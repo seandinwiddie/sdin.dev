@@ -3,15 +3,15 @@
 [https://Portfolio.sdin.dev](https://Portfolio.sdin.dev)
 
 ## Core Competencies
-**Programming Languages:** JavaScript, TypeScript, Python, Ruby, PHP, etc  
-**Frontend Frameworks:** React, Redux.js, RTK Query, Bootstrap, Tailwind CSS  
-**Backend Technologies:** Node.js, Express, Django, Ruby on Rails  
-**Databases:** Relational (MySQL, PostgreSQL), NoSQL (MongoDB, Cassandra), Graph  
+**Languages:** JavaScript, TypeScript, Python, Ruby, PHP, HTML, etc  
+**Front-end Development:** React.js, Redux.js, RTK Query, Bootstrap, Tailwind CSS, Webpack  
+**Backend:** Node.js, Express, Django, Ruby on Rails  
+**Database:** Relational (MySQL, PostgreSQL), NoSQL (MongoDB, Cassandra), Graph  
 **Cloud Platforms:** AWS, Azure, Google Cloud  
-**DevOps Tools:** Docker, Kubernetes, GitHub CI/CD  
+**DevOps Tools:** Docker, Kubernetes, GitHub CI/CD, Turborepo  
 **API Design:** RESTful APIs, GraphQL, gRPC  
-**Testing:** Jest, Cucumber, Selenium  
-**Technical Expertise:** Cross-platform Mobile Development (React Native/Expo Go), Behavior-Driven Development (BDD), Test-Driven Development (TDD), Agile Methodologies, Containerization, Serverless Computing, Microservices Architecture, Responsive Web Design, Progressive Web Apps (PWAs), Single Page Applications (SPAs), Minimum Viable Projects (MVPs), Machine Learning Integration, Natural Language Processing (NLP), Turborepo
+**Testing:** Jest, Cucumber, Selenium, Mocha  
+**Technical Expertise:** Cross-platform Mobile Development (React Native/Expo Go), Behavior-Driven Development (BDD), Test-Driven Development (TDD), Agile Methodologies, Containerization, Serverless Computing, Microservices Architecture, Responsive Web Design, Progressive Web Apps (PWAs), Single Page Applications (SPAs), Minimum Viable Projects (MVPs), Machine Learning Integration, Natural Language Processing (NLP), User Interface, Programming/Coding, Performance Testing, Workflows, Debugging, Project Management Skills, Information Technology, User Interface Design, Web Applications, Computer Science, Troubleshooting
 
 ## Project Highlights
 * Developed scalable member portals with advanced analytics and reporting systems
@@ -50,6 +50,6 @@ sean@sdin.dev | seandinwiddie@gmail.com
 **Eureka Nazarene School:** 1989 - 1991
 
 ## Recreational Activities
-**Family & Friends** | **Reading & Writing**
+Family & Friends | Reading & Writing
 
 **Let’s work together!**
