@@ -1,0 +1,78 @@
+PDF Research Tool - React Developer Needed - 08/11/2024 11:31 EST
+Open
+Bids
+84
+Average bid
+£50 GBP
+Details
+Proposals
+Project Details
+£36.00+ GBP per hour
+ Bidding ends in 18 hours, 42 minutes
+React Developer Needed: Legal Document Analysis Tool
+
+Long-term Vision
+We're building a sophisticated internal tool for legal document analysis and looking for a React developer to grow with us. While our team handles the AI/LLM logic that powers the analysis, we need a frontend specialist who can help us evolve from prototype to production-ready solution over the coming months.
+
+Your First Challenge
+Before diving into a full build, we have a specific issue that needs solving - a perfect opportunity to demonstrate your capabilities and establish a working relationship.
+
+We're prototyping with an open-source PDF viewer (react-pdf-highlighter) that displays documents and handles text selection. Our LangGraph agent analyzes the document text and returns categorized extracts as JSON. The highlight positioning system needs fixing - it can identify matching text using fuzzy matching but isn't rendering highlights in the correct positions.
+
+Here's what the positioning data looks like:
+
+```json
+// Current incorrect highlight position
+{
+"rects": [{
+"x1": 110.3984375,
+"x2": 626.8125,
+"y1": 570.765625,
+"y2": 591.265625,
+"width": 846.6666666666666,
+"pageNumber": 2
+}]
+}
+
+// Expected highlight position
+{
+"rects": [{
+"x1": 66.24,
+"x2": 394.7675400000002,
+"y1": 370.08,
+"y2": 390.58,
+"width": 846.6666666666666,
+"pageNumber": 2
+}]
+}
+```
+
+Current Prototype Stack
+- Frontend: React/TypeScript
+- PDF Handling: react-pdf-highlighter + PDF.js
+- Backend: Supabase
+- Document Analysis: Custom LangGraph implementation (handled by our team)
+
+What the System Needs to Do
+1. Receive categorized text extracts from our LangGraph agent
+2. Match these extracts in the PDF document
+3. Apply highlight overlays in the correct positions with category-specific colors
+
+What We're Looking For
+A React developer who can:
+- Solve the immediate highlighting issue quickly and efficiently
+- Demonstrate clear communication and problem-solving skills
+- Join us for the larger rebuild phase
+- Work collaboratively with our team handling the AI/LLM components
+
+Why This Matters
+While this first task might seem small, it's critical for our prototype's functionality and will give both parties a chance to evaluate fit before embarking on the larger project. For the right developer, this initial fix could be the beginning of a substantial long-term partnership as we move from prototype to production. For now, we want to do this with open-source or free libraries/resources.
+
+Next Steps
+If you can spot the potential solution to our coordinate transformation issue and are interested in being part of building something significant in the legal tech space, we'd love to hear from you.
+Skills Required
+PDF
+Frontend Development
+React Native
+Front-end Design
+React.js Framework

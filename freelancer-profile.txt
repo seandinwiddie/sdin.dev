@@ -1,0 +1,55 @@
+Hourly rate:
+$75 USD / hour
+Professional headline:
+https://sdin.dev
+Top skills:
+PHP
+Python
+Mobile App Development
+Django
+Golang
+Node.js
+Express JS
+Laravel
+Git
+React.js
+Blockchain
+Ethereum
+Backend Development
+Frontend Development
+React Native
+React.js Framework
+Redux.js
+RUST Programming
+API Development
+Web3.js
+Solana
+
+Summary:
+
+Full Stack Architect/Engineer
+
+I'm Sean Paul Payne Dinwiddie, a seasoned full-stack development engineer with over two decades of experience crafting scalable, high-performance applications. I specialize in building modern solutions.
+
+Core Expertise:
+- Web and software architecture and implementation
+- Application development with strict typing principles
+- Full-stack development with modern frameworks
+- Performance optimization and scalability solutions
+- User-centric interface design and development
+
+What I Deliver:
+- Scalable, maintainable web and native applications built with industry best practices
+- Clean, well-documented code that future teams will appreciate
+- Responsive, cross-platform solutions that work seamlessly
+- Performance-optimized applications with measurable improvements
+- Comprehensive testing and quality assurance
+
+Why Choose Me?
+- Proven track record of successful project delivery
+- Strong focus on code quality and maintainability
+- Deep understanding of modern web and software architecture
+- Excellent communication and collaboration skills
+- Commitment to delivering value beyond expectations
+
+Ready to elevate your project with professional, scalable solutions? Let's connect and discuss how I can help bring your vision to life!

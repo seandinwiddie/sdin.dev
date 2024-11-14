@@ -1,0 +1,64 @@
+Metrics Recruitment
+Share
+Show more options
+Protocol Engineering Lead
+United States · 1 month ago
+
+ Remote
+Matches your job preferences, workplace type is Remote.
+ Full-time
+Matches your job preferences, job type is Full-time.
+0 of 1 skills match
+Required skills are missing from your profile
+No longer accepting applications
+Meet the hiring team
+Caoimhe, #Hiring
+Caoimhe Byrne 
+ 2nd
+Office Manager | Talent Acquisition Specialist @Metrics Recruitment
+Job poster · 1 mutual connection
+
+Message
+About the job
+Metrics Recruitment is seeking a talented Lead Protocol Engineer for a company that looks to maximize money’s value — to reclaim value lost to the current financial system and ensure the onchain economy brings us money without borders. This role focuses on protocol development, proceed if you’re a hacker at heart, you can work from earliest R&D to final implementation, and these things are of interest to you: rollups, precompiles, predeploys, proof systems, EVM, real people using what you’ve built.
+
+
+
+Responsibilities:
+
+Design and implement enshrined rollup functionality and other VM-level optimizations and related services
+Conduct threshold-advancing research and proof-of-concept work in these areas
+Directly influence the protocol roadmap and strategy
+Be a tech lead and contribute to the Ethereum ecosystem more broadly through EIPs and RIPs
+
+
+Requirements:
+
+At least 4 years of blockchain development experience with a focus on Ethereum/EVM
+Experience with rollup architectures and cross-chain interactions
+Strong computer science fundamentals
+Informed opinions on the rollup ecosystem and current developments in the Ethereum technical roadmap
+Apparent interest and passion for contributing to the crypto ecosystem
+A bias for startups: constant problem solving, high ownership and accountability, smaller teams
+
+
+Nice-to-haves
+
+Experience writing Solidity smart contracts
+High confidence in Rust and/or Go
+Active and demonstrated contributions to open source crypto projects
+Prior experience in distributed systems, infra and/or security
+
+
+Benefits
+
+Fully remote organization that allows you to work anywhere in the US, Canada, or North American time zones (other exceptions considered case-by-case)
+100% employer-sponsored medical, vision and dental coverage for you, your spouse and your dependents
+Flexible vacation and work culture
+Work-from-home stipend, monthly wellness allowance, and annual learning & development allowance
+401(k) plan with company match (if eligible based on residency)
+Regular co-working opportunities in different cities throughout the US
+
+show less
+Requirements added by the job poster
+2+ years of work experience with Ethereum
