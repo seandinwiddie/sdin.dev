@@ -1,0 +1,62 @@
+Solana Automated Trading Sniper Bot
+Open
+Bids
+37
+Average bid
+£551 GBP
+Details
+Proposals
+Project Details
+£250.00 – 750.00 GBP
+ Bidding ends in 6 days, 22 hours
+I'm looking for a proficient developer to create an automated trading sniper bot for the Solana blockchain. This bot's main purpose is to execute trades on my behalf, following specific strategies and patterns.
+
+Key Requirements:
+- The bot should have the capability to perform automated trading on Solana-based DEXs.
+- Implement a 'copy trade/wallet' strategy, wherein the bot mimics trades from selected wallets (Multiple).
+- It should be efficient, fast and capable of handling high-frequency trading scenarios.
+- The MAIN feature for this bot would be that it is able to front run the wallets I am copy trading and also front run their sells.
+- User friendly interface
+
+Ideal Skills:
+- Strong understanding of Solana blockchain and its DEXs.
+- Proven experience in developing trading bots.
+- Familiarity with 'copy trading' strategies.
+- Knowledge in high-frequency trading and market dynamics.
+Skills Required
+PHP
+C Programming
+C# Programming
+Software Architecture
+C++ Programming
+
+Bid Amount
+£
+500.00
+GBP
+This project will be delivered in
+7
+Days
+
+Describe your proposal, what makes you the best candidate for this project?:
+
+Greetings! I'm thrilled to propose my services for your Solana trading bot project. As a seasoned developer with extensive experience in blockchain development, I understand the critical importance of speed, efficiency, and precision in automated trading systems.
+
+Let me address each of your requirements:
+
+1. Automated DEX Trading:
+I'll implement a robust trading engine using Solana's high-performance architecture, capable of executing trades across multiple DEXs with minimal latency. The system will leverage Solana's parallel processing capabilities for optimal performance.
+
+2. Copy Trading Implementation:
+I'll develop a sophisticated wallet monitoring system that can track multiple addresses simultaneously, using connections for real-time transaction detection. This ensures we never miss a trading opportunity.
+
+3. Front-Running Optimization:
+The bot will utilize advanced monitoring and custom optimization strategies to ensure your trades are executed before the target transactions. I'll implement priority management to maximize front-running success rates.
+
+4. High-Frequency Trading:
+Leveraging Solana's sub-second block times, I'll create an efficient order execution system that can handle multiple concurrent trades while maintaining performance under high load.
+
+5. User Interface:
+I'll design an intuitive dashboard. The interface will provide clear visibility into bot performance and wallet monitoring status.
+
+Let's create a trading bot that gives you the competitive edge you're looking for in the Solana ecosystem.

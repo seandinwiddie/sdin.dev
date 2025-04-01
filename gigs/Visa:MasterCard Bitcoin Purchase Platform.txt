@@ -1,0 +1,69 @@
+Visa/MasterCard Bitcoin Purchase Platform
+Open
+Bids
+58
+Average bid
+$573 USD
+Details
+Proposals
+Project Details
+$250.00 – 750.00 USD
+ Bidding ends in 6 days, 22 hours
+Project Title:
+Develop a Platform for Direct Bitcoin Purchases with Visa/MasterCard Payment
+
+Project Description:
+I am looking for a developer to create a straightforward platform that enables users to buy Bitcoin directly using Visa or MasterCard, with a small commission charged per transaction. The goal is to provide a simple, fast, and compliant way for users to purchase Bitcoin without requiring them to create an account or hold their funds on the platform. Key details and requirements are as follows:
+
+Key Requirements:
+1. Payment Integration:
+• Integrate secure payment processing for Visa and MasterCard to facilitate Bitcoin purchases.
+2. Bitcoin Purchase and Transfer:
+• Upon purchase, the Bitcoin should be sent directly to the buyer’s personal wallet on popular crypto exchanges like Binance or other wallets they specify.
+• There should be no need for users to create an account or hold their funds on the platform.
+3. Commission Structure:
+• Include a small commission on each transaction as a service fee for using the platform.
+4. Compliance and Security:
+• Since cryptocurrency purchases are restricted, please ensure the platform is designed with maximum security and discretion, keeping all transactions smooth and compliant with international standards.
+• The platform should prioritize user privacy and data security.
+5. User Interface:
+• Simple and intuitive UI focused solely on Bitcoin purchases, making it easy for users to buy and transfer Bitcoin with minimal steps.
+
+Additional Notes:
+• I am not looking to add wallets, portfolios, or account management features. The platform should strictly serve as a middleman for buying and transferring Bitcoin.
+• I welcome any suggestions on how best to implement this project securely and effectively.
+
+If you have experience with cryptocurrency payment gateways, security, and compliance, please reach out with your proposal and estimated timeline.
+Skills Required
+PHP
+Website Design
+Software Architecture
+PayPal API
+HTML
+
+Bid Amount
+$
+500.00
+USD
+This project will be delivered in
+7
+Days
+
+Describe your proposal, what makes you the best candidate for this project?:
+I'm thrilled to propose my services for developing your Visa/MasterCard Bitcoin Purchase Platform. With over two decades of experience in crafting secure, scalable, and user-centric applications, I am well-equipped to bring your vision to life.
+
+Payment Integration: I will integrate robust and secure payment processing for Visa and MasterCard, ensuring seamless Bitcoin purchases. My expertise in payment gateways will guarantee a smooth transaction experience for your users.
+
+Bitcoin Purchase and Transfer: I will implement a direct transfer system that sends Bitcoin to the buyer’s specified wallet immediately upon purchase. This will eliminate the need for account creation or fund holding on the platform, aligning perfectly with your requirements.
+
+Commission Structure: A transparent and efficient commission system will be embedded, providing a clear service fee structure for users while ensuring profitability for the platform.
+
+Compliance and Security: I prioritize security and compliance, especially in the cryptocurrency domain. The platform will be designed to meet international standards, ensuring user privacy and data security.
+
+User Interface: I will design a simple, intuitive UI focused solely on Bitcoin purchases, minimizing steps and maximizing user satisfaction.
+
+I am eager to leverage my skills to create a platform that not only meets but exceeds your expectations. Let's connect to discuss how I can contribute to your project's success.
+
+Warm regards,
+
+Sean Paul Payne Dinwiddie

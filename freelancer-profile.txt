@@ -1,55 +1,85 @@
 Hourly rate:
 $75 USD / hour
+
 Professional headline:
 https://sdin.dev
-Top skills:
-PHP
-Python
-Mobile App Development
-Django
-Golang
-Node.js
-Express JS
-Laravel
-Git
-React.js
-Blockchain
-Ethereum
-Backend Development
-Frontend Development
-React Native
-React.js Framework
-Redux.js
-RUST Programming
-API Development
-Web3.js
-Solana
 
 Summary:
 
 Full Stack Architect/Engineer
 
-I'm Sean Paul Payne Dinwiddie, a seasoned full-stack development engineer with over two decades of experience crafting scalable, high-performance applications. I specialize in building modern solutions.
+I'm Sean Paul Payne Dinwiddie, a seasoned full-stack engineer with over two decades of experience crafting scalable, high-performance applications. I specialize in building modern solutions.
+
+I'm a battle-tested developer crafting high-performance digital solutions. Think of me as your technical force multiplier - I don't just write code, I architect scalable systems that stand the test of time.
 
 Core Expertise:
-- Web and software architecture and implementation
-- Application development with strict typing principles
-- Full-stack development with modern frameworks
-- Performance optimization and scalability solutions
-- User-centric interface design and development
+• Web and software architecture and implementation
+• Application development with strict typing principles
+ Full-stack development with modern frameworks
+• Performance optimization and scalability solutions
+• User-centric interface design and development
 
 What I Deliver:
-- Scalable, maintainable web and native applications built with industry best practices
-- Clean, well-documented code that future teams will appreciate
-- Responsive, cross-platform solutions that work seamlessly
-- Performance-optimized applications with measurable improvements
-- Comprehensive testing and quality assurance
+• Scalable, maintainable web and native applications built with industry best practices
+• Clean, well-documented code that future teams will appreciate
+• Responsive, cross-platform solutions that work seamlessly
+• Performance-optimized applications with measurable improvements
+• Comprehensive testing and quality assurance
 
 Why Choose Me?
-- Proven track record of successful project delivery
-- Strong focus on code quality and maintainability
-- Deep understanding of modern web and software architecture
-- Excellent communication and collaboration skills
-- Commitment to delivering value beyond expectations
+• Proven track record of successful project delivery
+• Deep understanding of modern web and software architecture
+• Excellent communication and collaboration skills
+• Commitment to delivering value beyond expectations
+
+What Sets Me Apart:
+• Deep expertise in web and software ecosystem and modern development
+• Turning complex requirements into elegant solutions
+• Obsession with code quality and system architecture and maintainability
+
+Technical Philosophy:
+"Clean code isn't just about following best practices - it's about crafting solutions that future developers will thank you for."
 
 Ready to elevate your project with professional, scalable solutions? Let's connect and discuss how I can help bring your vision to life!
+
+Are YOU ready to transform your project into a masterpiece of modern web architecture? Let's work together and talk about how we can leverage cutting-edge technology to exceed your expectations!
+
+
+TOP SKILLS:
+
+Frontend Development
+• React.js
+• React.js Framework
+• Redux.js
+
+Backend Development
+API Development
+• Node.js
+• Express JS
+
+Mobile App Development
+• React Native / Expo
+
+Blockchain
+• Web3.js
+• Solana
+• Ethereum
+
+Django
+Laravel
+Spring Boot
+
+JavaScript
+Java
+Golang
+PHP
+Python
+RUST Programming
+Haskell
+
+Git
+
+Tailwind CSS
+Bootstrap
+WordPress
+WooCommerce

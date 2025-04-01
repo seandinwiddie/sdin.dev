@@ -1,0 +1,149 @@
+RSM Solutions, Inc logo
+RSM Solutions, Inc
+Share
+Show more options
+React Native Developer
+United States · 2 weeks ago · Over 100 applicants
+
+$90K/yr - $120K/yr
+ Remote
+Matches your job preferences, workplace type is Remote.
+ Full-time
+Matches your job preferences, job type is Full-time.
+ High skills match
+The majority of required skills are found on your profile
+Job activity
+Application viewed
+17 minutes ago
+Application submitted
+1 week ago
+Take the next step in your job search
+
+
+Find me similar jobs
+
+How should I prepare for an interview?
+
+Tell me more about RSM Solut...
+
+Recommended for you
+Prepare for interviews
+Practice your answers to common interview questions and get feedback.
+Meet the hiring team
+Tom
+Tom Welke  Tom Welke is verified
+ 3rd
+Putting the 'Human' back in HR | C Suite Strategy Administrator | The Good Karma Guy
+Job poster
+
+Message
+About the job
+Thank you for taking time to take a look at the React Native Developer role I posted here on LinkedIN, I appreciate it. If you are new to my JD's, welcome! If you have seen my JD's before, you know that I like to add humor to these things and put a personal 'flair' to these. So, buckle up and enjoy the ride.
+
+
+
+As with every role I work on, social fit is almost as important as the technical fit. Here are a few things to think about when it comes to social fit:
+
+I know the hiring manager for this role quite well. He sets clear expectations, is there to help (while not micro-managing), and is an all around very decent gentleman. Interesting note, he will help people regardless as to weather he gets anything in return.
+I am not going to use the typical 'ability to function in a fast paced environment along with the ability to collaborate with others'. If you are anything like me, you roll your eyes when you see that. Instead, I will say this...this is an environment where everyone, pretty much, brings their A game. This means that we are looking for individuals who really WANT to do their best work. This is not an environment with 'participation awards'.
+
+
+This role can be done remotely. Ideally, we are seeking individuals that are closer to Greensboro, North Carolina. However, that famous quite from Gone With the Wind rings true here 'wantin' aint gettin''. So, if you aren't local to North Carolina, that is ok.
+
+
+
+I can only work with US Citizens or Green Card Holders for this role. So, I cannot work with H1, OPT, EAD, F1, or STEM Visa Holders for this role. In addition, I can only work with candidates that already reside in the US. 
+
+
+
+You will be working on building major core and UI components for this clients next generation mobile customer digital platform applications. You will work with UX, UI, Product, and Platform Engineering teams in this role to help scope work & architect reliable and scalable React Native apps.
+
+
+
+Here are some of the nifty things you will be working on in this role:
+
+Work with PMs, designers & other developers to translate those wonderful business requirements into those nifty technical solutions.
+Use React Native to design and develop scalable & reusable UI components.
+Build components using GraphQL to fetch data from this client's loyalty platform and other data sources.
+Make use of additional JavaScript libraries such as Redux to make asynchronous API calls to 3rd part apps.
+As you might expect, you will work on code reviews, document standards & best practices, and use TDD.
+Stay up to date with regards to React Native, GraphQL, iOS and Android development trends.
+
+
+Here is what we are seeking:
+
+At least 6 years of React Native development. This experience should include roles where you were the only developer working on an initiative from start to finish.
+Experience with front end frameworks (React Native, React, Redux, and GraphQL).
+Experience building push notifications using firebase.
+Any experience with unit testing and MVC / MVVM Architectures.
+Experience with non-relational databases (handling & parsing JSON).
+Sql scripting experience.
+Experience deploying apps to the Appstore & Playstore (extra points for examples of your work).
+Experience working with Azure DevOps, Azure Functions, ADF, Azure data integration, & Microsoft App Center.
+
+show less
+Featured benefits
+Vision insurance, Medical insurance, Dental insurance, 401(k)
+
+Requirements added by the job poster
+Authorized to work in the United States
+No need for visa sponsorship
+
+
+-----
+
+
+Tom Welke
+3rd degree connection
+· 3rd
+Putting the 'Human' back in HR | C Suite Strategy Administrator | The Good Karma Guy
+Today
+Tom Welke sent the following messages at 5:37 PM
+View Tom’s profileTom Welke
+Tom Welke   5:37 PM
+
+Regarding the React Native role I posted here on LinkedIN
+Good Afternoon, Sean.
+Thank you for taking time to apply to the React Native role I posted here on LinkedIN, I appreciate it quite a bit. You bring a very nice mix of skills to the table. Allow me to introduce myself. My name is Tom Welke. I am Partner & VP at RSM Solutions Inc and I have been recruiting technical talent for over 22 years and been in the tech sector since the 1990s. Due to that, I am am going to be much more focused on 'fit' than anything else...a fit for you and a fit for the candidate. To that end, I have a few questions that I could use your help in answering:
+
+1) How many years of React Native experience do you have? Where was that experience gained?
+
+2) What are you seeking in terms of annual compensation?
+
+3) This role is being done on the East Coast Time Zone (9am-5pm). Will this work schedule work for you?
+
+4) Do you have examples of your mobile dev work that you could share? If so, is there a link to that work (where not proprietary)?
+
+5) Are you a US Citizen or Green Card Holder? Or, are you an H1, OPT or EAD Visa Holder?
+
+Feel free to respond to these questions with your answers. Once I have those answers, you and I can jointly determine the next steps. I look forward to seeing your responses. Sean.
+Kindest Regards,
+Tom
+
+Tom Welke
+Putting the 'Human' back in HR | C Suite Strategy Administrator | The Good Karma Guy
+
+
+
+-----
+
+Hi Tom,
+
+Thank you for reaching out regarding the React Native Developer role. I appreciate your detailed message and personal approach to recruitment. Let me address your questions:
+
+1) I have over 3 years of hands-on React Native experience, primarily gained through my work at Redding Webmaster and various freelance projects. I've developed and deployed multiple applications.
+
+2) Your stated compensation range of $80K-$110K/yr aligns with my expectations.
+
+3) Yes, the East Coast Time Zone schedule (9am-5pm) works perfectly for me.
+
+4) While many of my projects are under NDAs, I have developed several healthcare and business applications using React Native. I implement a secure architecture built on reusable React Native components with Redux/Context API for state management. Data handling uses REST APIs for business operations, with performance optimized through lazy loading and code splitting. The development process emphasizes security (HIPAA compliance), automated testing, and responsive design. I'd be happy to discuss the technical details and architecture decisions of these projects during an interview.
+
+5) I am a US Citizen.
+
+I'm particularly excited about this opportunity because of the emphasis on both technical excellence and social fit. Your description of the hiring manager's leadership style - setting clear expectations while avoiding micromanagement - resonates with my preferred work environment.
+
+Looking forward to discussing the next steps.
+
+Warm regards,
+Sean

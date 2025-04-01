@@ -1,0 +1,62 @@
+Movie Explorer & Nomination System Development
+Open
+Bids
+32
+Average bid
+$159 CAD
+Details
+Proposals
+Project Details
+$30.00 – 250.00 CAD
+ Bidding ends in 6 days, 23 hours
+Title: Nomination System with Movie Grid View and OMDb Integration
+User Story: As a user, I want to be able to explore a list of movies in a grid view, search and filter based on my preferences, and nominate my favorite movies. Each movie should display detailed information, and I want to see which movies are highly nominated. I should also be able to comment on movies when I nominate them, adding my own thoughts.
+Acceptance Criteria:
+OMDb API Integration & Data Storage:
+The system fetches movie data from the OMDb API.
+Movie data is stored in a Strapi "movies" collection with fields like title, year, rating, release date, runtime, genre, writer, director, actors, plot, language, country, awards, poster, metascore, IMDb rating, IMDb votes, IMDb ID, type, and response.
+Grid View Display:
+Movies are displayed in a responsive grid view.
+Each movie displays a featured image, title, and other relevant details.
+Movies are searchable and filterable by genre, release date, rating, and other available fields.
+Nomination System:
+Each movie has a "Nominate" button.
+Clicking "Nominate" increases the count displayed near the button.
+Movies are displayed in order of nomination count, with most-nominated movies appearing first.
+When nominating a movie, a text input allows the user to submit a comment, which is stored in the "nominate" collection along with the user ID and movie ID.
+Tab Navigation:
+The main section has tabs for "Movies," "Music," "E-books," and "Videos."
+Currently, only the "Movies" tab is active.
+Notes:
+Backend Logic: Ensure efficient sorting and filtering by nomination count and other fields.
+Scalability: The nomination count and user comments should be stored and retrieved efficiently to support a large user base.
+Skills Required
+PHP
+JavaScript
+Web Scraping
+Software Architecture
+MySQL
+
+Bid Amount
+$140.00 CAD
+This project will be delivered in 3 Days
+
+Describe your proposal, what makes you the best candidate for this project?:
+Hello,
+
+I'm thrilled to propose my services for the development of your Movie Explorer & Nomination System. With over two decades of experience in software architecture and development, I am well-equipped to deliver a robust and scalable solution that meets all your requirements.
+
+OMDb API Integration & Data Storage: I will seamlessly integrate the OMDb API to fetch and store movie data in a Strapi "movies" collection, ensuring all necessary fields are captured for a comprehensive movie database.
+
+Grid View Display: Leveraging responsive design principles, I will create a dynamic grid view that allows users to search and filter movies by genre, release date, and rating, providing an intuitive and engaging user experience.
+
+Nomination System: I will implement a nomination feature with a "Nominate" button for each movie. This will include a real-time update of nomination counts and a comment section for users to share their thoughts, stored efficiently in the "nominate" collection.
+
+Tab Navigation: The system will feature a tabbed interface with a focus on the "Movies" tab, ensuring a smooth and user-friendly navigation experience.
+
+Backend Logic & Scalability: I will ensure efficient sorting and filtering by nomination count and other fields, optimizing for scalability to support a large user base.
+
+Let's bring your vision to life with a solution that not only meets but exceeds your expectations. I look forward to the opportunity to work together.
+
+Warm regards,  
+Sean Paul Payne Dinwiddie

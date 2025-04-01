@@ -1,0 +1,78 @@
+E-Commerce Site Troubleshooting & Fixes
+Open
+Bids
+47
+Average bid
+$137 AUD
+Details
+Proposals
+Project Details
+$30.00 – 250.00 AUD
+ Bidding ends in 6 days, 22 hours
+I'm looking for a skilled web developer to assist me in fixing my e-commerce site. I have a design ready, but I need help troubleshooting and optimising the website.
+
+Ideal skills and experience for the job include:
+- Proficiency in e-commerce web development
+- Experience with troubleshooting and optimising websites
+- Knowledge of web design principles
+- Ability to work with pre-existing designs
+- Skilled in creating responsive web designs
+
+Please note, the specific issues I'm facing haven't been detailed yet, but a thorough inspection of the site will be required.
+
+Your task will be to identify and solve any potential problems, as well as optimising the site for better performance. The ultimate goal is to have a fully functioning, efficient e-commerce site.
+
+The e-commerce site is built on WordPress/WooCommerce. The primary issues are with the admin panel. The focus will be on improving the website's performance and speed. The main task involves resolving functionality errors in the admin panel.
+Skills Required
+PHP
+Website Design
+WordPress
+eCommerce
+HTML
+
+Bid Amount
+$
+140.00
+AUD
+This project will be delivered in
+1
+Days
+
+describe your proposal, what makes you the best candidate for this project?
+
+I'm excited to help optimize your WooCommerce site and resolve those admin panel issues! With over two decades of experience in e-commerce development, I specialize in WordPress performance optimization and troubleshooting.
+
+Let me break down how I'll address your needs:
+
+1. Admin Panel Functionality:
+- Complete diagnostic review of admin panel issues
+- Systematic troubleshooting of functionality errors
+- Implementation of performance optimizations
+- Testing and validation of all admin features
+
+2. Performance Optimization:
+- Comprehensive site speed analysis
+- Database optimization and cleanup
+- Caching implementation/configuration
+- Asset minification and optimization
+- Server-side performance tuning
+
+3. Site-wide Improvements:
+- Responsive design verification
+- Cross-browser compatibility testing
+- Implementation of WordPress best practices
+- Security hardening measures
+
+I've successfully optimized numerous WooCommerce sites, reducing load times by up to 40% and resolving complex admin panel issues. My experience with WordPress, PHP, and e-commerce platforms ensures I can deliver efficient, effective solutions.
+
+Timeline: I can complete this project within 1 day, providing you with:
+- Detailed documentation of all fixes
+- Performance optimization report
+- Recommendations for future maintenance
+
+My bid of $140 AUD represents excellent value for my expertise level. Let's transform your e-commerce site into a high-performing, efficient platform!
+
+Ready to get started and resolve those issues? Let's connect and make your WooCommerce site run like a dream!
+
+Warm regards,
+Sean

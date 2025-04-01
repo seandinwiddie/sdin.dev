@@ -1,0 +1,900 @@
+Delivered-To: seandinwiddie@gmail.com
+Received: by 2002:a05:6358:d587:b0:1da:3546:811a with SMTP id ms7csp295589rwb;
+        Thu, 20 Feb 2025 10:46:53 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IHqr8gQC85wbzSDFyYheV9HlHRpEVMY8ucQkAwME3r8xKbZIFUZptP5+Behf4veH4KzITBD
+X-Received: by 2002:a05:620a:472a:b0:7c0:a28e:4970 with SMTP id af79cd13be357-7c0cef0b2eamr47805385a.29.1740077212800;
+        Thu, 20 Feb 2025 10:46:52 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1740077212; cv=none;
+        d=google.com; s=arc-20240605;
+        b=O5USxzLDxwt/EtCM38eZ7GiyyKhwyUwXG0GnSWRfKQyx7IPHjjVcGjmjJbkvZv7h77
+         UxVu366BNUKi7H2wTnZ1r4h/cn9gzUDNbPhm6dOeCgDyYI0Z8PcHIfxmfLFGKymWJYKJ
+         0GHxlvUx6thQAmZ/5YeftCmeaB/P5vBdwHBCY78M5qWjCjLR8DHre+3CagS7qve13XwR
+         341n2nH0BvYDip+F71DOZEvjYfrBr1DhLGYKQME0hq4x3c/lY3TxQiYp/OeoHtJgXKHO
+         OiOoXH7iG8nsHnGU8M9QGL5AhjsGScAudKDxWtuI47bYqIGGPGxJLN6Y16FZvFl+g4fX
+         VEnA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=message-id:list-unsubscribe-post:list-unsubscribe:feedback-id
+         :content-transfer-encoding:mime-version:date:subject:from:to
+         :cfbl-address:dkim-signature:dkim-signature;
+        bh=By/Pee4SDnY/b4x9Yjn+0BVjUS3gaevunWhAJD4zNP4=;
+        fh=FhlPeZm7SnEjgbDGt1nnQ7SZi02VjH+QqflpW549C/U=;
+        b=XRhtuzc2kZZoNG6nZg8xeTGL2iGD9cqWWl58ss/wnWs1nHTAcwm3Ls+Uf44kYRSdKu
+         xmZFt2P6ie9woCDA1AsQR24mIESMcL/Osi0+cFos+MxNq+cz7N5kG4rgWa/8uLd8lo21
+         6SqByWmDPLOS6FIwJsD6y9+UTxslyGnNibhjzaUGtMOuYdHKFtD6iiMLrG1lgI5B6Su+
+         vOkwCJ16LXQQH626ZQJDoKskV1PxPy2txW+Ej/mbO2xY5neLZCYH7aVRryqn7d/YTcjv
+         J+a26sWSK0+Z/015mbRl9NT21Tra8MxzYBueXwQ8uCa37QXeXecqmAa+NmLAgt3WpiBQ
+         AYCA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@consulting.com header.s=acdkim1 header.b=I7YbiE+v;
+       dkim=pass header.i=@acems1.com header.s=dk header.b=HpeTmJ7Q;
+       spf=pass (google.com: domain of bounce-3109379-112-6275-seandinwiddie=gmail.com@em-3109379.consulting.com designates 192.92.97.176 as permitted sender) smtp.mailfrom="bounce-3109379-112-6275-seandinwiddie=gmail.com@em-3109379.consulting.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=consulting.com
+Return-Path: <bounce-3109379-112-6275-seandinwiddie=gmail.com@em-3109379.consulting.com>
+Received: from mail176.acems1.com (mail176.acems1.com. [192.92.97.176])
+        by mx.google.com with ESMTPS id af79cd13be357-7c09d5aab5dsi823765285a.86.2025.02.20.10.46.52
+        for <seandinwiddie@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 20 Feb 2025 10:46:52 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounce-3109379-112-6275-seandinwiddie=gmail.com@em-3109379.consulting.com designates 192.92.97.176 as permitted sender) client-ip=192.92.97.176;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@consulting.com header.s=acdkim1 header.b=I7YbiE+v;
+       dkim=pass header.i=@acems1.com header.s=dk header.b=HpeTmJ7Q;
+       spf=pass (google.com: domain of bounce-3109379-112-6275-seandinwiddie=gmail.com@em-3109379.consulting.com designates 192.92.97.176 as permitted sender) smtp.mailfrom="bounce-3109379-112-6275-seandinwiddie=gmail.com@em-3109379.consulting.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=consulting.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=acdkim1; d=consulting.com;
+ h=To:From:Subject:Date:MIME-Version:Content-Type:Content-Transfer-Encoding:
+ Feedback-ID:List-Unsubscribe:List-Unsubscribe-Post:Message-ID:From:To:Subject:
+ Date; x=1740163612; i=riandoris@consulting.com;
+ bh=By/Pee4SDnY/b4x9Yjn+0BVjUS3gaevunWhAJD4zNP4=;
+ b=I7YbiE+vhQHaeFEDkR89vfbNZIv5zx9ddGwVLWXB26EO+I09jPO00GRBIubmWWslXMrE+CnRgqyk
+   N3iWl5WLGpPQ6DbPH0Y2qnZGzQOriXlCHoP+SIGXD7d1Gb7vRgdEiYe5xtflXqX/L442LxNoD09d
+   T1sMRBKJzLxqyCCH+3qpOfqZic490XAVyR8sJdpH8NQORt02+yOFAmV1lgavmhDzzQiHkw7STEk2
+   hU3h9ELynbc2HQTaSj4vT67yTFIG2aUNwtepMLkZzo3VDtRICunxSbtExAZRtbaIZfw6FmHQIucd
+   TTqpQUHeZjD76UvqxapN6jlhXU7G/D5qy7X/Kg==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dk; d=acems1.com;
+ h=To:From:Subject:Date:MIME-Version:Content-Type:Content-Transfer-Encoding:
+ Feedback-ID:List-Unsubscribe:List-Unsubscribe-Post:Message-ID:From:To:Subject:
+ Date; x=1740163612;
+ bh=By/Pee4SDnY/b4x9Yjn+0BVjUS3gaevunWhAJD4zNP4=;
+ b=HpeTmJ7QmtEr6c6z4vN1h23y3/flJWVGvdbd6WBS1ZsN5qFcaeI9TyRBS+6mxpIVUeO4KuYUjM6k
+   AS9KXLlQYu29LVGvSRftVhtAQ4goRBg7xzyxC/IOWhnF1cg7Qa7h+GM6LFP8h6gJ/WnmLMls5enY
+   wF0k68JIitHlsQFL2Pg=
+Received: by mail181.acems1.com id hmts9o395q8a for <seandinwiddie@gmail.com>; Thu, 20 Feb 2025 18:43:43 +0000 (envelope-from <bounce-3109379-112-6275-seandinwiddie=gmail.com@em-3109379.consulting.com>)
+X-Mailer: ActiveCampaign Mailer
+CFBL-Address: fbl-report@acems1.com; report=arf
+To: "Sean" <seandinwiddie@gmail.com>
+From: "Rian Doris" <riandoris@consulting.com>
+Subject: Why high-ticket courses are dying (and what's next)
+Date: Thu, 20 Feb 2025 12:42:26 -0600
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift-155564597967b77792c24048.55323031_=_"
+Content-Transfer-Encoding: 7bit
+X-Report-Abuse: Please report abuse here: abuse@acemserv.com
+X-mid: c2VhbmRpbndpZGRpZUBnbWFpbC5jb20gLCBjMTEyICwgbTE1MyAsIHMxMjc3NjI
+x-virtual-mta: camp-use1-b-c1-172
+Feedback-ID: 3109379:3109379.112:camp-use1-b-c1-172:activecampaign
+X-250ok-CID: 3109379-112
+List-Unsubscribe: <https://consultingdotcom.activehosted.com/box.php?nl=11&c=112&m=153&s=400fe6ef634b20edcfc20d02a11235e0&funcml=unsub2&luha=1>,<mailto:unsubscribe-27a5489a79ffc4cef94070e0afa00e5e-112-400fe6ef634b20edcfc20d02a11235e0@mail172.acems1.com>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-DKIM-Options: s=acdkim1
+Message-ID: <0.0.2.1C6.1DB83C75DFA5D7C.0@mail181.acems1.com>
+
+
+
+
+--_=_swift-155564597967b77792c24048.55323031_=_
+Content-Type: text/plain; charset=utf-8
+
+The counterintuitive path to 85% profit margins in consulting.  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+
+In the email on Sunday, we explored how the consulting industry has fundamentally shifted since 2018: gone are the days of cheap Facebook ads and profitable high-ticket courses. 
+
+Here's a case study that perfectly illustrates this transformation.
+
+But before we dive in you need to
+understand that the first step to transitioning out of the grind of High-Ticket Courses to the smooth profitability of High-Touch Consulting is 
+
+**designing a primary offer that can generate more than $50,000 in LTV. **
+
+This is critical (and though you may not think it's possible for your market, it usually is). 
+
+You see, the core problem to solve for info businesses in 2025 and beyond isn't acquisition.
+
+The new problem to solve for is:
+
+**"How do I provide enough ongoing value to justify a $50K+ LTV to the top 25% of my market?"**
+
+When you architect a model that gets your LTV above this $50K line, you become less dependent on acquisition, which is a massive lever across your business. 
+
+Most high-ticket info marketer's businesses are like vampires that have to be constantly fed with new blood. 
+
+You want the opposite. 
+
+Instead of spending most of your money and time finding new customers who pay a little, we want to build a service so valuable that fewer
+customers pay a lot more and stay forever.
+
+Let's break it down:
+
+If your LTV is $100,000+ for the sake of this example, you only need to acquire 10 clients per year (not month-
+
+**year**!) to have a seven-figure business. 
+
+That means if you have a 10% conversion rate, you only need 100 sales calls per year. 
+
+That's about eight sales calls a month, or a couple a week.
+
+Imagine how different your business would be if, for every $1M of annual revenue, you only needed eight sales calls a month. That's one example of how a high LTV is an enormous lever.
+
+Back to our case-study:
+
+I was speaking with an entrepreneur, Mario, who helped café owners generate more profit. He was selling a $9K course followed by a $25K backend. These products were Done-With-You and taught café owners how to improve their profits.
+
+He had:
+
+* A sales team, costing him about 15% of his margin
+
+* Ads with $5K CAC, costing him +30% of his margin
+
+* A team of "Success Coaches" and "Client Success
+Managers" implementing his methodology, eating up another 10% of his margin
+
+Just these three expenses consumed 65% of his revenue. Adding other operating expenses left him with less than 20% net profit. 
+
+Meanwhile, most of his time was spent managing the sales team, marketing team, ads, creative, funnels, etc. Only a fraction of his time was spent actually helping clients. He was grinding to sell these café owners and only keeping about 20% at the end.
+
+Not to mention how he was spending his time. 
+
+Yes, he'd do a few client calls a week but the vast majority of his time was managing the sales team, managing the marketing team, the ads, the creative, the funnels, the whole shebang. Any time he had left went into overseeing the fulfillment team. 
+
+He was grinding to sell these cafe owners and landing a measly 20% at the end. And all of his time was spent on selling. Only a fraction on actually helping clients. 
+
+I helped him to scrap this offer and to build a new one
+entirely. 
+
+The new offers pricing:
+
+**$5K per month recurring + 25% of profits above their current profit level. Month to month with no obligation to stay.**
+
+Mario would meet directly with the cafe owner every other week one on one. In the in-between weeks the owners had access to him asynchronously so they could access him with any questions. 
+
+Mario's business transformed. 
+
+He let go of the bottom 75% of his client base who couldn't afford $5K a month or didn't make enough profit for the 25% profit share. 
+
+Then he focused on landing 50 clients into this new offer.
+
+Here's what his business looked like with this new offer once he'd done this:
+
+* No sales team, +15% of the profit secured for Mario himself
+
+* No ad spend, he got these clients through cheaper means as he didn't need many of them (we'll cover this later), 30% of his margin recovered there
+
+* Only one of his four-person client success team needed to stay on, saving him another 7% in margin
+
+* His weeks
+went from 80% of his time focused on acquiring customers to 80% of his time delivering to customers to maximize retention and LTV
+
+* He had to deal with 50 clients per year versus 300+ new ones every year! 
+
+The end result?
+
+He went from doing $400K per month grinding on acquisition all day, having major team headaches and mediocre client results. Not to mention only keeping $80K per month...
+
+To doing $400K per month ($200K from his 40 clients paying the retainer of $5K per month) and another $200K from his profit share. 
+
+But guess what? Margin went from 20% to 85%. 
+
+Net profit shifted from $80K to $340K!
+
+Besides the $260K in additional profit, what'd he love most about it all?
+
+That the fundamental orientation of his business transformed - there was no longer a battle to get customers, the battle was to keep them. 
+
+This was a battle he found infinitely more fulfilling. 
+
+And here's the crazy thing: Mario's churn was 10% per year - so he only needed to add 5 new
+clients per year to maintain these numbers. 
+
+Mario managed to solve the most lucrative problem online consultants and info entrepreneurs are up against - 
+
+**how do I provide enough ongoing value to justify mid 5 to 6 figure LTV?**
+
+This is the first set of actions required to transition from being a High-Ticket Infomarketer to a High-Touch Consultant:
+
+**1.** Reconfigure your offer so it's geared exclusively to the top 25% of your market--those who are the most affluent, committed, and capable of benefiting from what you provide.
+
+**2.** Make it recurring, so there's no ceiling on LTV, and shift your founder obsession to 
+
+**retention** rather than acquisition.
+
+**3.** Map your customer journey years in advance. Know what they'll need help with in years 2, 3, 4, and 5, so you can set expectations for a long-term relationship. The ideal is to keep every customer forever, optimizing for that scenario.
+
+The question for you to obsess over to unlock the extreme increases in
+profit that come with High-Touch Consulting (over High-Ticket Courses) is:
+
+**What ONE ongoing, recurring offer I can enroll the top 25% of my market into that has 5x the LTV of my current offer?**
+
+Part of the magic of recurring is that it decreases buyer resistance (versus the contract or engagement requiring a multi-five investment right off the bat) and it allows you to overdeliver such that you can have LTV run all the way up through six figures and even into the seven figure territory. 
+
+It also means that you don't need to grow client acquisition to grow the business. If you have 50 clients with 10% annual churn and get 10 new clients every year you'll have 70 clients in year 5. 
+
+So you don't need to grow acquisition to grow your business, just hold it constant! 
+
+As a result of doing that, net profit also continues to increase per client over time. 
+
+To pull off this LTV you can play with varying pricing structures. 
+
+I know some who do $0 retainer and 50% of
+additional profit, some who just do a flat monthly rate, some who do a blend. 
+
+You can toy with the specifics of pricing, the trick is that you're getting close to and ideally beyond $100K LTV so that your dependence on acquisition plummets - that's what unlocks the extreme profit. 
+
+Now if you want me to do for YOU what I did for Mario's business, I'd be happy to. 
+
+I'm running a one-off Mastermind called Beyond 2025. 
+
+In it, I overhaul your business (through one on one coaching with me and live group calls) to transition you toward a High-Touch Consulting model so your profit can soar like Mario's. 
+
+And so that you're optimally set up to generate $5M+ in net profit in the new landscape we find ourselves in. 
+
+I'll only be running Beyond 2025 once ever so if you'd like to work with me so that you can make 2025 your best year yet, book your call for Beyond 2025 here now. 
+
+On that call it'll be more for my team and we'll give you everything you need to know about
+Beyond 2025 and how it works. 
+
+Enrollment is going to end in mid-march 2025 and after this one cohort I'm going to be singularly focused on scaling my new neuroscience company. So this is the only chance you'll ever have to work with me to scale your business. 
+
+Book your call here now for Beyond 2025. https://consultingdotcom.acemlna.com/lt.php?x=3DZy~GDHIXDPE5Ku_dDIVBJt1KFUuwUhj-VjX5M2InGb5XGuyEy.zeFs1o2hjNI~juZAY5PL 
+
+Speak soon!
+
+Rían Doris, Owner at Consulting.com
+
+**P.S.** Book your call for Beyond 2025 here https://consultingdotcom.acemlna.com/lt.php?x=3DZy~GDHIXDPE5Ku_dDIVBJt1KFUuwUhj-VjX5M2InGb5XGuyEy.zeFs1o2hjNI~juZAY5PL and have me overhaul your business so you've got a clear path to $5M+ in net profit, optimized for our new environment. We're closing applications mid-march so act now. 
+
+If you book your call now you also get access to a one-off Youtube masterclass that'll show you how I generated 20M views with every video I uploaded going viral and
+generating 417K+ subs. All organic.
+
+Sent to: seandinwiddie@gmail.com
+
+Unsubscribe https://consultingdotcom.acemlna.com/proc.php?nl=11&c=112&m=153&s=400fe6ef634b20edcfc20d02a11235e0&act=unsub
+
+Consulting.com, 30 N GOULD ST STE R, SHERIDAN, WY 82801, United States
+--_=_swift-155564597967b77792c24048.55323031_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html>=0A<head><meta http-equiv=3D"Content-Type" content=3D"=
+text/html; charset=3Dutf-8"><meta name=3D"viewport" content=3D"width=3Ddevi=
+ce-width, minimal-ui, initial-scale=3D1.0, maximum-scale=3D1.0, user-scalab=
+le=3D0;"><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"><meta n=
+ame=3D"format-detection" content=3D"telephone=3Dno, date=3Dno, email=3Dno, =
+address=3Dno"><meta name=3D"x-apple-disable-message-reformatting">=0A <!--[=
+if (mso 16)]><style type=3D"text/css"> a { text-decoration: none; } =0A</st=
+yle><![endif]--><!--[if gte mso 9]><style> sup { font-size: 100% !important=
+; } </style><![endif]--><!--[if gte mso 9]><noscript>=0A         <xml>=0A  =
+         <o:OfficeDocumentSettings>=0A           <o:AllowPNG></o:AllowPNG>=
+=0A           <o:PixelsPerInch>96</o:PixelsPerInch>=0A           </o:Office=
+DocumentSettings>=0A         </xml>=0A      </noscript><![endif]--><!--[if =
+gte mso 9]><style>sup { font-size: 100% !important; }</style><![endif]--><!=
+--[if mso]><xml>=0A    <w:WordDocument xmlns:w=3D"urn:schemas-microsoft-com=
+:office:word">=0A      <w:DontUseAdvancedTypographyReadingMail></w:DontUseA=
+dvancedTypographyReadingMail>=0A    </w:WordDocument>=0A    </xml><![endif]=
+--><!--[if !mso]><!-- --><link href=3D"https://fonts.googleapis.com/css?fam=
+ily=3DRoboto:400,400i,700,700i" rel=3D"stylesheet"><!--<![endif]--><style t=
+ype=3D"text/css">#outlook a {=09padding:0;}.es-button {=09mso-style-priorit=
+y:100!important;=09text-decoration:none!important;}a[x-apple-data-detectors=
+] {=09color:inherit!important;=09text-decoration:none!important;=09font-siz=
+e:inherit!important;=09font-family:inherit!important;=09font-weight:inherit=
+!important;=09line-height:inherit!important;}.es-desk-hidden {=09display:no=
+ne;=09float:left;=09overflow:hidden;=09width:0;=09max-height:0;=09line-heig=
+ht:0;=09mso-hide:all;}@media only screen and (max-width:600px) {p, ul li, o=
+l li, a { line-height:150%!important } h1, h2, h3, h1 a, h2 a, h3 a { line-=
+height:120%!important } h1 { font-size:30px!important; text-align:inherit }=
+ h2 { font-size:26px!important; text-align:inherit } h3 { font-size:20px!im=
+portant; text-align:inherit } .es-header-body h1 a, .es-content-body h1 a, =
+.es-footer-body h1 a {=0Afont-size:30px!important } .es-header-body h2 a, .=
+es-content-body h2 a, .es-footer-body h2 a { font-size:26px!important } .es=
+-header-body h3 a, .es-content-body h3 a, .es-footer-body h3 a { font-size:=
+20px!important } .es-menu td a { font-size:13px!important } .es-header-body=
+ p, .es-header-body ul li, .es-header-body ol li, .es-header-body a { font-=
+size:16px!important } .es-content-body p, .es-content-body ul li, .es-conte=
+nt-body ol li, .es-content-body a { font-size:16px!important } .es-footer-b=
+ody p, .es-footer-body ul li, .es-footer-body ol li, .es-footer-body a { fo=
+nt-size:16px!important } .es-infoblock p, .es-infoblock ul li, .es-infobloc=
+k ol li, .es-infoblock a { font-size:12px!important } *[class=3D"gmail-fix"=
+] { display:none!important } .es-m-txt-c, .es-m-txt-c h1, .es-m-txt-c h2, .=
+es-m-txt-c h3 { text-align:center!important } .es-m-txt-r, .es-m-txt-r h1, =
+.es-m-txt-r h2, .es-m-txt-r h3 { text-align:right!important } .es-m-txt-l, =
+.es-m-txt-l h1, .es-m-txt-l h2,=0A.es-m-txt-l h3 { text-align:left!importan=
+t } .es-m-txt-r img, .es-m-txt-c img, .es-m-txt-l img { display:inline!impo=
+rtant } .es-button-border { display:inline-block!important } a.es-button, b=
+utton.es-button { display:inline-block!important; font-size:16px!important =
+} .es-adaptive table, .es-left, .es-right { width:100%!important } .ac-foot=
+er, .es-content table, .es-header table, .es-footer table, .es-content, .es=
+-footer, .es-header { width:100%!important; max-width:600px!important } .ac=
+-footer td, .ac-footer p, .es-adapt-td { display:block!important; width:100=
+%!important } .adapt-img { width:100%!important; height:auto!important } .e=
+s-m-p0 { padding:0px!important } .es-m-p0r { padding-right:0px!important } =
+.es-m-p0l { padding-left:0px!important } .es-m-p0t { padding-top:0px!import=
+ant } .es-m-p0b { padding-bottom:0!important } .es-m-p20b { padding-bottom:=
+20px!important } .es-mobile-hidden, .es-hidden { display:none!important } t=
+r.es-desk-hidden, td.es-desk-hidden,=0Atable.es-desk-hidden { width:auto!im=
+portant; overflow:visible!important; float:none!important; max-height:inher=
+it!important; line-height:inherit!important } tr.es-desk-hidden { display:t=
+able-row!important } table.es-desk-hidden { display:table!important } td.es=
+-desk-menu-hidden { display:table-cell!important } .es-menu td { width:1%!i=
+mportant } table.es-table-not-adapt, .esd-block-html table { width:auto!imp=
+ortant } table.es-social { display:inline-block!important } table.es-social=
+ td { display:inline-block!important } .es-desk-hidden { display:table-row!=
+important; width:auto!important; overflow:visible!important; max-height:inh=
+erit!important } }@media screen and (max-width:384px) {.mail-message-conten=
+t { width:414px!important } }</style>=0A </head>=0A <body class=3D"es-wrapp=
+er-color" data-new-gr-c-s-loaded=3D"14.1210.0" lang=3D"und" style=3D"font-f=
+amily:roboto, 'helvetica neue', helvetica, arial, sans-serif;width:100%;-we=
+bkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;bac=
+kground-color:inherit">        <div style=3D"display: none !important; padd=
+ing: 0; height: 1px; font-size: 1px; background-color: inherit !important; =
+opacity: 0; color: transparent; mso-line-height-rule: exactly; line-height:=
+1px; mso-hide:all;">=0A            The counterintuitive path to 85% profit =
+margins in consulting.=0A            <div style=3D"display: none; max-heigh=
+t: 0px; overflow: hidden;">=0A               =0A&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=
+=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=0A   =
+         </div>=0A=0A        </div>=0A<table class=3D"es-wrapper" width=3D"=
+100%" cellspacing=3D"0" cellpadding=3D"0" role=3D"none" style=3D"mso-table-=
+lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px=
+;padding:0;Margin:0;width:100%;background-repeat:repeat;background-position=
+:center top;height:100%;background-color:inherit"><tr><td valign=3D"top" st=
+yle=3D"padding:0;Margin:0"><table cellpadding=3D"0" cellspacing=3D"0" class=
+=3D"es-content" align=3D"center" role=3D"none" style=3D"mso-table-lspace:0p=
+t;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-la=
+yout:fixed !important;width:100%"><tr><td align=3D"center" bgcolor=3D"#ffff=
+ff" style=3D"padding:0;Margin:0;background-color:#ffffff"><table bgcolor=3D=
+"#ffffff" class=3D"es-content-body" align=3D"center" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"none" style=3D"mso-table-lspace:0pt;mso-table-rspace:=
+0pt;border-collapse:collapse;border-spacing:0px;background-color:transparen=
+t;width:650px"><tr><td align=3D"left" style=3D"padding:0;Margin:0"><table c=
+ellpadding=3D"0"=0Acellspacing=3D"0" width=3D"100%" role=3D"none" style=3D"=
+mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-s=
+pacing:0px"><tr><td align=3D"center" valign=3D"top" style=3D"padding:0;Marg=
+in:0;width:650px"><table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ role=3D"presentation" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;b=
+order-collapse:collapse;border-spacing:0px"><tr><td align=3D"left" style=3D=
+"padding:0;Margin:0;padding-top:20px"><p style=3D"Margin:0;-webkit-text-siz=
+e-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-f=
+amily:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;color=
+:#000000;font-size:18px">In the email on Sunday, we explored how the consul=
+ting industry has fundamentally shifted since 2018: gone are the days of ch=
+eap Facebook ads and profitable high-ticket courses.=C2=A0</p>=0A=0A<br><p =
+style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;m=
+so-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica,=
+ sans-serif;line-height:27px;color:#000000;font-size:18px">Here's a case st=
+udy that perfectly illustrates this transformation.</p>=0A<br><p style=3D"M=
+argin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-he=
+ight-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-seri=
+f;line-height:27px;color:#000000;font-size:18px">But before we dive in you =
+need to understand that the first step to transitioning out of the grind of=
+ High-Ticket Courses to the smooth profitability of High-Touch Consulting i=
+s <b>designing a primary offer that can generate more than $50,000 in LTV.=
+=C2=A0</b></p>=0A=0A<br><p style=3D"Margin:0;-webkit-text-size-adjust:none;=
+-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, '=
+helvetica neue', helvetica, sans-serif;line-height:27px;color:#000000;font-=
+size:18px">This is critical (and though you may not think it=E2=80=99s poss=
+ible for your market, it usually is).=C2=A0</p>=0A<br><p style=3D"Margin:0;=
+-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rul=
+e:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-h=
+eight:27px;color:#000000;font-size:18px">You see, the core problem to solve=
+ for info businesses in 2025 and beyond isn=E2=80=99t acquisition.</p>=0A<p=
+ style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;=
+mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica=
+, sans-serif;line-height:27px;color:#000000;font-size:18px"><br></p>=0A=0A<=
+p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none=
+;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetic=
+a, sans-serif;line-height:27px;color:#000000;font-size:18px">The new proble=
+m to solve for is:</p>=0A<p style=3D"Margin:0;-webkit-text-size-adjust:none=
+;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, =
+'helvetica neue', helvetica, sans-serif;line-height:27px;color:#000000;font=
+-size:18px"><br></p>=0A<p style=3D"Margin:0;-webkit-text-size-adjust:none;-=
+ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'h=
+elvetica neue', helvetica, sans-serif;line-height:27px;color:#000000;font-s=
+ize:18px"><b><i>=E2=80=9CHow do I provide enough ongoing value to justify a=
+ $50K+ LTV to the top 25% of my market?=E2=80=9D</i></b></p>=0A=0A<p style=
+=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-li=
+ne-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans=
+-serif;line-height:27px;color:#000000;font-size:18px"><br></p>=0A<p style=
+=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-li=
+ne-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans=
+-serif;line-height:27px;color:#000000;font-size:18px">When you architect a =
+model that gets your LTV above this $50K line, you become less dependent on=
+ acquisition, which is a massive lever across your business.=C2=A0</p>=0A<p=
+ style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;=
+mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica=
+, sans-serif;line-height:27px;color:#000000;font-size:18px"><br></p>=0A=0A<=
+p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none=
+;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetic=
+a, sans-serif;line-height:27px;color:#000000;font-size:18px">Most high-tick=
+et info marketer=E2=80=99s businesses are like vampires that have to be con=
+stantly fed with new blood.=C2=A0</p>=0A<p style=3D"Margin:0;-webkit-text-s=
+ize-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font=
+-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;col=
+or:#000000;font-size:18px"><br></p>=0A<p style=3D"Margin:0;-webkit-text-siz=
+e-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-f=
+amily:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;color=
+:#000000;font-size:18px">You want the opposite.=C2=A0</p>=0A=0A<p style=3D"=
+Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-h=
+eight-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-ser=
+if;line-height:27px;color:#000000;font-size:18px"><br></p>=0A<p style=3D"Ma=
+rgin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-hei=
+ght-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif=
+;line-height:27px;color:#000000;font-size:18px">Instead of spending most of=
+ your money and time finding new customers who pay a little, we want to bui=
+ld a service so valuable that fewer customers pay a lot more and stay forev=
+er.</p>=0A<p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-=
+adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue=
+', helvetica, sans-serif;line-height:27px;color:#000000;font-size:18px"><br=
+></p>=0A=0A<p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size=
+-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neu=
+e', helvetica, sans-serif;line-height:27px;color:#000000;font-size:18px">Le=
+t=E2=80=99s break it down:</p>=0A<p style=3D"Margin:0;-webkit-text-size-adj=
+ust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family=
+:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;color:#000=
+000;font-size:18px"><br></p>=0A<p style=3D"Margin:0;-webkit-text-size-adjus=
+t:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:a=
+rial, 'helvetica neue', helvetica, sans-serif;line-height:27px;color:#00000=
+0;font-size:18px">If your LTV is $100,000+ for the sake of this example, yo=
+u only need to acquire 10 clients per year (not month=E2=80=94<b>year</b>!)=
+ to have a seven-figure business.=C2=A0</p>=0A=0A<p style=3D"Margin:0;-webk=
+it-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exa=
+ctly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height=
+:27px;color:#000000;font-size:18px"><br></p>=0A<p style=3D"Margin:0;-webkit=
+-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exact=
+ly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:2=
+7px;color:#000000;font-size:18px">That means if you have a 10% conversion r=
+ate, you only need 100 sales calls per year.=C2=A0</p>=0A<p style=3D"Margin=
+:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-=
+rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;lin=
+e-height:27px;color:#000000;font-size:18px"><br></p>=0A=0A<p style=3D"Margi=
+n:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height=
+-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;li=
+ne-height:27px;color:#000000;font-size:18px">That=E2=80=99s about eight sal=
+es calls a month, or a couple a week.</p>=0A<p style=3D"Margin:0;-webkit-te=
+xt-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;=
+font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px=
+;color:#000000;font-size:18px"><br></p>=0A<p style=3D"Margin:0;-webkit-text=
+-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;fo=
+nt-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;c=
+olor:#000000;font-size:18px">Imagine how different your business would be i=
+f, for every $1M of annual revenue, you only needed eight sales calls a mon=
+th. That=E2=80=99s one example of how a high LTV is an enormous lever.</p>=
+=0A=0A<p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adju=
+st:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', h=
+elvetica, sans-serif;line-height:27px;color:#000000;font-size:18px"><br></p=
+>=0A<p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust=
+:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', hel=
+vetica, sans-serif;line-height:27px;color:#000000;font-size:18px">Back to o=
+ur case-study:</p>=0A<p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms=
+-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'hel=
+vetica neue', helvetica, sans-serif;line-height:27px;color:#000000;font-siz=
+e:18px"><br></p>=0A=0A<p style=3D"Margin:0;-webkit-text-size-adjust:none;-m=
+s-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'he=
+lvetica neue', helvetica, sans-serif;line-height:27px;color:#000000;font-si=
+ze:18px">I was speaking with an entrepreneur, Mario, who helped caf=C3=
+=A9 owners generate more profit. He was selling a $9K course followed by a =
+$25K backend. These products were Done-With-You and taught caf=C3=A9 owners=
+ how to improve their profits.</p>=0A<p style=3D"Margin:0;-webkit-text-size=
+-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-fa=
+mily:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;color:=
+#000000;font-size:18px"><br></p>=0A<p style=3D"Margin:0;-webkit-text-size-a=
+djust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-fami=
+ly:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;color:#0=
+00000;font-size:18px">He had:</p>=0A<ul> =0A<li style=3D"-webkit-text-size-=
+adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-fam=
+ily:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px=
+;color:#333333;margin-left:0;font-size:14px"><p style=3D"Margin:0;-webkit-t=
+ext-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly=
+;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:27p=
+x;color:#000000;font-size:18px">A sales team, costing him about 15% of his =
+margin</p>=0A</li> =0A<li style=3D"-webkit-text-size-adjust:none;-ms-text-s=
+ize-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica=
+ neue', helvetica, arial, sans-serif;line-height:27px;color:#333333;margin-=
+left:0;font-size:14px"><p style=3D"Margin:0;-webkit-text-size-adjust:none;-=
+ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'h=
+elvetica neue', helvetica, sans-serif;line-height:27px;color:#000000;font-s=
+ize:18px">Ads with $5K CAC, costing him +30% of his margin</p>=0A</li> =0A<=
+li style=3D"-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-lin=
+e-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, aria=
+l, sans-serif;line-height:27px;color:#333333;margin-left:0;font-size:14px">=
+<p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:non=
+e;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helveti=
+ca, sans-serif;line-height:27px;color:#000000;font-size:18px">A team of =
+=E2=80=9CSuccess Coaches=E2=80=9D and =E2=80=9CClient Success Managers=
+=E2=80=9D implementing his methodology, eating up another 10% of his margin=
+</p>=0A</li> </ul><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-te=
+xt-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvet=
+ica neue', helvetica, sans-serif;line-height:27px;color:#000000;font-size:1=
+8px">Just these three expenses consumed 65% of his revenue. Adding other op=
+erating expenses left him with less than 20% net profit.=C2=A0</p>=0A=0A<p =
+style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;m=
+so-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica,=
+ sans-serif;line-height:27px;color:#000000;font-size:18px"><br></p>=0A<p st=
+yle=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso=
+-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, s=
+ans-serif;line-height:27px;color:#000000;font-size:18px">Meanwhile, most of=
+ his time was spent managing the sales team, marketing team, ads, creative,=
+ funnels, etc. Only a fraction of his time was spent actually helping clien=
+ts. He was grinding to sell these caf=C3=A9 owners and only keeping about 2=
+0% at the end.</p>=0A<p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms=
+-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'hel=
+vetica neue', helvetica, sans-serif;line-height:27px;color:#000000;font-siz=
+e:18px"><br></p>=0A=0A<p style=3D"Margin:0;-webkit-text-size-adjust:none;-m=
+s-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'he=
+lvetica neue', helvetica, sans-serif;line-height:27px;color:#000000;font-si=
+ze:18px">Not to mention how he was spending his time.=C2=A0</p>=0A<br><p st=
+yle=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso=
+-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, s=
+ans-serif;line-height:27px;color:#000000;font-size:18px">Yes, he=E2=80=
+=99d do a few client calls a week but the vast majority of his time was man=
+aging the sales team, managing the marketing team, the ads, the creative, t=
+he funnels, the whole shebang. Any time he had left went into overseeing th=
+e fulfillment team.=C2=A0</p>=0A=0A<br><p style=3D"Margin:0;-webkit-text-si=
+ze-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-=
+family:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;colo=
+r:#000000;font-size:18px">He was grinding to sell these cafe owners and lan=
+ding a measly 20% at the end. And all of his time was spent on selling. Onl=
+y a fraction on actually helping clients.=C2=A0</p>=0A<br><p style=3D"Margi=
+n:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height=
+-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;li=
+ne-height:27px;color:#000000;font-size:18px">I helped him to scrap this off=
+er and to build a new one entirely.=C2=A0</p>=0A<br><p style=3D"Margin:0;-w=
+ebkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:=
+exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-hei=
+ght:27px;color:#000000;font-size:18px">The new offers pricing:</p>=0A=0A<br=
+><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:no=
+ne;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvet=
+ica, sans-serif;line-height:27px;color:#000000;font-size:18px"><b>$5K per m=
+onth recurring + 25% of profits above their current profit level. Month to =
+month with no obligation to stay.</b></p>=0A<br><p style=3D"Margin:0;-webki=
+t-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exac=
+tly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:=
+27px;color:#000000;font-size:18px">Mario would meet directly with the cafe =
+owner every other week one on one. In the in-between weeks the owners had a=
+ccess to him asynchronously so they could access him with any questions.=
+=C2=A0</p>=0A=0A<br><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-=
+text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helv=
+etica neue', helvetica, sans-serif;line-height:27px;color:#000000;font-size=
+:18px">Mario=E2=80=99s business transformed.=C2=A0</p>=0A<p style=3D"Margin=
+:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-=
+rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;lin=
+e-height:27px;color:#000000;font-size:18px"><br></p>=0A<p style=3D"Margin:0=
+;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-ru=
+le:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-=
+height:27px;color:#000000;font-size:18px">He let go of the bottom 75% of hi=
+s client base who couldn=E2=80=99t afford $5K a month or didn=E2=80=99t mak=
+e enough profit for the 25% profit share.=C2=A0</p>=0A=0A<p style=3D"Margin=
+:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-=
+rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;lin=
+e-height:27px;color:#000000;font-size:18px"><br></p>=0A<p style=3D"Margin:0=
+;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-ru=
+le:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-=
+height:27px;color:#000000;font-size:18px">Then he focused on landing 50 cli=
+ents into this new offer.</p>=0A<p style=3D"Margin:0;-webkit-text-size-adju=
+st:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:=
+arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;color:#0000=
+00;font-size:18px"><br></p>=0A=0A<p style=3D"Margin:0;-webkit-text-size-adj=
+ust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family=
+:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;color:#000=
+000;font-size:18px">Here=E2=80=99s what his business looked like with this =
+new offer once he=E2=80=99d done this:</p>=0A<ul> <li style=3D"-webkit-text=
+-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;fo=
+nt-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-heigh=
+t:27px;color:#333333;margin-left:0;font-size:14px"><p style=3D"Margin:0;-we=
+bkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:e=
+xactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-heig=
+ht:27px;color:#000000;font-size:18px">No sales team, +15% of the profit sec=
+ured for Mario himself</p>=0A</li> =0A<li style=3D"-webkit-text-size-adjust=
+:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:ro=
+boto, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color=
+:#333333;margin-left:0;font-size:14px"><p style=3D"Margin:0;-webkit-text-si=
+ze-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-=
+family:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;colo=
+r:#000000;font-size:18px">No ad spend, he got these clients through cheaper=
+ means as he didn=E2=80=99t need many of them (we=E2=80=99ll cover this lat=
+er), 30% of his margin recovered there</p>=0A</li> =0A<li style=3D"-webkit-=
+text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactl=
+y;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-h=
+eight:27px;color:#333333;margin-left:0;font-size:14px"><p style=3D"Margin:0=
+;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-ru=
+le:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-=
+height:27px;color:#000000;font-size:18px">Only one of his four-person clien=
+t success team needed to stay on, saving him another 7% in margin</p>=0A</l=
+i> =0A<li style=3D"-webkit-text-size-adjust:none;-ms-text-size-adjust:none;=
+mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetic=
+a, arial, sans-serif;line-height:27px;color:#333333;margin-left:0;font-size=
+:14px"><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adj=
+ust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', =
+helvetica, sans-serif;line-height:27px;color:#000000;font-size:18px">His we=
+eks went from 80% of his time focused on acquiring customers to 80% of his =
+time delivering to customers to maximize retention and LTV</p>=0A</li> =0A<=
+li style=3D"-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-lin=
+e-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, aria=
+l, sans-serif;line-height:27px;color:#333333;margin-left:0;font-size:14px">=
+<p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:non=
+e;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helveti=
+ca, sans-serif;line-height:27px;color:#000000;font-size:18px">He had to dea=
+l with 50 clients per year versus 300+ new ones every year!=C2=A0</p>=0A</l=
+i> </ul><br><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-siz=
+e-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica ne=
+ue', helvetica, sans-serif;line-height:27px;color:#000000;font-size:18px">T=
+he end result?</p>=0A=0A<br><p style=3D"Margin:0;-webkit-text-size-adjust:n=
+one;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:aria=
+l, 'helvetica neue', helvetica, sans-serif;line-height:27px;color:#000000;f=
+ont-size:18px">He went from doing $400K per month grinding on acquisition a=
+ll day, having major team headaches and mediocre client results. Not to men=
+tion only keeping $80K per month=E2=80=A6</p>=0A<br><p style=3D"Margin:0;-w=
+ebkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:=
+exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-hei=
+ght:27px;color:#000000;font-size:18px">To doing $400K per month ($200K from=
+ his 40 clients paying the retainer of $5K per month) and another $200K fro=
+m his profit share.=C2=A0</p>=0A=0A<br><p style=3D"Margin:0;-webkit-text-si=
+ze-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-=
+family:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;colo=
+r:#000000;font-size:18px">But guess what? Margin went from 20% to 85%.=
+=C2=A0</p>=0A<br><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-tex=
+t-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helveti=
+ca neue', helvetica, sans-serif;line-height:27px;color:#000000;font-size:18=
+px">Net profit shifted from $80K to $340K!</p>=0A<br><p style=3D"Margin:0;-=
+webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule=
+:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-he=
+ight:27px;color:#000000;font-size:18px">Besides the $260K in additional pro=
+fit, what=E2=80=99d he love most about it all?</p>=0A=0A<br><p style=3D"Mar=
+gin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-heig=
+ht-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;=
+line-height:27px;color:#000000;font-size:18px">That the fundamental orienta=
+tion of his business transformed =E2=80=94=C2=A0there was no longer a battl=
+e to get customers, the battle was to keep them.=C2=A0</p>=0A<br><p style=
+=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-li=
+ne-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans=
+-serif;line-height:27px;color:#000000;font-size:18px">This was a battle he =
+found infinitely more fulfilling.=C2=A0</p>=0A=0A<br><p style=3D"Margin:0;-=
+webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule=
+:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-he=
+ight:27px;color:#000000;font-size:18px">And here=E2=80=99s the crazy thing:=
+ Mario=E2=80=99s churn was 10% per year =E2=80=94=C2=A0so he only needed to=
+ add 5 new clients per year to maintain these numbers.=C2=A0</p>=0A<br><p s=
+tyle=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;ms=
+o-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, =
+sans-serif;line-height:27px;color:#000000;font-size:18px">Mario managed to =
+solve the most lucrative problem online consultants and info entrepreneurs =
+are up against =E2=80=94 <b><i>how do I provide enough ongoing value to jus=
+tify mid 5 to 6 figure LTV?</i></b></p>=0A=0A<br><p style=3D"Margin:0;-webk=
+it-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exa=
+ctly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height=
+:27px;color:#000000;font-size:18px">This is the first set of actions requir=
+ed to transition from being a High-Ticket Infomarketer to a High-Touch Cons=
+ultant:</p>=0A<p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-s=
+ize-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica =
+neue', helvetica, sans-serif;line-height:27px;color:#000000;font-size:18px"=
+><br></p>=0A=0A<p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-=
+size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica=
+ neue', helvetica, sans-serif;line-height:27px;color:#000000;font-size:18px=
+"><em>1.</em> Reconfigure your offer so it=E2=80=99s geared exclusively to =
+the top 25% of your market=E2=80=93=E2=80=93those who are the most affluent=
+, committed, and capable of benefiting from what you provide.</p>=0A<p styl=
+e=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-l=
+ine-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, san=
+s-serif;line-height:27px;color:#000000;font-size:18px"><br></p>=0A=0A<p sty=
+le=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-=
+line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sa=
+ns-serif;line-height:27px;color:#000000;font-size:18px"><em>2.</em> Make it=
+ recurring, so there=E2=80=99s no ceiling on LTV, and shift your founder ob=
+session to <b>retention</b> rather than acquisition.</p>=0A<p style=3D"Marg=
+in:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-heigh=
+t-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;l=
+ine-height:27px;color:#000000;font-size:18px"><br></p>=0A=0A<p style=3D"Mar=
+gin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-heig=
+ht-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;=
+line-height:27px;color:#000000;font-size:18px"><em>3.</em> Map your custome=
+r journey years in advance. Know what they=E2=80=99ll need help with in yea=
+rs 2, 3, 4, and 5, so you can set expectations for a long-term relationship=
+. The ideal is to keep every customer forever, optimizing for that scenario=
+.</p>=0A<p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-ad=
+just:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue',=
+ helvetica, sans-serif;line-height:27px;color:#000000;font-size:18px"><br><=
+/p>=0A=0A<p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-a=
+djust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue'=
+, helvetica, sans-serif;line-height:27px;color:#000000;font-size:18px">The =
+question for you to obsess over to unlock the extreme increases in profit t=
+hat come with High-Touch Consulting (over High-Ticket Courses) is:</p>=0A<p=
+ style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;=
+mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica=
+, sans-serif;line-height:27px;color:#000000;font-size:18px"><br></p>=0A<p s=
+tyle=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;ms=
+o-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, =
+sans-serif;line-height:27px;color:#000000;font-size:18px"><b><i>What ONE on=
+going, recurring offer I can enroll the top 25% of my market into that has =
+5x the LTV of my current offer?</i></b></p>=0A=0A<p style=3D"Margin:0;-webk=
+it-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exa=
+ctly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height=
+:27px;color:#000000;font-size:18px"><br></p>=0A<p style=3D"Margin:0;-webkit=
+-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exact=
+ly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:2=
+7px;color:#000000;font-size:18px">Part of the magic of recurring is that it=
+ decreases buyer resistance (versus the contract or engagement requiring a =
+multi-five investment right off the bat) and it allows you to overdeliver s=
+uch that you can have LTV run all the way up through six figures and even i=
+nto the seven figure territory.=C2=A0</p>=0A=0A<br><p style=3D"Margin:0;-we=
+bkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:e=
+xactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-heig=
+ht:27px;color:#000000;font-size:18px">It also means that you don=E2=80=
+=99t need to grow client acquisition to grow the business. If you have 50 c=
+lients with 10% annual churn and get 10 new clients every year you=E2=80=
+=99ll have 70 clients in year 5.=C2=A0</p>=0A<br><p style=3D"Margin:0;-webk=
+it-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exa=
+ctly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height=
+:27px;color:#000000;font-size:18px">So you don=E2=80=99t need to grow acqui=
+sition to grow your business, just hold it constant!=C2=A0</p>=0A=0A<br><p =
+style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;m=
+so-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica,=
+ sans-serif;line-height:27px;color:#000000;font-size:18px">As a result of d=
+oing that, net profit also continues to increase per client over time.=
+=C2=A0</p>=0A<br><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-tex=
+t-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helveti=
+ca neue', helvetica, sans-serif;line-height:27px;color:#000000;font-size:18=
+px">To pull off this LTV you can play with varying pricing structures.=
+=C2=A0</p>=0A=0A<br><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-=
+text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helv=
+etica neue', helvetica, sans-serif;line-height:27px;color:#000000;font-size=
+:18px">I know some who do $0 retainer and 50% of additional profit, some wh=
+o just do a flat monthly rate, some who do a blend.=C2=A0</p>=0A<br><p styl=
+e=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-l=
+ine-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, san=
+s-serif;line-height:27px;color:#000000;font-size:18px">You can toy with the=
+ specifics of pricing, the trick is that you=E2=80=99re getting close to an=
+d ideally beyond $100K LTV so that your dependence on acquisition plummets =
+=E2=80=94=C2=A0that=E2=80=99s what unlocks the extreme profit.=C2=A0</p>=0A=
+=0A<br><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adj=
+ust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', =
+helvetica, sans-serif;line-height:27px;color:#000000;font-size:18px">Now if=
+ you want me to do for YOU what I did for Mario=E2=80=99s business, I=
+=E2=80=99d be happy to.=C2=A0</p>=0A<p style=3D"Margin:0;-webkit-text-size-=
+adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-fam=
+ily:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;color:#=
+000000;font-size:18px"><br>I=E2=80=99m running a one-off Mastermind called =
+Beyond 2025.=C2=A0</p>=0A=0A<br><p style=3D"Margin:0;-webkit-text-size-adju=
+st:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:=
+arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;color:#0000=
+00;font-size:18px">In it, I overhaul your business (through one on one coac=
+hing with me and live group calls) to transition you toward a High-Touch Co=
+nsulting model so your profit can soar like Mario=E2=80=99s.=C2=A0</p>=0A<b=
+r><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:n=
+one;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helve=
+tica, sans-serif;line-height:27px;color:#000000;font-size:18px">And so that=
+ you=E2=80=99re optimally set up to generate $5M+ in net profit in the new =
+landscape we find ourselves in.=C2=A0</p>=0A=0A<br><p style=3D"Margin:0;-we=
+bkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:e=
+xactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-heig=
+ht:27px;color:#000000;font-size:18px">I=E2=80=99ll only be running Beyond 2=
+025 once ever so if you=E2=80=99d like to work with me so that you can make=
+ 2025 your best year yet, book your call for Beyond 2025 here now.=C2=A0</p=
+>=0A<br><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-ad=
+just:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue',=
+ helvetica, sans-serif;line-height:27px;color:#000000;font-size:18px">On th=
+at call it=E2=80=99ll be more for my team and we=E2=80=99ll give you everyt=
+hing you need to know about Beyond 2025 and how it works.=C2=A0</p>=0A=0A<b=
+r><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:n=
+one;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helve=
+tica, sans-serif;line-height:27px;color:#000000;font-size:18px">Enrollment =
+is going to end in mid-march 2025 and after this one cohort I=E2=80=99m goi=
+ng to be singularly focused on scaling my new neuroscience company. So this=
+ is the only chance you=E2=80=99ll ever have to work with me to scale your =
+business.=C2=A0</p>=0A=0A<br><p style=3D"Margin:0;-webkit-text-size-adjust:=
+none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:ari=
+al, 'helvetica neue', helvetica, sans-serif;line-height:27px;color:#000000;=
+font-size:18px"><a target=3D"_blank" style=3D"-webkit-text-size-adjust:none=
+;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:und=
+erline;color:#4046a7;font-size:18px;font-family:arial, 'helvetica neue', he=
+lvetica, sans-serif" href=3D"https://consultingdotcom.acemlna.com/lt.php?x=
+=3D3DZy~GDHIXDPE5Ku_dDIVBJt1KFUuwUhj-VjX5M2InGb5XGuyEy.zeFs1o2hjNI~juZAY5PL=
+">Book your call here now for Beyond 2025.</a>=C2=A0</p>=0A<br><p style=3D"=
+Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-h=
+eight-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-ser=
+if;line-height:27px;color:#000000;font-size:18px">Speak soon!</p>=0A=0A<p s=
+tyle=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;ms=
+o-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, =
+sans-serif;line-height:27px;color:#000000;font-size:18px"><br></p>=0A<p sty=
+le=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-=
+line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sa=
+ns-serif;line-height:27px;color:#000000;font-size:18px">R=C3=ADan Doris, Ow=
+ner at Consulting.com</p>=0A<p style=3D"Margin:0;-webkit-text-size-adjust:n=
+one;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:aria=
+l, 'helvetica neue', helvetica, sans-serif;line-height:27px;color:#000000;f=
+ont-size:18px;display:none"><br></p>=0A</td>=0A</tr>=0A=0A <tr><td align=3D=
+"left" style=3D"padding:0;Margin:0;padding-top:10px;padding-bottom:20px;fon=
+t-size:0px"><img src=3D"https://content.app-us1.com/cdn-cgi/image/fit=3Dsca=
+le-down,format=3Dauto,onerror=3Dredirect,width=3D650,dpr=3D2/WDp9N/2023/01/=
+26/7fa497d7-f5a0-49d2-87c8-c8e20081e86e.png" alt=3D"" style=3D"display:bloc=
+k;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic=
+" data-cf-ir-is-resized=3D"true" width=3D"125"></td>=0A=0A </tr>=0A<tr><td =
+align=3D"left" style=3D"padding:0;Margin:0"><p style=3D"Margin:0;-webkit-te=
+xt-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;=
+font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px=
+;color:#000000;font-size:18px"><strong>P.S.</strong> <a target=3D"_blank" s=
+tyle=3D"-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-he=
+ight-rule:exactly;text-decoration:underline;color:#4046a7;font-size:18px;fo=
+nt-family:arial, 'helvetica neue', helvetica, sans-serif" href=3D"https://c=
+onsultingdotcom.acemlna.com/lt.php?x=3D3DZy~GDHIXDPE5Ku_dDIVBJt1KFUuwUhj-Vj=
+X5M2InGb5XGuyEy.zeFs1o2hjNI~juZAY5PL">Book your call for Beyond 2025 here</=
+a> and have me overhaul your business so you=E2=80=99ve got a clear path to=
+ $5M+ in net profit, optimized for our new environment. We=E2=80=99re closi=
+ng applications mid-march so act now.=C2=A0</p>=0A=0A<br><p style=3D"Margin=
+:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-=
+rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;lin=
+e-height:27px;color:#000000;font-size:18px">If you book your call now you a=
+lso get access to a one-off Youtube masterclass that=E2=80=99ll show you ho=
+w I generated 20M views with every video I uploaded going viral and generat=
+ing 417K+ subs. All organic.</p>=0A<p style=3D"Margin:0;-webkit-text-size-a=
+djust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-fami=
+ly:arial, 'helvetica neue', helvetica, sans-serif;line-height:27px;color:#0=
+00000;font-size:18px;display:none"><br></p>=0A<p style=3D"Margin:0;-webkit-=
+text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactl=
+y;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:27=
+px;color:#000000;font-size:18px;display:none"><br></p>=0A</td>=0A</tr>=0A=
+=0A <tr><td align=3D"center" style=3D"padding:0;Margin:0;padding-top:25px;p=
+adding-bottom:25px;font-size:0px"><img class=3D"adapt-img" src=3D"https://c=
+ontent.app-us1.com/cdn-cgi/image/fit=3Dscale-down,format=3Dauto,onerror=3Dr=
+edirect,width=3D650,dpr=3D2/WDp9N/2025/02/18/84e3c7d4-0b33-48ff-9de0-68cb99=
+d71b7f.png" alt=3D"" style=3D"display:block;border:0;outline:none;text-deco=
+ration:none;-ms-interpolation-mode:bicubic" data-cf-ir-is-resized=3D"true" =
+width=3D"650"></td>=0A=0A </tr>=0A</table>=0A</td>=0A</tr>=0A</table>=0A</t=
+d>=0A</tr>=0A</table>=0A</td>=0A</tr>=0A</table>=0A</td>=0A</tr>=0A</table>=
+=0A=0A <table class=3D"ac-footer" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" role=3D"none" style=3D"mso-table-lspace:0pt;mso-table-rspace:0p=
+t;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important=
+;width:100%;background-color:inherit;background-repeat:repeat;background-po=
+sition:center top"><tr><td align=3D"center" style=3D"padding:0;Margin:0;pad=
+ding-top:20px;padding-bottom:20px;background:inherit;font-family:inherit;fo=
+nt-size:11px;color:inherit"><p style=3D"Margin:0;-webkit-text-size-adjust:n=
+one;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:inhe=
+rit;line-height:16.5px;font-size:inherit;color:inherit">Sent to: seandinwid=
+die@gmail.com<br><br><a style=3D"-webkit-text-size-adjust:none;-ms-text-siz=
+e-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;font-f=
+amily:inherit;color:inherit;font-weight:bold" href=3D"https://consultingdot=
+com.acemlna.com/proc.php?nl=3D11&c=3D112&m=3D153&s=3D400fe6ef634b20edcfc20d=
+02a11235e0&act=3Dunsub"=0Atarget=3D"_blank">Unsubscribe</a><br><br><span cl=
+ass=3D"perstag_address" style=3D"color:inherit;font-family:inherit;font-siz=
+e:11px">Consulting.com, 30 N GOULD ST STE R, SHERIDAN, WY 82801, United Sta=
+tes</span></p>=0A=0A</td>=0A</tr>=0A</table>=0A<img src=3D"https://consulti=
+ngdotcom.acemlna.com/lt.php?x=3D41Zy~GDHIXDPE5Ku_dDIVBJt1KFUuwUhj-VjX5M2InG=
+b5XGuyE2DjFJs1e3T-t~vjDZsznHIIMHVUsu5_Qj" border=3D"0" width=3D"1" height=
+=3D"1" alt=3D"" style=3D"display:block;width:1px!important;min-width:1px!im=
+portant;max-width:1px!important;height:1px!important;border:0;overflow:hidd=
+en;" /><br clear=3D"all" /></body>=0A</html>
+--_=_swift-155564597967b77792c24048.55323031_=_--
+
+
