@@ -1,23 +1,21 @@
-Hourly rate:
-$75 USD / hour
-
 Professional headline:
 https://sdin.dev
 
 Summary:
 
-Full Stack Architect/Engineer
+Full Stack Architect/Engineer & Technical Consultant
 
-I'm Sean Paul Payne Dinwiddie, a seasoned full-stack engineer with over two decades of experience crafting scalable, high-performance applications. I specialize in building modern solutions.
+I'm Sean Paul Payne Dinwiddie, a seasoned full-stack engineer and technical consultant with over two decades of experience crafting scalable, high-performance applications. I specialize in building modern solutions that deliver measurable business value.
 
-I'm a battle-tested developer crafting high-performance digital solutions. Think of me as your technical force multiplier - I don't just write code, I architect scalable systems that stand the test of time.
+I'm a battle-tested developer crafting high-performance digital solutions. Think of me as your technical force multiplier - I don't just write code, I architect scalable systems that stand the test of time and deliver ongoing value to your business.
 
 Core Expertise:
 • Web and software architecture and implementation
 • Application development with strict typing principles
- Full-stack development with modern frameworks
+• Full-stack development with modern frameworks
 • Performance optimization and scalability solutions
 • User-centric interface design and development
+• Technical consulting and business value optimization
 
 What I Deliver:
 • Scalable, maintainable web and native applications built with industry best practices
@@ -25,22 +23,25 @@ What I Deliver:
 • Responsive, cross-platform solutions that work seamlessly
 • Performance-optimized applications with measurable improvements
 • Comprehensive testing and quality assurance
+• Ongoing technical guidance and optimization
 
 Why Choose Me?
-• Proven track record of successful project delivery
+• Proven track record of successful project delivery and long-term client relationships
 • Deep understanding of modern web and software architecture
 • Excellent communication and collaboration skills
 • Commitment to delivering value beyond expectations
+• Focus on long-term business impact rather than short-term solutions
 
 What Sets Me Apart:
 • Deep expertise in web and software ecosystem and modern development
 • Turning complex requirements into elegant solutions
 • Obsession with code quality and system architecture and maintainability
+• Value-based consulting approach focused on long-term business success
 
 Technical Philosophy:
-"Clean code isn't just about following best practices - it's about crafting solutions that future developers will thank you for."
+"Clean code isn't just about following best practices - it's about crafting solutions that future developers will thank you for. And it's about building systems that deliver ongoing value to your business."
 
-Ready to elevate your project with professional, scalable solutions? Let's connect and discuss how I can help bring your vision to life!
+Ready to elevate your project with professional, scalable solutions? Let's connect and discuss how I can help bring your vision to life and deliver lasting value to your business!
 
 Are YOU ready to transform your project into a masterpiece of modern web architecture? Let's work together and talk about how we can leverage cutting-edge technology to exceed your expectations!
 
