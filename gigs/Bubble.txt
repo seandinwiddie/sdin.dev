@@ -1,0 +1,51 @@
+Bubble.io Referral & Rewards System setup
+Open
+Bids
+35
+Average bid
+$416 AUD
+Details
+Proposals
+Project Details
+$250.00 – 750.00 AUD
+ Bidding ends in 6 days, 23 hours
+I am looking to implement a Referral and Rewards System on a webapp built on bubble.io. The primary goal of this system is to increase user signups.
+
+1️⃣Referral Tracking System
+Generate unique referral codes for each user.
+Store referral data in the database.
+
+2️⃣ Reward Automation
+Set triggers: “If X referrals → reward Y”.
+Distribute rewards (discounts, free exclusive deals, cashback).
+
+3️⃣ Fraud Prevention
+Prevent duplicate referrals from the same user.
+
+- Users should be able to refer others via referral links and social media sharing.
+- As a reward for successful referrals, users will receive discounts on services/products from our platform.
+
+Ideal Skills:
+- Proficiency in bubble.io is a must.
+- Experience in developing referral systems will be highly advantageous.
+- Knowledge in eCommerce and discount systems implementation is preferred.
+More clearer task compilation step by step guide will be provided after onboard. Rewards offered if you complete the task before a set date.
+Skills Required
+Data Processing
+Backend Development
+Process Automation
+Bubble Developer
+Fraud Detection
+Project ID: 39262742
+ Report Project
+Place a bid on this project
+You will be able to edit your bid until the project is awarded to someone.
+Bid Amount
+$
+500.00
+AUD
+This project will be delivered in
+7
+Days
+Paid to you: A$500.00 - A$50.00 fee = A$450.00
+Describe your proposal (minimum 100 characters, maximum 1500 characters) What makes you the best candidate for this project?

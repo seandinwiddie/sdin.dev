@@ -1,0 +1,63 @@
+Custom E-Form with E-Signature Integration
+Open
+Bids
+165
+Average bid
+$112 AUD
+Details
+Proposals
+Project Details
+$30.00 – 250.00 AUD
+ Bidding ends in 6 days, 23 hours
+I'm seeking a professional who can design a web-based form for me. This form should allow users to fill it out, sign it using a type and draw e-signature options, and then automatically convert it into a PDF and email it.
+
+Key Requirements:
+- The form should be hosted on a website.
+- Implement 'Type' and 'Draw' options for e-signatures.
+- No need for saving partially completed forms.
+
+Ideal Skills and Experience:
+- Proficiency in web development and form design.
+- Experience with e-signature integration.
+- Ability to implement automatic PDF conversion and email functionality.
+Skills Required
+PHP
+Website Design
+Graphic Design
+CSS
+HTML
+Project ID: 39262740
+ Report Project
+Place a bid on this project
+You will be able to edit your bid until the project is awarded to someone.
+Bid Amount
+$
+250.00
+AUD
+This project will be delivered in
+7
+Days
+Paid to you: A$250.00 - A$25.00 fee = A$225.00
+Describe your proposal (minimum 100 characters, maximum 1500 characters) What makes you the best candidate for this project?
+
+I am a seasoned full-stack developer with extensive experience in creating secure, user-friendly web forms and implementing e-signature solutions. For this project, I propose to develop a modern, responsive web form. The solution will include:
+
+1. A clean, intuitive interface with both type and draw signature options
+2. Real-time form validation and error handling
+3. Secure PDF generation
+4. Automated email delivery system
+5. Mobile-responsive design ensuring accessibility across all devices
+
+My technical approach includes:
+- Modern tech stack for optimal performance and security
+- RESTful API architecture for scalability
+- Input sanitization and XSS protection
+- Cross-browser compatibility testing
+- Comprehensive error handling and user feedback
+
+I will deliver the complete solution, including:
+- Source code with detailed documentation
+- Testing and deployment instructions
+- Post-deployment support
+
+My experience with similar projects and commitment to delivering high-quality, secure solutions makes me the ideal candidate for this project.
