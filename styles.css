@@ -1,0 +1,28 @@
+@import url("https://seandinwiddie.com/wp-content/themes/visual-composer-starter-theme-child/dank-mono.css");
+
+body,
+h1,
+p,
+a {
+  font-family: "dm" !important;
+}
+
+a {
+  font-style: italic !important;
+}
+
+/* Coaching page specific styles */
+.value-card {
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial {
+  font-style: italic;
+  border-left: 3px solid #3273dc;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+} 
