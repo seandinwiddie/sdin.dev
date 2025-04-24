@@ -1,0 +1,809 @@
+Delivered-To: seandinwiddie@gmail.com
+Received: by 2002:a05:6358:e48c:b0:1e2:112a:b85d with SMTP id by12csp3188663rwb;
+        Wed, 23 Apr 2025 16:38:12 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEY3RRPHrtsc9RJDcbckexObLpOxuP/e8SkeQvc9fsnqr8SWGnyhKTVMzOT2BAtgsBz36uU
+X-Received: by 2002:a17:903:287:b0:223:faf5:c82 with SMTP id d9443c01a7336-22db3bae5femr4470395ad.8.1745451492247;
+        Wed, 23 Apr 2025 16:38:12 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1745451492; cv=none;
+        d=google.com; s=arc-20240605;
+        b=cK4VXt7ndsb2uKB6FDFDXU7gOYJlwumR9m+kqvRjlWN/8cTy4Vvx5n3OBB4XRRTdG6
+         OtGS32JHCw+3pJUUyXg8CMtwd6ZSAL/Ame5+mtCVBlxjO3UL9zQegmvUvAfQQtigqQN9
+         74UFOqdgl3ZCAFuf4CS96sOvLibDy2c4t6XwXm8JjnAuujqWvHXsKU9kGOEmfBoJJDm1
+         XQOuVQwJEGqH0oxg6c9QoZGWZ2h8To3QKn9myxxjzK1dLHfuMXFsUsrTibT9y+fdXkmp
+         Vg+gF/zkmBisQ2GcSBhlGz9tkuELC2FRvdcLi0lTbPSBvNroNMY8D/p91kGTNJgoem66
+         rfnw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:date:list-unsubscribe-post:list-unsubscribe:message-id:from
+         :subject:mime-version:dkim-signature:dkim-signature;
+        bh=enAwy8K4v6xuJbbFf43LFvmflmeo+PzxC85XMFH3ugw=;
+        fh=xu54kwr7BeBodFYAB47Wg4je2dfUhR7j5jjW8jbana8=;
+        b=bb+zNLJ0SDAfoBbQdB51CYi2XKU8Xe3TRyRBoWJTHnxz81EXxWDQJziU5DZwJZibMr
+         btbhv0/GHJUCYinWBqrxeXH7u6E3jwE+mv39oZ+Ps5QhgUcJkf4IYlYODg+va2AFHZW+
+         a0/VpyiC0Vvt061uEfmupF2TbEpGS/KTYhaOCZV+lj0D9LMY8O8Pm9SqmQMHNPLBenRG
+         OgXJGM67+H0DhXZaIxvXx0CruNeUC6qLBZ4Hif/Giq6KG/SU5IXLhC5NpBQ+4Uyz+Ba9
+         qma4lF4F76/thSEGiF8a0/HYylxAPOYSuKNR4ugorYFJQn4uHTNzOuR+Yt2qzfoav+L/
+         ip4A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@yelp.com header.s=s1 header.b=e2uhvWy7;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=XTlwF96m;
+       spf=pass (google.com: domain of bounces+6746021-c477-seandinwiddie=gmail.com@em.yelp.com designates 167.89.8.98 as permitted sender) smtp.mailfrom="bounces+6746021-c477-seandinwiddie=gmail.com@em.yelp.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yelp.com
+Return-Path: <bounces+6746021-c477-seandinwiddie=gmail.com@em.yelp.com>
+Received: from o1.em.yelp.com (o1.em.yelp.com. [167.89.8.98])
+        by mx.google.com with ESMTPS id d9443c01a7336-22db4d72055si1024235ad.119.2025.04.23.16.38.11
+        for <seandinwiddie@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Wed, 23 Apr 2025 16:38:12 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+6746021-c477-seandinwiddie=gmail.com@em.yelp.com designates 167.89.8.98 as permitted sender) client-ip=167.89.8.98;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@yelp.com header.s=s1 header.b=e2uhvWy7;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=XTlwF96m;
+       spf=pass (google.com: domain of bounces+6746021-c477-seandinwiddie=gmail.com@em.yelp.com designates 167.89.8.98 as permitted sender) smtp.mailfrom="bounces+6746021-c477-seandinwiddie=gmail.com@em.yelp.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yelp.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yelp.com;
+	h=mime-version:content-type:subject:from:list-unsubscribe:
+	list-unsubscribe-post:to:cc:content-type:feedback-id:from:subject:to;
+	s=s1; bh=enAwy8K4v6xuJbbFf43LFvmflmeo+PzxC85XMFH3ugw=;
+	b=e2uhvWy7D1Rp0Ca/yY1ERx5xoUzsmO+fyVruzw8zovvuFtXO5zliaK6u1eorEyJmFAqb
+	ChXvkOxOEYQClL8oDUwu63z4kUoN2iZn/xhU50+nmdC8Sqxuu6kqPDHb6ATk20QPkskIz7
+	toY/a+9iZIbPBqV0m5GKqtEAg2c9r2Io/OeH5r/amOkwA+eSZBGzn8eT45J0qFXYy+/mGq
+	GgSoriRcg+fkDlQUG14DkcRQqvfKLvk0UObPKxYQ/f6zYXQjdY4VrZanpxS2gdKzaE3qW+
+	c+oaVqf/RGsXKy5e6XlmUo77dF2BnacZYecKv29SFHsJKdx9QYX+dSqe0PBZoURw==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info;
+	h=mime-version:content-type:subject:from:list-unsubscribe:
+	list-unsubscribe-post:to:cc:content-type:feedback-id:from:subject:to;
+	s=smtpapi; bh=enAwy8K4v6xuJbbFf43LFvmflmeo+PzxC85XMFH3ugw=;
+	b=XTlwF96max+P/qVLpvakSOhBq+fboYdEYk4E4bXMmafzPVMw5joBpPJV/UFbwEDh5TZB
+	v64p2L3omq9GjlianqA0bMo/qeYhRrWZgNpiYO8TsmYJrc8nB58AbDb2QXFtwELe8LiqxZ
+	F73R969ObIqqttALUy03J9brVY1KTIUoA=
+Received: by recvd-86db547995-mtgsh with SMTP id recvd-86db547995-mtgsh-1-680979E2-34
+	2025-04-23 23:38:10.997719268 +0000 UTC m=+1301407.467287432
+Received: from smtp-sendgrid.yelpcorp.com (unknown)
+	by geopod-ismtpd-canary-0 (SG) with ESMTP id p7RXoDRAQhaMvCB-PllbgQ
+	for <seandinwiddie@gmail.com>; Wed, 23 Apr 2025 23:38:10.970 +0000 (UTC)
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============5535740523465636595=="
+Subject: New Lead: Reply to Jessica's web design request
+From: Yelp Inbox <reply+98c01357921548ffaea77de30e6d5374@messaging.yelp.com>
+Message-ID: 
+ <20250423233810.13.27520.8ebae609157742583640e8b46d71572b@yelp.com>
+List-Unsubscribe: 
+ =?us-ascii?Q?=3Chttps=3A=2F=2Fbiz=2Eyelp=2Ecom=2Fblock=5Fnotifications=2F7UOLdqN=5FP16ErUqDQAMZ?=
+ =?us-ascii?Q?iZyg7JAZObJkM9dTS4nJXVPqc1bvQ7yxCA=2Fmess?=
+ =?us-ascii?Q?age=5Fthe=5Fbusiness=3Futm=5Fsource=3Drequest=5Fa=5Fq?=
+ =?us-ascii?Q?uote=5Ffirst=5Fmessage=5Fv2&utm=5Fcampaign=3Drequ?=
+ =?us-ascii?Q?est=5Fa=5Fquote&ytl=5F=3D8ebae609157742583640e8?=
+ =?us-ascii?Q?b46d71572b=3E=2C=3Cmailto=3Areturnto+bn+7UOLdqN?=
+ =?us-ascii?Q?=5FP16ErUqDQAMZiZyg7JAZObJkM9dTS4nJXVPqc1?=
+ =?us-ascii?Q?bvQ7yxCA=40yelp=2Ecom=3E?=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Date: Wed, 23 Apr 2025 23:38:11 +0000 (UTC)
+X-SG-EID: 
+ =?us-ascii?Q?u001=2ENhV4wmJbxI1H6jNiT14J26vM8Mo=2Fi2GfbzdvLjwE09LUCicPG0gxP+a8e?=
+ =?us-ascii?Q?ENa1yXIIXRqn8SOvgVvukrNNKOsJUXWjx4e3Wli?=
+ =?us-ascii?Q?brET3YgQACr5FfDUCP2rVQpC+1JImYCwJvh13mg?=
+ =?us-ascii?Q?ZlmozmLHgVPQOq9qSMewyJlQCxyX66iTwG0jZ4q?=
+ =?us-ascii?Q?ubMO41+4wy5mpOrWYHtSrgW0dneGbB91CRBT89W?=
+ =?us-ascii?Q?R9rfnPjKs4hZUqFRTCaxyM2X8BHiTBS9LMI2H0d?=
+ =?us-ascii?Q?9mJeM++Tnm3hpuRfdcjJvfOTYctvPibFiK=2F38gP?=
+ =?us-ascii?Q?cX2w0U1M=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprBwZoPrH4niBBvNq?=
+ =?us-ascii?Q?rzcgBWrwGt+SRZRtYXzB6xkfFgPB+io1=2FkCz+=2Fv?=
+ =?us-ascii?Q?hPEb6mRIQ4Ko+Y3lNfuFGCk+ZFn9voSdyTpK3L4?=
+ =?us-ascii?Q?Ckrf5ki1V9ENDJIAcNv4wHMvZpKtSFyOlT4+JRs?=
+ =?us-ascii?Q?NOLGQdamDXKFCjuBbbvjNRP7LzM1LdjKKon7GP+?=
+ =?us-ascii?Q?nQ0p=2FIGsdCnOgb=2FOvt5cZBv98Za6P72JF4UBW89?=
+ =?us-ascii?Q?s2P6?=
+To: "Sean D." <seandinwiddie@gmail.com>
+X-Entity-ID: u001.NiO84uJByt5zLxRP5HNUuw==
+
+--===============5535740523465636595==
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Jessica requested a quote from Sean Dinwiddie for a web design. Reply to st=
+ay eligible for leads and keep your response rate up!
+
+=CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=
+=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=
+=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=
+=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=
+=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =
+=CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=
+=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=
+=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=
+=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=
+=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =
+=CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=
+=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=
+=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=
+=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=
+=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =
+=CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=
+=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=
+=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=
+=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=
+=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =
+=CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=
+=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=
+=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=
+=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=
+=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =
+=CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=
+=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=
+=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=8C =CD=8F=E2=80=
+=8C =CD=8F=E2=80=8C
+
+## You have a new web design request.
+
+[Reply to Jessica on Yelp Biz](https://biz.yelp.com/login/passwordless/redi=
+rect/MLAfe515b3ffd2140a6b70bb69f7e01b92f?return_url=3D%2Fleads_center%2FGkU=
+HaNotVk53_eXa_7JK7A%2Fleads%2FZmF-A4zKBHPmfSleK4FRNQ&ytl_=3D8ebae6091577425=
+83640e8b46d71572b&utm_medium=3Demail&utm_source=3Drequest_a_quote_first_mes=
+sage_v2&utm_campaign=3DApr-23-2025)
+
+Sent to Sean Dinwiddie
+
+Redding, CA 96002
+
+When do you require this service?
+
+As soon as possible
+
+Are there any other details you'd like to share?
+
+How much do you charge to create a basic simply website and host it for a H=
+VAC company?
+
+In what location do you need the service?
+
+96003
+
+Jessica M.
+
+0
+
+21
+
+9
+
+[Reply to Jessica on Yelp Biz](https://biz.yelp.com/login/passwordless/redi=
+rect/MLAfe515b3ffd2140a6b70bb69f7e01b92f?return_url=3D%2Fleads_center%2FGkU=
+HaNotVk53_eXa_7JK7A%2Fleads%2FZmF-A4zKBHPmfSleK4FRNQ&ytl_=3D8ebae6091577425=
+83640e8b46d71572b&utm_medium=3Demail&utm_source=3Drequest_a_quote_first_mes=
+sage_v2&utm_campaign=3DApr-23-2025)
+
+[I'm not interested](https://biz.yelp.com/messaging/mark_as_replied_autosub=
+mit/98c01357921548ffaea77de30e6d5374?reply_type=3DNOT_NEEDED&ytl_=3D8ebae60=
+9157742583640e8b46d71572b&utm_medium=3Demail&utm_source=3Drequest_a_quote_f=
+irst_message_v2&utm_campaign=3DApr-23-2025)
+
+[I already replied](https://biz.yelp.com/messaging/mark_as_replied_autosubm=
+it/98c01357921548ffaea77de30e6d5374?reply_type=3DOTHER&ytl_=3D8ebae60915774=
+2583640e8b46d71572b&utm_medium=3Demail&utm_source=3Drequest_a_quote_first_m=
+essage_v2&utm_campaign=3DApr-23-2025)
+
+Or reply directly to this email
+
+[Report this conversation](https://biz.yelp.com/flag/GkUHaNotVk53_eXa_7JK7A=
+/message_to_business_conversation/F6dP8OSQYjIW-MVLVOiiiQ?ytl_=3D8ebae609157=
+742583640e8b46d71572b&utm_medium=3Demail&utm_source=3Drequest_a_quote_first=
+_message_v2&utm_campaign=3DApr-23-2025)
+
+Don't miss out on future leads =E2=80=94 stay responsive!
+
+Having a low response rate affects your ranking in search results. Your mes=
+saging may also be turned off.
+
+Your response time
+
+Your response rate
+
+Keep track of incoming leads with text notifications.
+
+[Get text notifications](https://biz.yelp.com/settings/email?ytl_=3D8ebae60=
+9157742583640e8b46d71572b&utm_medium=3Demail&utm_source=3Drequest_a_quote_f=
+irst_message_v2&utm_campaign=3DApr-23-2025)
+
+[](https://biz.yelp.com/redir?s=3D1cb93ce342802f9ea0b9844fd5aa547a21e261e87=
+6c7f00f814f6f245e8747b2&url=3Dhttps%3A%2F%2Fwww.facebook.com%2Fyelp%2F&ytl_=
+=3D8ebae609157742583640e8b46d71572b&utm_medium=3Demail&utm_source=3Drequest=
+_a_quote_first_message_v2&utm_campaign=3DApr-23-2025)
+
+[](https://biz.yelp.com/redir?s=3D327a72498d8843ec6945c039794c8c2cbe9d66c45=
+b91ae36fc62ff61379b1011&url=3Dhttps%3A%2F%2Ftwitter.com%2Fyelp%2F&ytl_=3D8e=
+bae609157742583640e8b46d71572b&utm_medium=3Demail&utm_source=3Drequest_a_qu=
+ote_first_message_v2&utm_campaign=3DApr-23-2025)
+
+[](https://biz.yelp.com/redir?s=3D676fbc6935187fc677ac9c7de01ac79a6c4f7e6c6=
+446a87f2d62994ea1c8f68a&url=3Dhttps%3A%2F%2Fwww.instagram.com%2Fyelp%2F&ytl=
+_=3D8ebae609157742583640e8b46d71572b&utm_medium=3Demail&utm_source=3Dreques=
+t_a_quote_first_message_v2&utm_campaign=3DApr-23-2025)
+
+[](https://blog.yelp.com/section/yelp-community?ytl_=3D8ebae609157742583640=
+e8b46d71572b&utm_medium=3Demail&utm_source=3Drequest_a_quote_first_message_=
+v2&utm_campaign=3DApr-23-2025)
+
+This email was sent to [seandinwiddie@gmail.com](mailto:seandinwiddie@gmail=
+.com)
+
+Manage [email preferences](https://biz.yelp.com/settings/email?ytl_=3D8ebae=
+609157742583640e8b46d71572b&utm_medium=3Demail&utm_source=3Drequest_a_quote=
+_first_message_v2&utm_campaign=3DApr-23-2025) | [Unsubscribe](https://biz.y=
+elp.com/block_notifications/7UOLdqN_P16ErUqDQAMZiZyg7JAZObJkM9dTS4nJXVPqc1b=
+vQ7yxCA/message_the_business/?ytl_=3D8ebae609157742583640e8b46d71572b&utm_m=
+edium=3Demail&utm_source=3Drequest_a_quote_first_message_v2&utm_campaign=3D=
+Apr-23-2025)
+
+=C2=A9 2025 | Yelp Inc, 350 Mission Street, San Francisco, CA 94105, USA | =
+[business.yelp.com](https://business.yelp.com?ytl_=3D8ebae609157742583640e8=
+b46d71572b&utm_medium=3Demail&utm_source=3Drequest_a_quote_first_message_v2=
+&utm_campaign=3DApr-23-2025)
+
+[](https://biz.yelp.com/redir?s=3D128616a56f774f3ea83acc7bd6304219939242d61=
+9287b97fe69462e57543b92&url=3Dhttps%3A%2F%2Fapp.adjust.com%2F5nzdby%3Fcreat=
+ive%3Dapple_btn&ytl_=3D8ebae609157742583640e8b46d71572b&utm_medium=3Demail&=
+utm_source=3Drequest_a_quote_first_message_v2&utm_campaign=3DApr-23-2025)
+
+[](https://biz.yelp.com/redir?s=3D1eed7881183d6877f6c2281ca34d4c874c97db964=
+378cef9918b51af0a134e97&url=3Dhttps%3A%2F%2Fapp.adjust.com%2Fpgjbu2%3Fcreat=
+ive%3Dandroid_btn&ytl_=3D8ebae609157742583640e8b46d71572b&utm_medium=3Demai=
+l&utm_source=3Drequest_a_quote_first_message_v2&utm_campaign=3DApr-23-2025)
+
+--===============5535740523465636595==
+MIME-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+                <meta charset=3D"utf-8">
+                <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+               =20
+                <link href=3D"https://fonts.googleapis.com/css2?family=3DOp=
+en+Sans:wght@400;600;700&amp;family=3DPoppins:wght@500;700&amp;display=3Dsw=
+ap" rel=3D"stylesheet">
+                <title>New Lead: Reply to Jessica's web design request</tit=
+le>
+            <style>html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h=
+6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,=
+kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul=
+,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,art=
+icle,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu=
+,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;b=
+order:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,=
+details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:blo=
+ck;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}bl=
+ockquote:before,blockquote:after,q:before,q:after{content:"";content:none;}=
+table{border-collapse:collapse;border-spacing:0;}body{line-height:18px;}@me=
+dia only screen and (max-width: 600px){.yelp-email-uotj2y{padding-left:16px=
+!important;padding-right:16px!important;} }@media only screen and (max-widt=
+h: 600px){.yelp-email-uotj2y{border-top-left-radius:12px!important;border-t=
+op-right-radius:12px!important;} }@media only screen and (max-width: 600px)=
+{.yelp-email-i9y6ig{padding-left:16px!important;padding-right:16px!importan=
+t;} }@media only screen and (max-width: 600px){.responsive:not(.responsive-=
+biz) .yelp-email-qy876a{font-family:"Poppins","Helvetica Neue",Helvetica,Ar=
+ial,sans-serif;font-size:24px;font-weight:700;letter-spacing:-0.4px;line-he=
+ight:32px;} }@media only screen and (max-width: 780px){.responsive-biz .yel=
+p-email-qy876a{font-family:"Poppins","Helvetica Neue",Helvetica,Arial,sans-=
+serif;font-size:24px;font-weight:700;letter-spacing:-0.4px;line-height:32px=
+;} }.yelp-email-lhxp9k:active,.yelp-email-lhxp9k:focus,.yelp-email-lhxp9k:h=
+over,.yelp-email-lhxp9k:visited{text-decoration:none;}.yelp-email-lhxp9k[ar=
+ia-disabled=3D"true"],.yelp-email-lhxp9k:disabled{cursor:not-allowed;}.yelp=
+-email-lhxp9k:hover{box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.3);}.yelp-email-=
+lhxp9k[aria-disabled=3D"true"],.yelp-email-lhxp9k:disabled{background-color=
+:rgba(227,227,227,1);background-image:none;border-color:rgba(227,227,227,1)=
+;box-shadow:none;color:rgba(200,201,202,1);outline:none;transition:none;}@m=
+edia only screen and (max-width: 600px){.responsive:not(.responsive-biz) .y=
+elp-email-lhxp9k{box-shadow:none;} }@media only screen and (max-width: 780p=
+x){.responsive-biz .yelp-email-lhxp9k{box-shadow:none;} }.yelp-email-lhxp9k=
+:focus-visible{outline-color:rgba(2,122,151,1);outline-offset:2px;outline-s=
+tyle:solid;outline-width:2px;}@media (pointer: coarse){.yelp-email-lhxp9k:h=
+over{box-shadow:none;} }.yelp-email-lhxp9k+a:not([data-button=3D"true"]),.y=
+elp-email-lhxp9k+.button-sibling:not([data-button=3D"true"]){font-size:14px=
+;line-height:1.28571em;margin-bottom:7px;margin-top:9px;}@media only screen=
+ and (max-width: 600px){.responsive .yelp-email-lhxp9k+a:not([data-button=
+=3D"true"]),.responsive .yelp-email-lhxp9k+.button-sibling:not([data-button=
+=3D"true"]){font-size:16px;line-height:1.31250em;} }.yelp-email-lhxp9k:acti=
+ve{color:rgba(255,255,255,1);}.yelp-email-lhxp9k:focus{background-color:rgb=
+a(244,13,21,1);}.yelp-email-lhxp9k:hover{background-color:rgba(244,13,21,1)=
+;color:rgba(255,255,255,1);}.yelp-email-lhxp9k[aria-disabled=3D"true"],.yel=
+p-email-lhxp9k:disabled{background-color:rgba(227,227,227,1);color:rgba(200=
+,201,202,1);}.yelp-email-lhxp9k:not([aria-disabled=3D"true"]):not(:disabled=
+)[data-activated=3D"true"]{background-color:rgba(244,13,21,1);background-im=
+age:radial-gradient(rgba(255,255,255,0.24) 1%, transparent 1%);}.yelp-email=
+-lhxp9k:not([aria-disabled=3D"true"]):not(:disabled)[data-activated=3D"true=
+"]:active{transition:all 0s;background-color:rgba(244,13,21,1);background-i=
+mage:radial-gradient(transparent 1%, transparent 1%);}.yelp-email-14vxdf7:a=
+ctive,.yelp-email-14vxdf7:focus,.yelp-email-14vxdf7:hover,.yelp-email-14vxd=
+f7:visited{text-decoration:none;}.yelp-email-14vxdf7[aria-disabled=3D"true"=
+],.yelp-email-14vxdf7:disabled{cursor:not-allowed;}.yelp-email-14vxdf7:hove=
+r{box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.3);}.yelp-email-14vxdf7[aria-disab=
+led=3D"true"],.yelp-email-14vxdf7:disabled{background-color:rgba(227,227,22=
+7,1);background-image:none;border-color:rgba(227,227,227,1);box-shadow:none=
+;color:rgba(200,201,202,1);outline:none;transition:none;}@media only screen=
+ and (max-width: 600px){.responsive:not(.responsive-biz) .yelp-email-14vxdf=
+7{box-shadow:none;} }@media only screen and (max-width: 780px){.responsive-=
+biz .yelp-email-14vxdf7{box-shadow:none;} }.yelp-email-14vxdf7:focus-visibl=
+e{outline-color:rgba(2,122,151,1);outline-offset:2px;outline-style:solid;ou=
+tline-width:2px;}@media (pointer: coarse){.yelp-email-14vxdf7:hover{box-sha=
+dow:none;} }.yelp-email-14vxdf7+a:not([data-button=3D"true"]),.yelp-email-1=
+4vxdf7+.button-sibling:not([data-button=3D"true"]){font-size:14px;line-heig=
+ht:1.28571em;margin-bottom:7px;margin-top:9px;}@media only screen and (max-=
+width: 600px){.responsive .yelp-email-14vxdf7+a:not([data-button=3D"true"])=
+,.responsive .yelp-email-14vxdf7+.button-sibling:not([data-button=3D"true"]=
+){font-size:16px;line-height:1.31250em;} }.yelp-email-14vxdf7:active{color:=
+rgba(45,46,47,1);}.yelp-email-14vxdf7:focus{background-color:rgba(107,109,1=
+11,0.12);}.yelp-email-14vxdf7:hover{background-color:rgba(107,109,111,0.12)=
+;color:rgba(45,46,47,1);box-shadow:none;}.yelp-email-14vxdf7[aria-disabled=
+=3D"true"],.yelp-email-14vxdf7:disabled{background-color:rgba(0,0,0,0);bord=
+er:1px solid rgba(227,227,227,1);color:rgba(200,201,202,1);}.yelp-email-14v=
+xdf7:not([aria-disabled=3D"true"]):not(:disabled)[data-activated=3D"true"]{=
+background-color:rgba(107,109,111,0.12);background-image:radial-gradient(rg=
+ba(45,46,47,0.16) 1%, transparent 1%);}.yelp-email-14vxdf7:not([aria-disabl=
+ed=3D"true"]):not(:disabled)[data-activated=3D"true"]:active{transition:all=
+ 0s;background-color:rgba(107,109,111,0.12);background-image:radial-gradien=
+t(transparent 1%, transparent 1%);}.yelp-email-v6zssv:hover{text-decoration=
+:underline;}.yelp-email-v6zssv:focus-visible{outline-color:rgba(2,122,151,1=
+);outline-offset:2px;outline-style:solid;outline-width:2px;}.yelp-email-gbg=
+ks:hover{text-decoration:underline;}.yelp-email-gbgks:focus-visible{outline=
+-color:rgba(2,122,151,1);outline-offset:2px;outline-style:solid;outline-wid=
+th:2px;}.yelp-email-1gfkpv:hover{text-decoration:underline;}.yelp-email-1gf=
+kpv:focus-visible{outline-color:rgba(2,122,151,1);outline-offset:2px;outlin=
+e-style:solid;outline-width:2px;}.yelp-email-ywe5zp:hover{text-decoration:u=
+nderline;}.yelp-email-ywe5zp:focus-visible{outline-color:rgba(2,122,151,1);=
+outline-offset:2px;outline-style:solid;outline-width:2px;}.yelp-email-1ywuf=
+jh:hover{text-decoration:underline;}.yelp-email-1ywufjh:focus-visible{outli=
+ne-color:rgba(2,122,151,1);outline-offset:2px;outline-style:solid;outline-w=
+idth:2px;}@media only screen and (max-width: 600px){.yelp-email-1ywufjh{dis=
+play:inline!important;} }</style></head>
+            <body>
+                <img src=3D"https://www.yelp.com/tracking/track.gif?ytl_=3D=
+8ebae609157742583640e8b46d71572b&amp;utm_medium=3Demail&amp;utm_source=3Dre=
+quest_a_quote_first_message_v2&amp;utm_campaign=3DApr-23-2025" width=3D"0" =
+height=3D"0" align=3D"right"><div><div style=3D"display:none;max-height:0px=
+;overflow:hidden">Jessica requested a quote from Sean Dinwiddie for a web d=
+esign. Reply to stay eligible for leads and keep your response rate up!</di=
+v><div style=3D"display:none;max-height:0px;overflow:hidden">&#847;&#8204;&=
+#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;=
+&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204=
+;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#820=
+4;&#160; &#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8=
+204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#=
+8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&=
+#8204;&#160;&#847;&#8204;&#160; &#847;&#8204;&#160;&#847;&#8204;&#160;&#847=
+;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#84=
+7;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#8=
+47;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160; &#847;&#8204;&#160;&=
+#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;=
+&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160=
+;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#16=
+0; &#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#=
+160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&=
+#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;=
+&#160;&#847;&#8204;&#160; &#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#820=
+4;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#82=
+04;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8=
+204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160; &#847;&#8204;&#160;&#847;&=
+#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;=
+&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847=
+;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160; &#8=
+47;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#=
+847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&=
+#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;=
+&#847;&#8204;&#160; &#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#16=
+0;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#1=
+60;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#=
+160;&#847;&#8204;&#160;&#847;&#8204;&#160; &#847;&#8204;&#160;&#847;&#8204;=
+&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204=
+;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#820=
+4;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;&#847;&#8204;&#160;</div><div=
+ class=3D"responsive yelp-email-1pbh2b5" style=3D"border-color:rgba(235,235=
+,235,1);text-align:center;width:100%;"><div class=3D"yelp-email-1spxgk2" da=
+ta-testid=3D"email-content-container" style=3D"display:inline-block;border-=
+color:rgba(235,235,235,1);max-width:620px;"><div class=3D"yelp-email-uotj2y=
+" data-testid=3D"email-header" style=3D"border-color:rgba(235,235,235,1);pa=
+dding-left:24px;padding-right:24px;background-image:linear-gradient(#ffffff=
+, #ffffff);border-top-left-radius:16px;border-top-right-radius:16px;"><div =
+class=3D"yelp-email-9i50dz" data-testid=3D"email-logo-container" style=3D"p=
+adding-top:16px!important;padding-bottom:16px!important;border-color:rgba(2=
+35,235,235,1);text-align:left;"><img src=3D"https://s3-media0.fl.yelpcdn.co=
+m/assets/public/logo_for_business_desktop@2x.yji-a6326a76a792057fe3c3.png" =
+width=3D"168" height=3D"29" alt=3D"Yelp for business logo"></div></div><div=
+ class=3D"yelp-email-xtdqo1" style=3D"border-color:rgba(235,235,235,1);text=
+-align:left;"><div class=3D"yelp-email-i9y6ig" style=3D"border-color:rgba(2=
+35,235,235,1);padding-left:24px;padding-right:24px;"><div class=3D"yelp-ema=
+il-1nfbd79" style=3D"padding-bottom:20px!important;margin-top:8px!important=
+;border-color:rgba(235,235,235,1);"><h2 class=3D"yelp-email-qy876a" style=
+=3D'font-family:"Poppins","Helvetica Neue",Helvetica,Arial,sans-serif;font-=
+size:28px;font-weight:700;letter-spacing:-0.4px;line-height:36px;word-wrap:=
+break-word!important;word-break:break-word!important;overflow-wrap:break-wo=
+rd!important;color:rgba(45,46,47,1);text-align:center;'>You have a new web =
+design request.</h2></div><div class=3D"yelp-email-foidjw" style=3D"margin-=
+top:16px!important;margin-bottom:16px!important;border-color:rgba(235,235,2=
+35,1);"><a href=3D"https://biz.yelp.com/login/passwordless/redirect/MLAfe51=
+5b3ffd2140a6b70bb69f7e01b92f?return_url=3D%2Fleads_center%2FGkUHaNotVk53_eX=
+a_7JK7A%2Fleads%2FZmF-A4zKBHPmfSleK4FRNQ&amp;ytl_=3D8ebae609157742583640e8b=
+46d71572b&amp;utm_medium=3Demail&amp;utm_source=3Drequest_a_quote_first_mes=
+sage_v2&amp;utm_campaign=3DApr-23-2025" class=3D"yelp-email-lhxp9k" data-ac=
+tivated=3D"false" data-button=3D"true" style=3D"text-decoration:none;appear=
+ance:none;background-image:none;background-repeat:no-repeat;border:0;cursor=
+:pointer;margin:0;align-items:center;border-radius:4px;box-shadow:none;box-=
+sizing:border-box;display:inline-flex;height:auto;justify-content:center;ma=
+rgin:0px;padding-bottom:10px;padding-left:16px;padding-right:16px;padding-t=
+op:10px;position:relative;text-align:left;transition:all 0.8s;transition-pr=
+operty:background-image,background-color,background-position,background-siz=
+e,border-color,box-shadow,opacity;user-select:none;vertical-align:middle;wi=
+dth:100%;white-space:pre-line;background-color:rgba(215,22,22,1);color:rgba=
+(255,255,255,1);display:block!important;text-align:center;"><span class=3D"=
+yelp-email-uypnao" style=3D'font-family:"Poppins","Helvetica Neue",Helvetic=
+a,Arial,sans-serif;font-size:16px;font-weight:500;letter-spacing:-0.2px;lin=
+e-height:24px;color:inherit;text-align:left;margin-top:1px;'>Reply to Jessi=
+ca on Yelp Biz</span></a></div><div class=3D"yelp-email-1b41kw7" style=3D"p=
+adding-top:16px!important;padding-right:16px!important;padding-bottom:16px!=
+important;padding-left:16px!important;margin-bottom:8px!important;border-bo=
+ttom:1px solid rgba(230, 230, 230, 1);border-color:rgba(235,235,235,1);back=
+ground-color:rgba(247,247,247,1);"><div class=3D"yelp-email-kmjcga" style=
+=3D"padding-bottom:12px!important;border-bottom:1px solid rgba(230, 230, 23=
+0, 1);border-color:rgba(227,227,227,1);"><p class=3D"yelp-email-1eao26v" da=
+ta-font-weight=3D"semibold" style=3D'font-family:"Open Sans","Helvetica Neu=
+e",Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;letter-spacing=
+:0px;line-height:16px;color:rgba(110,112,114,1);text-align:center;'>Sent to=
+ Sean Dinwiddie</p><p class=3D"yelp-email-1eao26v" data-font-weight=3D"semi=
+bold" style=3D'font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,san=
+s-serif;font-size:12px;font-weight:600;letter-spacing:0px;line-height:16px;=
+color:rgba(110,112,114,1);text-align:center;'>Redding, CA 96002</p></div><d=
+iv class=3D"yelp-email-fuebkq" style=3D"margin-top:20px!important;margin-bo=
+ttom:12px!important;border-color:rgba(235,235,235,1);"><p class=3D"yelp-ema=
+il-brmg6y" data-font-weight=3D"bold" style=3D'font-family:"Open Sans","Helv=
+etica Neue",Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;lette=
+r-spacing:0px;line-height:24px;color:rgba(45,46,47,1);text-align:left;'>Whe=
+n do you require this service?</p><p class=3D"yelp-email-76dxr2" style=3D'f=
+ont-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-siz=
+e:16px;font-weight:400;letter-spacing:0px;line-height:24px;color:rgba(45,46=
+,47,1);text-align:left;'>As soon as possible</p></div><div class=3D"yelp-em=
+ail-fuebkq" style=3D"margin-top:20px!important;margin-bottom:12px!important=
+;border-color:rgba(235,235,235,1);"><p class=3D"yelp-email-brmg6y" data-fon=
+t-weight=3D"bold" style=3D'font-family:"Open Sans","Helvetica Neue",Helveti=
+ca,Arial,sans-serif;font-size:16px;font-weight:700;letter-spacing:0px;line-=
+height:24px;color:rgba(45,46,47,1);text-align:left;'>Are there any other de=
+tails you'd like to share?</p><p class=3D"yelp-email-76dxr2" style=3D'font-=
+family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16=
+px;font-weight:400;letter-spacing:0px;line-height:24px;color:rgba(45,46,47,=
+1);text-align:left;'>How much do you charge to create a basic simply websit=
+e and host it for a HVAC company?</p></div><div class=3D"yelp-email-fuebkq"=
+ style=3D"margin-top:20px!important;margin-bottom:12px!important;border-col=
+or:rgba(235,235,235,1);"><p class=3D"yelp-email-brmg6y" data-font-weight=3D=
+"bold" style=3D'font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sa=
+ns-serif;font-size:16px;font-weight:700;letter-spacing:0px;line-height:24px=
+;color:rgba(45,46,47,1);text-align:left;'>In what location do you need the =
+service?</p><p class=3D"yelp-email-76dxr2" style=3D'font-family:"Open Sans"=
+,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;font-weight:400=
+;letter-spacing:0px;line-height:24px;color:rgba(45,46,47,1);text-align:left=
+;'>96003</p></div></div><div class=3D"yelp-email-spuuj1" style=3D"margin-to=
+p:16px!important;margin-bottom:20px!important;border-color:rgba(235,235,235=
+,1);"><div class=3D"yelp-email-1w4cxvu" style=3D"border-color:rgba(235,235,=
+235,1);display:table;"><div class=3D"arrange-unit yelp-email-yjbg2" style=
+=3D"display:table-cell;padding-right:12px!important;border-color:rgba(235,2=
+35,235,1);vertical-align:middle;"><img src=3D"https://s3-media0.fl.yelpcdn.=
+com/assets/public/default_user_avatar_40x40_v2.yji-1b8b3dd9a1cc11cda816.png=
+" srcset=3D"https://s3-media0.fl.yelpcdn.com/assets/public/default_user_ava=
+tar_40x40_v2@2x.yji-70442a3cafd04643ebb4.png 2x" alt=3D"user avatar" width=
+=3D"40" height=3D"40" class=3D"yelp-email-1etei1u" style=3D"border-radius:5=
+0%;overflow:hidden;"></div><div class=3D"arrange-unit yelp-email-th62py" st=
+yle=3D"display:table-cell;border-color:rgba(235,235,235,1);vertical-align:m=
+iddle;"><div class=3D"yelp-email-151su5y" style=3D"border-color:rgba(235,23=
+5,235,1);"><p class=3D"yelp-email-1x3m2tt" data-font-weight=3D"semibold" st=
+yle=3D'font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;=
+font-size:16px;font-weight:600;letter-spacing:0px;line-height:24px;color:rg=
+ba(45,46,47,1);text-align:left;'>Jessica M.</p><div class=3D"yelp-email-1w4=
+cxvu" style=3D"border-color:rgba(235,235,235,1);display:table;"><div class=
+=3D"arrange-unit yelp-email-1q2gu1n" style=3D"display:table-cell;padding-ri=
+ght:4px!important;border-color:rgba(235,235,235,1);vertical-align:middle;">=
+<span class=3D"yelp-email-1owsdqa" style=3D"width:16px;height:16px;display:=
+inline-block;vertical-align:middle;position:relative;top:0;"><img src=3D"ht=
+tps://s3-media0.fl.yelpcdn.com/assets/public/16x16_friend_v2.yji-ba0dd48ceb=
+880b5a542c.png" width=3D"16" height=3D"16"></span></div><div class=3D"arran=
+ge-unit yelp-email-th62py" style=3D"display:table-cell;border-color:rgba(23=
+5,235,235,1);vertical-align:middle;"><span class=3D"yelp-email-mdqf9" style=
+=3D'font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;fon=
+t-size:14px;font-weight:400;letter-spacing:0px;line-height:20px;color:rgba(=
+110,112,114,1);text-align:left;'>0</span></div><div class=3D"arrange-unit y=
+elp-email-vfvyzs" style=3D"display:table-cell;padding-right:4px!important;p=
+adding-left:8px!important;border-color:rgba(235,235,235,1);vertical-align:m=
+iddle;"><span class=3D"yelp-email-1owsdqa" style=3D"width:16px;height:16px;=
+display:inline-block;vertical-align:middle;position:relative;top:0;"><img s=
+rc=3D"https://s3-media0.fl.yelpcdn.com/assets/public/16x16_review_v2.yji-ad=
+6909d4766cb6339fb9.png" width=3D"16" height=3D"16"></span></div><div class=
+=3D"arrange-unit yelp-email-th62py" style=3D"display:table-cell;border-colo=
+r:rgba(235,235,235,1);vertical-align:middle;"><span class=3D"yelp-email-mdq=
+f9" style=3D'font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-=
+serif;font-size:14px;font-weight:400;letter-spacing:0px;line-height:20px;co=
+lor:rgba(110,112,114,1);text-align:left;'>21</span></div><div class=3D"arra=
+nge-unit yelp-email-vfvyzs" style=3D"display:table-cell;padding-right:4px!i=
+mportant;padding-left:8px!important;border-color:rgba(235,235,235,1);vertic=
+al-align:middle;"><span class=3D"yelp-email-1owsdqa" style=3D"width:16px;he=
+ight:16px;display:inline-block;vertical-align:middle;position:relative;top:=
+0;"><img src=3D"https://s3-media0.fl.yelpcdn.com/assets/public/16x16_photos=
+_v2.yji-fa35ff95973be48e9174.png" width=3D"16" height=3D"16"></span></div><=
+div class=3D"arrange-unit yelp-email-th62py" style=3D"display:table-cell;bo=
+rder-color:rgba(235,235,235,1);vertical-align:middle;"><span class=3D"yelp-=
+email-mdqf9" style=3D'font-family:"Open Sans","Helvetica Neue",Helvetica,Ar=
+ial,sans-serif;font-size:14px;font-weight:400;letter-spacing:0px;line-heigh=
+t:20px;color:rgba(110,112,114,1);text-align:left;'>9</span></div></div></di=
+v></div></div></div><div class=3D"yelp-email-1ti8tqq" style=3D"margin-botto=
+m:12px!important;border-color:rgba(235,235,235,1);"><a href=3D"https://biz.=
+yelp.com/login/passwordless/redirect/MLAfe515b3ffd2140a6b70bb69f7e01b92f?re=
+turn_url=3D%2Fleads_center%2FGkUHaNotVk53_eXa_7JK7A%2Fleads%2FZmF-A4zKBHPmf=
+SleK4FRNQ&amp;ytl_=3D8ebae609157742583640e8b46d71572b&amp;utm_medium=3Demai=
+l&amp;utm_source=3Drequest_a_quote_first_message_v2&amp;utm_campaign=3DApr-=
+23-2025" class=3D"yelp-email-lhxp9k" data-activated=3D"false" data-button=
+=3D"true" style=3D"text-decoration:none;appearance:none;background-image:no=
+ne;background-repeat:no-repeat;border:0;cursor:pointer;margin:0;align-items=
+:center;border-radius:4px;box-shadow:none;box-sizing:border-box;display:inl=
+ine-flex;height:auto;justify-content:center;margin:0px;padding-bottom:10px;=
+padding-left:16px;padding-right:16px;padding-top:10px;position:relative;tex=
+t-align:left;transition:all 0.8s;transition-property:background-image,backg=
+round-color,background-position,background-size,border-color,box-shadow,opa=
+city;user-select:none;vertical-align:middle;width:100%;white-space:pre-line=
+;background-color:rgba(215,22,22,1);color:rgba(255,255,255,1);display:block=
+!important;text-align:center;"><span class=3D"yelp-email-uypnao" style=3D'f=
+ont-family:"Poppins","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:=
+16px;font-weight:500;letter-spacing:-0.2px;line-height:24px;color:inherit;t=
+ext-align:left;margin-top:1px;'>Reply to Jessica on Yelp Biz</span></a></di=
+v><div class=3D"yelp-email-1ti8tqq" style=3D"margin-bottom:12px!important;b=
+order-color:rgba(235,235,235,1);"><a href=3D"https://biz.yelp.com/messaging=
+/mark_as_replied_autosubmit/98c01357921548ffaea77de30e6d5374?reply_type=3DN=
+OT_NEEDED&amp;ytl_=3D8ebae609157742583640e8b46d71572b&amp;utm_medium=3Demai=
+l&amp;utm_source=3Drequest_a_quote_first_message_v2&amp;utm_campaign=3DApr-=
+23-2025" class=3D"yelp-email-14vxdf7" data-activated=3D"false" data-button=
+=3D"true" style=3D"text-decoration:none;appearance:none;background-image:no=
+ne;background-repeat:no-repeat;border:0;cursor:pointer;margin:0;align-items=
+:center;border-radius:4px;box-shadow:none;box-sizing:border-box;display:inl=
+ine-flex;height:auto;justify-content:center;margin:0px;padding-bottom:10px;=
+padding-left:16px;padding-right:16px;padding-top:10px;position:relative;tex=
+t-align:left;transition:all 0.8s;transition-property:background-image,backg=
+round-color,background-position,background-size,border-color,box-shadow,opa=
+city;user-select:none;vertical-align:middle;width:100%;white-space:pre-line=
+;background-color:rgba(0,0,0,0);border:1px solid rgba(200,201,202,1);color:=
+rgba(45,46,47,1);display:block!important;text-align:center;"><span class=3D=
+"yelp-email-uypnao" style=3D'font-family:"Poppins","Helvetica Neue",Helveti=
+ca,Arial,sans-serif;font-size:16px;font-weight:500;letter-spacing:-0.2px;li=
+ne-height:24px;color:inherit;text-align:left;margin-top:1px;'>I'm not inter=
+ested</span></a></div><div class=3D"yelp-email-151su5y" style=3D"border-col=
+or:rgba(235,235,235,1);"><a href=3D"https://biz.yelp.com/messaging/mark_as_=
+replied_autosubmit/98c01357921548ffaea77de30e6d5374?reply_type=3DOTHER&amp;=
+ytl_=3D8ebae609157742583640e8b46d71572b&amp;utm_medium=3Demail&amp;utm_sour=
+ce=3Drequest_a_quote_first_message_v2&amp;utm_campaign=3DApr-23-2025" class=
+=3D"yelp-email-14vxdf7" data-activated=3D"false" data-button=3D"true" style=
+=3D"text-decoration:none;appearance:none;background-image:none;background-r=
+epeat:no-repeat;border:0;cursor:pointer;margin:0;align-items:center;border-=
+radius:4px;box-shadow:none;box-sizing:border-box;display:inline-flex;height=
+:auto;justify-content:center;margin:0px;padding-bottom:10px;padding-left:16=
+px;padding-right:16px;padding-top:10px;position:relative;text-align:left;tr=
+ansition:all 0.8s;transition-property:background-image,background-color,bac=
+kground-position,background-size,border-color,box-shadow,opacity;user-selec=
+t:none;vertical-align:middle;width:100%;white-space:pre-line;background-col=
+or:rgba(0,0,0,0);border:1px solid rgba(200,201,202,1);color:rgba(45,46,47,1=
+);display:block!important;text-align:center;"><span class=3D"yelp-email-uyp=
+nao" style=3D'font-family:"Poppins","Helvetica Neue",Helvetica,Arial,sans-s=
+erif;font-size:16px;font-weight:500;letter-spacing:-0.2px;line-height:24px;=
+color:inherit;text-align:left;margin-top:1px;'>I already replied</span></a>=
+</div><div class=3D"yelp-email-15dx7yz" style=3D"margin-top:20px!important;=
+margin-bottom:8px!important;border-color:rgba(235,235,235,1);text-align:cen=
+ter;"><p class=3D"yelp-email-ycxitl" style=3D'font-family:"Open Sans","Helv=
+etica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;lette=
+r-spacing:0px;line-height:20px;color:rgba(45,46,47,1);text-align:center;col=
+or:#8d8e91;'>Or reply directly to this email</p></div><div class=3D"yelp-em=
+ail-1t98384" style=3D"margin-bottom:20px!important;border-color:rgba(235,23=
+5,235,1);text-align:center;"><p class=3D"yelp-email-1wqatlv" style=3D'font-=
+family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12=
+px;font-weight:400;letter-spacing:0px;line-height:16px;color:rgba(45,46,47,=
+1);text-align:center;'><a href=3D"https://biz.yelp.com/flag/GkUHaNotVk53_eX=
+a_7JK7A/message_to_business_conversation/F6dP8OSQYjIW-MVLVOiiiQ?ytl_=3D8eba=
+e609157742583640e8b46d71572b&amp;utm_medium=3Demail&amp;utm_source=3Dreques=
+t_a_quote_first_message_v2&amp;utm_campaign=3DApr-23-2025" class=3D"yelp-em=
+ail-v6zssv" style=3D'font-family:"Open Sans","Helvetica Neue",Helvetica,Ari=
+al,sans-serif;border-radius:3px;text-decoration:none;font-weight:600;color:=
+rgba(2,122,151,1);font-size:inherit;font-weight:400;'>Report this conversat=
+ion</a></p></div><div class=3D"yelp-email-d9ckj2" style=3D"padding-top:24px=
+!important;padding-right:24px!important;padding-bottom:24px!important;paddi=
+ng-left:24px!important;border-color:rgba(235,235,235,1);"><div class=3D"yel=
+p-email-dydz9v" style=3D"border-color:rgba(235,235,235,1);display:table;"><=
+div class=3D"arrange-unit yelp-email-yjbg2" style=3D"vertical-align:top;dis=
+play:table-cell;padding-right:12px!important;border-color:rgba(235,235,235,=
+1);"><span class=3D"yelp-email-14dtidv" style=3D"width:40px;height:40px;dis=
+play:inline-block;vertical-align:middle;position:relative;top:0;"><img src=
+=3D"https://s3-media0.fl.yelpcdn.com/assets/public/40x40_new_v2.yji-74b113c=
+a3acfa0400a47.png" width=3D"40" height=3D"40"></span></div><div class=3D"ar=
+range-unit yelp-email-th62py" style=3D"vertical-align:top;display:table-cel=
+l;border-color:rgba(235,235,235,1);"><p class=3D"yelp-email-brmg6y" data-fo=
+nt-weight=3D"bold" style=3D'font-family:"Open Sans","Helvetica Neue",Helvet=
+ica,Arial,sans-serif;font-size:16px;font-weight:700;letter-spacing:0px;line=
+-height:24px;color:rgba(45,46,47,1);text-align:left;'>Don't miss out on fut=
+ure leads &#8212; stay responsive!</p><div class=3D"yelp-email-foidjw" styl=
+e=3D"margin-top:16px!important;margin-bottom:16px!important;border-color:rg=
+ba(235,235,235,1);"><p class=3D"yelp-email-1n7uvtf" style=3D'font-family:"O=
+pen Sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-w=
+eight:400;letter-spacing:0px;line-height:20px;color:rgba(45,46,47,1);text-a=
+lign:left;'>Having a low response rate affects your ranking in search resul=
+ts. Your messaging may also be turned off.</p></div><div class=3D"yelp-emai=
+l-10awmjw" style=3D"display:inline-block;margin-right:24px!important;border=
+-color:rgba(235,235,235,1);"><p class=3D"yelp-email-on84zr" style=3D'font-f=
+amily:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14p=
+x;font-weight:400;letter-spacing:0px;line-height:20px;color:rgba(110,112,11=
+4,1);text-align:left;font-size:10px;'>Your response time</p><p class=3D"yel=
+p-email-ew65kg" data-font-weight=3D"bold" style=3D'font-family:"Open Sans",=
+"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;=
+letter-spacing:0px;line-height:20px;color:rgba(45,46,47,1);text-align:left;=
+'></p></div><div class=3D"yelp-email-9ggis3" style=3D"display:inline-block;=
+border-color:rgba(235,235,235,1);"><p class=3D"yelp-email-on84zr" style=3D'=
+font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-si=
+ze:14px;font-weight:400;letter-spacing:0px;line-height:20px;color:rgba(110,=
+112,114,1);text-align:left;font-size:10px;'>Your response rate</p><p class=
+=3D"yelp-email-ew65kg" data-font-weight=3D"bold" style=3D'font-family:"Open=
+ Sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weig=
+ht:700;letter-spacing:0px;line-height:20px;color:rgba(45,46,47,1);text-alig=
+n:left;'></p></div></div></div></div><div class=3D"yelp-email-1ur3tq2" styl=
+e=3D"padding-top:24px!important;padding-right:24px!important;padding-left:2=
+4px!important;border-top:1px solid rgba(230, 230, 230, 1);border-color:rgba=
+(235,235,235,1);"><div class=3D"yelp-email-dydz9v" style=3D"border-color:rg=
+ba(235,235,235,1);display:table;"><div class=3D"arrange-unit yelp-email-yjb=
+g2" style=3D"vertical-align:top;display:table-cell;padding-right:12px!impor=
+tant;border-color:rgba(235,235,235,1);"><span class=3D"yelp-email-14dtidv" =
+style=3D"width:40px;height:40px;display:inline-block;vertical-align:middle;=
+position:relative;top:0;"><img src=3D"https://s3-media0.fl.yelpcdn.com/asse=
+ts/public/40x40_text_us_v2.yji-ac4c83ff0d54f26a8a09.png" width=3D"40" heigh=
+t=3D"40"></span></div><div class=3D"arrange-unit yelp-email-th62py" style=
+=3D"vertical-align:top;display:table-cell;border-color:rgba(235,235,235,1);=
+"><div class=3D"yelp-email-7cqze1" style=3D"margin-bottom:16px!important;bo=
+rder-color:rgba(235,235,235,1);"><p class=3D"yelp-email-wpsy4m" data-font-w=
+eight=3D"semibold" style=3D'font-family:"Open Sans","Helvetica Neue",Helvet=
+ica,Arial,sans-serif;font-size:14px;font-weight:600;letter-spacing:0px;line=
+-height:20px;color:rgba(45,46,47,1);text-align:left;'>Keep track of incomin=
+g leads with text notifications.</p></div><div class=3D"yelp-email-151su5y"=
+ style=3D"border-color:rgba(235,235,235,1);"><a href=3D"https://biz.yelp.co=
+m/settings/email?ytl_=3D8ebae609157742583640e8b46d71572b&amp;utm_medium=3De=
+mail&amp;utm_source=3Drequest_a_quote_first_message_v2&amp;utm_campaign=3DA=
+pr-23-2025" class=3D"yelp-email-gbgks" style=3D'font-family:"Open Sans","He=
+lvetica Neue",Helvetica,Arial,sans-serif;border-radius:3px;text-decoration:=
+none;font-weight:600;color:rgba(2,122,151,1);font-size:14px;line-height:20p=
+x;'>Get text notifications</a></div></div></div></div></div></div><div clas=
+s=3D"yelp-email-7tsxm2" style=3D"padding-top:32px!important;margin-top:32px=
+!important;border-top:1px solid rgba(230, 230, 230, 1);border-color:rgba(23=
+5,235,235,1);"><div class=3D"yelp-email-151su5y" style=3D"border-color:rgba=
+(235,235,235,1);"><div class=3D"yelp-email-18ziojo" style=3D"border-color:r=
+gba(235,235,235,1);text-align:center;"><div class=3D"yelp-email-11wyizq" st=
+yle=3D"display:inline-block;border-color:rgba(235,235,235,1);max-width:320p=
+x;width:100%;"><div class=3D"yelp-email-1qzx6od" style=3D"margin-bottom:16p=
+x!important;border-color:rgba(235,235,235,1);display:table;width:100%;table=
+-layout:fixed;"><div class=3D"arrange-unit yelp-email-1uj065g" style=3D"dis=
+play:table-cell;border-color:rgba(235,235,235,1);text-align:center;"><a hre=
+f=3D"https://biz.yelp.com/redir?s=3D1cb93ce342802f9ea0b9844fd5aa547a21e261e=
+876c7f00f814f6f245e8747b2&amp;url=3Dhttps%3A%2F%2Fwww.facebook.com%2Fyelp%2=
+F&amp;ytl_=3D8ebae609157742583640e8b46d71572b&amp;utm_medium=3Demail&amp;ut=
+m_source=3Drequest_a_quote_first_message_v2&amp;utm_campaign=3DApr-23-2025"=
+ class=3D"yelp-email-gbgks" style=3D'font-family:"Open Sans","Helvetica Neu=
+e",Helvetica,Arial,sans-serif;border-radius:3px;text-decoration:none;font-w=
+eight:600;color:rgba(2,122,151,1);font-size:14px;line-height:20px;'><img sr=
+c=3D"https://s3-media0.fl.yelpcdn.com/assets/public/24x24_social_share_face=
+book_v2@2x.yji-e2b79e02e052158eecfe.png" alt=3D"Link to Yelp&#8217;s Facebo=
+ok account" width=3D"24" height=3D"24"></a></div><div class=3D"arrange-unit=
+ yelp-email-1uj065g" style=3D"display:table-cell;border-color:rgba(235,235,=
+235,1);text-align:center;"><a href=3D"https://biz.yelp.com/redir?s=3D327a72=
+498d8843ec6945c039794c8c2cbe9d66c45b91ae36fc62ff61379b1011&amp;url=3Dhttps%=
+3A%2F%2Ftwitter.com%2Fyelp%2F&amp;ytl_=3D8ebae609157742583640e8b46d71572b&a=
+mp;utm_medium=3Demail&amp;utm_source=3Drequest_a_quote_first_message_v2&amp=
+;utm_campaign=3DApr-23-2025" class=3D"yelp-email-gbgks" style=3D'font-famil=
+y:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;border-radius:3px=
+;text-decoration:none;font-weight:600;color:rgba(2,122,151,1);font-size:14p=
+x;line-height:20px;'><img src=3D"https://s3-media0.fl.yelpcdn.com/assets/pu=
+blic/24x24_social_share_twitter_v2@2x.yji-2b13430aafddd684e76d.png" alt=3D"=
+Link to Yelp&#8217;s X account" width=3D"24" height=3D"24"></a></div><div c=
+lass=3D"arrange-unit yelp-email-1uj065g" style=3D"display:table-cell;border=
+-color:rgba(235,235,235,1);text-align:center;"><a href=3D"https://biz.yelp.=
+com/redir?s=3D676fbc6935187fc677ac9c7de01ac79a6c4f7e6c6446a87f2d62994ea1c8f=
+68a&amp;url=3Dhttps%3A%2F%2Fwww.instagram.com%2Fyelp%2F&amp;ytl_=3D8ebae609=
+157742583640e8b46d71572b&amp;utm_medium=3Demail&amp;utm_source=3Drequest_a_=
+quote_first_message_v2&amp;utm_campaign=3DApr-23-2025" class=3D"yelp-email-=
+gbgks" style=3D'font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sa=
+ns-serif;border-radius:3px;text-decoration:none;font-weight:600;color:rgba(=
+2,122,151,1);font-size:14px;line-height:20px;'><img src=3D"https://s3-media=
+0.fl.yelpcdn.com/assets/public/24x24_social_share_instagram_v2@2x.yji-7d003=
+10c2736004eeedb.png" alt=3D"Link to Yelp&#8217;s Instagram account" width=
+=3D"24" height=3D"24"></a></div><div class=3D"arrange-unit yelp-email-1uj06=
+5g" style=3D"display:table-cell;border-color:rgba(235,235,235,1);text-align=
+:center;"><a href=3D"https://blog.yelp.com/section/yelp-community?ytl_=3D8e=
+bae609157742583640e8b46d71572b&amp;utm_medium=3Demail&amp;utm_source=3Drequ=
+est_a_quote_first_message_v2&amp;utm_campaign=3DApr-23-2025" class=3D"yelp-=
+email-gbgks" style=3D'font-family:"Open Sans","Helvetica Neue",Helvetica,Ar=
+ial,sans-serif;border-radius:3px;text-decoration:none;font-weight:600;color=
+:rgba(2,122,151,1);font-size:14px;line-height:20px;'><img src=3D"https://s3=
+-media0.fl.yelpcdn.com/assets/public/24x24_social_share_yelp_blog_v2@2x.yji=
+-ce9bfa408cd8da321dc3.png" alt=3D"Link to Yelp&#8217;s official blog" width=
+=3D"24" height=3D"24"></a></div></div></div></div><div class=3D"yelp-email-=
+1nq6ldo" style=3D"margin-bottom:20px!important;border-color:rgba(235,235,23=
+5,1);white-space:nowrap;text-align:center;"><p class=3D"yelp-email-1nax0kx"=
+ style=3D'font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-ser=
+if;font-size:14px;font-weight:400;letter-spacing:0px;line-height:20px;color=
+:rgba(45,46,47,1);text-align:center;'>This email was sent to<!-- -->&#160;<=
+a href=3D"mailto:seandinwiddie@gmail.com" class=3D"yelp-email-1gfkpv" style=
+=3D'font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;bor=
+der-radius:3px;text-decoration:none;font-weight:normal;color:inherit;font-s=
+ize:14px;line-height:20px;text-decoration:underline;'>seandinwiddie@gmail.c=
+om</a></p><p class=3D"yelp-email-1nax0kx" style=3D'font-family:"Open Sans",=
+"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;=
+letter-spacing:0px;line-height:20px;color:rgba(45,46,47,1);text-align:cente=
+r;'>Manage <a href=3D"https://biz.yelp.com/settings/email?ytl_=3D8ebae60915=
+7742583640e8b46d71572b&amp;utm_medium=3Demail&amp;utm_source=3Drequest_a_qu=
+ote_first_message_v2&amp;utm_campaign=3DApr-23-2025" class=3D"yelp-email-yw=
+e5zp" style=3D'font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,san=
+s-serif;border-radius:3px;text-decoration:none;font-weight:normal;color:inh=
+erit;font-size:inherit;text-decoration:underline;'>email preferences</a><sp=
+an class=3D"yelp-email-1n7uvtf" style=3D'font-family:"Open Sans","Helvetica=
+ Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;letter-spa=
+cing:0px;line-height:20px;color:rgba(45,46,47,1);text-align:left;'>&#160;|&=
+#160;</span><a href=3D"https://biz.yelp.com/block_notifications/7UOLdqN_P16=
+ErUqDQAMZiZyg7JAZObJkM9dTS4nJXVPqc1bvQ7yxCA/message_the_business/?ytl_=3D8e=
+bae609157742583640e8b46d71572b&amp;utm_medium=3Demail&amp;utm_source=3Drequ=
+est_a_quote_first_message_v2&amp;utm_campaign=3DApr-23-2025" class=3D"yelp-=
+email-ywe5zp" style=3D'font-family:"Open Sans","Helvetica Neue",Helvetica,A=
+rial,sans-serif;border-radius:3px;text-decoration:none;font-weight:normal;c=
+olor:inherit;font-size:inherit;text-decoration:underline;'>Unsubscribe</a><=
+/p></div><div class=3D"yelp-email-7cqze1" style=3D"margin-bottom:16px!impor=
+tant;border-color:rgba(235,235,235,1);"><p class=3D"yelp-email-1nax0kx" sty=
+le=3D'font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;f=
+ont-size:14px;font-weight:400;letter-spacing:0px;line-height:20px;color:rgb=
+a(45,46,47,1);text-align:center;'>&#169; 2025 | Yelp Inc, 350 Mission Stree=
+t, San Francisco, CA 94105, USA | <a href=3D"https://business.yelp.com?ytl_=
+=3D8ebae609157742583640e8b46d71572b&amp;utm_medium=3Demail&amp;utm_source=
+=3Drequest_a_quote_first_message_v2&amp;utm_campaign=3DApr-23-2025" class=
+=3D"yelp-email-1ywufjh" style=3D'font-family:"Open Sans","Helvetica Neue",H=
+elvetica,Arial,sans-serif;border-radius:3px;text-decoration:none;font-weigh=
+t:normal;color:inherit;font-size:14px;line-height:20px;text-decoration:unde=
+rline;display:block;'>business.yelp.com</a></p></div><div class=3D"yelp-ema=
+il-18ziojo" style=3D"border-color:rgba(235,235,235,1);text-align:center;"><=
+div class=3D"yelp-email-1uccfpb" style=3D"border-color:rgba(235,235,235,1);=
+display:inline-table;"><div class=3D"arrange-unit yelp-email-18sd4pk" style=
+=3D"display:table-cell;padding-right:8px!important;border-color:rgba(235,23=
+5,235,1);"><a href=3D"https://biz.yelp.com/redir?s=3D128616a56f774f3ea83acc=
+7bd6304219939242d619287b97fe69462e57543b92&amp;url=3Dhttps%3A%2F%2Fapp.adju=
+st.com%2F5nzdby%3Fcreative%3Dapple_btn&amp;ytl_=3D8ebae609157742583640e8b46=
+d71572b&amp;utm_medium=3Demail&amp;utm_source=3Drequest_a_quote_first_messa=
+ge_v2&amp;utm_campaign=3DApr-23-2025" class=3D"yelp-email-gbgks" style=3D'f=
+ont-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;border-r=
+adius:3px;text-decoration:none;font-weight:600;color:rgba(2,122,151,1);font=
+-size:14px;line-height:20px;'><img src=3D"https://s3-media0.fl.yelpcdn.com/=
+assets/public/apple-badge.yji-a5f33dfcd11ed77f9fb4.png" alt=3D"Download on =
+the App Store" width=3D"150" height=3D"50"></a></div><div class=3D"arrange-=
+unit yelp-email-th62py" style=3D"display:table-cell;border-color:rgba(235,2=
+35,235,1);"><a href=3D"https://biz.yelp.com/redir?s=3D1eed7881183d6877f6c22=
+81ca34d4c874c97db964378cef9918b51af0a134e97&amp;url=3Dhttps%3A%2F%2Fapp.adj=
+ust.com%2Fpgjbu2%3Fcreative%3Dandroid_btn&amp;ytl_=3D8ebae609157742583640e8=
+b46d71572b&amp;utm_medium=3Demail&amp;utm_source=3Drequest_a_quote_first_me=
+ssage_v2&amp;utm_campaign=3DApr-23-2025" class=3D"yelp-email-gbgks" style=
+=3D'font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;bor=
+der-radius:3px;text-decoration:none;font-weight:600;color:rgba(2,122,151,1)=
+;font-size:14px;line-height:20px;'><img src=3D"https://s3-media0.fl.yelpcdn=
+.com/assets/public/google-play-badge.yji-f71e95510d9d77d4e771.png" alt=3D"G=
+et it on Google Play" width=3D"168" height=3D"50"></a></div></div></div></d=
+iv></div></div></div><!-- PRAGMA_YELP_BEGIN_RESPONSE --></div>
+
+           =20
+       =20
+    <img src=3D"https://u6746021.ct.sendgrid.net/wf/open?upn=3Du001.h52qACC=
+GFQKAnIe8D7vhNHcu4036V6kKDaISyFDsoHE6Mq0hIncgdJ45fU50MJDiVUHiTLaUq8trDXeJkR=
+URQc49-2BxVzLEnU8-2FuPQ2CMcSycPaZn-2Bc-2B4Y2eKjqkFdq2iupOdUXsLMgVOWdPssNcbm=
+AkT3pF1iE5XSCPkw38xJJft4D-2FLVtRq3ai3WCios-2BGpD1zg3Q9BkkCVMO1cOGk2af48omuN=
+HrSI3btmmPZBSyn18UKmWRBsBBm0inGJAk8kazpexboX13BJEvjFK804-2B7Yu2UgbrqP4BUcOP=
+tnl8jy9n-2BkBGzHSnSr1K8D4QKq4HZxxBS5AXJbgEbTdemazUFijYgG8Zjosz4H4SB0uL151s4=
+pi7cVCz8-2Ba86SPp-2Fu8lr-2BoZW4SRr2w0sjy0O0MTyHS9DcCMU2BMn2zAGyYXEI-3D" alt=
+=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !important;=
+width:1px !important;border-width:0 !important;margin-top:0 !important;marg=
+in-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;p=
+adding-top:0 !important;padding-bottom:0 !important;padding-right:0 !import=
+ant;padding-left:0 !important;"/></body></html>
+--===============5535740523465636595==--
