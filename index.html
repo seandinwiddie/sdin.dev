@@ -47,6 +47,16 @@
       {
         font-style: italic !important;
       }
+      
+      @keyframes pulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+      }
+      
+      .pulse-link {
+        animation: pulse 2s infinite ease-in-out;
+      }
     </style>
   </head>
   <body>
@@ -136,7 +146,7 @@
                     Software Engineering Consultant
                     </h3>
                     <h4 class="subtitle">
-                    DFY, DWY, and <a href="coaching/">Coaching</a>
+                    DFY, DWY, and <a href="coaching/" class="pulse-link">Coaching</a>
                     </h4>
                   </div>
                 </section>
