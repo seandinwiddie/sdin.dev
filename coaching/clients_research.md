@@ -24,15 +24,22 @@ This document summarizes the initial research findings for potential clients bas
     *   Tim Tumanic (Founder/Board Member): https://www.linkedin.com/in/tim-tumanic-75709114
     *   Scott Schenk (VP of Operations): Check employees on Company Page: https://www.linkedin.com/company/jr-machine-inc/
     *   Shane Kunschke (VP of Manufacturing): No direct public profile found.
+*   **Email Contact:**
+    *   Company: General contact email from website not found, but they have a "Request Info" form on their website
 
-**2. Chamberlain Machine Inc.**
-*   **Location:** Bellows Falls, VT
+**2. Chamberlain Machine LLC**
+*   **Location:** Walpole, NH (previously listed as Bellows Falls, VT)
 *   **Industry:** Precision CNC Machining & Assembly (Partners with Cascon on hydraulic pumps)
 *   **Size Estimate:** $13M revenue (LeadIQ estimate), 11-50 employees (LinkedIn range). Fits criteria.
 *   **Potential Decision Makers:**
     *   S. B. (Vice President - via LeadIQ, initial only)
     *   D. C. (Manager - Production and HR - via LeadIQ, initial only) - *Potentially relevant for operational/process discussions.*
-*   **Notes:** *Initial search results were confusing due to the similarly named (but much larger) Chamberlain Group. This entry refers to `chamberlainmachine.com` based in Vermont, which appears distinct and fits the size criteria.* Further verification is recommended. Decision maker search needs more depth. Skipped for now due to lack of clear decision-maker contact.
+*   **Email Contact:**
+    *   Engineering: Engineering@chamberlainmachine.com
+    *   Company phone: 603-756-2560
+    *   Mailing Address: PO Box 847, Walpole, NH 03608
+    *   Shipping Address: 17 Huntington Lane, Walpole, NH 03608
+*   **Notes:** *Initial search results were confusing due to the similarly named (but much larger) Chamberlain Group. This entry refers to `chamberlainmachine.com` which fits the size criteria.*
 
 **3. Hardy Machine LLC**
 *   **Location:** Hatfield, PA
@@ -44,6 +51,8 @@ This document summarizes the initial research findings for potential clients bas
 *   **LinkedIn Profiles:**
     *   Bill Hardy (President): Check employees on Company Page: https://www.linkedin.com/company/hardy-machine-llc/
     *   Dwight (Buddy) Miller (Operations Manager): Check employees on Company Page: https://www.linkedin.com/company/hardy-machine-llc/
+*   **Email Contact:**
+    *   Company: info@hardymachinellc.com (from website)
 
 ---
 
@@ -52,9 +61,18 @@ This document summarizes the initial research findings for potential clients bas
 **4. Brazos M & E, Ltd.**
 *   **Location:** Clute, TX
 *   **Industry:** Civil Construction, Plant Site Development, Pipeline Maintenance (Chemical, Petrochemical, Refining focus)
-*   **Size Estimate:** 201-500 employees (LinkedIn range). Revenue information not found. Employee count suggests it *could* be within the target range, possibly at the higher end or slightly above. Worth investigating further.
+*   **Size Estimate:** 201-500 employees (LinkedIn range). Revenue estimated $1-10M (per Visual Visitor). Employee count suggests it *could* be within the target range.
 *   **Potential Decision Makers:**
-    *   *Initial web searches did not reveal specific Owner, COO, CTO, or VP Technology contacts.* Further targeted research (e.g., LinkedIn Sales Navigator, direct outreach) is required. Skipped for now due to lack of clear decision-maker contact.
+    *   Matt Closs (Safety Director)
+    *   Mike White (Area Manager)
+    *   Charles Armstrong (Project Manager)
+    *   Greg Reese (Foreman)
+    *   John Reyna (Foreman)
+*   **Contact Information:**
+    *   Company phone: +1 979-233-2841
+    *   Website: https://www.brazosm-e.com
+    *   Headquarters: 622 Commerce Street, PO Box 388, Clute, TX 77531
+*   **Notes:** Additional research into executive leadership recommended, as current contacts may not be final decision-makers.
 
 ---
 
@@ -70,6 +88,9 @@ This document summarizes the initial research findings for potential clients bas
 *   **LinkedIn Profiles:**
     *   Walter Lynch (CEO): https://www.linkedin.com/in/walter-lynch-008a8852
     *   J.J. Rodeheffer (COO & Co-Founder): Identified via CEO's post: https://www.linkedin.com/posts/walter-lynch-008a8852_the-story-of-zipline-with-coo-and-co-founder-activity-7080607426202255361-LI7Y?trk=public_profile_like_view (Direct profile search recommended)
+*   **Email Contact:**
+    *   Walter Lynch: w*****@ziplin***.com (partial from Wiza)
+    *   General: Contact form on website, phone: 888.469.4754
 
 **6. Ascent Global Logistics**
 *   **Location:** Belleville, MI (HQ)
@@ -89,6 +110,9 @@ This document summarizes the initial research findings for potential clients bas
     *   Richard Miller (Managing Partner)
 *   **LinkedIn Profiles:**
     *   Richard Miller (Managing Partner): https://www.linkedin.com/in/richard-miller-09397a14/
+*   **Email Contact:**
+    *   Company: sales@aersupply.com
+    *   General: Phone: 800-767-7606
 
 ---
 
@@ -104,6 +128,8 @@ This document summarizes the initial research findings for potential clients bas
 *   **LinkedIn Profiles:**
     *   Steven Hake (President & CEO): Profile identified via Wiza: https://wiza.co/d/stambaugh-ness/1791/steven-hake (Direct LinkedIn search recommended)
     *   John Honodel (CIO): Identified in news article: https://insidepublicaccounting.com/2024/01/31/stambaugh-ness-announces-expansion-of-ownership/ (Direct LinkedIn search recommended)
+*   **Email Contact:**
+    *   John Honodel: j*****@stamba***.com (partial from Wiza)
 
 **9. VLP Law Group LLP**
 *   **Location:** Palo Alto, CA (HQ, but distributed model)
@@ -113,13 +139,16 @@ This document summarizes the initial research findings for potential clients bas
     *   Timothy Bowers (Managing Partner)
 *   **LinkedIn Profiles:**
     *   Timothy Bowers (Managing Partner): https://www.linkedin.com/in/timothybowers
+*   **Email Contact:**
+    *   Timothy Bowers: Direct email not found, but he can be contacted through the company website: https://www.vlplawgroup.com/attorneys/timothy-bowers/ (has "Email Timothy" link)
+    *   Company phone: (650) 251-4218
 
 ---
 
 ## Next Steps & Further Research Areas
 
 *   Verify revenue for companies where only employee counts or ranges were found (e.g., Hardy Machine, Brazos M&E, Zipline Logistics, AER Supply, Stambaugh Ness, VLP).
-*   Conduct targeted searches for specific decision-maker roles for companies where initial searches were inconclusive (e.g., Chamberlain, Brazos M&E).
+*   Continue targeted searches for higher-level executive decision-makers at companies where only mid-level managers were identified (e.g., Brazos M&E).
 *   Expand search using more specific industry terms and geographic filters to identify additional candidates in Manufacturing, Construction, Logistics, and Distribution.
 *   Utilize LinkedIn Sales Navigator or similar tools for deeper contact finding and company insights.
-*   Exclude past clients (Carport Central, Compliance Associates, ENPLAN, Veritas Health Systems) from any outreach lists. 
+*   Exclude past clients (Carport Central, Compliance Associates, ENPLAN, Veritas Health Systems) from any outreach lists.
