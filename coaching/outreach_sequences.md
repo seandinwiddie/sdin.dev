@@ -26,6 +26,13 @@
 
     Get these specific insights by simply replying to this email or texting me at 530-638-3238 to set up a time.
 
+    Thank you for your time!
+
+    Kind regards,
+    Sean Paul Payne Dinwiddie
+    Software Development Consultant 🧑🏼‍💻☕
+    https://sdin.dev/coaching
+
 ---
 
 **Email 2 (Follow-up: 3-4 days later):**
@@ -231,6 +238,13 @@
 
     Get 3 specific automation ideas tailored to Hardy Machine by replying to this email or texting me at 530-638-3238.
 
+    Thank you for your time!
+
+    Kind regards,
+    Sean Paul Payne Dinwiddie
+    Software Development Consultant 🧑🏼‍💻☕
+    https://sdin.dev/coaching
+
 ---
 
 **Email 2 (Follow-up: 3-4 days later):**
@@ -333,6 +347,13 @@
     You might be thinking: "We've tried customizing our existing systems before." That's exactly why I'd like to show you our unique approach that delivers ROI within 60 days without disrupting current operations.
 
     Get a clear picture of how these solutions would work specifically for Zipline in a free, 20-minute strategy call. Reply to this email or text me at 530-638-3238 to schedule.
+
+    Thank you for your time!
+
+    Kind regards,
+    Sean Paul Payne Dinwiddie
+    Software Development Consultant 🧑🏼‍💻☕
+    https://sdin.dev/coaching
 
 ---
 
@@ -437,6 +458,13 @@
 
     Discover 3 high-impact automation opportunities specific to AER Supply's workflow. Reply to this email or text me at 530-638-3238 to schedule.
 
+    Thank you for your time!
+
+    Kind regards,
+    Sean Paul Payne Dinwiddie
+    Software Development Consultant 🧑🏼‍💻☕
+    https://sdin.dev/coaching
+
 ---
 
 **Email 2 (Follow-up: 3-4 days later):**
@@ -540,6 +568,13 @@
 
     Discover 3 high-impact automation opportunities specific to Stambaugh Ness. Reply to this email or text me at 530-638-3238 to schedule.
 
+    Thank you for your time!
+
+    Kind regards,
+    Sean Paul Payne Dinwiddie
+    Software Development Consultant 🧑🏼‍💻☕
+    https://sdin.dev/coaching
+
 ---
 
 **Email 2 (Follow-up: 3-4 days later):**
@@ -642,6 +677,13 @@
     You might be concerned about security, adoption, or integration with existing systems—all critical considerations we can address in detail during a free, 20-minute strategy call.
 
     Discover 3 high-impact technology solutions specific to VLP's distributed model. Reply to this email or text me at 530-638-3238 to schedule.
+
+    Thank you for your time!
+
+    Kind regards,
+    Sean Paul Payne Dinwiddie
+    Software Development Consultant 🧑🏼‍💻☕
+    https://sdin.dev/coaching
 
 ---
 
