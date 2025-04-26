@@ -19,7 +19,7 @@
 
     Could automating specific workflows or replacing a cumbersome legacy system unlock significant value for JR Machine?
 
-    I'd welcome the opportunity to share specific ideas in a brief strategy call. You can book a time directly here: [Link to your Calendly or scheduling tool, or use: mailto:sean@sdin.dev?subject=Strategy%20Call%20Request%20-%20JR%20Machine]
+    I'd welcome the opportunity to share specific ideas in a brief strategy call. Simply reply to this email or text me at 530-638-3238 to set up a time.
 
     Best regards,
 
@@ -43,7 +43,7 @@
 
     Is finding scalable, efficient solutions a current priority? If so, a quick chat could be highly valuable.
 
-    Book a Free Strategy Call: [Link to your Calendly or scheduling tool, or use: mailto:sean@sdin.dev?subject=Strategy%20Call%20Request%20-%20JR%20Machine]
+    Simply reply to this email or text me at 530-638-3238 to schedule a free strategy call.
 
     Best regards,
 
@@ -65,7 +65,7 @@
 
     Would a brief 15-minute brainstorming session be helpful to pinpoint potential high-impact automation opportunities within your current operations? No obligation, just sharing insights.
 
-    Let me know what you think.
+    Simply reply to this email or text me at 530-638-3238 to schedule a free session.
 
     Best regards,
 
@@ -86,6 +86,8 @@
     My goal is always to build solutions that pay for themselves multiple times over, saving significant time (like the 30+ hours/week example) and creating scalable, long-term advantages.
 
     If optimizing processes and leveraging technology for better efficiency becomes a priority down the road, please feel free to reach out.
+
+    Simply reply to this email or text me at 530-638-3238 to schedule a free strategy call.
 
     Wishing you and JR Machine continued success.
 
@@ -118,7 +120,7 @@
 
     Could automating specific processes (like quoting, job tracking, or QC documentation) unlock significant value for Hardy Machine?
 
-    I'd be happy to share some specific ideas in a brief strategy call. You can book a time directly here: [Link to your Calendly or scheduling tool, or use: mailto:sean@sdin.dev?subject=Strategy%20Call%20Request%20-%20Hardy%20Machine]
+    I'd be happy to share some specific ideas in a brief strategy call. Simply reply to this email or text me at 530-638-3238 to set up a time.
 
     Best regards,
 
@@ -142,7 +144,7 @@
 
     Is improving operational efficiency and scalability a priority right now? A quick chat could reveal some high-value opportunities.
 
-    Book a Free Strategy Call: [Link to your Calendly or scheduling tool, or use: mailto:sean@sdin.dev?subject=Strategy%20Call%20Request%20-%20Hardy%20Machine]
+    Simply reply to this email or text me at 530-638-3238 to schedule a free strategy call.
 
     Best regards,
 
@@ -164,7 +166,7 @@
 
     Would a brief 15-minute call be useful to brainstorm potential high-impact automation points within your specific operations? No strings attached.
 
-    Let me know what you think.
+    Simply reply to this email or text me at 530-638-3238 to schedule a free session.
 
     Best regards,
 
@@ -185,6 +187,8 @@
     My goal is to build solutions that provide a strong ROI by saving significant time (like the 30+ hours/week example) and improving performance (like the 70% boost example), creating lasting operational advantages.
 
     If enhancing efficiency through tailored technology becomes a focus for Hardy Machine in the future, please feel free to reach out.
+
+    Simply reply to this email or text me at 530-638-3238 to schedule a free strategy call.
 
     Wishing you continued success.
 
@@ -217,7 +221,7 @@
 
     Could targeted automation or a custom tool provide a significant competitive edge for Zipline Logistics?
 
-    I'd welcome the chance to discuss potential high-impact areas in a brief strategy call. Book easily here: [Link to your Calendly or scheduling tool, or use: mailto:sean@sdin.dev?subject=Strategy%20Call%20Request%20-%20Zipline%20Logistics]
+    I'd welcome the chance to discuss potential high-impact areas in a brief strategy call. Simply reply to this email or text me at 530-638-3238 to set up a time.
 
     Best regards,
 
@@ -241,7 +245,7 @@
 
     Is enhancing operational efficiency or client-facing technology a priority for Zipline currently? A short conversation could be very worthwhile.
 
-    Book a Free Strategy Call: [Link to your Calendly or scheduling tool, or use: mailto:sean@sdin.dev?subject=Strategy%20Call%20Request%20-%20Zipline%20Logistics]
+    Simply reply to this email or text me at 530-638-3238 to schedule a free strategy call.
 
     Best regards,
 
@@ -263,6 +267,8 @@
 
     Would a quick 15-minute chat be useful to brainstorm potential high-ROI tech opportunities specific to Zipline's CPG focus? No obligation.
 
+    Simply reply to this email or text me at 530-638-3238 to schedule a free session.
+
     Best regards,
 
     Sean Dinwiddie
@@ -282,6 +288,8 @@
     My aim is always to build solutions that deliver strong ROI by saving time (like the 30+ hours/week example), improving performance (70% boost), and creating scalable advantages tailored to your niche.
 
     If optimizing processes or enhancing your technology stack for CPG clients becomes a greater focus down the line, please feel free to connect.
+
+    Simply reply to this email or text me at 530-638-3238 to schedule a free strategy call.
 
     Wishing you and Zipline Logistics continued success.
 
@@ -314,7 +322,7 @@
 
     Could targeted automation or a custom software solution unlock significant efficiency for AER Supply?
 
-    I'd welcome the opportunity to share specific ideas in a brief strategy call. You can book a time here: [Link to your Calendly or scheduling tool, or use: mailto:sean@sdin.dev?subject=Strategy%20Call%20Request%20-%20AER%20Supply]
+    I'd welcome the opportunity to share specific ideas in a brief strategy call. Simply reply to this email or text me at 530-638-3238 to set up a time.
 
     Best regards,
 
@@ -338,7 +346,7 @@
 
     Is improving operational efficiency or leveraging technology for a better customer/sales experience a priority? A quick chat could be valuable.
 
-    Book a Free Strategy Call: [Link to your Calendly or scheduling tool, or use: mailto:sean@sdin.dev?subject=Strategy%20Call%20Request%20-%20AER%20Supply]
+    Simply reply to this email or text me at 530-638-3238 to schedule a free strategy call.
 
     Best regards,
 
@@ -360,7 +368,7 @@
 
     Would a brief 15-minute call be helpful to explore potential high-value automation opportunities within your distribution workflow? No obligation.
 
-    Let me know your thoughts.
+    Simply reply to this email or text me at 530-638-3238 to schedule a free session.
 
     Best regards,
 
@@ -381,6 +389,8 @@
     My goal is to build solutions that deliver a strong return by saving time (30+ hours/week example), boosting performance (70% gain example), and creating tailored efficiencies that generic software can't provide.
 
     If optimizing your distribution processes with technology becomes a greater focus for AER Supply down the road, please don't hesitate to reach out.
+
+    Simply reply to this email or text me at 530-638-3238 to schedule a free strategy call.
 
     Wishing you and AER Supply continued success.
 
@@ -413,7 +423,7 @@
 
     Could targeted internal automation or a bespoke software solution help Stambaugh Ness scale more effectively?
 
-    I'd welcome the opportunity to share specific ideas relevant to professional services firms in a brief strategy call. Book easily here: [Link to your Calendly or scheduling tool, or use: mailto:sean@sdin.dev?subject=Strategy%20Call%20Request%20-%20Stambaugh%20Ness]
+    I'd welcome the opportunity to share specific ideas relevant to professional services firms in a brief strategy call. Simply reply to this email or text me at 530-638-3238 to set up a time.
 
     Best regards,
 
@@ -437,7 +447,7 @@
 
     Is enhancing internal systems to support future growth a current priority? A quick chat could uncover valuable opportunities. (Perhaps John Honodel, your CIO, might also find this relevant?)
 
-    Book a Free Strategy Call: [Link to your Calendly or scheduling tool, or use: mailto:sean@sdin.dev?subject=Strategy%20Call%20Request%20-%20Stambaugh%20Ness]
+    Simply reply to this email or text me at 530-638-3238 to schedule a free strategy call.
 
     Best regards,
 
@@ -459,6 +469,8 @@
 
     Would a brief 15-minute brainstorming session be helpful to identify potential high-impact internal automation opportunities relevant to a firm like Stambaugh Ness? No obligation, just sharing insights.
 
+    Simply reply to this email or text me at 530-638-3238 to schedule a free session.
+
     Best regards,
 
     Sean Dinwiddie
@@ -478,6 +490,8 @@
     My focus is building solutions that deliver strong ROI by saving significant time (30+ hours/week example), boosting performance (70% gain example), and creating operational advantages tailored to the unique needs of professional services firms.
 
     If optimizing internal systems or leveraging custom tech for operational scale becomes a greater focus for Stambaugh Ness in the future, please feel free to connect.
+
+    Simply reply to this email or text me at 530-638-3238 to schedule a free strategy call.
 
     Wishing you and the team continued success.
 
@@ -510,7 +524,7 @@
 
     Could targeted automation or a custom software solution further optimize VLP's distributed model?
 
-    I'd welcome the chance to discuss potential high-impact areas in a brief strategy call. You can book time here: [Link to your Calendly or scheduling tool, or use: mailto:sean@sdin.dev?subject=Strategy%20Call%20Request%20-%20VLP%20Law%20Group]
+    I'd welcome the chance to discuss potential high-impact areas in a brief strategy call. Simply reply to this email or text me at 530-638-3238 to set up a time.
 
     Best regards,
 
@@ -534,7 +548,7 @@
 
     Is refining the technology infrastructure that supports your remote attorneys a current focus? A quick conversation could be very productive.
 
-    Book a Free Strategy Call: [Link to your Calendly or scheduling tool, or use: mailto:sean@sdin.dev?subject=Strategy%20Call%20Request%20-%20VLP%20Law%20Group]
+    Simply reply to this email or text me at 530-638-3238 to schedule a free strategy call.
 
     Best regards,
 
@@ -556,6 +570,8 @@
 
     Would a short 15-minute call be helpful to brainstorm potential tech solutions tailored to the unique operational needs of a firm like VLP? No obligation.
 
+    Simply reply to this email or text me at 530-638-3238 to schedule a free session.
+
     Best regards,
 
     Sean Dinwiddie
@@ -575,6 +591,8 @@
     My goal is always to build solutions providing strong ROI through time savings (30+ hrs/wk example), performance improvements (70% boost example), and tailored advantages that support remote work efficiency and security.
 
     If leveraging custom technology to further refine your virtual firm model becomes a priority, please feel free to connect.
+
+    Simply reply to this email or text me at 530-638-3238 to schedule a free strategy call.
 
     Wishing you and VLP Law Group continued success.
 
