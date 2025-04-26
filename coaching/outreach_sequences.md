@@ -1,4 +1,5 @@
 ## Outreach Sequence: JR Machine
+[← Research Details](clients_research.md#manufacturing)
 
 **Email Sequence (Targeting President/CEO):**
 
@@ -94,6 +95,7 @@
 ---
 
 ## Outreach Sequence: Hardy Machine LLC
+[← Research Details](clients_research.md#manufacturing)
 
 **Email Sequence (Targeting President):**
 
@@ -189,6 +191,7 @@
 ---
 
 ## Outreach Sequence: Zipline Logistics
+[← Research Details](clients_research.md#logistics)
 
 **Email Sequence (Targeting CEO):**
 
@@ -282,8 +285,9 @@
 ---
 
 ## Outreach Sequence: AER Supply Ltd.
+[← Research Details](clients_research.md#wholesale-distribution)
 
-**Email Sequence (Targeting Managing Partner):**
+**Email Sequence (Targeting President):**
 
 **Goal:** Introduce custom software for marine distribution challenges, highlight ROI (value, time/performance gains), secure strategy call.
 
@@ -377,6 +381,7 @@
 ---
 
 ## Outreach Sequence: Stambaugh Ness
+[← Research Details](clients_research.md#professional-services-potentially-higher-revenueemployee)
 
 **Email Sequence (Targeting CEO/CIO):**
 
@@ -470,6 +475,7 @@
 ---
 
 ## Outreach Sequence: VLP Law Group LLP
+[← Research Details](clients_research.md#professional-services-potentially-higher-revenueemployee)
 
 **Email Sequence (Targeting Managing Partner):**
 
