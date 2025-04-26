@@ -8,7 +8,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Manufacturing
 
-**1. JR Machine**
+**1. JR Machine** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-jr-machine)
 *   **Location:** Shawano, WI
 *   **Industry:** Precision Parts Contract Manufacturing (Specializes in complex parts, superalloys)
 *   **Size Estimate:** ~$12M revenue (as of 2019 article), 11-50 employees (LinkedIn range). Fits criteria.
@@ -41,7 +41,7 @@ This document summarizes the initial research findings for potential clients bas
     *   Shipping Address: 17 Huntington Lane, Walpole, NH 03608
 *   **Notes:** *Initial search results were confusing due to the similarly named (but much larger) Chamberlain Group. This entry refers to `chamberlainmachine.com` which fits the size criteria.*
 
-**3. Hardy Machine LLC**
+**3. Hardy Machine LLC** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-hardy-machine-llc)
 *   **Location:** Hatfield, PA
 *   **Industry:** Precision Milling, Turning, Assembly (Medical, fluid/gas control, electronics, aerospace)
 *   **Size Estimate:** 11-50 employees (LinkedIn range). Revenue not explicitly found, but employee count and industry suggest it likely fits within $5M-$100M.
@@ -78,7 +78,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Logistics
 
-**5. Zipline Logistics**
+**5. Zipline Logistics** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-zipline-logistics)
 *   **Location:** Columbus, OH / Austin, TX
 *   **Industry:** 3PL focused on CPG retail performance.
 *   **Size Estimate:** Revenue not explicitly found. Their focus on CPG retail compliance and recent acquisition activity (Summit Eleven) indicate potential mid-market positioning.
@@ -102,7 +102,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Wholesale Distribution
 
-**7. AER Supply Ltd.**
+**7. AER Supply Ltd.** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-aer-supply-ltd)
 *   **Location:** Seabrook, TX
 *   **Industry:** Marine Wholesale Distribution (Technical Systems)
 *   **Size Estimate:** 11-50 employees (LinkedIn range). Potentially on the lower end ($5M+) but could fit.
@@ -118,7 +118,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Professional Services (Potentially Higher Revenue/Employee)
 
-**8. Stambaugh Ness**
+**8. Stambaugh Ness** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-stambaugh-ness)
 *   **Location:** York, PA (HQ, but remote workforce)
 *   **Industry:** Tax, Technology, Advisory focused on Architecture, Engineering, Construction (AEC) firms.
 *   **Size Estimate:** Revenue not explicitly found. Specialization and service type suggest mid-market potential ($5M-$100M).
@@ -131,7 +131,7 @@ This document summarizes the initial research findings for potential clients bas
 *   **Email Contact:**
     *   John Honodel: j*****@stamba***.com (partial from Wiza)
 
-**9. VLP Law Group LLP**
+**9. VLP Law Group LLP** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-vlp-law-group-llp)
 *   **Location:** Palo Alto, CA (HQ, but distributed model)
 *   **Industry:** Full-service law firm (Corporate, IP, Tech Transactions, M&A).
 *   **Size Estimate:** Revenue not explicitly found. Distributed model; size could fit within the range.
