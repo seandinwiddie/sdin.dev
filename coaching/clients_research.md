@@ -43,7 +43,7 @@ This document summarizes the initial research findings for potential clients bas
     *   Dwight (Buddy) Miller (Operations Manager)
 *   **LinkedIn Profiles:**
     *   Bill Hardy (President): Check employees on Company Page: https://www.linkedin.com/company/hardy-machine-llc/
-    *   Dwight (Buddy) Miller (Director of Operations): Check employees on Company Page: https://www.linkedin.com/company/hardy-machine-llc/
+    *   Dwight (Buddy) Miller (Operations Manager): Check employees on Company Page: https://www.linkedin.com/company/hardy-machine-llc/
 
 ---
 
