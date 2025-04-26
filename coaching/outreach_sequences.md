@@ -24,8 +24,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Your Title/Company]
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -48,6 +48,8 @@
     Best regards,
 
     Sean Dinwiddie
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -68,7 +70,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -89,8 +92,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Your Title/Company]
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -120,8 +123,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Your Title/Company]
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -144,6 +147,8 @@
     Best regards,
 
     Sean Dinwiddie
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -164,7 +169,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -185,8 +191,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Your Title/Company]
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -216,8 +222,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Your Title/Company]
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -240,6 +246,8 @@
     Best regards,
 
     Sean Dinwiddie
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -258,7 +266,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -279,15 +288,15 @@
     Best regards,
 
     Sean Dinwiddie
-    [Your Title/Company]
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
 ## Outreach Sequence: AER Supply Ltd.
 [← Research Details](clients_research.md#wholesale-distribution)
 
-**Email Sequence (Targeting President):**
+**Email Sequence (Targeting Managing Partner):**
 
 **Goal:** Introduce custom software for marine distribution challenges, highlight ROI (value, time/performance gains), secure strategy call.
 
@@ -310,8 +319,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Your Title/Company]
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -334,6 +343,8 @@
     Best regards,
 
     Sean Dinwiddie
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -354,7 +365,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -375,8 +387,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Your Title/Company]
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -406,8 +418,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Your Title/Company]
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -430,6 +442,8 @@
     Best regards,
 
     Sean Dinwiddie
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -448,7 +462,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -469,8 +484,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Your Title/Company]
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -500,8 +515,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Your Title/Company]
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -524,6 +539,8 @@
     Best regards,
 
     Sean Dinwiddie
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -542,7 +559,8 @@
     Best regards,
 
     Sean Dinwiddie
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
 
@@ -563,7 +581,7 @@
     Best regards,
 
     Sean Dinwiddie
-    [Your Title/Company]
-    [Link to sdin.dev/coaching/]
+    Software Automation Consultant
+    sdin.dev/coaching/
 
 ---
