@@ -25,7 +25,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -49,7 +49,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -71,7 +71,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -95,7 +95,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -126,7 +126,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -150,7 +150,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -172,7 +172,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -196,7 +196,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -227,7 +227,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -251,7 +251,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -273,7 +273,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -297,7 +297,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -328,7 +328,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -352,7 +352,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -374,7 +374,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -398,7 +398,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -429,7 +429,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -453,7 +453,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -475,7 +475,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -499,7 +499,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -530,7 +530,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -554,7 +554,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -576,7 +576,7 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
 
@@ -600,6 +600,6 @@
 
     Sean Dinwiddie
     Software Automation Consultant
-    sdin.dev/coaching/
+    https://sdin.dev/coaching
 
 ---
