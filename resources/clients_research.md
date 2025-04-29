@@ -151,4 +151,4 @@ This document summarizes the initial research findings for potential clients bas
 *   Continue targeted searches for higher-level executive decision-makers at companies where only mid-level managers were identified (e.g., Brazos M&E).
 *   Expand search using more specific industry terms and geographic filters to identify additional candidates in Manufacturing, Construction, Logistics, and Distribution.
 *   Utilize LinkedIn Sales Navigator or similar tools for deeper contact finding and company insights.
-*   Exclude past clients (Carport Central, Compliance Associates, ENPLAN, Veritas Health Systems) from any outreach lists.
+*   Exclude past clients (Carport Central, Compliance Associates, ENPLAN, Veritas Health Systems) from any outreach lists. 
