@@ -13,17 +13,11 @@ This document summarizes the initial research findings for potential clients bas
 *   **Industry:** Precision Parts Contract Manufacturing (Specializes in complex parts, superalloys)
 *   **Size Estimate:** ~$12M revenue (as of 2019 article), 11-50 employees (LinkedIn range). Fits criteria.
 *   **Potential Decision Makers:**
-    *   Tim Tumanic (Founder/Board Member)
+    *   Tim Tumanic (Founder/Board Member) - https://www.linkedin.com/in/tim-tumanic-75709114
     *   Parker Tumanic (President)
-    *   Paul Knoll (CEO)
+    *   Paul Knoll (CEO) - https://www.linkedin.com/in/paul-knoll-871360b
     *   Scott Schenk (VP of Operations)
     *   Shane Kunschke (VP of Manufacturing)
-*   **LinkedIn Profiles:**
-    *   Paul Knoll (CEO): https://www.linkedin.com/in/paul-knoll-871360b
-    *   Parker Tumanic (President): Check employees on Company Page: https://www.linkedin.com/company/jr-machine-inc/
-    *   Tim Tumanic (Founder/Board Member): https://www.linkedin.com/in/tim-tumanic-75709114
-    *   Scott Schenk (VP of Operations): Check employees on Company Page: https://www.linkedin.com/company/jr-machine-inc/
-    *   Shane Kunschke (VP of Manufacturing): No direct public profile found.
 *   **Email Contact:**
     *   Company: General contact email from website not found, but they have a "Request Info" form on their website
 
@@ -48,11 +42,21 @@ This document summarizes the initial research findings for potential clients bas
 *   **Potential Decision Makers:**
     *   Bill Hardy (President)
     *   Dwight (Buddy) Miller (Operations Manager)
-*   **LinkedIn Profiles:**
-    *   Bill Hardy (President): Check employees on Company Page: https://www.linkedin.com/company/hardy-machine-llc/
-    *   Dwight (Buddy) Miller (Operations Manager): Check employees on Company Page: https://www.linkedin.com/company/hardy-machine-llc/
 *   **Email Contact:**
     *   Company: info@hardymachinellc.com (from website)
+
+**4. Protolabs, Inc.** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-protolabs)
+*   **Location:** Maple Plain, MN
+*   **Industry:** Digital Manufacturing (CNC machining, 3D printing, injection molding, sheet metal)
+*   **Size Estimate:** $50-100M revenue range, 100-250 employees. Fits criteria.
+*   **Potential Decision Makers:**
+    *   Robert Bodor (President and CEO) - https://www.linkedin.com/in/robert-bodor
+    *   Dan Schumacher (CIO) - https://www.linkedin.com/in/dan-schumacher-23926a/
+    *   Rich Baker (CTO) - https://www.linkedin.com/in/rich-baker-2954a93/
+*   **Email Contact:**
+    *   Company: info@protolabs.com
+    *   Sales: customerservice@protolabs.com
+    *   Phone: 877-479-3680
 
 ---
 
@@ -83,11 +87,8 @@ This document summarizes the initial research findings for potential clients bas
 *   **Industry:** 3PL focused on CPG retail performance.
 *   **Size Estimate:** Revenue not explicitly found. Their focus on CPG retail compliance and recent acquisition activity (Summit Eleven) indicate potential mid-market positioning.
 *   **Potential Decision Makers:**
-    *   Walter Lynch (CEO)
+    *   Walter Lynch (CEO) - https://www.linkedin.com/in/walter-lynch-008a8852
     *   J.J. Rodeheffer (COO & Co-Founder)
-*   **LinkedIn Profiles:**
-    *   Walter Lynch (CEO): https://www.linkedin.com/in/walter-lynch-008a8852
-    *   J.J. Rodeheffer (COO & Co-Founder): Identified via CEO's post: https://www.linkedin.com/posts/walter-lynch-008a8852_the-story-of-zipline-with-coo-and-co-founder-activity-7080607426202255361-LI7Y?trk=public_profile_like_view (Direct profile search recommended)
 *   **Email Contact:**
     *   Walter Lynch: w*****@ziplin***.com (partial from Wiza)
     *   General: Contact form on website, phone: 888.469.4754
@@ -98,18 +99,29 @@ This document summarizes the initial research findings for potential clients bas
 *   **Size Estimate:** $2.5 Billion+ annual revenue stated on website. **Likely too large** based on the $5M-$100M criteria. Keeping for reference but probably not a target.
 *   **Potential Decision Makers:** N/A (Likely too large)
 
+**7. Echo Global Logistics** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-echo-global)
+*   **Location:** Chicago, IL
+*   **Industry:** Transportation Management and Freight Brokerage
+*   **Size Estimate:** $50-100M revenue range, 51-200 employees. Fits criteria.
+*   **Potential Decision Makers:**
+    *   Dave Menzel (President and COO) - https://www.linkedin.com/in/david-menzel-8321031/
+    *   Peter Rogers (CIO) - https://www.linkedin.com/in/pete-rogers-7a12a15/
+    *   Doug Waggoner (CEO) - https://www.linkedin.com/in/dougwaggoner/
+*   **Email Contact:**
+    *   Sales: sales@echo.com
+    *   General: info@echo.com
+    *   Phone: 800-354-7993
+
 ---
 
 ## Wholesale Distribution
 
-**7. AER Supply Ltd.** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-aer-supply-ltd)
+**8. AER Supply Ltd.** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-aer-supply-ltd)
 *   **Location:** Seabrook, TX
 *   **Industry:** Marine Wholesale Distribution (Technical Systems)
 *   **Size Estimate:** 11-50 employees (LinkedIn range). Potentially on the lower end ($5M+) but could fit.
 *   **Potential Decision Makers:**
-    *   Richard Miller (Managing Partner)
-*   **LinkedIn Profiles:**
-    *   Richard Miller (Managing Partner): https://www.linkedin.com/in/richard-miller-09397a14/
+    *   Richard Miller (Managing Partner) - https://www.linkedin.com/in/richard-miller-09397a14/
 *   **Email Contact:**
     *   Company: sales@aersupply.com
     *   General: Phone: 800-767-7606
@@ -118,30 +130,59 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Professional Services (Potentially Higher Revenue/Employee)
 
-**8. Stambaugh Ness** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-stambaugh-ness)
+**9. Stambaugh Ness** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-stambaugh-ness)
 *   **Location:** York, PA (HQ, but remote workforce)
 *   **Industry:** Tax, Technology, Advisory focused on Architecture, Engineering, Construction (AEC) firms.
 *   **Size Estimate:** Revenue not explicitly found. Specialization and service type suggest mid-market potential ($5M-$100M).
 *   **Potential Decision Makers:**
     *   Steven L. Hake (President & CEO)
     *   John Honodel (CIO)
-*   **LinkedIn Profiles:**
-    *   Steven Hake (President & CEO): Profile identified via Wiza: https://wiza.co/d/stambaugh-ness/1791/steven-hake (Direct LinkedIn search recommended)
-    *   John Honodel (CIO): Identified in news article: https://insidepublicaccounting.com/2024/01/31/stambaugh-ness-announces-expansion-of-ownership/ (Direct LinkedIn search recommended)
 *   **Email Contact:**
     *   John Honodel: j*****@stamba***.com (partial from Wiza)
 
-**9. VLP Law Group LLP** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-vlp-law-group-llp)
+**10. VLP Law Group LLP** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-vlp-law-group-llp)
 *   **Location:** Palo Alto, CA (HQ, but distributed model)
 *   **Industry:** Full-service law firm (Corporate, IP, Tech Transactions, M&A).
 *   **Size Estimate:** Revenue not explicitly found. Distributed model; size could fit within the range.
 *   **Potential Decision Makers:**
-    *   Timothy Bowers (Managing Partner)
-*   **LinkedIn Profiles:**
-    *   Timothy Bowers (Managing Partner): https://www.linkedin.com/in/timothybowers
+    *   Timothy Bowers (Managing Partner) - https://www.linkedin.com/in/timothybowers
 *   **Email Contact:**
     *   Timothy Bowers: Direct email not found, but he can be contacted through the company website: https://www.vlplawgroup.com/attorneys/timothy-bowers/ (has "Email Timothy" link)
     *   Company phone: (650) 251-4218
+
+---
+
+## Healthcare/Medical Technology
+
+**11. Medpod Inc.** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-medpod)
+*   **Location:** Ronkonkoma, NY
+*   **Industry:** Telemedicine & Remote Patient Monitoring
+*   **Size Estimate:** $10-20M revenue, 51-200 employees. Fits criteria.
+*   **Potential Decision Makers:**
+    *   Jack Tawil (CEO & Chairman) - https://www.linkedin.com/in/jack-tawil-4551bb8/
+    *   Dr. Snehal Patel (CTO) - https://www.linkedin.com/in/snehal-patel-md-mba-58a9602/
+    *   Mike Patel (VP of Business Development) - https://www.linkedin.com/in/mikepatel-medtech/
+*   **Email Contact:**
+    *   Sales: sales@medpodhealth.com
+    *   General: info@medpodhealth.com
+    *   Phone: 631-392-4176
+
+---
+
+## Financial Technology (FinTech)
+
+**12. Lendflow** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-lendflow)
+*   **Location:** Austin, TX
+*   **Industry:** Embedded Finance & Credit API Platform
+*   **Size Estimate:** $15-25M revenue, 51-200 employees. Fits criteria.
+*   **Potential Decision Makers:**
+    *   Jon Fry (CEO & Co-Founder) - https://www.linkedin.com/in/jonfrytx/
+    *   Sean Wilkinson (CTO & Co-Founder)
+    *   Brandon Greer (Head of Engineering)
+*   **Email Contact:**
+    *   Sales: sales@lendflow.com
+    *   General: info@lendflow.com
+    *   Phone: 512-782-4025
 
 ---
 
