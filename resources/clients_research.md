@@ -202,6 +202,16 @@ This document summarizes the initial research findings for potential clients bas
     *   Media: media.relations@techmahindra.com
 *   **Notes:** Recent financial performance shows strong growth with 92.6% YoY increase in profit after tax in Q3 FY25. They've launched several AI initiatives including "TechM agentX" (GenAI-powered solutions) and partnerships with NVIDIA, AWS, and Microsoft, indicating investment in emerging technologies.
 
+**14. RecordPoint** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-recordpoint)
+*   **Location:** Issaquah, WA (USA)
+*   **Industry:** Information Governance & Records Management Software (Compliance, Data Management)
+*   **Size Estimate:** Estimate needed. Company specializes in records management and compliance solutions. Size verification required to confirm mid-market fit.
+*   **Potential Decision Makers:**
+    *   Josh Mason (Technology Executive) - https://www.linkedin.com/in/jmason-exec/
+*   **Email Contact:**
+    *   Contact information needs to be researched
+*   **Notes:** Josh's profile indicates interest in AI technologies, cloud infrastructure (particularly Google Cloud/Vertex AI), and handling regulated/sensitive data. RecordPoint likely faces challenges integrating new AI capabilities with governance and compliance requirements, representing an opportunity for custom internal tooling or integration solutions.
+
 ---
 
 ## Next Steps & Further Research Areas
