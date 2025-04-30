@@ -226,6 +226,16 @@ This document summarizes the initial research findings for potential clients bas
     *   Contact information needs to be researched
 *   **Notes:** Jeffrey's profile shows significant interest in AI (particularly agentic AI), data pipelines, and optimization problems. He has a patent for workforce scheduling systems. His recommendations highlight expertise in technology strategy, data pipelines, and integration solutions. Events.com likely faces challenges with platform scalability, AI feature integration, and data processing optimization, which aligns with custom software development opportunities.
 
+**16. Power Meta Corp**
+*   **Location:** Santa Ana, CA
+*   **Industry:** Technology (Blockchain/AI)
+*   **Size Estimate:** Revenue verification needed. Company appears to work in blockchain technology with AI integration.
+*   **Potential Decision Makers:**
+    *   Chase Donahoe (CTO) - https://www.linkedin.com/in/chase-donahoe/
+*   **Email Contact:**
+    *   Contact information needs to be researched
+*   **Notes:** Chase's profile indicates involvement with blockchain technology (ADION platform) and artificial intelligence. He has participated in technology conferences including GenAI Summit and San Francisco Tech Week. His background includes software engineering experience with technologies like React, Express, Redux, Python, and Flask. The company appears to be active in the emerging technology space, particularly at the intersection of blockchain and AI.
+
 ---
 
 ## Next Steps & Further Research Areas
