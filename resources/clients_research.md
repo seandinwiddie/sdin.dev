@@ -209,11 +209,23 @@ This document summarizes the initial research findings for potential clients bas
     *   Contact information needs to be researched
 *   **Notes:** As a FinTech company providing financing solutions for vehicle protection plans and F&I products, Line 5 likely requires custom software for loan origination, dealer portals, customer management, and compliance tracking. They promote their "E-Rating & E-Contracting platform" as a key offering, suggesting a focus on digital solutions. Their in-house collections and customer service teams handle ongoing customer relationships, potentially requiring integrated systems for account management and communication.
 
+**15. BlockFi**
+*   **Location:** Jersey City, NJ
+*   **Industry:** Cryptocurrency Financial Services (Lending, Trading, Credit Cards)
+*   **Size Estimate:** Previously valued at $3 billion (2021), filed for bankruptcy in November 2022 following FTX collapse. Currently in recovery phase with plans to make customers whole. Size determination may be challenging given restructuring status.
+*   **Potential Decision Makers:**
+    *   Alexander Grigoryan (CTO) - https://www.linkedin.com/in/alexgrigoryan/
+    *   Zac Prince (CEO & Founder)
+    *   Flori Marquez (COO & Founder)
+*   **Email Contact:**
+    *   Contact information needs to be researched
+*   **Notes:** Alexander Grigoryan brings 15+ years of engineering and management experience from companies including PayPal, Walmart, and Skillz. His background includes scaling global engineering organizations and developing mobile payments technology. BlockFi has been working through bankruptcy proceedings since 2022 but announced in July 2024 they expect to make customers whole. Their technology platform previously offered cryptocurrency lending, trading, and a rewards credit card. Current technology needs may focus on reorganization, compliance systems, and customer reimbursement infrastructure.
+
 ---
 
 ## IT Services & Digital Solutions
 
-**15. Tech Mahindra**
+**16. Tech Mahindra**
 *   **Location:** Pune, India (Global operations in 90+ countries)
 *   **Industry:** IT Services & Digital Solutions (Consulting, Cloud, AI, Engineering Services, Network Services)
 *   **Size Estimate:** $4.77 billion revenue (Forbes), 150,000+ employees globally. While revenue exceeds the $5M-$100M target range, their business unit structure may offer targeted engagement opportunities.
@@ -227,7 +239,7 @@ This document summarizes the initial research findings for potential clients bas
     *   Media: media.relations@techmahindra.com
 *   **Notes:** Recent financial performance shows strong growth with 92.6% YoY increase in profit after tax in Q3 FY25. They've launched several AI initiatives including "TechM agentX" (GenAI-powered solutions) and partnerships with NVIDIA, AWS, and Microsoft, indicating investment in emerging technologies.
 
-**16. RecordPoint** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-recordpoint)
+**17. RecordPoint** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-recordpoint)
 *   **Location:** Issaquah, WA (USA)
 *   **Industry:** Information Governance & Records Management Software (Compliance, Data Management)
 *   **Size Estimate:** Estimate needed. Company specializes in records management and compliance solutions. Size verification required to confirm mid-market fit.
@@ -241,7 +253,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Technology/SaaS
 
-**17. Events.com** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-eventscom)
+**18. Events.com** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-eventscom)
 *   **Location:** San Diego, CA
 *   **Industry:** Event Technology & Management SaaS Platform
 *   **Size Estimate:** Revenue verification needed. Company provides an event management platform for organizers and attendees.
@@ -251,7 +263,7 @@ This document summarizes the initial research findings for potential clients bas
     *   Contact information needs to be researched
 *   **Notes:** Jeffrey's profile shows significant interest in AI (particularly agentic AI), data pipelines, and optimization problems. He has a patent for workforce scheduling systems. His recommendations highlight expertise in technology strategy, data pipelines, and integration solutions. Events.com likely faces challenges with platform scalability, AI feature integration, and data processing optimization, which aligns with custom software development opportunities.
 
-**18. Power Meta Corp**
+**19. Power Meta Corp**
 *   **Location:** Santa Ana, CA
 *   **Industry:** Technology (Blockchain/AI)
 *   **Size Estimate:** Revenue verification needed. Company appears to work in blockchain technology with AI integration.
@@ -261,7 +273,7 @@ This document summarizes the initial research findings for potential clients bas
     *   Contact information needs to be researched
 *   **Notes:** Chase's profile indicates involvement with blockchain technology (ADION platform) and artificial intelligence. He has participated in technology conferences including GenAI Summit and San Francisco Tech Week. His background includes software engineering experience with technologies like React, Express, Redux, Python, and Flask. The company appears to be active in the emerging technology space, particularly at the intersection of blockchain and AI.
 
-**19. Limo Anywhere**
+**20. Limo Anywhere**
 *   **Location:** Phoenix, AZ
 *   **Industry:** Transportation Technology/SaaS
 *   **Size Estimate:** Revenue verification needed. Company provides transportation management software for the ground transportation industry.
@@ -275,7 +287,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Financial Services
 
-**20. South River Mortgage**
+**21. South River Mortgage**
 *   **Location:** Location verification needed
 *   **Industry:** Financial Services/Mortgage
 *   **Size Estimate:** Revenue verification needed. Company provides mortgage services with likely needs for loan processing and customer management systems.
@@ -289,7 +301,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Data Center Technology & Cryptocurrency
 
-**21. CleanSpark**
+**22. CleanSpark**
 *   **Location:** Scottsdale, AZ
 *   **Industry:** Data Center Technology/Bitcoin Mining
 *   **Size Estimate:** Revenue verification needed. Company focuses on Bitcoin mining operations and data center cooling technology.
