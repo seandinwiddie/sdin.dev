@@ -63,6 +63,50 @@
           color: white !important;
         }
         
+        /* Enhance main title and subtitle contrast */
+        .title.is-1, .subtitle.is-3 {
+          color: #000 !important;
+          text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8) !important;
+          font-weight: 700 !important;
+        }
+        
+        /* Add semi-transparent background behind titles for better readability */
+        .hero-body .content {
+          background-color: rgba(255, 255, 255, 0.7);
+          padding: 20px;
+          border-radius: 12px;
+        }
+        
+        /* Enhance CTA section */
+        .has-text-centered .title.is-4 {
+          color: #000 !important;
+          background-color: rgba(255, 255, 255, 0.8);
+          padding: 10px;
+          display: inline-block;
+          border-radius: 5px;
+          font-weight: 700 !important;
+        }
+        
+        /* Make paragraph text in the CTA section more readable */
+        .has-text-centered .is-size-5 {
+          color: #000 !important;
+          background-color: rgba(255, 255, 255, 0.8);
+          padding: 10px;
+          border-radius: 5px;
+          font-weight: 500 !important;
+        }
+        
+        /* Fix for notification warning that might have poor contrast */
+        .notification.is-warning.is-light {
+          background-color: rgba(243, 156, 18, 0.2) !important;
+        }
+        
+        .notification.is-warning.is-light p {
+          color: #000 !important;
+          text-shadow: none !important;
+          font-weight: 600 !important;
+        }
+        
         .testimonial-box p, 
         .card-content p,
         .notification p,
