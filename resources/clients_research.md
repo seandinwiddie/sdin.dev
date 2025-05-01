@@ -78,11 +78,23 @@ This document summarizes the initial research findings for potential clients bas
     *   Headquarters: 622 Commerce Street, PO Box 388, Clute, TX 77531
 *   **Notes:** Additional research into executive leadership recommended, as current contacts may not be final decision-makers.
 
+**5. PLOT Jobsite Coordination**
+*   **Location:** Wichita, KS (HQ)
+*   **Industry:** Construction Technology (Procurement and Delivery Coordination Software for General Contractors)
+*   **Size Estimate:** 1-10 employees (Company website). Revenue verification needed, but likely fits within mid-market criteria based on team size and industry focus.
+*   **Potential Decision Makers:**
+    *   Eric Biven (CTO) - https://www.linkedin.com/in/ebiven/
+    *   Chris Callen (CEO & Founder)
+*   **Email Contact:**
+    *   Contact information needs to be researched
+    *   Website: https://www.getplot.com
+*   **Notes:** Eric has extensive technology leadership experience with AWS certifications (Solutions Architect Professional/Associate, Developer Associate) and a strong software engineering background. PLOT focuses on construction software that reduces chaos for contractors by helping them manage schedules, materials, and deliveries. The company was founded in 2021 by Chris Callen, a second-generation construction professional. Their procurement dashboard tool includes lead time analysis capabilities, suggesting potential interest in data analytics and process optimization solutions.
+
 ---
 
 ## Logistics
 
-**5. Zipline Logistics** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-zipline-logistics)
+**6. Zipline Logistics** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-zipline-logistics)
 *   **Location:** Columbus, OH / Austin, TX
 *   **Industry:** 3PL focused on CPG retail performance.
 *   **Size Estimate:** Revenue not explicitly found. Their focus on CPG retail compliance and recent acquisition activity (Summit Eleven) indicate potential mid-market positioning.
@@ -93,13 +105,13 @@ This document summarizes the initial research findings for potential clients bas
     *   Walter Lynch: w*****@ziplin***.com (partial from Wiza)
     *   General: Contact form on website, phone: 888.469.4754
 
-**6. Ascent Global Logistics**
+**7. Ascent Global Logistics**
 *   **Location:** Belleville, MI (HQ)
 *   **Industry:** Global Logistics (Brokerage, Forwarding, On-Demand, Managed Transportation)
 *   **Size Estimate:** $2.5 Billion+ annual revenue stated on website. **Likely too large** based on the $5M-$100M criteria. Keeping for reference but probably not a target.
 *   **Potential Decision Makers:** N/A (Likely too large)
 
-**7. Echo Global Logistics** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-echo-global)
+**8. Echo Global Logistics** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-echo-global)
 *   **Location:** Chicago, IL
 *   **Industry:** Transportation Management and Freight Brokerage
 *   **Size Estimate:** $50-100M revenue range, 51-200 employees. Fits criteria.
@@ -116,7 +128,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Wholesale Distribution
 
-**8. AER Supply Ltd.** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-aer-supply-ltd)
+**9. AER Supply Ltd.** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-aer-supply-ltd)
 *   **Location:** Seabrook, TX
 *   **Industry:** Marine Wholesale Distribution (Technical Systems)
 *   **Size Estimate:** 11-50 employees (LinkedIn range). Potentially on the lower end ($5M+) but could fit.
@@ -130,7 +142,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Professional Services (Potentially Higher Revenue/Employee)
 
-**9. Stambaugh Ness** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-stambaugh-ness)
+**10. Stambaugh Ness** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-stambaugh-ness)
 *   **Location:** York, PA (HQ, but remote workforce)
 *   **Industry:** Tax, Technology, Advisory focused on Architecture, Engineering, Construction (AEC) firms.
 *   **Size Estimate:** Revenue not explicitly found. Specialization and service type suggest mid-market potential ($5M-$100M).
@@ -140,7 +152,7 @@ This document summarizes the initial research findings for potential clients bas
 *   **Email Contact:**
     *   John Honodel: j*****@stamba***.com (partial from Wiza)
 
-**10. VLP Law Group LLP** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-vlp-law-group-llp)
+**11. VLP Law Group LLP** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-vlp-law-group-llp)
 *   **Location:** Palo Alto, CA (HQ, but distributed model)
 *   **Industry:** Full-service law firm (Corporate, IP, Tech Transactions, M&A).
 *   **Size Estimate:** Revenue not explicitly found. Distributed model; size could fit within the range.
@@ -154,7 +166,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Healthcare/Medical Technology
 
-**11. Medpod Inc.** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-medpod)
+**12. Medpod Inc.** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-medpod)
 *   **Location:** Ronkonkoma, NY
 *   **Industry:** Telemedicine & Remote Patient Monitoring
 *   **Size Estimate:** $10-20M revenue, 51-200 employees. Fits criteria.
@@ -171,7 +183,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Financial Technology (FinTech)
 
-**12. Lendflow** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-lendflow)
+**13. Lendflow** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-lendflow)
 *   **Location:** Austin, TX
 *   **Industry:** Embedded Finance & Credit API Platform
 *   **Size Estimate:** $15-25M revenue, 51-200 employees. Fits criteria.
@@ -188,7 +200,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## IT Services & Digital Solutions
 
-**13. Tech Mahindra**
+**14. Tech Mahindra**
 *   **Location:** Pune, India (Global operations in 90+ countries)
 *   **Industry:** IT Services & Digital Solutions (Consulting, Cloud, AI, Engineering Services, Network Services)
 *   **Size Estimate:** $4.77 billion revenue (Forbes), 150,000+ employees globally. While revenue exceeds the $5M-$100M target range, their business unit structure may offer targeted engagement opportunities.
@@ -202,7 +214,7 @@ This document summarizes the initial research findings for potential clients bas
     *   Media: media.relations@techmahindra.com
 *   **Notes:** Recent financial performance shows strong growth with 92.6% YoY increase in profit after tax in Q3 FY25. They've launched several AI initiatives including "TechM agentX" (GenAI-powered solutions) and partnerships with NVIDIA, AWS, and Microsoft, indicating investment in emerging technologies.
 
-**14. RecordPoint** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-recordpoint)
+**15. RecordPoint** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-recordpoint)
 *   **Location:** Issaquah, WA (USA)
 *   **Industry:** Information Governance & Records Management Software (Compliance, Data Management)
 *   **Size Estimate:** Estimate needed. Company specializes in records management and compliance solutions. Size verification required to confirm mid-market fit.
@@ -216,7 +228,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Technology/SaaS
 
-**15. Events.com** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-eventscom)
+**16. Events.com** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-eventscom)
 *   **Location:** San Diego, CA
 *   **Industry:** Event Technology & Management SaaS Platform
 *   **Size Estimate:** Revenue verification needed. Company provides an event management platform for organizers and attendees.
@@ -226,7 +238,7 @@ This document summarizes the initial research findings for potential clients bas
     *   Contact information needs to be researched
 *   **Notes:** Jeffrey's profile shows significant interest in AI (particularly agentic AI), data pipelines, and optimization problems. He has a patent for workforce scheduling systems. His recommendations highlight expertise in technology strategy, data pipelines, and integration solutions. Events.com likely faces challenges with platform scalability, AI feature integration, and data processing optimization, which aligns with custom software development opportunities.
 
-**16. Power Meta Corp**
+**17. Power Meta Corp**
 *   **Location:** Santa Ana, CA
 *   **Industry:** Technology (Blockchain/AI)
 *   **Size Estimate:** Revenue verification needed. Company appears to work in blockchain technology with AI integration.
@@ -236,7 +248,7 @@ This document summarizes the initial research findings for potential clients bas
     *   Contact information needs to be researched
 *   **Notes:** Chase's profile indicates involvement with blockchain technology (ADION platform) and artificial intelligence. He has participated in technology conferences including GenAI Summit and San Francisco Tech Week. His background includes software engineering experience with technologies like React, Express, Redux, Python, and Flask. The company appears to be active in the emerging technology space, particularly at the intersection of blockchain and AI.
 
-**17. Limo Anywhere**
+**18. Limo Anywhere**
 *   **Location:** Phoenix, AZ
 *   **Industry:** Transportation Technology/SaaS
 *   **Size Estimate:** Revenue verification needed. Company provides transportation management software for the ground transportation industry.
@@ -250,7 +262,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Financial Services
 
-**18. South River Mortgage**
+**19. South River Mortgage**
 *   **Location:** Location verification needed
 *   **Industry:** Financial Services/Mortgage
 *   **Size Estimate:** Revenue verification needed. Company provides mortgage services with likely needs for loan processing and customer management systems.
@@ -264,7 +276,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Data Center Technology & Cryptocurrency
 
-**19. CleanSpark**
+**20. CleanSpark**
 *   **Location:** Scottsdale, AZ
 *   **Industry:** Data Center Technology/Bitcoin Mining
 *   **Size Estimate:** Revenue verification needed. Company focuses on Bitcoin mining operations and data center cooling technology.
