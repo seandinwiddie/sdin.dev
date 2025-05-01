@@ -959,7 +959,7 @@ Have you been exploring specific challenges in integrating AI capabilities with 
 I'd enjoy connecting for a brief conversation if you have a few minutes to share your perspective.
 
 Sean
-530-638-3238
+vm 530-638-3238
 https://sdin.dev/coaching
 
 ---
