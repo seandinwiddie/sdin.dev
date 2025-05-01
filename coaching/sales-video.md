@@ -4,7 +4,7 @@
 
 **[Start: Screen share showing terminal with code]**
 
-"Hey, fellow CTOs. Sean Dinwiddie here.
+"Hey, fellow technologists. Sean Dinwiddie here.
 
 Are off-the-shelf solutions draining your budget while still not solving your unique challenges?
 
