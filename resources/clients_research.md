@@ -239,7 +239,17 @@ This document summarizes the initial research findings for potential clients bas
     *   Media: media.relations@techmahindra.com
 *   **Notes:** Recent financial performance shows strong growth with 92.6% YoY increase in profit after tax in Q3 FY25. They've launched several AI initiatives including "TechM agentX" (GenAI-powered solutions) and partnerships with NVIDIA, AWS, and Microsoft, indicating investment in emerging technologies.
 
-**17. RecordPoint** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-recordpoint)
+**17. Publicis Sapient**
+*   **Location:** Global operations (Publicis Groupe)
+*   **Industry:** Digital Transformation Consulting & Technology Services (Customer Data Solutions)
+*   **Size Estimate:** Part of Publicis Groupe ($14+ billion revenue). The Customer Data Solutions division could offer targeted engagement opportunities within their business unit structure.
+*   **Potential Decision Makers:**
+    *   Raymond Velez (EVP & Chief Technology Officer for Customer Data Solutions) - https://www.linkedin.com/in/rayvelez/
+*   **Email Contact:**
+    *   Contact information needs to be researched
+*   **Notes:** Raymond Velez oversees Customer Data Solutions, suggesting his focus includes data integration, customer analytics, and personalization technologies. As an EVP and CTO, he likely has significant decision-making authority for technology investments and strategy. Publicis Sapient likely faces challenges with legacy system integration, data orchestration, and implementing modern customer data platforms that could benefit from custom software solutions. Their large enterprise clients may require specialized tools for data compliance, analytics, and cross-channel customer journey management.
+
+**18. RecordPoint** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-recordpoint)
 *   **Location:** Issaquah, WA (USA)
 *   **Industry:** Information Governance & Records Management Software (Compliance, Data Management)
 *   **Size Estimate:** Estimate needed. Company specializes in records management and compliance solutions. Size verification required to confirm mid-market fit.
@@ -253,7 +263,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Technology/SaaS
 
-**18. Events.com** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-eventscom)
+**19. Events.com** [→ Outreach Sequence](outreach_sequences.md#outreach-sequence-eventscom)
 *   **Location:** San Diego, CA
 *   **Industry:** Event Technology & Management SaaS Platform
 *   **Size Estimate:** Revenue verification needed. Company provides an event management platform for organizers and attendees.
@@ -263,7 +273,7 @@ This document summarizes the initial research findings for potential clients bas
     *   Contact information needs to be researched
 *   **Notes:** Jeffrey's profile shows significant interest in AI (particularly agentic AI), data pipelines, and optimization problems. He has a patent for workforce scheduling systems. His recommendations highlight expertise in technology strategy, data pipelines, and integration solutions. Events.com likely faces challenges with platform scalability, AI feature integration, and data processing optimization, which aligns with custom software development opportunities.
 
-**19. Power Meta Corp**
+**20. Power Meta Corp**
 *   **Location:** Santa Ana, CA
 *   **Industry:** Technology (Blockchain/AI)
 *   **Size Estimate:** Revenue verification needed. Company appears to work in blockchain technology with AI integration.
@@ -273,7 +283,7 @@ This document summarizes the initial research findings for potential clients bas
     *   Contact information needs to be researched
 *   **Notes:** Chase's profile indicates involvement with blockchain technology (ADION platform) and artificial intelligence. He has participated in technology conferences including GenAI Summit and San Francisco Tech Week. His background includes software engineering experience with technologies like React, Express, Redux, Python, and Flask. The company appears to be active in the emerging technology space, particularly at the intersection of blockchain and AI.
 
-**20. Limo Anywhere**
+**21. Limo Anywhere**
 *   **Location:** Phoenix, AZ
 *   **Industry:** Transportation Technology/SaaS
 *   **Size Estimate:** Revenue verification needed. Company provides transportation management software for the ground transportation industry.
@@ -287,7 +297,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Financial Services
 
-**21. South River Mortgage**
+**22. South River Mortgage**
 *   **Location:** Location verification needed
 *   **Industry:** Financial Services/Mortgage
 *   **Size Estimate:** Revenue verification needed. Company provides mortgage services with likely needs for loan processing and customer management systems.
@@ -301,7 +311,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Data Center Technology & Cryptocurrency
 
-**22. CleanSpark**
+**23. CleanSpark**
 *   **Location:** Scottsdale, AZ
 *   **Industry:** Data Center Technology/Bitcoin Mining
 *   **Size Estimate:** Revenue verification needed. Company focuses on Bitcoin mining operations and data center cooling technology.
