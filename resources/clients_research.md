@@ -293,11 +293,21 @@ This document summarizes the initial research findings for potential clients bas
     *   Contact information needs to be researched
 *   **Notes:** Melissa has extensive IT management experience, including implementing formal ticket processes using JIRA and consolidating multiple databases (merged 15 separate databases into one). She has expertise in .NET, SQL, and web technologies, as well as experience with WCAG 2.0 accessibility standards. Her background managing development staff and handling complex IT projects suggests she has decision-making authority on technology initiatives. She has experience with system modernization, which aligns well with custom software development opportunities.
 
+**22. Certinia (formerly FinancialForce)**
+*   **Location:** San Francisco, CA (HQ, with global operations)
+*   **Industry:** Cloud ERP Software (Financial Management, PSA, Billing)
+*   **Size Estimate:** Private company that has raised over $200M in funding. Estimated annual revenue $100M-$200M based on market position. Size verification needed but likely fits criteria for divisional engagement.
+*   **Potential Decision Makers:**
+    *   Raju Malhotra (Chief Product & Technology Officer) - https://www.linkedin.com/in/rajumalhotra/
+*   **Email Contact:**
+    *   Contact information needs to be researched
+*   **Notes:** Raju leads both product and technology at Certinia, giving him significant decision-making authority over software investments and technical direction. His dual role suggests he balances business priorities with technical implementation, making him receptive to solutions with clear ROI. Certinia provides financial management, PSA, and billing solutions built on the Salesforce platform, likely facing challenges with integration to diverse customer systems, scaling while maintaining performance, complex financial workflow automation, and enhancing data visualization/reporting capabilities. The company recently rebranded from FinancialForce to Certinia (2022), which may indicate broader transformation initiatives where custom development could provide value.
+
 ---
 
 ## Financial Services
 
-**22. South River Mortgage**
+**23. South River Mortgage**
 *   **Location:** Location verification needed
 *   **Industry:** Financial Services/Mortgage
 *   **Size Estimate:** Revenue verification needed. Company provides mortgage services with likely needs for loan processing and customer management systems.
@@ -311,7 +321,7 @@ This document summarizes the initial research findings for potential clients bas
 
 ## Data Center Technology & Cryptocurrency
 
-**23. CleanSpark**
+**24. CleanSpark**
 *   **Location:** Scottsdale, AZ
 *   **Industry:** Data Center Technology/Bitcoin Mining
 *   **Size Estimate:** Revenue verification needed. Company focuses on Bitcoin mining operations and data center cooling technology.
