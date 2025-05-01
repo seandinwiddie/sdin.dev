@@ -1154,6 +1154,14 @@ https://sdin.dev/coaching
 
 ---
 
+Melissa Statom  9:48 AM
+I try not to go looking for integration challenges - they are like uninvited party guests. One minute you are syncing data, the next you are neck deep trying to find reddit posts on an undocumented third-party API that must have been written as a dare. It's more of a 'survival of the most caffeinated'... but that keeps things interesting right?
+
+Seen by Melissa Statom at 9:48 AM.
+
+
+---
+
 **Email 2 (Follow-up: 3-4 days later):**
 *   **Subject:** Re: Your experience with transportation technology
 *   **Body:**
