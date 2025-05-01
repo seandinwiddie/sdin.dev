@@ -236,6 +236,16 @@ This document summarizes the initial research findings for potential clients bas
     *   Contact information needs to be researched
 *   **Notes:** Chase's profile indicates involvement with blockchain technology (ADION platform) and artificial intelligence. He has participated in technology conferences including GenAI Summit and San Francisco Tech Week. His background includes software engineering experience with technologies like React, Express, Redux, Python, and Flask. The company appears to be active in the emerging technology space, particularly at the intersection of blockchain and AI.
 
+**17. Limo Anywhere**
+*   **Location:** Phoenix, AZ
+*   **Industry:** Transportation Technology/SaaS
+*   **Size Estimate:** Revenue verification needed. Company provides transportation management software for the ground transportation industry.
+*   **Potential Decision Makers:**
+    *   Melissa Statom (IT Management) - https://www.linkedin.com/in/melissastatom/
+*   **Email Contact:**
+    *   Contact information needs to be researched
+*   **Notes:** Melissa has extensive IT management experience, including implementing formal ticket processes using JIRA and consolidating multiple databases (merged 15 separate databases into one). She has expertise in .NET, SQL, and web technologies, as well as experience with WCAG 2.0 accessibility standards. Her background managing development staff and handling complex IT projects suggests she has decision-making authority on technology initiatives. She has experience with system modernization, which aligns well with custom software development opportunities.
+
 ---
 
 ## Next Steps & Further Research Areas
