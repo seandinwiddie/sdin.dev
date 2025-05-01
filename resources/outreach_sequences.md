@@ -1504,3 +1504,67 @@ https://sdin.dev/coaching
     Sean Paul Payne Dinwiddie
     Software Development Consultant 🧑🏼‍💻☕
     https://sdin.dev/coaching
+
+---
+
+## Outreach Sequence: BlockFi
+[← Research Details](clients_research.md#financial-technology-fintech)
+
+**Email Sequence (Targeting CTO):**
+
+**Goal:** Introduce custom software solutions for cryptocurrency platform infrastructure, highlight data integration and security optimization opportunities, secure strategy call.
+
+**Email 1:**
+*   **Subject:** Cryptocurrency recovery platform challenges
+*   **Body:**
+
+Hi Alexander,
+
+I noticed your role as CTO at BlockFi and your strong background scaling engineering teams at PayPal, Walmart, and Skillz. As you navigate BlockFi's recovery process, are you facing any interesting technical challenges with customer reimbursement systems or compliance infrastructure?
+
+Sean
+530-638-3238
+https://sdin.dev/coaching
+
+**Email 2:**
+*   **Subject:** Following up: Custom software for crypto platform recovery
+*   **Body:**
+
+Hi Alexander,
+
+I wanted to follow up on my previous message about the technical challenges in cryptocurrency platform recovery.
+
+For CTOs in fintech managing restructuring processes, you're likely balancing regulatory compliance with efficient customer reimbursement systems. I've helped financial technology companies develop custom solutions that streamline complex data flows while maintaining security standards.
+
+For example, I helped a financial services company reduce their compliance reporting time by 72.3% through an automated data validation and submission system.
+
+If you're working on infrastructure modernization or customer distribution systems, I'd be happy to offer some insights. Would a 15-minute conversation be helpful?
+
+Sean
+530-638-3238
+https://sdin.dev/coaching
+
+**Email 3:**
+*   **Subject:** Resource: Navigating technical infrastructure during financial recovery
+*   **Body:**
+
+Hi Alexander,
+
+I hope you don't mind me reaching out once more. Given your experience scaling engineering teams and BlockFi's current recovery phase, I thought you might find this article useful: [Link to relevant article about fintech recovery/rebuilding].
+
+When working with financial technology companies in transition phases, I've found that custom software solutions can provide specific advantages for user verification processes and distribution management:
+
+• 41.9% faster customer identity verification
+• 63.7% reduction in reconciliation errors
+• Streamlined reporting for regulatory compliance
+
+If you're interested in discussing how these approaches might benefit BlockFi's current infrastructure needs, I'd be happy to share more specific examples during a brief call.
+
+Best regards,
+
+Sean
+530-638-3238
+https://sdin.dev/coaching
+
+**LinkedIn Message:**
+Hi Alexander, I saw your background in scaling engineering teams at companies like PayPal and Walmart before joining BlockFi. I work with fintech CTOs on custom software solutions for complex data flows and security systems. Given BlockFi's current transition, would you be open to a quick conversation about technology infrastructure during recovery phases? No pressure either way.
