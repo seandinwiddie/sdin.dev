@@ -57,6 +57,64 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
       
+      /* Improve contrast for light mode */
+      @media (prefers-color-scheme: light) {
+        .hero.is-primary {
+          color: white !important;
+        }
+        
+        .testimonial-box p, 
+        .card-content p,
+        .notification p,
+        .content li,
+        .content p {
+          color: #000 !important;
+          text-shadow: none !important;
+        }
+        
+        .card-content {
+          background-color: rgba(255, 255, 255, 0.9) !important;
+        }
+        
+        .stat-card {
+          background-color: white !important;
+        }
+        
+        .stat-description,
+        .stats-counter {
+          color: #000 !important;
+        }
+        
+        .notification.is-info.is-light {
+          background-color: rgba(52, 152, 219, 0.2) !important;
+        }
+        
+        .notification.is-info.is-light p {
+          color: #000 !important;
+          text-shadow: none !important;
+          font-weight: 600 !important;
+        }
+        
+        .notification.is-info.is-light strong {
+          color: #000 !important;
+        }
+        
+        .testimonial-box {
+          background-color: rgba(255, 255, 255, 0.9) !important;
+          border-left: 4px solid var(--accent-color) !important;
+        }
+      }
+      
+      /* Ensure dark mode maintains good contrast */
+      @media (prefers-color-scheme: dark) {
+        .notification p,
+        .card-content p,
+        .content li,
+        .content p {
+          color: white !important;
+        }
+      }
+      
       .hero.is-primary {
         background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
         color: white;
@@ -680,7 +738,7 @@
                       <a target="_blank" href="https://www.instagram.com/sdin.dev/"><i class="fab fa-instagram"></i></a>
                     </span>
                     <span class="icon">
-                      <a target="_blank" href="https://x.com/seandinwiddie"><i class="fab fa-twitter"></i></a>
+                      <a target="_blank" href="https://x.com/seandinwiddie"><i class="fab fa-x-twitter"></i></a>
                     </span>
                     <span class="icon">
                       <a target="_blank" href="https://www.facebook.com/seanpaulpaynedinwiddie/"><i class="fab fa-facebook"></i></a>
