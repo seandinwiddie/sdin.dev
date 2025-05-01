@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204973696-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-204973696-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      sdin.dev |Custom Software Solutions That Save $50K+ Monthly in Operational Costs
+    </title>
+    <meta name="description" content="Transform your business with high-touch software development and automation consulting that delivers measurable ROI and ongoing monthly savings" />
+    <link rel="canonical" href="https://sdin.dev/coaching/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="sdin.dev | Custom Software Solutions That Save $50K+ Monthly in Operational Costs" />
+    <meta property="og:description" content="Transform your business with high-touch software development and automation consulting that delivers measurable ROI and ongoing monthly savings" />
+    <meta property="og:url" content="https://sdin.dev/coaching/" />
+    <meta property="og:site_name" content="sdin.dev" />
+    <meta property="article:publisher" content="https://www.facebook.com/seanpaulpaynedinwiddie/" />
+    <meta property="og:image" content="https://sdin.dev/profile.png" />
+    <meta property="og:image:width" content="128" />
+    <meta property="og:image:height" content="128" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@seandinwiddie" />
+    <meta name="twitter:label1" content="Est. reading time" />
+    <meta name="twitter:data1" content="3 minutes" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑🏼‍💻</text></svg>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #34495e;
+        --accent-color: #3498db;
+        --text-color: #2c3e50;
+        --light-bg: #f8f9fa;
+        --card-bg: #ffffff;
+        --success-color: #27ae60;
+        --warning-color: #f39c12;
+        --info-color: #3498db;
+      }
+      
+      body {
+        color: var(--text-color);
+        background-color: #f8f9fa;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      
+      /* Improve contrast for light mode */
+      @media (prefers-color-scheme: light) {
+        .hero.is-primary {
+          color: white !important;
+        }
+        
+        /* Enhance main title and subtitle contrast */
+        .title.is-1, .subtitle.is-3 {
+          color: #000 !important;
+          text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8) !important;
+          font-weight: 700 !important;
+        }
+        
+        /* Add semi-transparent background behind titles for better readability */
+        .hero-body .content {
+          background-color: rgba(255, 255, 255, 0.7);
+          padding: 20px;
+          border-radius: 12px;
+        }
+        
+        /* Enhance CTA section */
+        .has-text-centered .title.is-4 {
+          color: #000 !important;
+          background-color: rgba(255, 255, 255, 0.8);
+          padding: 10px;
+          display: inline-block;
+          border-radius: 5px;
+          font-weight: 700 !important;
+        }
+        
+        /* Make paragraph text in the CTA section more readable */
+        .has-text-centered .is-size-5 {
+          color: #000 !important;
+          background-color: rgba(255, 255, 255, 0.8);
+          padding: 10px;
+          border-radius: 5px;
+          font-weight: 500 !important;
+        }
+        
+        /* Fix for notification warning that might have poor contrast */
+        .notification.is-warning.is-light {
+          background-color: rgba(243, 156, 18, 0.2) !important;
+        }
+        
+        .notification.is-warning.is-light p {
+          color: #000 !important;
+          text-shadow: none !important;
+          font-weight: 600 !important;
+        }
+        
+        .testimonial-box p, 
+        .card-content p,
+        .notification p,
+        .content li,
+        .content p {
+          color: #000 !important;
+          text-shadow: none !important;
+        }
+        
+        .card-content {
+          background-color: rgba(255, 255, 255, 0.9) !important;
+        }
+        
+        .stat-card {
+          background-color: white !important;
+        }
+        
+        .stat-description,
+        .stats-counter {
+          color: #000 !important;
+        }
+        
+        .notification.is-info.is-light {
+          background-color: rgba(52, 152, 219, 0.2) !important;
+        }
+        
+        .notification.is-info.is-light p {
+          color: #000 !important;
+          text-shadow: none !important;
+          font-weight: 600 !important;
+        }
+        
+        .notification.is-info.is-light strong {
+          color: #000 !important;
+        }
+        
+        .testimonial-box {
+          background-color: rgba(255, 255, 255, 0.9) !important;
+          border-left: 4px solid var(--accent-color) !important;
+        }
+      }
+      
+      /* Ensure dark mode maintains good contrast */
+      @media (prefers-color-scheme: dark) {
+        .notification p,
+        .card-content p,
+        .content li,
+        .content p {
+          color: white !important;
+        }
+      }
+      
+      .hero.is-primary {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: white;
+      }
+      
+      .hero-body {
+        padding: 3rem 1.5rem;
+      }
+      
+      .title, .subtitle, .card-header-title {
+        color: inherit;
+      }
+      
+      .card {
+        margin-bottom: 2rem;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      }
+      
+      .card-header {
+        background-color: var(--accent-color);
+        color: white;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+      
+      .card-header-title {
+        color: white;
+        font-size: 1.25rem;
+        line-height: 1.3;
+        word-wrap: break-word;
+        hyphens: auto;
+      }
+      
+      /* Fix for value card headers with long titles */
+      .value-card .card-header-title {
+        font-size: 1.15rem;
+      }
+      
+      .notification.is-info.is-light {
+        background-color: rgba(52, 152, 219, 0.15);
+        border-left: 4px solid var(--info-color);
+      }
+      
+      /* Improve text contrast in the notification area */
+      .notification p {
+        color: white;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        font-weight: 500;
+      }
+      
+      .notification strong {
+        color: white;
+        font-weight: 700;
+      }
+      
+      .notification.is-warning.is-light {
+        background-color: rgba(243, 156, 18, 0.15);
+        border-left: 4px solid var(--warning-color);
+      }
+      
+      .value-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      
+      .value-card .card-content {
+        flex-grow: 1;
+      }
+      
+      .value-card .card-header {
+        border-radius: 0;
+      }
+      
+      .value-card img {
+        display: block;
+      }
+      
+      .button.is-primary {
+        background-color: var(--accent-color);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+      
+      .button.is-primary:hover {
+        background-color: #2980b9;
+        transform: scale(1.05);
+      }
+      
+      .box {
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+      }
+      
+      .box:hover {
+        transform: translateX(5px);
+      }
+      
+      .image.is-128x128 {
+        animation: float 6s ease-in-out infinite;
+      }
+      
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+      
+      .fadeIn {
+        animation: fadeIn 1.5s;
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      
+      .stats-counter {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        display: block;
+        color: var(--primary-color);
+      }
+      
+      .stat-description {
+        font-size: 1rem;
+        opacity: 0.8;
+        color: var(--text-color);
+      }
+      
+      .stat-card {
+        padding: 2rem;
+        text-align: center;
+        background-color: var(--card-bg);
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: transform 0.3s ease;
+      }
+      
+      .stat-card:hover {
+        transform: translateY(-5px);
+      }
+      
+      /* Add a subtle background pattern */
+      .hero {
+        position: relative;
+        background-color: var(--primary-color);
+        overflow: hidden;
+      }
+      
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        opacity: 0.5;
+      }
+      
+      .hero-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.15;
+        z-index: -1;
+      }
+      
+      /* Image styling */
+      .feature-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 0;
+        margin-bottom: 0;
+        transition: transform 0.3s ease;
+      }
+      
+      .feature-image:hover {
+        transform: scale(1.03);
+      }
+      
+      .testimonial-image {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 1rem;
+        border: 3px solid var(--accent-color);
+      }
+      
+      .testimonial-box {
+        display: flex;
+        align-items: flex-start;
+      }
+      
+      .testimonial-content {
+        flex: 1;
+      }
+      
+      /* Photo credit */
+      .photo-credit {
+        font-size: 0.7rem;
+        opacity: 0.7;
+        margin-top: 0.5rem;
+        display: none; /* Hide all photo credits */
+      }
+      
+      .notification {
+        border-radius: 12px;
+      }
+      
+      .button {
+        border-radius: 12px;
+      }
+      
+      /* Fix for any navigation or UI elements */
+      nav, .pagination-link, .pagination-previous, .pagination-next, .dropdown-menu, .dropdown-content, .modal-content, .navbar-dropdown {
+        border-radius: 12px !important;
+      }
+      
+      /* Ensure all interactive elements have consistent styling */
+      a, button, input, select, textarea, .icon {
+        transition: all 0.3s ease;
+      }
+      
+      /* Remove any right-angle corners */
+      * {
+        scrollbar-width: thin;
+      }
+      
+      *::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      
+      *::-webkit-scrollbar-track {
+        background: rgba(0,0,0,0.1);
+        border-radius: 10px;
+      }
+      
+      *::-webkit-scrollbar-thumb {
+        background-color: var(--accent-color);
+        border-radius: 10px;
+      }
+      
+      /* Make testimonials stand out more */
+      .testimonial-box {
+        background-color: rgba(52, 152, 219, 0.1);
+        border-left: 4px solid var(--accent-color);
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .testimonial-box:hover {
+        transform: translateX(8px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      }
+      
+      .testimonial-box:before {
+        content: "\f10d";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        left: -15px;
+        top: -15px;
+        background: var(--accent-color);
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+      }
+      
+      /* Enhanced CTA button */
+      .cta-button {
+        background: linear-gradient(135deg, var(--accent-color), #2980b9);
+        padding: 1.5rem 2rem;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+        border: none;
+        transform-origin: center;
+      }
+      
+      .cta-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 30px rgba(52, 152, 219, 0.4);
+        background: linear-gradient(135deg, #2980b9, var(--accent-color));
+      }
+      
+      /* Icons for better readability */
+      .feature-icon {
+        display: inline-block;
+        margin-right: 8px;
+        color: var(--accent-color);
+      }
+      
+      .section-icon {
+        margin-right: 10px;
+        color: white;
+      }
+      
+      /* Enhanced card headers */
+      .card-header {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero is-primary is-fullheight">
+      <div class="hero-background"></div>
+      <div class="hero-body">
+        <div class="container">
+          <nav class="level">
+            <div class="level-item has-text-centered">
+              <a href="../">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="profile.png">
+                </figure>
+              </a>
+            </div>
+          </nav>
+          <div class="columns is-centered">
+            <div class="column is-10">
+              <div class="content is-medium fadeIn">
+                <h1 class="title is-1 has-text-centered" data-aos="fade-up">
+                  Custom Software Solutions That Save $50K+ Monthly in Operational Costs
+                </h1>
+                <h2 class="subtitle is-3 has-text-centered" data-aos="fade-up" data-aos-delay="200">
+                  For $3-5M+ Businesses: Stop Wasting Money on Off-the-Shelf Software. Get Tailored Solutions That Put Real Dollars Back in Your Pocket.
+                </h2>
+                
+                <div class="notification is-info is-light" data-aos="fade-up" data-aos-delay="300">
+                  <p class="has-text-centered is-size-5" style="color: white; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);">
+                    <strong><i class="fas fa-phone-alt feature-icon"></i>Book Your Free Strategy Call Today</strong> and discover how custom software can transform your business operations and save you $50K+ every month.
+                  </p>
+                  <p class="has-text-centered">
+                    <a class="button is-primary is-large is-flex-direction-column is-flex-wrap-wrap is-responsive is-fullwidth-mobile px-2 py-4 cta-button" href="mailto:sean@sdin.dev?subject=Strategy%20Call%20Request">
+                      <i class="fas fa-calendar-check" style="font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                      Book Your Free<br>Strategy Call Now
+                    </a>
+                  </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="500">
+                  <header class="card-header">
+                    <h3 class="card-header-title">Why Traditional Software Development Is Costing You Money</h3>
+                  </header>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>
+                        Most businesses waste thousands on generic software that doesn't fit their unique needs. They hire developers who disappear after the project ends, leaving you with systems that quickly become outdated.
+                      </p>
+                      <p>
+                        <strong>There's a better way.</strong> As your dedicated software consultant, I don't just build applications - I architect solutions that deliver measurable cost savings month after month. This high-touch approach means you get personalized attention, strategic guidance, and ongoing optimization that keeps your business ahead of the curve.
+                      </p>
+                      <div class="testimonial-box" data-aos="fade-right">
+                        <img src="https://boondata.com/wp-content/uploads/tammy-boone-portrait.jpg" alt="Tammy Boone - Compliance Associates" class="testimonial-image">
+                        <div class="testimonial-content">
+                          <p class="has-text-weight-bold is-size-5"><i class="fas fa-chart-line feature-icon"></i>Compliance Associates Success: $41,600 Monthly Cost Savings</p>
+                          <p>
+                            For Tammy Boone, Owner of Compliance Associates, I developed custom software that streamlined regulatory compliance processes, reducing manual documentation work by 30+ hours weekly. At $80/hour fully-loaded labor cost, this saves them $2,400/week or $10,400/month in direct labor costs. The improved accuracy and reporting also eliminated $31,200 in monthly compliance penalties and rework expenses.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="testimonial-box" data-aos="fade-right" data-aos-delay="100">
+                        <img src="https://media.licdn.com/dms/image/v2/C4E03AQEH-Q8dkJyHRg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1621921311398?e=1751500800&v=beta&t=D8_zDT6LEM6Oav-3idU1EaLaDDnEKh4hfFb-At1z-nk" alt="Christian Lara - CCO of Carport Central" class="testimonial-image">
+                        <div class="testimonial-content">
+                          <p class="has-text-weight-bold is-size-5"><i class="fas fa-shopping-cart feature-icon"></i>Carport Central Success: $73,500 Monthly Revenue Increase</p>
+                          <p>
+                            For Christian Lara, CCO of Carport Central, I spearheaded the refactoring of their legacy website to modern standards. This modernization improves site performance by 70%, enhances mobile responsiveness, and creates a more intuitive user experience—resulting in a 28% conversion rate improvement. For their business, this translated to approximately $73,500 in additional monthly revenue.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="testimonial-box" data-aos="fade-right" data-aos-delay="200">
+                        <img src="https://www.redding.com/gcdn/presto/2019/07/18/PRRS/f3b326ab-6610-46fb-8c80-4b2a60c8db84-Randall_Hauser.JPG?width=600&height=886&fit=crop&format=pjpg&auto=webp" alt="Randall Hauser - CEO and Founder of ENPLAN" class="testimonial-image">
+                        <div class="testimonial-content">
+                          <p class="has-text-weight-bold is-size-5"><i class="fas fa-cogs feature-icon"></i>ENPLAN Success: $62,300 Monthly Efficiency Gains</p>
+                          <p>
+                            For Randall Hauser, CEO and Founder of ENPLAN, I led the modernization of their legacy website to current standards. The refactoring significantly improved performance and created a more maintainable codebase. This resulted in $27,300 monthly savings in maintenance costs and $35,000 in monthly operational efficiency improvements through streamlined workflows.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="testimonial-box" data-aos="fade-right" data-aos-delay="300">
+                        <img src="https://media.licdn.com/dms/image/v2/C5603AQGwINT1ynZmfQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517729069526?e=1751500800&v=beta&t=6CrQHuJQ4BEmCtOFijNIi5TJkNFjfK-pyfZUig-dOAM" alt="Jim Phillips - President of Veritas Health Systems" class="testimonial-image">
+                        <div class="testimonial-content">
+                          <p class="has-text-weight-bold is-size-5"><i class="fas fa-heartbeat feature-icon"></i>Veritas Health Systems Success: $58,900 Monthly Cost Reduction</p>
+                          <p>
+                            For Jim Phillips, President of Veritas Health Systems, I developed custom tailored accounting applications and insurance forecasting tools. These solutions streamlined workflows, accelerated processing, and enhanced data visualization. The result was $58,900 in monthly operational cost savings through eliminated overhead and improved staff efficiency.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columns is-multiline" data-aos="fade-up" data-aos-delay="400">
+                  <div class="column is-3">
+                    <div class="stat-card">
+                      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Productivity chart" class="feature-image">
+                      <span class="stats-counter">500%</span>
+                      <span class="stat-description">Productivity Increase</span>
+                    </div>
+                  </div>
+                  <div class="column is-3">
+                    <div class="stat-card">
+                      <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Saving time" class="feature-image">
+                      <span class="stats-counter">30+</span>
+                      <span class="stat-description">Hours Saved Weekly</span>
+                    </div>
+                  </div>
+                  <div class="column is-3">
+                    <div class="stat-card">
+                      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Error reduction" class="feature-image">
+                      <span class="stats-counter">90%</span>
+                      <span class="stat-description">Error Reduction</span>
+                    </div>
+                  </div>
+                  <div class="column is-3">
+                    <div class="stat-card">
+                      <img src="https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Return on investment" class="feature-image">
+                      <span class="stats-counter">3-5x</span>
+                      <span class="stat-description">ROI in First Month</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" data-aos="fade-up">
+                  <header class="card-header">
+                    <h3 class="card-header-title"><i class="fas fa-tasks section-icon"></i>Our Proven 4-Step Process</h3>
+                  </header>
+                  <div class="card-content">
+                    <div class="content">
+                      <ol>
+                        <li><strong><i class="fas fa-comments feature-icon"></i>Strategy Call:</strong> We begin with a deep dive into your business challenges and technical needs to identify opportunities for maximum impact.</li>
+                        <li><strong><i class="fas fa-drafting-compass feature-icon"></i>Solution Design:</strong> I design a tailored software architecture that addresses your specific requirements and delivers measurable ROI.</li>
+                        <li><strong><i class="fas fa-code feature-icon"></i>Development & Implementation:</strong> We build and deploy custom software solutions that solve your immediate challenges while setting up for future growth.</li>
+                        <li><strong><i class="fas fa-chart-line feature-icon"></i>Ongoing Optimization:</strong> Regular check-ins ensure your systems continue to deliver value as your business evolves, with continuous improvements that maximize your investment.</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="columns is-multiline">
+                  <div class="column is-one-third">
+                    <div class="card value-card" data-aos="flip-left" data-aos-delay="100">
+                      <img src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Software development" class="feature-image">
+                      <header class="card-header">
+                        <h3 class="card-header-title"><i class="fas fa-coins section-icon"></i>Custom Software That Pays For Itself</h3>
+                      </header>
+                      <div class="card-content">
+                        <div class="content">
+                          <p>
+                            Our clients typically see a 3-5x return on their software investment within the first month. We build systems that deliver $50K+ in monthly cost savings, creating a sustainable competitive advantage that compounds over time. Save money while getting the best custom solutions for your business.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-one-third">
+                    <div class="card value-card" data-aos="flip-left" data-aos-delay="200">
+                      <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Automation" class="feature-image">
+                      <header class="card-header">
+                        <h3 class="card-header-title"><i class="fas fa-robot section-icon"></i>Automation That Saves You 20+ Hours Weekly</h3>
+                      </header>
+                      <div class="card-content">
+                        <div class="content">
+                          <p>
+                            You get direct access to me, not a junior consultant or support team. We identify repetitive tasks that can be automated, freeing up your team to focus on strategic initiatives while reducing errors by up to 90%. This translates directly to monthly cost savings of $30K+ for most clients.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-one-third">
+                    <div class="card value-card" data-aos="flip-left" data-aos-delay="300">
+                      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Partnership" class="feature-image">
+                      <header class="card-header">
+                        <h3 class="card-header-title"><i class="fas fa-handshake section-icon"></i>Technical Partnership</h3>
+                      </header>
+                      <div class="card-content">
+                        <div class="content">
+                          <p>
+                            We become true partners in your business success. I'm invested in your long-term growth and committed to helping you navigate the ever-changing technical landscape with scalable solutions that grow with your business. Find the best path forward with expert guidance.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" data-aos="fade-up">
+                  <header class="card-header">
+                    <h3 class="card-header-title"><i class="fas fa-gift section-icon"></i>What You Get (Valued at $15K+ Monthly)</h3>
+                  </header>
+                  <div class="card-content">
+                    <div class="content">
+                      <ul>
+                        <li><strong><i class="fas fa-user-clock feature-icon"></i>Direct Access:</strong> Weekly one-on-one sessions to address challenges and opportunities</li>
+                        <li><strong><i class="fas fa-laptop-code feature-icon"></i>Custom Software Development:</strong> Tailored applications built specifically for your business needs</li>
+                        <li><strong><i class="fas fa-magic feature-icon"></i>Process Automation:</strong> Workflow automation that typically saves 20+ hours weekly</li>
+                        <li><strong><i class="fas fa-plug feature-icon"></i>API Integration:</strong> Seamless connections between your existing systems and new solutions</li>
+                        <li><strong><i class="fas fa-sitemap feature-icon"></i>Technical Architecture:</strong> Scalable, maintainable systems built with industry best practices</li>
+                        <li><strong><i class="fas fa-tachometer-alt feature-icon"></i>Performance Optimization:</strong> Continuous improvement to ensure your systems run at peak efficiency</li>
+                        <li><strong><i class="fas fa-compass feature-icon"></i>Strategic Guidance:</strong> Expert advice on technology decisions that impact your business</li>
+                        <li><strong><i class="fas fa-life-ring feature-icon"></i>Implementation Support:</strong> Hands-on help with critical technical initiatives</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" data-aos="fade-up">
+                  <header class="card-header">
+                    <h3 class="card-header-title"><i class="fas fa-tools section-icon"></i>Technical Expertise</h3>
+                  </header>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>Specializing in modern, efficient development approaches that deliver reliable, maintainable applications:</p>
+                      <ul>
+                        <li><strong>Redux Toolkit (RTK):</strong> Building predictable state management solutions with the official, opinionated Redux library</li>
+                        <li><strong>RTK Query:</strong> Implementing efficient API data fetching with automatic caching and request lifecycle management</li>
+                        <li><strong>Functional Programming:</strong> Writing clean, testable code with pure functions and immutable data patterns</li>
+                        <li><strong>TypeScript:</strong> Ensuring type safety and enhanced developer experience with static typing</li>
+                        <li><strong>Expo Go:</strong> Rapid mobile app development with React Native that works across iOS and Android</li>
+                        <li><strong>Clean Code Architecture:</strong> Prioritizing maintainability, scalability, and readability with intuitive design patterns that eliminate technical debt and prevent "spaghetti code"</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" data-aos="fade-up">
+                  <header class="card-header">
+                    <h3 class="card-header-title"><i class="fas fa-flask section-icon"></i>Backed by Research</h3>
+                  </header>
+                  <div class="card-content">
+                    <div class="content">
+                      <p>The value propositions we offer are supported by industry research and data:</p>
+                      <ul>
+                        <li>McKinsey reports that companies with successful digital transformations achieve 20-50% improvement in operational performance<sup><a href="https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening" target="_blank">[1]</a></sup></li>
+                        <li>Forrester Research found that companies leveraging custom software solutions see an average ROI of 321% over three years<sup><a href="https://www.forrester.com/report/The-Total-Economic-Impact-Of-Microsoft-Power-Apps/RES159527" target="_blank">[2]</a></sup></li>
+                        <li>Nucleus Research states that automation solutions typically deliver $9.33 in value for every dollar spent<sup><a href="https://nucleusresearch.com/research/single/automation-drives-933-roi/" target="_blank">[3]</a></sup></li>
+                        <li>State of JavaScript survey shows TypeScript adoption increased to 78% among professional developers due to its impact on code quality and maintainability<sup><a href="https://stateofjs.com" target="_blank">[4]</a></sup></li>
+                        <li>Redux Toolkit reduces boilerplate code by 40-60% compared to traditional Redux implementations, accelerating development cycles<sup><a href="https://redux-toolkit.js.org/introduction/getting-started" target="_blank">[5]</a></sup></li>
+                        <li>Microsoft research found TypeScript can prevent up to 15% of bugs in JavaScript applications, directly impacting software quality and maintenance costs<sup><a href="https://earlbarr.com/publications/typestudy.pdf" target="_blank">[6]</a></sup></li>
+                        <li>Functional programming approaches reduce bugs by up to 60% according to studies comparing imperative vs. functional codebases<sup><a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.368.1058&rep=rep1&type=pdf" target="_blank">[7]</a></sup></li>
+                        <li>RTK Query can reduce API-related code by up to 80% while improving application performance through automatic caching<sup><a href="https://redux-toolkit.js.org/rtk-query/overview" target="_blank">[8]</a></sup></li>
+                        <li>Expo Go reduces development time by approximately 30-40% through cross-platform capabilities<sup><a href="https://expo.dev/case-studies" target="_blank">[9]</a></sup></li>
+                        <li>CISQ reports that poor software quality costs US organizations $2.08 trillion in 2020, highlighting the critical importance of maintainable architecture<sup><a href="https://www.it-cisq.org/the-cost-of-poor-software-quality-in-the-us-a-2020-report/" target="_blank">[10]</a></sup></li>
+                        <li>Clean code architecture reduces maintenance costs by up to 50% over a software application's lifetime according to industry analyses<sup><a href="https://www.sei.cmu.edu/publications/technical-reports/" target="_blank">[11]</a></sup></li>
+                        <li>According to Stack Overflow's 2023 Developer Survey, TypeScript is among the most loved languages (77.3%), reflecting its positive impact on developer productivity and code quality<sup><a href="https://insights.stackoverflow.com/survey/2023" target="_blank">[12]</a></sup></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="notification is-warning is-light" data-aos="fade-up">
+                  <p class="has-text-centered is-size-5">
+                    <strong>Limited Availability:</strong> I maintain an intentionally small client roster to provide truly personalized, white-glove service. Currently accepting just 1 new client this month.
+                  </p>
+                </div>
+
+                <div class="has-text-centered" data-aos="fade-up">
+                  <h3 class="title is-4"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 10px;"></i>Ready to Save $50K+ Monthly With Custom Software?</h3>
+                  <p class="is-size-5">
+                    Book your free strategy call today and discover how we can work together to build custom software solutions that reduce your operational costs by $50K+ every month. Save time and money now!
+                  </p>
+                  <p>
+                    <a class="button is-primary is-large is-flex-direction-column is-flex-wrap-wrap is-responsive is-fullwidth-mobile px-2 py-4 cta-button" href="mailto:sean@sdin.dev?subject=Strategy%20Call%20Request">
+                      <i class="fas fa-calendar-check" style="font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                      Book Your Free<br>Strategy Call Now!
+                    </a>
+                  </p>
+                  <p class="is-size-7">
+                    Or reach me directly at <a href="mailto:sean@sdin.dev">sean@sdin.dev</a>
+                  </p>
+                </div>
+
+                <div class="has-text-centered">
+                  <p>
+                    <span class="icon">
+                      <a target="_blank" href="https://www.linkedin.com/in/seandinwiddie/"><i class="fab fa-linkedin"></i></a>
+                    </span>
+                    <span class="icon">
+                      <a target="_blank" href="https://github.com/SeanDinwiddie"><i class="fab fa-github"></i></a>
+                    </span>
+                    <span class="icon">
+                      <a target="_blank" href="https://www.instagram.com/sdin.dev/"><i class="fab fa-instagram"></i></a>
+                    </span>
+                    <span class="icon">
+                      <a target="_blank" href="https://x.com/seandinwiddie"><i class="fab fa-x-twitter"></i></a>
+                    </span>
+                    <span class="icon">
+                      <a target="_blank" href="https://www.facebook.com/seanpaulpaynedinwiddie/"><i class="fab fa-facebook"></i></a>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+          duration: 1000,
+          once: false,
+          mirror: true
+        });
+      });
+    </script>
+  </body>
+</html>
