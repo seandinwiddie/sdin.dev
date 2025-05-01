@@ -76,18 +76,18 @@ The first 1-2 sentences determine whether they'll read the rest. According to Ba
 
 For initial outreach, prioritize brevity and personal connection over comprehensive selling:
 
-1. **Keep it short and focused** - 3-5 sentences maximum for the first message
-2. **Be genuinely curious** - Ask an open-ended question about their work or recent company news
-3. **Avoid sales language** - No feature lists, benefits bullets, or calls to action in the opener
-4. **Show specific research** - Reference a specific detail about them or their company
+1. **Keep it short and focused** - 2-3 sentences maximum for the first message
+2. **Only reference easily verifiable information** - Stick to information clearly visible on public profiles (current role, company, published articles, etc.)
+3. **Be genuinely curious** - Ask an open-ended question about their work or industry
+4. **Avoid sales language** - No feature lists, benefits bullets, or calls to action in the opener
 5. **Use a conversational tone** - Write like you're sending a note to a colleague
-6. **End with a low-pressure next step** - Make it easy for them to respond without commitment
+6. **End with a simple signature** - Just your name, phone number, and website
+7. **Avoid assumptions about their projects** - Don't reference specific work they've done unless it's clearly documented in public sources
 
 #### Example Opener Structure:
-- Personal introduction (1 sentence)
-- Specific observation about their work/company (1 sentence)
-- Open-ended question related to their expertise (1 sentence)
-- Simple, low-pressure close (1 sentence)
+- Personal introduction with reference to verifiable information (1 sentence)
+- Open-ended question related to their industry or role (1 sentence)
+- Simple signature
 
 ### Hook Templates
 
