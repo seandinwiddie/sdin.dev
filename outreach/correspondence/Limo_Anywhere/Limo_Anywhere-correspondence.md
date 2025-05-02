@@ -33,23 +33,21 @@ Seen by Melissa Statom at 9:48 AM.
 *   **Subject:** Re: Your experience with transportation technology
 *   **Body:**
 
-    Hi Melissa,
+Hi Melissa,
 
-    I couldn't help but laugh at your "uninvited party guests" analogy for integration challenges - so accurate! And yes, those undocumented APIs definitely feel like they were written as dares sometimes.
+I couldn't help but laugh at your "uninvited party guests" analogy for integration challenges - so accurate! And yes, those undocumented APIs definitely feel like they were written as dares sometimes.
 
-    That "survival of the most caffeinated" approach is familiar territory. I've found that having a strategic framework for approaching these challenges can significantly reduce the reddit-searching emergencies and late-night debugging sessions.
+That "survival of the most caffeinated" approach is familiar territory. I've found that having a strategic framework for approaching these challenges can significantly reduce the reddit-searching emergencies and late-night debugging sessions. Though often times there is some enjoyment in the process.
 
-    In my work with transportation and logistics clients, I've developed methodologies for taming those unruly APIs and creating more predictable integration patterns. One client saw a 72% performance improvement after we implemented targeted architecture changes to their chaotic data pipeline.
+In my work with transportation and logistics clients, I've developed methodologies for taming those unruly APIs and creating more predictable integration patterns. One client saw a 72% performance improvement after we implemented targeted architecture changes to their ad-hoc data pipeline.
 
-    If you're looking for ways to make those uninvited integration guests behave better at Limo Anywhere, I'd be happy to share some specific approaches during a brief conversation.
+If you're looking for ways to make those uninvited integration guests behave better at Limo Anywhere, I'd be happy to share some specific approaches during a brief conversation.
 
-    Simply reply to this message or text me at 530-638-3238 to set up a time.
+Thanks!
 
-    Thanks!
-
-    Sean
-    Software Development Consultant 🧑🏼‍💻☕
-    https://sdin.dev/coaching
+Sean
+Software Development Consultant 🧑🏼‍💻☕
+https://sdin.dev/coaching
 
 ---
 
