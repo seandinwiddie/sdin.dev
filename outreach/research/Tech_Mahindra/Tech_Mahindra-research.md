@@ -7,7 +7,7 @@
     *   Dr. Pandian Angaiyan - https://www.linkedin.com/in/drpandian/
     *   Mohit Joshi (CEO & Managing Director)
     *   Rohit Anand (Chief Financial Officer)
-*   **Email Contact:**
+*   **Message Contact:**
     *   General: info@techmahindra.com (inferred)
     *   Media: media.relations@techmahindra.com
 *   **Notes:** Recent financial performance shows strong growth with 92.6% YoY increase in profit after tax in Q3 FY25. They've launched several AI initiatives including "TechM agentX" (GenAI-powered solutions) and partnerships with NVIDIA, AWS, and Microsoft, indicating investment in emerging technologies. 

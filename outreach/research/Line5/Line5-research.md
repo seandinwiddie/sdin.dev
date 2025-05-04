@@ -6,7 +6,7 @@
     *   Nicolas Basiti (CTO) - https://www.linkedin.com/in/nicolas-basiti-1915242b/
     *   Brenda Cline Kereakes (COO)
     *   Jim Parker (National Sales Manager)
-*   **Email Contact:**
+*   **Message Contact:**
     *   Company website: https://www.line5.com
     *   Contact information needs to be researched
 *   **Notes:** As a FinTech company providing financing solutions for vehicle protection plans and F&I products, Line 5 likely requires custom software for loan origination, dealer portals, customer management, and compliance tracking. They promote their "E-Rating & E-Contracting platform" as a key offering, suggesting a focus on digital solutions. Their in-house collections and customer service teams handle ongoing customer relationships, potentially requiring integrated systems for account management and communication. 

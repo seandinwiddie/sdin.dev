@@ -5,6 +5,6 @@
 *   **Potential Decision Makers:**
     *   Walter Lynch (CEO) - https://www.linkedin.com/in/walter-lynch-008a8852
     *   J.J. Rodeheffer (COO & Co-Founder)
-*   **Email Contact:**
+*   **Message Contact:**
     *   Walter Lynch: w*****@ziplin***.com (partial from Wiza)
     *   General: Contact form on website, phone: 888.469.4754 

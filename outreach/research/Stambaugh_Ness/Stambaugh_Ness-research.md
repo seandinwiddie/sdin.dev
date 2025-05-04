@@ -5,5 +5,5 @@
 *   **Potential Decision Makers:**
     *   Steven L. Hake (President & CEO)
     *   John Honodel (CIO)
-*   **Email Contact:**
+*   **Message Contact:**
     *   John Honodel: j*****@stamba***.com (partial from Wiza) 

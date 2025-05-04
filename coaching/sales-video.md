@@ -1,5 +1,10 @@
 # Tech Leadership Coaching - Sales Video Script (30 Seconds)
 
+## notes
+
+slides showing cowboy oop
+then refactored as fp
+
 ## Script
 
 **[Start: Screen share showing terminal with code]**

@@ -6,7 +6,7 @@
     *   Jack Tawil (CEO & Chairman) - https://www.linkedin.com/in/jack-tawil-4551bb8/
     *   Dr. Snehal Patel (CTO) - https://www.linkedin.com/in/snehal-patel-md-mba-58a9602/
     *   Mike Patel (VP of Business Development) - https://www.linkedin.com/in/mikepatel-medtech/
-*   **Email Contact:**
+*   **Message Contact:**
     *   Sales: sales@medpodhealth.com
     *   General: info@medpodhealth.com
     *   Phone: 631-392-4176 

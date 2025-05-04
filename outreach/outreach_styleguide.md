@@ -1,6 +1,6 @@
-# Outreach Email Style Guide
+# Outreach Message Style Guide
 
-This style guide provides best practices for crafting effective outreach emails that generate responses. It combines research-backed insights from WordStream's analysis of high-performing ads and Backlinko's copywriting principles, adapted for email outreach.
+This style guide provides best practices for crafting effective outreach messages that generate responses. It combines research-backed insights from WordStream's analysis of high-performing ads and Backlinko's copywriting principles, adapted for message outreach.
 
 ## Core Principles
 
@@ -46,7 +46,7 @@ Keep CTAs action-oriented and crystal clear. The recipient should know exactly w
 
 According to [Backlinko's copywriting guide](https://backlinko.com/copywriting-guide), speaking directly to your recipient's persona dramatically increases response rates:
 
-### Key Elements of Persona-Based Emails
+### Key Elements of Persona-Based Messages
 
 1. **Role-Specific Language** - Reference their position and corresponding responsibilities
 2. **Industry-Specific Challenges** - Mention problems unique to their sector
@@ -97,7 +97,7 @@ For initial outreach, prioritize brevity and personal connection over comprehens
 | Director/VP | "Managing [specific area] for [type of company] often means choosing between [option A] and [option B]—when you actually need both." |
 | Manager | "The day-to-day reality of [specific responsibility] often leaves little time for [strategic improvement]." |
 
-## Email Structure Best Practices
+## Message Structure Best Practices
 
 According to Backlinko, high-converting outreach follows this structure:
 
@@ -143,7 +143,7 @@ Focus on: Billable hours, client acquisition, service quality, cross-selling
 ### Distribution
 Focus on: Inventory management, sales support, seasonal planning, margin protection
 
-## Example Email Templates
+## Example Message Templates
 
 ### For C-Level Executives
 
@@ -159,7 +159,7 @@ For a [role] focused on [specific industry/challenge], you can get:
 • [Benefit 2 with specific outcome]
 • [Benefit 3 with specific outcome]
 
-If you're working on [relevant priority], let's talk. Get your free strategy call now—just reply to this email or text me at [phone].
+If you're working on [relevant priority], let's talk. Get your free strategy call now—just reply to this message or text me at [phone].
 
 Thank you for your time!
 
@@ -180,7 +180,7 @@ With a tailored approach for [company name], you could:
 • [Specific time/resource saving]
 • [Specific competitive advantage]
 
-If you're looking for ways to [achieve specific goal], let's talk. Get your free strategy call now—just reply to this email or text me at [phone].
+If you're looking for ways to [achieve specific goal], let's talk. Get your free strategy call now—just reply to this message or text me at [phone].
 
 Thank you for your time!
 

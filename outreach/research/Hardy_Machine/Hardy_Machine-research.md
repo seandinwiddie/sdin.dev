@@ -5,5 +5,5 @@
 *   **Potential Decision Makers:**
     *   Bill Hardy (President)
     *   Dwight (Buddy) Miller (Operations Manager)
-*   **Email Contact:**
+*   **Message Contact:**
     *   Company: info@hardymachinellc.com (from website) 

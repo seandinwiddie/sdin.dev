@@ -6,7 +6,7 @@
     *   Dave Menzel (President and COO) - https://www.linkedin.com/in/david-menzel-8321031/
     *   Peter Rogers (CIO) - https://www.linkedin.com/in/pete-rogers-7a12a15/
     *   Doug Waggoner (CEO) - https://www.linkedin.com/in/dougwaggoner/
-*   **Email Contact:**
+*   **Message Contact:**
     *   Sales: sales@echo.com
     *   General: info@echo.com
     *   Phone: 800-354-7993 

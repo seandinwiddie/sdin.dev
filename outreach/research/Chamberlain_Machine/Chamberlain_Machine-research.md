@@ -5,7 +5,7 @@
 *   **Potential Decision Makers:**
     *   S. B. (Vice President - via LeadIQ, initial only)
     *   D. C. (Manager - Production and HR - via LeadIQ, initial only) - *Potentially relevant for operational/process discussions.*
-*   **Email Contact:**
+*   **Message Contact:**
     *   Engineering: Engineering@chamberlainmachine.com
     *   Company phone: 603-756-2560
     *   Mailing Address: PO Box 847, Walpole, NH 03608

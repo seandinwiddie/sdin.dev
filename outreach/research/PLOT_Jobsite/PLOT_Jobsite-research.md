@@ -5,7 +5,7 @@
 *   **Potential Decision Makers:**
     *   Eric Biven (CTO) - https://www.linkedin.com/in/ebiven/
     *   Chris Callen (CEO & Founder)
-*   **Email Contact:**
+*   **Message Contact:**
     *   Contact information needs to be researched
     *   Website: https://www.getplot.com
 *   **Notes:** Eric has extensive technology leadership experience with AWS certifications (Solutions Architect Professional/Associate, Developer Associate) and a strong software engineering background. PLOT focuses on construction software that reduces chaos for contractors by helping them manage schedules, materials, and deliveries. The company was founded in 2021 by Chris Callen, a second-generation construction professional. Their procurement dashboard tool includes lead time analysis capabilities, suggesting potential interest in data analytics and process optimization solutions. 

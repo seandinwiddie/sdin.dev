@@ -6,7 +6,7 @@
     *   Jon Fry (CEO & Co-Founder) - https://www.linkedin.com/in/jonfrytx/
     *   Sean Wilkinson (CTO & Co-Founder)
     *   Brandon Greer (Head of Engineering)
-*   **Email Contact:**
+*   **Message Contact:**
     *   Sales: sales@lendflow.com
     *   General: info@lendflow.com
     *   Phone: 512-782-4025 

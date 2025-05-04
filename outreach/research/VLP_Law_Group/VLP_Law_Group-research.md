@@ -4,6 +4,6 @@
 *   **Size Estimate:** Revenue not explicitly found. Distributed model; size could fit within the range.
 *   **Potential Decision Makers:**
     *   Timothy Bowers (Managing Partner) - https://www.linkedin.com/in/timothybowers
-*   **Email Contact:**
-    *   Timothy Bowers: Direct email not found, but he can be contacted through the company website: https://www.vlplawgroup.com/attorneys/timothy-bowers/ (has "Email Timothy" link)
+*   **Message Contact:**
+    *   Timothy Bowers: Direct message not found, but he can be contacted through the company website: https://www.vlplawgroup.com/attorneys/timothy-bowers/ (has "Message Timothy" link)
     *   Company phone: (650) 251-4218 

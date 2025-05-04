@@ -8,5 +8,5 @@
     *   Paul Knoll (CEO) - https://www.linkedin.com/in/paul-knoll-871360b
     *   Scott Schenk (VP of Operations)
     *   Shane Kunschke (VP of Manufacturing)
-*   **Email Contact:**
-    *   Company: General contact email from website not found, but they have a "Request Info" form on their website 
+*   **Message Contact:**
+    *   Company: General contact message from website not found, but they have a "Request Info" form on their website 
