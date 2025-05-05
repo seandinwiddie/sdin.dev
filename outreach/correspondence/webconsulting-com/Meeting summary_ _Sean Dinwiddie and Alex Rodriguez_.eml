@@ -1,0 +1,1083 @@
+Delivered-To: seandinwiddie@gmail.com
+Received: by 2002:a05:6358:3384:b0:1e2:112a:b85d with SMTP id i4csp2519990rwd;
+        Mon, 5 May 2025 11:49:06 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFblGkxQ3T4RhGx+OMGMMhm/SmGI1ix6jDOiaN53e5mBjRTrJoR8rHmXTY6FKEykiEvi+8a
+X-Received: by 2002:a05:6214:1bc8:b0:6ed:122c:7da7 with SMTP id 6a1803df08f44-6f528c3eee5mr147064836d6.5.1746470945740;
+        Mon, 05 May 2025 11:49:05 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1746470945; cv=none;
+        d=google.com; s=arc-20240605;
+        b=SuvqsUrupIS6DJc4LXm79W7h8TPrqOzU8RA8j9EgQ6MeVH5S/auJdUFmMe9JqoxYd8
+         rSUTIHOX8MnmfGDZUUzYMyE3vl/z/es/U4vESXKtYWJ0DOWQ+mgKm2sw3irDUCkszM/f
+         XyWCA0SzPdqUWKrQzZlr+5G218KnrR4YyBMeGibCjg7G3bRPyshDZEVt8czhWXlK4qT4
+         cOZ2VvGLQ/5UvWeLjNmTe5R4StCaVG9tsbesGIDAbd0JtRJqE1EgU+sElx5MkZaTKaS5
+         gSj0ajrqRy9wW/NCSL+FtMs8b88qSj7d8hUKy8wCzvHZr40Z7MjrgfGYDvSfACsNhAJd
+         QICQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=list-unsubscribe-post:list-unsubscribe:to:subject:message-id
+         :mime-version:from:date:dkim-signature:dkim-signature;
+        bh=ba8tKbYr4I6sifMuxFsLxg5vmwE3kYVPbMpMpMZH6iw=;
+        fh=9KI90wrVtsQ80PzKnSNRA39tupTd07ZIzvTQMivC2QI=;
+        b=N0lWUMyq0/GfjCuKoTci6fKn6Aru7qnBsBj1/z+QM77rMQ6Ins52ouFSnBp3Sn7/vw
+         /IyCWLN9oWwf6QDiEFTwZpWgmlFn8vGVTwtZPbJSkzCbiKzh47aKi14AepKznUp0Igrm
+         toNKTswnLrOfqFlI+Wp04LwsnIiOsBekdftpEadF1iY6fa9SKsW5HgLRpBFdoLJSB5T6
+         CiDalzUI9jpf8VjHugMKug1Wa+S9iKo9F4fpJ1Amgkp8gk5limanwB1AEg0JsTNXCSex
+         fvrc8+G029TduZ6XDEDY5jQw1n71T31suXgxtMvAtP4Rg4F46GXYqzMYZlktluz2nw04
+         wFPw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@grain.co header.s=s1 header.b=aNOiPt8k;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=roBd6xmH;
+       spf=pass (google.com: domain of bounces+10327057-8462-seandinwiddie=gmail.com@em7548.grain.co designates 159.183.135.207 as permitted sender) smtp.mailfrom="bounces+10327057-8462-seandinwiddie=gmail.com@em7548.grain.co";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=grain.co
+Return-Path: <bounces+10327057-8462-seandinwiddie=gmail.com@em7548.grain.co>
+Received: from o1.ptr1422.grain.co (o1.ptr1422.grain.co. [159.183.135.207])
+        by mx.google.com with ESMTPS id 6a1803df08f44-6f50f4abcbcsi93172226d6.436.2025.05.05.11.49.05
+        for <seandinwiddie@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 05 May 2025 11:49:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+10327057-8462-seandinwiddie=gmail.com@em7548.grain.co designates 159.183.135.207 as permitted sender) client-ip=159.183.135.207;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@grain.co header.s=s1 header.b=aNOiPt8k;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=roBd6xmH;
+       spf=pass (google.com: domain of bounces+10327057-8462-seandinwiddie=gmail.com@em7548.grain.co designates 159.183.135.207 as permitted sender) smtp.mailfrom="bounces+10327057-8462-seandinwiddie=gmail.com@em7548.grain.co";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=grain.co
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=grain.co;
+	h=content-type:from:mime-version:subject:to:list-unsubscribe:
+	list-unsubscribe-post:cc:content-type:feedback-id:from:subject:to;
+	s=s1; bh=ba8tKbYr4I6sifMuxFsLxg5vmwE3kYVPbMpMpMZH6iw=;
+	b=aNOiPt8kwEs5SqLPijwnp+vUavRnVD79NEOa39ersiRCCC3pyhFPIaQz3PU8hO9jdKzD
+	hieyiS7uwljqO9WZ4uRHI3MsLh7HztjfuCJytQm+uQIn0nVmQs/JzkuCi+zgIq4X7CXfuk
+	WRzOipegzCqYOtulNly+ggCjcxuHakjI85QW5H3Y/vFYEbQgZiKxrHuATpMJ8DneJx7R7M
+	NhuS1ZSIT0Czfj5P9dgP+fIqIW/+kTwobJCWN9hKkhnoARF+ZXW2JNg5aBzr+qwyIy0pod
+	OPivTTIRaoagtGNox9SkIRLlF6sV3d6NRKwr8htwbFH45GFtz45FPMBQodyvxpZg==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info;
+	h=content-type:from:mime-version:subject:to:list-unsubscribe:
+	list-unsubscribe-post:cc:content-type:feedback-id:from:subject:to;
+	s=smtpapi; bh=ba8tKbYr4I6sifMuxFsLxg5vmwE3kYVPbMpMpMZH6iw=;
+	b=roBd6xmHH3C1h/C8xARBgnXKKZ20HiPG662P8ejrJlS8uyPEqtddSdgX140wPB0PH+oV
+	Y6W/B4VGyMG+OzZrUttQwd6MEh7YN4oXMRItxwCopZZWZ7TcGe/ovg6COnInGtZzUgr/Cu
+	y4tU5jWRB+ZDa6PtCkPy9Mq0UmqsBTIGI=
+Received: by recvd-545d4d4647-vzpdq with SMTP id recvd-545d4d4647-vzpdq-1-68190821-2C
+	2025-05-05 18:49:05.235530795 +0000 UTC m=+2320864.665674311
+Received: from MTAzMjcwNTc (unknown)
+	by geopod-ismtpd-27 (SG) with HTTP
+	id IKPXlo62Rj2blC_VfKYi1Q
+	Mon, 05 May 2025 18:49:05.229 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=bacc74e7109b544dfd0a062bd0508d15468e0089299e2a506b8bc7b86f35
+Date: Mon, 05 May 2025 18:49:05 +0000 (UTC)
+From: Grain <noreply@grain.co>
+Mime-Version: 1.0
+Message-ID: <IKPXlo62Rj2blC_VfKYi1Q@geopod-ismtpd-27>
+Subject: Meeting summary: "Sean Dinwiddie and Alex Rodriguez"
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EW840yDjfN9e7q+g8BBm2BG3yVBEzAnqSAvrLz376PQGcIuHhn0wwsIejW?=
+ =?us-ascii?Q?n+4cIrvKinhpw7HDlAaLYiC+cAvXXFS7iFu1QKv?=
+ =?us-ascii?Q?t5r48lCUXbR+fLIGCWyvNwIr0zRa8WtAbswGwiI?=
+ =?us-ascii?Q?50+oRUnyQUgxtTon3PvsmdWaeXF14s866umVGRq?=
+ =?us-ascii?Q?75QHX30xzy+SPC1boZCHYy6N8Y=2F07tb2d8iy0Y=2F?=
+ =?us-ascii?Q?H2b6ztqRn+Th2I1pqbK2zQ=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BnO7yFj2lh9i1I3ZvN1AjJk0rhOiAzkBRBlM8?=
+ =?us-ascii?Q?98HcJkIBpGTDZJ6Yruib=2FsZ1EUKxF3UMopY4er4?=
+ =?us-ascii?Q?Fi4xprgnbXAfF1EtjrJ170Py5=2FXO3xHs+bnqxj7?=
+ =?us-ascii?Q?Q70gLyVh6hukRim0zkJ+h2niJqjlwtrFuD5AznH?=
+ =?us-ascii?Q?MIlWYIvsl1aORs9Jz98+URtVrOCVuJEiuZCT2IB?=
+ =?us-ascii?Q?RnHoXE0MDiZGHztBswlnfE=3D?=
+To: seandinwiddie@gmail.com
+X-Entity-ID: u001.m1jCEyBpKDM0ARPPPDaABg==
+List-Unsubscribe: 
+ =?us-ascii?Q?=3Chttps=3A=2F=2Fu10327057=2Ect=2Esendgrid=2Enet=2Flu=2Funsubscribe=3Foc=3Du001=2EmH2x?=
+ =?us-ascii?Q?wUkJaMFagyTzc2rH1cOTsv5Ne=5FCLGz-X5RdCVhd?=
+ =?us-ascii?Q?Imwg=5FHZOwtVEP2D76ddnHBPqOZxq5=5FuHU5CsMCM?=
+ =?us-ascii?Q?WvO0kaU1Io08bNl0SWeskzYWywCd=5F5L7hCAVa8H?=
+ =?us-ascii?Q?ar5EzdznJQILHLIBOU=5FNwWhgoegcViBSVu3MIDA?=
+ =?us-ascii?Q?ZOpmVoMcptWWoA=5F2X0QFVxdUPmVUwTwRMy5ncQ9?=
+ =?us-ascii?Q?9PHUHxLYrjh23dA68Yxa3ErBzgSwPhcyT5rSFyn?=
+ =?us-ascii?Q?OazOvU-aWcTfUbBNpbtrrskvLvFIIt02pwSTb3X?=
+ =?us-ascii?Q?qxZYqFEZ7VEI2F8frHTqqgYbwqxQ2wXB5hf6s5d?=
+ =?us-ascii?Q?EIExCVWDUova6Kvg0JyvjW4mywIpz=5F2QGQoJ0e2?=
+ =?us-ascii?Q?-kczWYtEHPS7PUxH1kKkuJrvCbYbTMbyJiMGR6r?=
+ =?us-ascii?Q?XFI8CvcTvg6hVFCCB70zOSW9V0RJ98FHYKDU-Cd?=
+ =?us-ascii?Q?uVWQtLb7LLnseTrpiIKXNwwzuwWwU4=5FqGEmVgDA?=
+ =?us-ascii?Q?z8Zuu365pJI66XLqfjYwBmP7iVLWc29243ZMVCB?=
+ =?us-ascii?Q?PZofqbiGkJhDWzBnES9PW-LHlq-VI4-H8myzrub?=
+ =?us-ascii?Q?Y=5Fr9ctRKcDE5bkT1gvGUzIkyrJKlgtAl=5FHrvtR4?=
+ =?us-ascii?Q?B6HNU2t=5FjsieURMUpQwaG-6mDAfM25TNZZIjcMf?=
+ =?us-ascii?Q?PmiauN-pCDgu-kaN=5FrK24SFPpjNkHFXmclqdkpR?=
+ =?us-ascii?Q?T4QtzqbC7n9bRdLTDi1HoDdLwGiIHkQYfQnPoHJ?=
+ =?us-ascii?Q?PviLkuC41xHg3sWgqTcI1JkFin0DqJIIhm0tC1Q?=
+ =?us-ascii?Q?3jVnxcaoFTn7UePEcxsw9P8lsGqEWsRTaRByJzt?=
+ =?us-ascii?Q?laOVfCcS1YCrCagCfCGgsmzY8SGiUNhyDivATnR?=
+ =?us-ascii?Q?whR3o7JHbvWSGB7lA8KPQ9YRO8e6h9tYhsiV8Oe?=
+ =?us-ascii?Q?9RkAE5hm4=5F86rRN6k0L3SBVD8kyKAOTNee2FYV9?=
+ =?us-ascii?Q?XK7r2swzdlgiergO031PkU3UVuw2rZ7RUwt6X1r?=
+ =?us-ascii?Q?wILzLjIMH2QmYIfwwtvg=3E=2C=3Cmailto=3Aunsubscri?=
+ =?us-ascii?Q?be=40em7548=2Egrain=2Eco=3Fsubject=3D10327057=2ESnj?=
+ =?us-ascii?Q?maT4YP0VAGEynmmN7KRWJLPDgX1IYvmndOpuCO7?=
+ =?us-ascii?Q?hoMDAwdTAwMCRQpjLCfnTvALW7fIlxEYlF1=5Fx3c?=
+ =?us-ascii?Q?PpnP1WYZT6ULbNCxyh8zEBea-wOv5tP7YVRhbzq?=
+ =?us-ascii?Q?oq5HaSt5dgl56uT8l3p1h2VgVWmUSSbvoqynWQP?=
+ =?us-ascii?Q?tL=5FP3ANu6AjsFWhT-oU00Tg=3D=3D=2EN6nCbKe-Ly79g?=
+ =?us-ascii?Q?TZIHdX4HFd7piPIuSXdxhN52XvbvfxoMDAwdTAw?=
+ =?us-ascii?Q?MLo4EZcaGAkrSQzy9dBlZzPpZgwT9xIZqSxkwnh?=
+ =?us-ascii?Q?iq2JsL0Wuc=5F488Dor3z5iXemekpFXB0uL2-BtEG?=
+ =?us-ascii?Q?NhhX=5Fk=5FBe3wJ3AgHYac6A3ZVDVLBG4hX8HX7AR6?=
+ =?us-ascii?Q?oNGTxh6y5ceVjObr-cq=5FJJgqck3IIra=5FYMbKhBG?=
+ =?us-ascii?Q?=5Fr43bgS6QnxeSnaO6wgUOK8qJUobqf1fmh8eTQl?=
+ =?us-ascii?Q?0t6g0gjGOEMVHz18NEX9rydt1HKFOnha=5FWBBGk2?=
+ =?us-ascii?Q?-Cmqmk6tdXMeQM2cUFX4xXEMFKFVD2d=5Frk6uaAZ?=
+ =?us-ascii?Q?3f2e-OB4Js4AxqmlbLfPNsGtFuhX8=5F=5FoUDeludU?=
+ =?us-ascii?Q?0eWIIsSRhqmNz1rfGc4s7BLUfqB4XeATynuIla1?=
+ =?us-ascii?Q?tAFqY0blOGKEAkauoj5QUfdm26HSE-joEWodY-K?=
+ =?us-ascii?Q?Wb4=5Feg71UpCKLzoLs=3D=3E?=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+
+--bacc74e7109b544dfd0a062bd0508d15468e0089299e2a506b8bc7b86f35
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+Mime-Version: 1.0
+
+Grain logo Sparkle icon
+AI meeting summary
+
+Use for Free
+(https://grain.com/?utm_source=3Dmeeting_recap_email&utm_medium=3Demail&utm=
+_campaign=3Dexternal_participant_meeting_recap_email&utm_content=3Demail_us=
+e_for_free_link)
+
+Sean Dinwiddie and Alex Rodriguez
+
+May 05, 2025
+=E2=80=A2
+46 mins
+=E2=80=A2
+Participants:
+
+seandinwiddie & Alex +1 other
+
+Key Takeaways
+
+=E2=80=A2 Sean Dinwiddie focuses on application development and prefers
+consulting over managing teams. He aims to scale his business by
+acquiring more clients while reducing hands-on involvement. 01:31
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D91730?utm_source=3Dmeeting_recap_=
+email&utm_medium=3Demail&utm_campaign=3Dexternal_participant_meeting_recap_=
+email&utm_content=3Demail_meeting_timestamp_link)
+=E2=80=A2 Dinwiddie currently charges $1,500-$2,000 per week per client
+and seeks larger projects or more clients to increase revenue
+without being overly hands-on. 08:54
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D534636?utm_source=3Dmeeting_recap=
+_email&utm_medium=3Demail&utm_campaign=3Dexternal_participant_meeting_recap=
+_email&utm_content=3Demail_meeting_timestamp_link)
+See all 4 Key Takeaways
+Right arrow
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/JRu=
+DOG77m6VM9q9SCcmcXZr2VhDZiAQYENUFn7Q9?utm_source=3Dmeeting_recap_email&utm_=
+medium=3Demail&utm_campaign=3Dexternal_participant_meeting_recap_email&utm_=
+content=3Demail_see_more_meeting_link)
+
+Discussion Topics
+
+Business Development ChallengesSean wants to improve marketing
+efforts and be more aggressive in client outreach.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D1061906)Sean
+currently charges $1500-2000 per week per client, preferring
+weekly sprints over hourly billing.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D534636)Sean
+struggles to acquire better clients and scale his business
+without being overly hands-on.Experiences burnout from managing
+multiple hands-on projects and clients.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D239538)Desires
+to transition to a consulting role rather than managing
+day-to-day tasks.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D429916)Consulting
+and Collaboration OpportunitiesAlex encourages leveraging
+existing skills in fractional roles to attract higher-paying
+clients.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D1447803)Sean
+identifies potential collaboration on projects requiring coding
+expertise.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D1798898)Alex
+suggests exploring fractional roles to reduce client acquisition
+pressure and stabilize income.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D1365422)Client
+Acquisition StrategiesAlex recommends focusing on retainer-based
+models for consistent income and less client chasing.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D1447803)Sean
+acknowledges the need to be more aggressive with his marketing
+efforts.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D1061906)Sean
+currently relies on outreach and spreading landing pages across
+the web for client acquisition.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D1020366)Technical
+Expertise and Services OfferedSean's ideal client includes
+startups and agencies needing overflow work.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D1111003)Sean
+is interested in working with Chief Technology Officers on legacy
+applications.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D1184064)Sean
+specializes in application development, particularly in state
+management for applications using Redux and React.Has experience
+in porting legacy applications to modern standards.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D159740)Enjoys
+working with teams but prefers technical management over HR
+responsibilities.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D489190)Financial
+Goals and Business ModelAlex discusses the potential of a
+fractional model to provide stability and reduce the need for
+constant client acquisition.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D1447803)Sean's
+low month revenue is around $6,000, while his highest month was
+about $12,000, achieved through intensive work.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D794746)Sean
+aims for gradual growth in his business, preferring to charge
+more per client or acquire more clients at his current rate.
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QL=
+tJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D748794)See
+all 5 topics
+Right arrow
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/JRu=
+DOG77m6VM9q9SCcmcXZr2VhDZiAQYENUFn7Q9?utm_source=3Dmeeting_recap_email&utm_=
+medium=3Demail&utm_campaign=3Dexternal_participant_meeting_recap_email&utm_=
+content=3Demail_see_more_meeting_link)
+
+Action Items
+
+See all 3 action items
+Right arrow
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/JRu=
+DOG77m6VM9q9SCcmcXZr2VhDZiAQYENUFn7Q9?utm_source=3Dmeeting_recap_email&utm_=
+medium=3Demail&utm_campaign=3Dexternal_participant_meeting_recap_email&utm_=
+content=3Demail_see_more_meeting_link)
+View Meeting
+(https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/JRu=
+DOG77m6VM9q9SCcmcXZr2VhDZiAQYENUFn7Q9?utm_source=3Dmeeting_recap_email&utm_=
+medium=3Demail&utm_campaign=3Dexternal_participant_meeting_recap_email&utm_=
+content=3Demail_view_meeting_link)
+
+New to Grain? Use it for free with your team, forever.
+
+Accurate summaries, insights, and coaching for every recording.
+Use for Free
+(https://grain.com/?utm_source=3Dmeeting_recap_email&utm_medium=3Demail&utm=
+_campaign=3Dexternal_participant_meeting_recap_email&utm_content=3Demail_us=
+e_for_free_link)
+
+Grain (https://grain.com) Twitter
+(https://twitter.com/grainhq)LinkedIn
+(https://www.linkedin.com/company/grainhq)
+
+You are receiving this because you attended a meeting recorded
+with Grain.
+
+Copyright =C2=A9 2025 Grain Intelligence, all rights reserved.
+
+Data & Security Policy (https://grain.com/security)
+=C2=B7
+Contact Support (help@grain.com)
+Unsubscribe From This List https://u10327057.ct.sendgrid.net/asm/unsubscrib=
+e/?user_id=3D10327057&data=3DJj35KpNywsrb7AQTLcvrx6GmzlS2waNZodPN8jqt6HdoMD=
+AwdTAwMN8JoNCsNnEwLZSKp0kHlp75m4km7U2nRtC912OSLeRBZMv2xWZYQ_p4VrwBuohf8U4ot=
+KMNWqHfI8tSP5SX_fk-XLemW5Gk5bCgr6XptO0RajsmgELKoCK_iGQLn_KuSoe2grBbQZ6m_rxg=
+oRZXyj4gsR5ObZtGT9R26YfGJ0X5GRKc8HMKqoI-tnfEB3D5iKCj7NwYSZrLUUpRiFew2KGLYn2=
+IF0_23ac9TbRNW3dSOOejikx1vjWNe41WXdsURdWh7ePbUwSf-2FTjFfUIrFrAS1lGxeI0s9X29=
+n27cULyeE0azjA3gXBYAezdUxi2iMicfWJkakOgXE_7rJUPyDPGOvztjsFDMimw6SsG5d_u7nYB=
+DSY9lVIh4L5oECVNV8YjyuvjBR4t3JvyrkkLNPNPxHF14aHtDxmXeM0AfiVV40OFdBXLe0lCdMc=
+JGezdhy8xUnyRO8lFonkif6nT4R8w2GDQ-8wmb0iDOeMqkDIXIIu764gorOtDbCcoaTpGbVi00A=
+0gEm_nlzBaKOgYiYuiWn7nz5cBSt3_ywcv_9DopvGFmswewMc7696UTbW1Q=3D=3D | Manage =
+Email Preferences https://u10327057.ct.sendgrid.net/asm/?user_id=3D10327057=
+&data=3D33iM75rPG-WvXfMOVGIvvZVeSAOrDat2Mtz-8eUQ4_poMDAwdTAwMP6f_tzZnOUeeev=
+kPnd-t8d7yw-qyzYurJOlw4YwXAFxSw8pmskNQaJrTINCc-JIQFb8v4o3hlorGP-w9RgQOhfEPp=
+d5FBxqf_oIWImcid1t82sCoiVlCbPyCaHLYNHxAz-_i-IYk3CIBggerkaDwSMN5m29imNL8tkU6=
+XT6uNE36SaURgyW8oFmBg1dwSXBzA-BubPmbiP6y_tQSXlRAbRNXYCL3oBmtfPoI0hckwuZIOn-=
+uN3vdKj3h4TYfvSxLSXMw00h6iMf-kMPA34qnjeWapVUZ4Fg7_a2p6QNvByfXj2qGzxr8BO52hD=
+0lG3I8aJbtl9L5C3Vk282aC6baHNicG4nyDuhsFktD4OXzVL6OuV5CqBXaxfICUP9rfbJtZeXYB=
+rYupNebp36Q4mu3YB-I3w1YhMHEGI7s-IkBg2HHXKacqnvjNA2yOvljQ_UAv1U7-kjtLe4YGTxe=
+ysxLdpNe-C_OyrdJCRQiKqYYA6_FFZGCz5RnWgkHks6R2otD9NuUbGS2vsvnhw8zU6BZYKMkNY5=
+JrWG1ffxPPTz9QXG
+--bacc74e7109b544dfd0a062bd0508d15468e0089299e2a506b8bc7b86f35
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+Mime-Version: 1.0
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml"><head><meta name=3D"viewport" =
+content=3D"width=3Ddevice-width, initial-scale=3D1.0"/><meta name=3D"x-appl=
+e-disable-message-reformatting"/><meta http-equiv=3D"Content-Type" content=
+=3D"text/html; charset=3DUTF-8"/><meta name=3D"color-scheme" content=3D"lig=
+ht"/><meta name=3D"supported-color-schemes" content=3D"light"/><title></tit=
+le><link href=3D"https://fonts.googleapis.com/css2?family=3DPoppins:ital,wg=
+ht@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;=
+1,400;1,500;1,600;1,700;1,800;1,900&amp;display=3Dswap" rel=3D"stylesheet"/=
+><link href=3D"https://fonts.googleapis.com/css2?family=3DInter:wght@400;50=
+0;700&amp;display=3Dswap" rel=3D"stylesheet"/><style type=3D"text/css" rel=
+=3D"stylesheet" media=3D"all">
+    /* Base ----------------------------------- */
+
+    body {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", =
+"Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helv=
+etica Neue", sans-serif;
+      font-size: 15px;
+      color: #51545E;
+      background-color: #FFFFFF;
+      width: 100% !important;
+      height: 100%;
+      margin: 0;
+      word-break: break-word;
+      -webkit-text-size-adjust: none;
+    }
+
+    /* Typography ----------------------------- */
+
+    blockquote,
+    p,
+    ol,
+    ul,
+    pre {
+      color: #51545E;
+      line-height: 1.65;
+      word-wrap: break-word;
+      margin: 1.15em 0;
+      box-sizing: border-box;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: #333333;
+      font-weight: 500;
+      line-height: 1.25;
+      margin-top: 0;
+      margin-bottom: 0.3em;
+    }
+
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.25em; }
+    h4 { font-size: 1em; }
+
+    blockquote {
+      border-left: 3px solid #CCCCCC;
+      padding-left: 1em;
+    }
+
+    blockquote p {
+      color: #6a737d;
+    }
+
+    ol {
+      padding-left: 2em;
+    }
+
+    ol ol,
+    ol ul,
+    ul ol,
+    ul ul {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    li > p:first-child {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    li + li {
+      margin-top: 0.25em;
+    }
+
+    pre,
+    code {
+      font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monosp=
+ace;
+      background-color: #F6F8FA;
+      border-radius: 6px;
+    }
+
+    pre {
+      padding: 1em;
+      overflow-x: auto;
+      line-height: 1.25;
+      max-width: 100%;
+    }
+
+    code {
+      font-size: 85%;
+      padding: 0.2em 0.4em;
+    }
+
+    pre code {
+      background-color: transparent;
+      padding: 0;
+    }
+
+    a code {
+      color: #3869D4;
+    }
+
+    a {
+      color: #3869D4;
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    /* Layout --------------------------------- */
+
+    .email-wrapper {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      background-color: #ffffff;
+    }
+
+    .email-preheader {
+      padding: 20px 0;
+    }
+
+    .email-footer-spacer {
+      padding: 10px 0;
+    }
+
+    .email-content {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+    }
+
+    .email-masthead {
+      padding: 25px 0 0 0;
+      text-align: center;
+    }
+
+    .email-masthead__name {
+      color: #333;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .email-body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+    }
+
+    .email-body_inner {
+      width: 570px;
+      margin: 0 auto;
+      padding: 0;
+      -premailer-width: 570px;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      background-color: #FFFFFF;
+      border: 1px solid #F0F0F0;
+      border-radius: 3px;
+    }
+
+    .email-footer {
+      width: 570px;
+      margin: 0 auto;
+      padding: 0 32px;
+      padding-bottom: 32px;
+      -premailer-width: 570px;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      text-align: left;
+      color: #545454;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;=20
+    }
+
+    .email-footer__inner {
+      width:100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      margin: 0;
+    }
+
+    .email-footer__content-cell {
+      padding: 20px 0;
+      color: #A5ACB8;
+    }
+
+    .email-footer__content-cell a {
+      color: #A5ACB8;
+      text-decoration: none;
+    }
+
+    .email-footer__content-cell a:not(:first-child) {
+      margin-left: 1rem;
+    }
+
+    .email-footer__app-name {
+      font-weight: 500;
+    }
+
+    .content-cell {
+      <!-- padding: 0px 0px 32px 0px; -->
+      padding: 0;
+    }
+
+    .inner-content-table {
+      padding: 40px 32px 32px 32px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .email-body_inner,
+      .email-footer,
+      .email-footer__inner {
+        width: 100% !important;
+      }
+
+      .email-body_inner {
+        border-color:transparent !important;
+      }
+
+      .content-cell {
+        padding: 20px !important;
+      }
+
+      .email-footer {
+        padding: 0 20px !important;
+      }
+
+      .email-preheader {
+        padding: 12px !important;
+      }
+
+      .email-footer-spacer {
+        padding: 12px !important;
+      }
+    }
+
+    /* Used by template recipes --------------- */
+
+    .body-action {
+      width: 100%;
+      margin: 30px auto;
+      padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      text-align: center;
+    }
+
+    .body-sub {
+      margin-top: 25px;
+      padding-top: 25px;
+      border-top: 1px solid #EAEAEC;
+    }
+
+    p.sub {
+      font-size: 14px;
+    }
+
+    .button {
+      background-color: #3869D4;
+      border-top: 10px solid #3869D4;
+      border-right: 20px solid #3869D4;
+      border-bottom: 10px solid #3869D4;
+      border-left: 20px solid #3869D4;
+      display: inline-block;
+      color: #FFF!important;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      border-radius: 4px;
+      -webkit-text-size-adjust: none;
+      box-sizing: border-box;
+    }
+
+    .button--brand {
+      color: #FFF!important;
+      background-color: #E95744;
+      border-top: 10px solid #E95744;
+      border-right: 20px solid #E95744;
+      border-bottom: 10px solid #E95744;
+      border-left: 20px solid #E95744;
+    }
+   =20
+    .btn-primary a {
+      width: auto;
+      white-space: nowrap;
+      height: 48px;
+      border-radius: 8px;
+      background-color: #009959;
+      padding: 16px 20px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      color:  #FFF;
+      text-align: center;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .btn-secondary a {
+      width: auto;
+      white-space: nowrap;
+      border-radius: 6px;
+      background-color: #FFF;
+      text-align: center;
+      border: 1px solid #E6E6E6;
+      color: #141414;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      text-decoration: none;
+      display: flex;
+    }
+   =20
+    .info-content-paragraph {
+      color: #000;
+      font-family: "Inter";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+      margin: 0 0 24px 0;
+    }
+
+    @media only screen and (max-width: 500px) {
+      .button {
+        width: 100% !important;
+        text-align: center !important;
+      }
+    }
+    </style><!--[if mso]>
+    <style type=3D"text/css">
+      .f-fallback {
+        font-family: Arial, sans-serif;
+      }
+    </style>
+    <![endif]--></head><body style=3D"-webkit-text-size-adjust: none; backg=
+round-color: #FFFFFF; color: #51545E; font-family: &quot;Inter&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &qu=
+ot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans=
+&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; fon=
+t-size: 15px; height: 100%; margin: 0; width: 100% !important; word-break: =
+break-word;"><table class=3D"email-wrapper" width=3D"100%" cellpadding=3D"0=
+" cellspacing=3D"0" role=3D"presentation" style=3D"-premailer-cellpadding: =
+0; -premailer-cellspacing: 0; -premailer-width: 100%; background-color: #ff=
+ffff; margin: 0; padding: 0; width: 100%;"><tr><td align=3D"center"><table =
+class=3D"email-content" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" =
+role=3D"presentation" style=3D"-premailer-cellpadding: 0; -premailer-cellsp=
+acing: 0; -premailer-width: 100%; margin: 0; padding: 0; width: 100%;"><tr>=
+<td class=3D"email-preheader" style=3D"padding: 20px 0;"></td></tr><tr><td =
+class=3D"email-body" width=3D"570" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"-premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width=
+: 100%; margin: 0; padding: 0; width: 100%;"><table class=3D"email-body_inn=
+er" align=3D"center" width=3D"570" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" style=3D"-premailer-cellpadding: 0; -premailer-cellspacin=
+g: 0; -premailer-width: 570px; background-color: #FFFFFF; border: 1px solid=
+ #F0F0F0; border-radius: 3px; margin: 0 auto; padding: 0; width: 570px;"><t=
+r><td class=3D"content-cell" style=3D"--&gt;
+      padding: 0; &lt;!-- padding: 0px 0px 32px 0px;"><div class=3D"f-fallb=
+ack"><table style=3D"min-width: 100%; max-width: 600px; border-spacing: 0; =
+border-collapse: collapse;"><tr style=3D"background-image: url(&#39;https:/=
+/media.grain.com/public/email/scribble_pattern.png&#39;); margin: 0; backgr=
+ound-color: #F5FDFA; background-size: cover; height: 48px; min-width: 100%;=
+ max-width: 600px"><td style=3D"text-align: left; vertical-align: middle; w=
+idth: 33%;"><div style=3D"display: inline-block; padding-left: 16px;"><img =
+src=3D"https://media.grain.com/public/email/grain_logo_lg.png" alt=3D"Grain=
+ logo" style=3D"height: 16px; max-width: 100%; vertical-align: middle;"/></=
+div></td><td style=3D"text-align: center; vertical-align: middle; width: 33=
+%;"><div style=3D"display: inline-block; vertical-align: middle;"><img src=
+=3D"https://media.grain.com/public/email/sparkle_lg.png" alt=3D"Sparkle ico=
+n" style=3D"height: 16px; max-width: 100%; vertical-align: middle; width: 1=
+6px;"/><span style=3D"font-size: 12px; font-weight: 500; line-height: 16px;=
+ margin-left: 4px; vertical-align: middle;">
+            AI meeting summary
+             =20
+            </span></div></td><td style=3D"text-align: right; vertical-alig=
+n: middle; padding-right: 12px; width: 33%;"><table role=3D"presentation" b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"btn-secondary" sty=
+le=3D"display: inline-block; vertical-align: middle;"><tr><td align=3D"cent=
+er" style=3D"height: 16px; vertical-align: middle;"><a href=3D"https://grai=
+n.com/?utm_source=3Dmeeting_recap_email&amp;utm_medium=3Demail&amp;utm_camp=
+aign=3Dexternal_participant_meeting_recap_email&amp;utm_content=3Demail_use=
+_for_free_link" target=3D"_blank" style=3D"background-color: #FFF; border: =
+1px solid #E6E6E6; border-radius: 6px; color: #141414; display: flex; font-=
+size: 12px; font-weight: 500; line-height: 16px; padding: 4px 8px; text-ali=
+gn: center; text-decoration: none; white-space: nowrap; width: auto;">
+                  Use for Free
+                </a></td></tr></table></td></tr></table><table class=3D"inn=
+er-content-table" style=3D"padding: 40px 32px 32px 32px;"><tr><td valign=3D=
+"top" align=3D"center" style=3D"
+        font-size: 28px;
+        line-height: 125%;
+        color: #141414;
+        font-weight: 600;
+        font-style: normal;
+        padding-bottom: 6px;
+        font-family: &#39;Poppins&#39;, -apple-system, BlinkMacSystemFont, =
+&#39;Segoe UI&#39;, &#39;Roboto&#39;, &#39;Oxygen&#39;, &#39;Ubuntu&#39;, &=
+#39;Cantarell&#39;, &#39;Fira Sans&#39;, &#39;Droid Sans&#39;, &#39;Helveti=
+ca Neue&#39;, sans-serif;">
+      Sean Dinwiddie and Alex Rodriguez
+    </td></tr><tr><td align=3D"center" style=3D"
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+      "><div style=3D"margin-bottom: 32px;">
+        May 05, 2025
+        <span style=3D"padding: 0 2px 0 2px; color: #949494;">=E2=80=A2</sp=
+an>
+        46 mins
+        <span style=3D"padding: 0 2px 0 2px; color: #949494;">=E2=80=A2</sp=
+an>
+        Participants:
+         =20
+            seandinwiddie &amp; Alex +1 other
+         =20
+       </div></td></tr><tr><td><div style=3D"border-bottom: 1px solid #E6E6=
+E6;"></div></td></tr><tr><td style=3D"font-size: 16px; line-height: 20px; f=
+ont-weight: 600;"><div style=3D"margin-top: 32px;">
+        Key Takeaways
+      </div></td></tr><tr><td><div style=3D"font-size: 13px; line-height: 2=
+0px; padding-top: 14px;"><table style=3D"width: 100%; border-collapse: coll=
+apse; padding-left: 0; margin-block-start: 0; margin-block-end: 0;"><tr><td=
+ style=3D"width: 10px; vertical-align: top; padding-right: 4px;">=E2=80=A2<=
+/td><td style=3D"vertical-align: top;">Sean Dinwiddie focuses on applicatio=
+n development and prefers consulting over managing teams. He aims to scale =
+his business by acquiring more clients while reducing hands-on involvement.=
+</td><td style=3D"text-align: right; color: #141414; vertical-align: top; w=
+hite-space: nowrap; width: 10px; padding-left: 6px;"><a href=3D"https://gra=
+in.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QLtJb8djbgTQlH=
+JgrXU36xzKOHUkNRmtuib2ShE?t=3D91730?utm_source=3Dmeeting_recap_email&amp;ut=
+m_medium=3Demail&amp;utm_campaign=3Dexternal_participant_meeting_recap_emai=
+l&amp;utm_content=3Demail_meeting_timestamp_link" target=3D"_blank" style=
+=3D"color: #949494; font-size: 12px; line-height: 20px; text-decoration: un=
+derline;">01:31</a></td></tr><tr><td style=3D"width: 10px; vertical-align: =
+top; padding-right: 4px;">=E2=80=A2</td><td style=3D"vertical-align: top;">=
+Dinwiddie currently charges $1,500-$2,000 per week per client and seeks lar=
+ger projects or more clients to increase revenue without being overly hands=
+-on.</td><td style=3D"text-align: right; color: #141414; vertical-align: to=
+p; white-space: nowrap; width: 10px; padding-left: 6px;"><a href=3D"https:/=
+/grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QLtJb8djbg=
+TQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D534636?utm_source=3Dmeeting_recap_email&a=
+mp;utm_medium=3Demail&amp;utm_campaign=3Dexternal_participant_meeting_recap=
+_email&amp;utm_content=3Demail_meeting_timestamp_link" target=3D"_blank" st=
+yle=3D"color: #949494; font-size: 12px; line-height: 20px; text-decoration:=
+ underline;">08:54</a></td></tr></table><a href=3D"https://grain.com/share/=
+recording/a89d172c-2056-41ca-9bd5-dc004efd3641/JRuDOG77m6VM9q9SCcmcXZr2VhDZ=
+iAQYENUFn7Q9?utm_source=3Dmeeting_recap_email&amp;utm_medium=3Demail&amp;ut=
+m_campaign=3Dexternal_participant_meeting_recap_email&amp;utm_content=3Dema=
+il_see_more_meeting_link" target=3D"_blank" style=3D"color: #3869D4; text-d=
+ecoration: underline;"><div style=3D"margin-top: 10px;"><span style=3D"colo=
+r: #009959; font-size: 12px; line-height: 16px;">
+           See all 4 Key Takeaways
+         </span><img src=3D"https://media.grain.com/public/email/icon_arrow=
+_right.png" alt=3D"Right arrow" style=3D"max-width: 100%; padding-left: 4px=
+;"/></div></a></div></td></tr><tr><td style=3D"font-size: 16px; line-height=
+: 20px; font-weight: 600;"><div style=3D"margin-top: 32px; margin-bottom: 2=
+px;">
+      Discussion Topics
+    </div></td></tr><tr><td><div style=3D"font-size: 13px; line-height: 20p=
+x; padding-top: 14px;"><div style=3D"margin-bottom: 16px;"><div style=3D"fo=
+nt-weight: 500; margin-bottom: 8px;">Business Development Challenges</div><=
+div style=3D"margin-left: 12px; margin-bottom: 8px;"><a href=3D"https://gra=
+in.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QLtJb8djbgTQlH=
+JgrXU36xzKOHUkNRmtuib2ShE?t=3D1061906" target=3D"_blank" style=3D"color: #1=
+41414; text-decoration: none;"><li>Sean wants to improve marketing efforts =
+and be more aggressive in client outreach.</li></a></div><div style=3D"marg=
+in-left: 12px; margin-bottom: 8px;"><a href=3D"https://grain.com/share/reco=
+rding/a89d172c-2056-41ca-9bd5-dc004efd3641/7QLtJb8djbgTQlHJgrXU36xzKOHUkNRm=
+tuib2ShE?t=3D534636" target=3D"_blank" style=3D"color: #141414; text-decora=
+tion: none;"><li>Sean currently charges $1500-2000 per week per client, pre=
+ferring weekly sprints over hourly billing.</li></a></div><div style=3D"mar=
+gin-left: 12px; margin-bottom: 8px;"><li>Sean struggles to acquire better c=
+lients and scale his business without being overly hands-on.</li><div style=
+=3D"margin-left: 18px; margin-top: 4px; font-size: 12px; color: #666666;"><=
+div style=3D"margin-bottom: 4px;"><a href=3D"https://grain.com/share/record=
+ing/a89d172c-2056-41ca-9bd5-dc004efd3641/7QLtJb8djbgTQlHJgrXU36xzKOHUkNRmtu=
+ib2ShE?t=3D239538" target=3D"_blank" "=3D"&quot;" style=3D"color: #666666; =
+text-decoration: none;"><li>Experiences burnout from managing multiple hand=
+s-on projects and clients.</li></a></div><div style=3D"margin-bottom: 4px;"=
+><a href=3D"https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004=
+efd3641/7QLtJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D429916" target=3D"_bla=
+nk" "=3D"&quot;" style=3D"color: #666666; text-decoration: none;"><li>Desir=
+es to transition to a consulting role rather than managing day-to-day tasks=
+.</li></a></div></div></div></div><div style=3D"margin-bottom: 16px;"><div =
+style=3D"font-weight: 500; margin-bottom: 8px;">Consulting and Collaboratio=
+n Opportunities</div><div style=3D"margin-left: 12px; margin-bottom: 8px;">=
+<a href=3D"https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004e=
+fd3641/7QLtJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D1447803" target=3D"_bla=
+nk" style=3D"color: #141414; text-decoration: none;"><li>Alex encourages le=
+veraging existing skills in fractional roles to attract higher-paying clien=
+ts.</li></a></div><div style=3D"margin-left: 12px; margin-bottom: 8px;"><a =
+href=3D"https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3=
+641/7QLtJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D1798898" target=3D"_blank"=
+ style=3D"color: #141414; text-decoration: none;"><li>Sean identifies poten=
+tial collaboration on projects requiring coding expertise.</li></a></div><d=
+iv style=3D"margin-left: 12px; margin-bottom: 8px;"><a href=3D"https://grai=
+n.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QLtJb8djbgTQlHJ=
+grXU36xzKOHUkNRmtuib2ShE?t=3D1365422" target=3D"_blank" style=3D"color: #14=
+1414; text-decoration: none;"><li>Alex suggests exploring fractional roles =
+to reduce client acquisition pressure and stabilize income.</li></a></div><=
+/div><div style=3D"margin-bottom: 16px;"><div style=3D"font-weight: 500; ma=
+rgin-bottom: 8px;">Client Acquisition Strategies</div><div style=3D"margin-=
+left: 12px; margin-bottom: 8px;"><a href=3D"https://grain.com/share/recordi=
+ng/a89d172c-2056-41ca-9bd5-dc004efd3641/7QLtJb8djbgTQlHJgrXU36xzKOHUkNRmtui=
+b2ShE?t=3D1447803" target=3D"_blank" style=3D"color: #141414; text-decorati=
+on: none;"><li>Alex recommends focusing on retainer-based models for consis=
+tent income and less client chasing.</li></a></div><div style=3D"margin-lef=
+t: 12px; margin-bottom: 8px;"><a href=3D"https://grain.com/share/recording/=
+a89d172c-2056-41ca-9bd5-dc004efd3641/7QLtJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2S=
+hE?t=3D1061906" target=3D"_blank" style=3D"color: #141414; text-decoration:=
+ none;"><li>Sean acknowledges the need to be more aggressive with his marke=
+ting efforts.</li></a></div><div style=3D"margin-left: 12px; margin-bottom:=
+ 8px;"><a href=3D"https://grain.com/share/recording/a89d172c-2056-41ca-9bd5=
+-dc004efd3641/7QLtJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D1020366" target=
+=3D"_blank" style=3D"color: #141414; text-decoration: none;"><li>Sean curre=
+ntly relies on outreach and spreading landing pages across the web for clie=
+nt acquisition.</li></a></div></div><div style=3D"margin-bottom: 16px;"><di=
+v style=3D"font-weight: 500; margin-bottom: 8px;">Technical Expertise and S=
+ervices Offered</div><div style=3D"margin-left: 12px; margin-bottom: 8px;">=
+<a href=3D"https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004e=
+fd3641/7QLtJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D1111003" target=3D"_bla=
+nk" style=3D"color: #141414; text-decoration: none;"><li>Sean&#39;s ideal c=
+lient includes startups and agencies needing overflow work.</li></a></div><=
+div style=3D"margin-left: 12px; margin-bottom: 8px;"><a href=3D"https://gra=
+in.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QLtJb8djbgTQlH=
+JgrXU36xzKOHUkNRmtuib2ShE?t=3D1184064" target=3D"_blank" style=3D"color: #1=
+41414; text-decoration: none;"><li>Sean is interested in working with Chief=
+ Technology Officers on legacy applications.</li></a></div><div style=3D"ma=
+rgin-left: 12px; margin-bottom: 8px;"><li>Sean specializes in application d=
+evelopment, particularly in state management for applications using Redux a=
+nd React.</li><div style=3D"margin-left: 18px; margin-top: 4px; font-size: =
+12px; color: #666666;"><div style=3D"margin-bottom: 4px;"><a href=3D"https:=
+//grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QLtJb8djb=
+gTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D159740" target=3D"_blank" "=3D"&quot;" s=
+tyle=3D"color: #666666; text-decoration: none;"><li>Has experience in porti=
+ng legacy applications to modern standards.</li></a></div><div style=3D"mar=
+gin-bottom: 4px;"><a href=3D"https://grain.com/share/recording/a89d172c-205=
+6-41ca-9bd5-dc004efd3641/7QLtJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D48919=
+0" target=3D"_blank" "=3D"&quot;" style=3D"color: #666666; text-decoration:=
+ none;"><li>Enjoys working with teams but prefers technical management over=
+ HR responsibilities.</li></a></div></div></div></div><div style=3D"margin-=
+bottom: 16px;"><div style=3D"font-weight: 500; margin-bottom: 8px;">Financi=
+al Goals and Business Model</div><div style=3D"margin-left: 12px; margin-bo=
+ttom: 8px;"><a href=3D"https://grain.com/share/recording/a89d172c-2056-41ca=
+-9bd5-dc004efd3641/7QLtJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D1447803" ta=
+rget=3D"_blank" style=3D"color: #141414; text-decoration: none;"><li>Alex d=
+iscusses the potential of a fractional model to provide stability and reduc=
+e the need for constant client acquisition.</li></a></div><div style=3D"mar=
+gin-left: 12px; margin-bottom: 8px;"><a href=3D"https://grain.com/share/rec=
+ording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QLtJb8djbgTQlHJgrXU36xzKOHUkNR=
+mtuib2ShE?t=3D794746" target=3D"_blank" style=3D"color: #141414; text-decor=
+ation: none;"><li>Sean&#39;s low month revenue is around $6,000, while his =
+highest month was about $12,000, achieved through intensive work.</li></a><=
+/div><div style=3D"margin-left: 12px; margin-bottom: 8px;"><a href=3D"https=
+://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/7QLtJb8dj=
+bgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D748794" target=3D"_blank" style=3D"colo=
+r: #141414; text-decoration: none;"><li>Sean aims for gradual growth in his=
+ business, preferring to charge more per client or acquire more clients at =
+his current rate.</li></a></div></div></div><a href=3D"https://grain.com/sh=
+are/recording/a89d172c-2056-41ca-9bd5-dc004efd3641/JRuDOG77m6VM9q9SCcmcXZr2=
+VhDZiAQYENUFn7Q9?utm_source=3Dmeeting_recap_email&amp;utm_medium=3Demail&am=
+p;utm_campaign=3Dexternal_participant_meeting_recap_email&amp;utm_content=
+=3Demail_see_more_meeting_link" target=3D"_blank" style=3D"color: #3869D4; =
+text-decoration: underline;"><div style=3D"display: flex; align-items: cent=
+er; gap: 6px; margin-top: 10px;"><span style=3D"color: #009959; font-size: =
+12px; line-height: 16px;">
+          See all 5 topics
+        </span><img src=3D"https://media.grain.com/public/email/icon_arrow_=
+right.png" alt=3D"Right arrow" style=3D"max-width: 100%;"/></div></a></td><=
+/tr><tr><td style=3D"font-size: 16px; line-height: 20px; font-weight: 600;"=
+><div style=3D"margin-top: 32px; margin-bottom: 4px;">
+        Action Items
+      </div></td></tr><tr><td><table width=3D"100%"><div style=3D"
+         color: #949494;
+         text-overflow: ellipsis;
+         font-size: 12px;
+         line-height: 16px;
+         padding-top: 10px;
+        ">
+         =20
+            Alex Rodriguez =E2=80=A2 lostimagination=20
+         =20
+        </div><div style=3D"
+         text-overflow: ellipsis;
+         color: #141414;
+         font-size: 13px;
+         line-height: 20px;
+         font-weight: 400;
+         padding-top: 10px;
+        "><label><span style=3D"display: inline-block; width: 86%;">=E2=98=
+=90 Follow up on the call with Emily regarding the app project</span></labe=
+l><span style=3D"font-size: 12px; line-height: 20px; padding-left: 2px; flo=
+at: right;"><a href=3D"https://grain.com/share/recording/a89d172c-2056-41ca=
+-9bd5-dc004efd3641/7QLtJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D2479762?utm=
+_source=3Dmeeting_recap_email&amp;utm_medium=3Demail&amp;utm_campaign=3Dext=
+ernal_participant_meeting_recap_email&amp;utm_content=3Demail_meeting_times=
+tamp_link" target=3D"_blank" style=3D"color: #949494; text-decoration: unde=
+rline;">
+               41:19
+             </a></span></div><div style=3D"
+         text-overflow: ellipsis;
+         color: #141414;
+         font-size: 13px;
+         line-height: 20px;
+         font-weight: 400;
+         padding-top: 10px;
+        "><label><span style=3D"display: inline-block; width: 86%;">=E2=98=
+=90 Ask for updates on the coffee project from Josh</span></label><span sty=
+le=3D"font-size: 12px; line-height: 20px; padding-left: 2px; float: right;"=
+><a href=3D"https://grain.com/share/recording/a89d172c-2056-41ca-9bd5-dc004=
+efd3641/7QLtJb8djbgTQlHJgrXU36xzKOHUkNRmtuib2ShE?t=3D2702833?utm_source=3Dm=
+eeting_recap_email&amp;utm_medium=3Demail&amp;utm_campaign=3Dexternal_parti=
+cipant_meeting_recap_email&amp;utm_content=3Demail_meeting_timestamp_link" =
+target=3D"_blank" style=3D"color: #949494; text-decoration: underline;">
+               45:02
+             </a></span></div></table><a href=3D"https://grain.com/share/re=
+cording/a89d172c-2056-41ca-9bd5-dc004efd3641/JRuDOG77m6VM9q9SCcmcXZr2VhDZiA=
+QYENUFn7Q9?utm_source=3Dmeeting_recap_email&amp;utm_medium=3Demail&amp;utm_=
+campaign=3Dexternal_participant_meeting_recap_email&amp;utm_content=3Demail=
+_see_more_meeting_link" target=3D"_blank" style=3D"color: #3869D4; text-dec=
+oration: underline;"><div style=3D"display: flex; align-items: center; gap:=
+ 6px; margin-top: 10px;"><span style=3D"color: #009959; font-size: 12px; li=
+ne-height: 16px;">
+           See all 3 action items
+         </span><img src=3D"https://media.grain.com/public/email/icon_arrow=
+_right.png" alt=3D"Right arrow" style=3D"max-width: 100%;"/></div></a></td>=
+</tr><tr><td align=3D"center" style=3D"padding-top: 32px; padding-bottom: 3=
+2px;"><table style=3D"width: 100%; padding: 8px 0px;"><tr><td style=3D"text=
+-align: center;"><table role=3D"presentation" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" class=3D"btn-primary" height:=3D"height:" 48px;=3D"48px=
+;" style=3D"text-align: center; margin: 0 auto; border-collapse: collapse; =
+width: auto;"><tr><td align=3D"center"><a href=3D"https://grain.com/share/r=
+ecording/a89d172c-2056-41ca-9bd5-dc004efd3641/JRuDOG77m6VM9q9SCcmcXZr2VhDZi=
+AQYENUFn7Q9?utm_source=3Dmeeting_recap_email&amp;utm_medium=3Demail&amp;utm=
+_campaign=3Dexternal_participant_meeting_recap_email&amp;utm_content=3Demai=
+l_view_meeting_link" target=3D"_blank" style=3D"background-color: #009959; =
+border-radius: 8px; color: #FFF; font-size: 12px; font-style: normal; font-=
+weight: 500; height: 48px; line-height: 16px; padding: 16px 20px; text-alig=
+n: center; text-decoration: none; white-space: nowrap; width: auto;">
+              View Meeting
+            </a></td></tr></table></td></tr></table></td></tr></table><tabl=
+e style=3D"width: 100%; margin-top: 32px; border-spacing: 0;"><tr style=3D"=
+background-image: url(&#39;https://media.grain.com/public/email/scribble_pa=
+ttern_lg.png&#39;); background-color: #F5FDFA; background-size: cover; padd=
+ing: 24px;"><td><div style=3D"line-height: 16px; padding: 24px;"><div style=
+=3D"font-size: 13px; font-weight: 600;">
+            New to Grain? Use it for free with your team, forever.
+          </div><div style=3D"font-size: 12px; font-weight: 400; padding-to=
+p: 6px;">
+            Accurate summaries, insights, and coaching for every recording.
+          </div></div></td><td><table role=3D"presentation" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"btn-secondary" style=3D"padding-=
+right: 16px;"><tr><td align=3D"center"><a href=3D"https://grain.com/?utm_so=
+urce=3Dmeeting_recap_email&amp;utm_medium=3Demail&amp;utm_campaign=3Dextern=
+al_participant_meeting_recap_email&amp;utm_content=3Demail_use_for_free_lin=
+k" target=3D"_blank" style=3D"background-color: #FFF; border: 1px solid #E6=
+E6E6; border-radius: 6px; color: #141414; display: flex; font-size: 12px; f=
+ont-weight: 500; height: 16px; line-height: 16px; padding: 8px 12px; text-a=
+lign: center; text-decoration: none; white-space: nowrap; width: auto;">
+                  Use for Free
+                </a></td></tr></table></td></tr></table></div></td></tr><tr=
+><td class=3D"email-footer" style=3D"-premailer-cellpadding: 0; -premailer-=
+cellspacing: 0; -premailer-width: 570px; color: #545454; font-size: 12px; f=
+ont-style: normal; font-weight: 400; line-height: 16px; margin: 0 auto; pad=
+ding: 0 32px; padding-bottom: 32px; text-align: left; width: 570px;"><table=
+ class=3D"email-footer__inner" width=3D"490" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"-premailer-cellpadding: 0; -premailer=
+-cellspacing: 0; margin: 0; padding-top: 24px; width: 100%;"><tr><td style=
+=3D"text-align: left; vertical-align: middle"><a href=3D"https://grain.com"=
+ style=3D"color: #3869D4; text-decoration: underline;"><img border=3D"0" sr=
+c=3D"https://ci5.googleusercontent.com/proxy/ybUqLo6di-SHazATJFJiAm8Lry88WT=
+9yvoUajuhhLMTVTJTz6RR4kTYyFJTQoiIfJ08cs-pURPf5yBb32KC6BTyytyVRoDRZ2ZQlc5Qsf=
+Q=3Ds0-d-e1-ft#https://media.grain-staging.co/public/email/grain_footer.png=
+" width=3D"88" alt=3D"Grain" style=3D"border: 0; display: inline-block; hei=
+ght: auto; max-width: 100%; text-decoration: none; width: 88px;"/></a></td>=
+<td><table role=3D"presentation" style=3D"width: 100%; vertical-align: top;=
+ border-spacing: 0; border-collapse: collapse;"><tr><td style=3D"padding-le=
+ft: 4px; text-align: right"><a href=3D"https://twitter.com/grainhq" target=
+=3D"_blank" style=3D"color: #3869D4; text-decoration: underline;"><img widt=
+h=3D"20" height=3D"20" src=3D"https://static.grain-marketing.co/images/soci=
+al-network-icons/twitter@2x.png" alt=3D"Twitter" title=3D"Twitter" style=3D=
+"border: 0; display: inline-block; height: auto; margin-right: 20px; max-wi=
+dth: 100%; text-decoration: none;"/></a><a href=3D"https://www.linkedin.com=
+/company/grainhq" target=3D"_blank" style=3D"color: #3869D4; text-decoratio=
+n: underline;"><img width=3D"20" height=3D"20" src=3D"https://static.grain-=
+marketing.co/images/social-network-icons/linkedin@2x.png" alt=3D"LinkedIn" =
+title=3D"LinkedIn" style=3D"border: 0; display: inline-block; height: auto;=
+ max-width: 100%; text-decoration: none;"/></a></td></tr></table></td></tr>=
+<tr><td class=3D"content-block powered-by" colspan=3D"2" style=3D"text-alig=
+n: left; color: #545454; font-weight: 400;"><table style=3D"margin-top: 24p=
+x;"><tr><td>
+        You are receiving this because you attended a meeting recorded with=
+ Grain.
+      </td></tr></table></td></tr><tr><td class=3D"content-block powered-by=
+" colspan=3D"2" style=3D"text-align: left; color: #545454; font-weight: 400=
+;"><table style=3D"margin-top: 24px;"><tr><td>
+    Copyright =C2=A9 2025 Grain Intelligence, all rights reserved.
+   </td> </tr></table></td></tr><tr><td colspan=3D"2" style=3D"text-align: =
+left; color: #545454; font-weight: 400;"><table style=3D"margin-top: 24px;"=
+><tr><td><a target=3D"_blank" href=3D"https://grain.com/security" style=3D"=
+color: #545454; text-decoration: underline;">
+      Data &amp; Security Policy
+    </a>
+    =C2=B7
+    <a target=3D"_blank" href=3D"mailto:help@grain.com" title=3D"help@grain=
+.com" rel=3D"noopener" style=3D"color: #545454; text-decoration: underline;=
+">
+      Contact Support
+    </a></td></tr></table></td></tr></table></td></tr></table></td></tr><tr=
+><td class=3D"email-footer-spacer" style=3D"padding: 10px 0;"></td></tr></t=
+able></td></tr></table><a href=3D'https://u10327057.ct.sendgrid.net/asm/uns=
+ubscribe/?user_id=3D10327057&amp;data=3DJj35KpNywsrb7AQTLcvrx6GmzlS2waNZodP=
+N8jqt6HdoMDAwdTAwMN8JoNCsNnEwLZSKp0kHlp75m4km7U2nRtC912OSLeRBZMv2xWZYQ_p4Vr=
+wBuohf8U4otKMNWqHfI8tSP5SX_fk-XLemW5Gk5bCgr6XptO0RajsmgELKoCK_iGQLn_KuSoe2g=
+rBbQZ6m_rxgoRZXyj4gsR5ObZtGT9R26YfGJ0X5GRKc8HMKqoI-tnfEB3D5iKCj7NwYSZrLUUpR=
+iFew2KGLYn2IF0_23ac9TbRNW3dSOOejikx1vjWNe41WXdsURdWh7ePbUwSf-2FTjFfUIrFrAS1=
+lGxeI0s9X29n27cULyeE0azjA3gXBYAezdUxi2iMicfWJkakOgXE_7rJUPyDPGOvztjsFDMimw6=
+SsG5d_u7nYBDSY9lVIh4L5oECVNV8YjyuvjBR4t3JvyrkkLNPNPxHF14aHtDxmXeM0AfiVV40OF=
+dBXLe0lCdMcJGezdhy8xUnyRO8lFonkif6nT4R8w2GDQ-8wmb0iDOeMqkDIXIIu764gorOtDbCc=
+oaTpGbVi00A0gEm_nlzBaKOgYiYuiWn7nz5cBSt3_ywcv_9DopvGFmswewMc7696UTbW1Q=3D=
+=3D'>Unsubscribe From This List</a> | <a href=3D'https://u10327057.ct.sendg=
+rid.net/asm/?user_id=3D10327057&amp;data=3D33iM75rPG-WvXfMOVGIvvZVeSAOrDat2=
+Mtz-8eUQ4_poMDAwdTAwMP6f_tzZnOUeeevkPnd-t8d7yw-qyzYurJOlw4YwXAFxSw8pmskNQaJ=
+rTINCc-JIQFb8v4o3hlorGP-w9RgQOhfEPpd5FBxqf_oIWImcid1t82sCoiVlCbPyCaHLYNHxAz=
+-_i-IYk3CIBggerkaDwSMN5m29imNL8tkU6XT6uNE36SaURgyW8oFmBg1dwSXBzA-BubPmbiP6y=
+_tQSXlRAbRNXYCL3oBmtfPoI0hckwuZIOn-uN3vdKj3h4TYfvSxLSXMw00h6iMf-kMPA34qnjeW=
+apVUZ4Fg7_a2p6QNvByfXj2qGzxr8BO52hD0lG3I8aJbtl9L5C3Vk282aC6baHNicG4nyDuhsFk=
+tD4OXzVL6OuV5CqBXaxfICUP9rfbJtZeXYBrYupNebp36Q4mu3YB-I3w1YhMHEGI7s-IkBg2HHX=
+KacqnvjNA2yOvljQ_UAv1U7-kjtLe4YGTxeysxLdpNe-C_OyrdJCRQiKqYYA6_FFZGCz5RnWgkH=
+ks6R2otD9NuUbGS2vsvnhw8zU6BZYKMkNY5JrWG1ffxPPTz9QXG'>Manage Email Preferenc=
+es</a></body></html>
+--bacc74e7109b544dfd0a062bd0508d15468e0089299e2a506b8bc7b86f35--
