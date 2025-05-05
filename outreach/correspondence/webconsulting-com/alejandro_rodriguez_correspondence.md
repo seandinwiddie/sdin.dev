@@ -125,6 +125,27 @@
 > 
 > Sean Paul Payne Dinwiddie 🙏
 
+### Strategy Call (May 2025)
+
+**Key Topics Discussed:**
+- Sean described his current business model of charging $1,500-$2,000 per week per client for development work
+- Alex suggested exploring a "fractional CIO/CTO" model with monthly retainers to create more stability
+- Sean explained his expertise in application optimization, refactoring, and state management using React and Redux
+- Both discussed scaling challenges and the desire to reduce client acquisition pressure
+- Sean shared his preference for technical management over HR responsibilities
+
+**Potential Collaboration Opportunities:**
+1. **App Development Project:** Alex mentioned a potential client named Emily who needs someone with coding experience
+2. **Coffee Business Web Application:** Alex has an ongoing project using Webflow, Wiz, and Supabase that might benefit from technical consultation
+3. **Fractional Development Services:** Possibility of Sean working with Alex's network of web consultants who need technical implementation support
+
+**Action Items:**
+- Alex will follow up regarding his call with Emily about the app project
+- Alex will speak with Josh about the coffee project's current status
+- Sean should reconnect with Alex later in the week for updates
+
+**Meeting Summary:** [Full transcript and AI summary available]
+
 ---
 
 ## Upcoming Opportunities
