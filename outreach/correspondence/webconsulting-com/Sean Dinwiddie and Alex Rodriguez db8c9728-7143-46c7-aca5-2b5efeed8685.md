@@ -26,7 +26,7 @@ Alex Rodriguez
 Okay, cool. Yeah, sounds. Sounds familiar. I've seen your. Your name before. How. How do you find out about me? 
 
 seandinwiddie
-Just on school. 
+Just on Skool.com 
 
 Alex Rodriguez
 Cool, cool, cool, cool. Awesome. Sean, so. So what was the motivation behind jumping on a phone call with me today? 
@@ -140,7 +140,7 @@ Alex Rodriguez
 Cool. So, dude, this is great. So you. You already dishing out this old technology of doing business, which is the hourly stuff. 
 
 seandinwiddie
-Yeah, thankfully, like, I got on board with school back. I don't know how long you've been on school, but it was quite a While ago for consulting.com through the accelerator program, it wasn't on school. And so that's what I went through. And so I try to kind of adhere to that. I'm not the best at being. It's very sales oriented. Just the consultant accelerator program with Sam Ovens. 
+Yeah, thankfully, like, I got on board with Skool.com back. I don't know how long you've been on Skool.com, but it was quite a While ago for consulting.com through the accelerator program, it wasn't on Skool.com. And so that's what I went through. And so I try to kind of adhere to that. I'm not the best at being. It's very sales oriented. Just the consultant accelerator program with Sam Ovens. 
 
 Alex Rodriguez
 But yeah, yeah, I did the. I did accelerator. I did up level. 
