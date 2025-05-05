@@ -3,11 +3,13 @@
 ## Company Profile
 *   **Company Name:** WebConsulting.com
 *   **Industry:** Web Development / Digital Strategy Consulting
-*   **Location:** [Need to verify]
+*   **Location:** Parrish, Florida
 *   **Website:** [webconsulting.com](https://webconsulting.com)
-*   **Business Model:** Web consulting services likely including web development, digital strategy, SEO, and online marketing solutions
-*   **Size Estimate:** Small to mid-size business (needs verification), possibly boutique web consultancy with specialized client focus
-*   **Founded:** [Need to research]
+*   **Business Model:** Mentorship and consulting for web designers/developers to help them build profitable web consulting businesses
+*   **Size Estimate:** Small business with a team of 5-6 people (confirmed from website)
+*   **Founded:** 2017 (according to LinkedIn)
+*   **Revenue Model:** Based on mentorship programs helping web designers achieve $100k-$300k/year through high-ticket clients
+*   **Target Market:** Web designers and developers who want to scale their businesses to 6 figures
 
 ## Decision Makers
 
@@ -44,11 +46,11 @@
 
 ## Fit Assessment
 *   **Decision-Making Authority:** ✅ As CEO & Founder, Alejandro has complete authority over technology investments and strategic direction
-*   **Revenue/Size Match:** ⚠️ Needs verification, but web consultancies often fall below the $5M-$100M target range unless they have scaled significantly
+*   **Revenue/Size Match:** ⚠️ Small business with team of 5-6 people, likely below the $5M-$100M revenue target range
 *   **Industry Alignment:** ✅ Strong alignment - web consulting involves process-heavy workflows, client management, and project delivery where automation can create significant efficiency
 *   **Technical Sophistication:** ✅ Likely high - web consultancies understand technology value and ROI
-*   **Value Proposition Match:** ⚠️ Depends on team size and current inefficiencies - need to verify if $50K+ monthly savings is achievable given their scale
-*   **Overall Fit:** ⭐⭐⭐☆☆ (3/5) - Potentially good fit but needs verification on size and scale of operations
+*   **Value Proposition Match:** ⚠️ May be difficult to achieve $50K+ monthly savings for a company of this size
+*   **Overall Fit:** ⭐⭐☆☆☆ (2/5) - Smaller than ideal target company, but good domain expertise alignment and potential for collaboration
 
 ## Outreach Strategy
 *   **Approach:** Peer-to-peer professional with focus on specific technical challenges
