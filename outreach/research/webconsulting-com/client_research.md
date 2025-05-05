@@ -96,6 +96,31 @@ Based on Alejandro's comment: *"I'm currently working on a few projects that cou
 
 Rather than working directly on WebConsulting.com's core business, collaboration might involve supporting Alejandro's extended network of web professionals and their clients through outsourcing, white-label services, or specialized tool development.
 
+## Specific Project Opportunities (From Strategy Call, May 2025)
+
+Following the strategy call with Alejandro (Alex), these specific opportunities were discussed:
+
+### 1. App Development Project with Emily
+* A potential client contact that Alex is in touch with
+* Client needs someone with coding experience, likely for app development
+* Alex described it as a project that's not in his area of expertise
+* Timeline: Alex expects to speak with Emily within the next week
+
+### 2. Coffee Business Web Application
+* Existing project Alex has been managing for several months
+* Front-end built with Webflow
+* Back-end utilizing Wiz and Supabase
+* Application handles order fulfillment, inventory management, and sales processes
+* Alex expressed some concerns about the current technical implementation
+* Opportunity for technical consultation or possible development support
+
+### 3. Fractional CIO/CTO Services Model
+* Alex recommended positioning services as "fractional" rather than "part-time" to maintain expertise perception
+* Target businesses not ready for full-time technical leadership
+* Monthly retainer model ($5,000+ per month) for businesses doing at least $1M in revenue
+* Focus on providing technical leadership without HR responsibilities
+* Reduces need for constant client acquisition
+
 ## Next Steps
 *   Research WebConsulting.com size and revenue to confirm fit with target criteria
 *   Determine team size and organizational structure
