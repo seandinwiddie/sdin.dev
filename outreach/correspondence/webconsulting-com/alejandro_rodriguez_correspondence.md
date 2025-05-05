@@ -195,26 +195,6 @@ https://sdin.dev/coaching
 
 ## Notes & Action Items
 
-### Research Findings
-- **Company Size:** Small team of 5-6 people working remotely
-  - Alejandro Rodriguez (CEO & Founder)
-  - Aubrey Taylor (Operations)
-  - Linda Espinosa (Executive Assistant)
-  - Brittany Rodriguez (CFO)
-  - Stephen Beacham (Community Manager)
-- **Business Model:** Mentorship/coaching program for web designers, developers, and digital marketers
-  - Targets founders making at least $5,000/month
-  - Helps them scale to 6-figure businesses ($100-300K/year)
-  - Offers structured programs: WC Alignment, WC Foundation, WC Leverage
-  - Founded in 2016, starting with 7 beta students
-- **Revenue:** No specific figures available, but indications of successful business:
-  - Scaled an online shoe brand to $500K in sales (separate business)
-  - Focuses exclusively on the mentorship program now
-  - Company address in Parrish, FL
-- **Target Market:** Freelancers/small business owners in web services space
-  - Specifically those looking to scale from $5K/month to $100-500K/year
-  - Offers transformation into "Web Consultants" with simplified operations (1 product, 2-3 staff)
-
 ### Research Needed
 - [ ] Visit WebConsulting.com website for more business details
 - [ ] Research Alejandro's course offerings and pricing model
