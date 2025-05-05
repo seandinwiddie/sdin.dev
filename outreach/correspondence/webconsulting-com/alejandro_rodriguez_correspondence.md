@@ -148,6 +148,7 @@ Based on the correspondence and research, potential areas where I could help inc
 - Specific pain points in client management or project delivery
 - Interest in collaboration vs. becoming a client
 - His course and community-building strategy (potential for tech support)
+- **Details about his current projects** that he mentioned "could align really well with what you're doing"
 
 ---
 
