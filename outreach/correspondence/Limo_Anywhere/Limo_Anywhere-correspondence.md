@@ -66,24 +66,59 @@ Sean
 
 ---
 
-**Message 4 (Final Attempt/Break-up: 7 days later):**
+**Reply:**
+
+Melissa Statom  1:58 PM
+Nothing like APIs that return 200 for every request... and shove the errors under a JSON field named "extrafield5" 
+
+If it' really gets rough...... start naming variables after emotions... or name the functions (broke_xyx(); notbroke_xyz())
+
+Melissa Statom  2:04 PM
+In all seriousness though in my day job, I don't write many API's anymore... I plan a lot of changes and direct the path of where we head, and a lot of diagrams, discussions, but there's not a lot of hands-on development. 
+
+I do have a side project I'm writing some APIs, trying not to make it like someone dared me to do it tho.  :) 
+
+Some of the most brilliant minds I have worked with had some really odd ways of architecting their projects. 
+
+I can't say that I have any opportunities for you currently with the coaching/contracting right now, but can keep you in mind if anything comes up... 
+
+But ofc if you want more jokes, I'm sure I can come up with more... I got lots of Sass for my SaaS.
+
+---
+
+**Message 4 (Relationship Building: 3-4 days later):**
+*   **Subject:** Your side project APIs & Sass for SaaS
+*   **Body:**
+
+Naming functions and vars after emotions really strikes a nerve – `broke_xyx()` is an instant classic! And APIs that hide errors in `extrafield5`... a special kind of pain, right? 😄
+
+Your side project sounds like the perfect creative outlet for building APIs the *right* way, especially when the day job shifts more to planning. It's definitely refreshing to build without that legacy baggage. Are you experimenting with any cool new patterns or tech for it that you're enjoying?
+
+And absolutely, I'm ready for those SaaS/Sass jokes whenever you are! Always appreciate a good dev pun.
+
+Sean
+530-638-3238
+
+---
+
+**Message 5 (Final Attempt/Break-up: If no response to Message 4):**
 *   **Subject:** Final note: Making integration less of a caffeine emergency
 *   **Body:**
 
-    Hi Melissa,
+Hi Melissa,
 
-    This is my final check-in regarding those integration challenges you so humorously described.
+This is my final check-in regarding those integration challenges you so humorously described.
 
-    Having rescued many development teams from the depths of undocumented API hell, I've developed frameworks that transform those "uninvited party guests" into manageable, predictable processes - significantly reducing the need for emergency reddit searches and 3 AM debugging sessions.
+Having rescued many development teams from the depths of undocumented API hell, I've developed frameworks that transform those "uninvited party guests" into manageable, predictable processes - significantly reducing the need for emergency reddit searches and 3 AM debugging sessions.
 
-    If you ever reach a point where Limo Anywhere's integration challenges could benefit from a more structured approach that provides measurable business value, I'd be happy to share some specific strategies during a brief call.
+If you ever reach a point where Limo Anywhere's integration challenges could benefit from a more structured approach that provides measurable business value, I'd be happy to share some specific strategies during a brief call.
 
-    Simply reply to this message or text me at 530-638-3238 to schedule a free strategy session.
+Simply reply to this message or text me at 530-638-3238 to schedule a free strategy session.
 
-    Wishing you a reasonable caffeine intake and minimal integration surprises!
+Wishing you a reasonable caffeine intake and minimal integration surprises!
 
-    Thanks,
+Thanks,
 
-    Sean
-    Software Development Consultant 🧑🏼‍💻☕
-    https://sdin.dev/coaching 
+Sean
+Software Development Consultant 🧑🏼‍💻☕
+https://sdin.dev/coaching 
