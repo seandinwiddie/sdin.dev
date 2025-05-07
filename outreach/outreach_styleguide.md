@@ -5,10 +5,54 @@ This style guide provides best practices for crafting effective outreach message
 ## Core Principles
 
 1. **Speak directly to the recipient's persona** - Personalize based on role, industry, and specific challenges
-2. **Create compelling hooks** - Open with a statement that demonstrates understanding of their situation
-3. **Use power language professionally** - Incorporate high-performing words without sounding sales-y
-4. **Maintain authenticity** - Be direct, credible, and valuable rather than hype-driven
-5. **Start with conversational ice-breakers** - Initial openers should be personal, brief, and genuine
+2. **Create compelling hooks** - Open with a statement or question that immediately grabs attention
+3. **Keep initial messages ultra-brief** - First contact should be 2-3 sentences maximum
+4. **Ask provocative questions** - Use questions that pique curiosity and invite response
+5. **Maintain authenticity** - Be direct, credible, and valuable rather than sales-focused
+6. **Start with conversational ice-breakers** - Initial openers should be personal, brief, and genuine
+
+## Updated Approach for Initial Messages
+
+The most effective initial outreach messages:
+1. Are extremely brief (2-3 sentences total)
+2. Focus on creating curiosity rather than explaining services
+3. Ask a targeted, thought-provoking question related to the recipient's work
+4. Avoid all sales language, CTAs, and formal elements
+5. Use a casual, peer-to-peer tone as if messaging a colleague
+6. End with a simple signature (just name and https://sdin.dev/coaching/)
+7. Use subject lines that are intriguing rather than descriptive
+
+### Example Initial Message Structure
+1. Reference to recipient's specific work or focus area (1 sentence)
+2. Thought-provoking question about a challenge in their domain (1 sentence)
+3. Brief mention of your relevant experience or interest (1 sentence)
+4. Simple signature
+
+### Revised Example Formats
+
+#### For C-Level Executives
+```
+Hi [Name],
+
+Your work on [specific focus area] caught my attention. Have you found an effective way to solve [relevant challenge that your solution addresses]?
+
+I've been working on similar challenges with other [industry] leaders and would love to hear your approach.
+
+[First Name]
+https://sdin.dev/coaching/
+```
+
+#### For Department Leaders
+```
+Hi [Name],
+
+I noticed your team at [Company] is tackling [specific initiative or challenge]. What's been the biggest obstacle in [related technical/operational area]?
+
+I've helped other [role] navigate similar situations and would be interested in your perspective.
+
+[First Name]
+https://sdin.dev/coaching/
+```
 
 ## Power Words That Drive Engagement
 
@@ -76,30 +120,37 @@ The first 1-2 sentences determine whether they'll read the rest. According to Ba
 
 For initial outreach, prioritize brevity and personal connection over comprehensive selling:
 
-1. **Keep it short and focused** - 2-3 sentences maximum for the first message
+1. **Keep it extremely short** - 2-3 sentences maximum for the first message
 2. **Only reference easily verifiable information** - Stick to information clearly visible on public profiles (current role, company, published articles, etc.)
-3. **Be genuinely curious** - Ask an open-ended question about their work or industry
-4. **Avoid sales language** - No feature lists, benefits bullets, or calls to action in the opener
-5. **Use a conversational tone** - Write like you're sending a note to a colleague
-6. **End with a simple signature** - Just your name, phone number, and website
-7. **Avoid assumptions about their projects** - Don't reference specific work they've done unless it's clearly documented in public sources
+3. **Lead with a provocative question** - Ask something that makes them think and want to respond
+4. **Completely avoid sales language** - No feature lists, benefits bullets, calls to action, or solution descriptions in the opener
+5. **Use an informal, conversational tone** - Write as if you're messaging a respected peer
+6. **End with minimal signature** - Just your first name and https://sdin.dev/coaching/
+7. **Use subject lines that create curiosity** - Avoid descriptive, service-oriented subject lines
+
+#### Effective Subject Line Examples:
+- "Question about [specific technical challenge]"
+- "[Industry] automation that actually works"
+- "Solving [specific pain point]"
+- "Quick question about [their recent project/focus]"
 
 #### Example Opener Structure:
-- Personal introduction with reference to verifiable information (1 sentence)
-- Open-ended question related to their industry or role (1 sentence)
-- Simple signature
+- Reference to their specific work or role (1 sentence)
+- Provocative question about a challenge in their domain (1 sentence)
+- Brief mention of your relevant experience (1 sentence)
+- Minimal signature
 
-### Hook Templates
+### Updated Hook Templates
 
 | Persona | Hook Template |
 |---------|--------------|
-| CEO | "With [company's recent development], you're likely balancing [strategic challenge] with [competing priority]." |
-| Director/VP | "Managing [specific area] for [type of company] often means choosing between [option A] and [option B]—when you actually need both." |
-| Manager | "The day-to-day reality of [specific responsibility] often leaves little time for [strategic improvement]." |
+| CEO | "Your work on [specific initiative] caught my attention. Have you found a way to address [strategic challenge] without sacrificing [competing priority]?" |
+| Director/VP | "I noticed your team at [company] is focusing on [specific area]. What's been the biggest challenge in balancing [option A] with [option B]?" |
+| Manager | "Your approach to [specific responsibility] stood out to me. How are you handling [common pain point] with your current tools?" |
 
-## Message Structure Best Practices
+## Message Structure for Follow-up Communications
 
-According to Backlinko, high-converting outreach follows this structure:
+After establishing initial contact, subsequent messages can follow this structure:
 
 1. **Hook** - Create immediate interest (1-2 sentences)
 2. **Pain** - Acknowledge their specific challenge (1-2 sentences)
@@ -163,7 +214,8 @@ If you're working on [relevant priority], let's talk. Get your free strategy cal
 
 Thank you for your time!
 
-[Signature]
+[First Name]
+https://sdin.dev/coaching/
 ```
 
 ### For Department Leaders
@@ -184,7 +236,8 @@ If you're looking for ways to [achieve specific goal], let's talk. Get your free
 
 Thank you for your time!
 
-[Signature]
+[First Name]
+https://sdin.dev/coaching/
 ```
 
 ## Conversational Follow-Up Strategies
@@ -196,7 +249,7 @@ When someone responds to your initial outreach, resist the temptation to immedia
 1. **Mirror their communication style** - If they're humorous, respond with humor; if they're brief, keep your response brief
 2. **Reference their exact words** - Quote specific language they used to show you're truly listening
 3. **Ask genuine questions** - Continue with curiosity rather than pitching
-4. **Simplify your signature** - Once engaged, drop formal signatures and use just your name/number
+4. **Simplify your signature** - Once engaged, drop formal signatures and use just your name and https://sdin.dev/coaching/
 5. **Gradually decrease message length** - Second and third messages should get progressively shorter
 6. **Use subject lines that continue the conversation** - Reference something specific they mentioned
 
