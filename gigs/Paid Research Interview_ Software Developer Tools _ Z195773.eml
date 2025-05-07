@@ -1,0 +1,355 @@
+Delivered-To: seandinwiddie@gmail.com
+Received: by 2002:a05:6358:3384:b0:1e2:112a:b85d with SMTP id i4csp2827400rwd;
+        Tue, 6 May 2025 02:09:02 -0700 (PDT)
+X-Received: by 2002:a17:907:8693:b0:acb:b28b:ccd with SMTP id a640c23a62f3a-ad1a4b0476bmr1017805666b.46.1746522542418;
+        Tue, 06 May 2025 02:09:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1746522542; cv=none;
+        d=google.com; s=arc-20240605;
+        b=eO7FolfmwGpjNu9zAqMHinpYj6fqe5Y5lEhW0/R3z2F8ojL24O1mBYsNbR+/YjCCf7
+         28X9xdwKJpl/AsCg7F/JVI4h4JKmqdhUbR36/B/UQX/Jzv573QQ3GrgmZ28J7p4/LG5H
+         P/YD7J8GsdEPShJVpXP2RMAdGZeoBD+yRMCSbh6uNKZSaIXGZev5st3e6qcrmwqejEzT
+         GtiEtvA8oUuFFG1IdTpiWgzYP5/6kgCB5gTs8JIJ3FTreQf97hH4Cz1Kjb2Ap2EqyNNJ
+         WLIIg3SO//oKor9VtFRSNH9DkftPr/t7VcIqQvFtTxbffH0PKkzf8PgFCfwz7/bXflE7
+         bYMQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:mime-version:list-unsubscribe:from
+         :dkim-signature;
+        bh=W5/7qvei42763orcT9OHhk2YW8n6HVjCBFSgd6NTnFk=;
+        fh=9KI90wrVtsQ80PzKnSNRA39tupTd07ZIzvTQMivC2QI=;
+        b=aEb93ZJ0VhDBRFn82JfLjwvu2AGj0hkclfEFxOUm9UqmwA30CtA6gvUTW2YBBVxFTN
+         ZUE4cRAA0aQ/T35yXPjdEMOLvA9gh93hP8EiWQEHWMLFnJFLLCn9u7xLR9JzhD+BXSy6
+         +laegaGUuysxrnN9bqY+7OXLpUapzxPlVdbkJVOOK8RIjkEB6SwNVIQTJ01m/UgNye+m
+         rHEL4qa8mbL2VneTKgTAL/M4liHzSOwOLA4yIWCq2rLWsMGlB6FxeS+dVNyhqt/w3PUe
+         dA9iJmQcffCu2P8dS5BT1K4vry1A53sJxDAKJrnFpGMNBV9kKhBvxuNpepn2jCK1aFC+
+         i30g==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@zintro.com header.s=google header.b=jm52dqQb;
+       spf=pass (google.com: domain of l.pearson@zintro.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=l.pearson@zintro.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=zintro.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <l.pearson@zintro.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id a640c23a62f3a-ad0c70c661asor511295566b.3.2025.05.06.02.09.02
+        for <seandinwiddie@gmail.com>
+        (Google Transport Security);
+        Tue, 06 May 2025 02:09:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of l.pearson@zintro.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@zintro.com header.s=google header.b=jm52dqQb;
+       spf=pass (google.com: domain of l.pearson@zintro.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=l.pearson@zintro.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=zintro.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=zintro.com; s=google; t=1746522541; x=1747127341; dara=google.com;
+        h=to:subject:message-id:date:mime-version:list-unsubscribe:from:from
+         :to:cc:subject:date:message-id:reply-to;
+        bh=W5/7qvei42763orcT9OHhk2YW8n6HVjCBFSgd6NTnFk=;
+        b=jm52dqQbkOCSJFfHgBuZGgB+OeWDpR03Tf9gAor1Hme+fk700MkrHcG9x3Ghy51N81
+         FUvf31uEO+vvt2TbKn6RP1+JVE557cy/qyC1vh2E1t/T/XSUnsNZsbuZFBGiEQl1Ptyw
+         HMEBcmPBMMikDS7h2wFSQlfDncZtORTycTp/4=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1746522541; x=1747127341;
+        h=to:subject:message-id:date:mime-version:list-unsubscribe:from
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=W5/7qvei42763orcT9OHhk2YW8n6HVjCBFSgd6NTnFk=;
+        b=JHbPFfyhklzCHlE1nimI+CXHyxrn8U+XCnIR4cNOVGE0DO0QF1TfKk0q5MQxdeUVLd
+         +x0ZNsAeTVgIOtKFDiaZuS01FoJe/yUOdhIglD8QClrgG4cpdmpK65yisPRKN4XQWaMA
+         HtlcfVKzrVFvLcG3dWNzFA+eAUBHIw/Mxalyu5CAYrO1PPyKKDTg6XCdP+T/L/RtwvwI
+         LN7OlbJa7Xahw00TikHR80AITODKMWTnXB3W/4Dqf+0kIX4tbljcmmuNBNK0FxsBypXk
+         j80VwDTsCnjsayJMAkKiGxwl99aFHuFAaRUOEPsXHHqTSLXR2W8eJaMr/IHtv88L8ODF
+         ptSA==
+X-Gm-Message-State: AOJu0YwiwVgHwrB9MfynoNDZgZtHzjQJMS549L2Sh3sxgaFZzo/XmJPV
+	yGRs0j9GOYgpqrEZX3OZd5rlCDZScs80hn111wl6sbFUNOCyN5xQaC93Dv5FJEfPKWY1jQ5m9Fo
+	7vU2s2K+xkW5/sFOkhi1CYFuU/MuwtrXLOlELExTt2mFabtgO
+X-Gm-Gg: ASbGncucl8iJLfn+Kxw2EL6TEdxzZHR68YhX8+Fo/Y93gTJpSa3CC67q74cFwWvy99t
+	o2SQ649bd7vG1aPfRSnmyokJtErAKCz1quwCqgdUryD/Qm0onKGwFUjQxdPI1BQwkU/qdvOhMnz
+	j+WbXrBewMzZ6MTes8la7c
+X-Google-Smtp-Source: AGHT+IHD2ekFJOMRcX2FpWBjczZsi3rZkSIRG2CXOrXQaXQuwVX6MATdHh0a8azmMtd4vtlFsFy7uWwqzFaWJp7NPMU=
+X-Received: by 2002:a17:907:94ca:b0:acf:15d:2387 with SMTP id
+ a640c23a62f3a-ad1a4911893mr894980366b.19.1746522541272; Tue, 06 May 2025
+ 02:09:01 -0700 (PDT)
+Received: from 988267684438 named unknown by gmailapi.google.com with
+ HTTPREST; Tue, 6 May 2025 02:09:00 -0700
+Received: from 988267684438 named unknown by gmailapi.google.com with
+ HTTPREST; Tue, 6 May 2025 02:09:00 -0700
+From: Lexi Pearson <l.pearson@zintro.com>
+List-Unsubscribe: <https://app.zintro.com/unsubscribe?email=seandinwiddie@gmail.com>
+MIME-Version: 1.0
+Date: Tue, 6 May 2025 02:09:00 -0700
+X-Gm-Features: ATxdqUH7ISGIZqX6T2PyeMl-7qf7ADGxQ1r4BP3aDoTJQ0OoyuZY-ShLephy7p8
+Message-ID: <CAHxBHTUiN_bJUtQ2n4mNUhrcBK6MXGbvkw725ksUDH3orFnf8Q@mail.gmail.com>
+Subject: Paid Research Interview: Software Developer Tools | Z195773
+To: seandinwiddie@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000aa42bc063473f7c5"
+
+--000000000000aa42bc063473f7c5
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Sean,
+
+
+I hope you're doing well. My name is Lexi, and I=E2=80=99m with Zintro=E2=
+=80=94a platform
+that connects professionals and subject matter experts with paid research
+opportunities.
+
+
+We=E2=80=99re currently conducting a study on Software Developer Tools and =
+are
+looking to speak with both experienced and aspiring software developers.
+The goal is to better understand how developers select their tools, use
+various Integrated Development Environments (IDEs), and approach technical
+problem-solving. This is a 60-minute webcam interview.
+
+
+Would you be open to participating? If so, please respond with the
+following:
+
+
+1. Which of the following IDEs have you used in the past few weeks or days?
+(Select all that apply)
+
+
+A. Cline
+
+B. Cursor
+
+C. Replit
+
+D. Tabnine
+
+E. Trae
+
+F. Windsurf
+
+G. None of the above
+
+
+2. Participants typically quote $320 for this type of engagement. What is
+your preferred rate for participating in a 60-minute interview on this
+topic?
+
+
+Let me know if you're interested, and I=E2=80=99ll be happy to provide more
+details. I look forward to hearing from you!
+
+
+Best Regards,
+
+
+Lexi Pearson | Qualitative Research Manager
+
+Mobile: (617) 936.0153 ext. 727
+
+HQ Address: 68 Harrison Ave #605, PMB 27193, Boston, MA 02111
+------------------------------
+
+Zintro is a global market research expert network. We connect researchers
+(market researchers, consulting groups, investors, universities, etc.) with
+experts who can provide valuable and unique perspectives on niche topics.
+
+
+Don't want to receive more emails about research projects? Please let me
+know or click here <https://app.zintro.com/unsubscribe>.
+
+
+This e-mail message is intended only for the recipient identified in the
+address of this message. It may contain information that is confidential,
+privileged, or subject to legal restrictions and penalties regarding its
+unauthorized disclosure and use. Any unauthorized review, copying,
+disclosure, use, or distribution is prohibited. If you have received this
+e-mail message in error, please notify the sender immediately by reply
+e-mail and delete this message from your system.
+
+[image: beacon]
+
+--000000000000aa42bc063473f7c5
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div class=3D""><div class=3D"aHl"></div><div id=3D":pi" tabindex=3D"-1"></=
+div><div id=3D":p7" class=3D"ii gt"><div id=3D":p6" class=3D"a3s aiL "><div=
+ dir=3D"ltr"><div><p class=3D"p1" style=3D"margin-bottom:0px;font-variant-n=
+umeric:normal;font-variant-east-asian:normal;font-variant-alternates:normal=
+;font-size-adjust:none;font-kerning:auto;font-feature-settings:normal;font-=
+stretch:normal;font-size:13px;line-height:normal;font-family:&quot;Helvetic=
+a Neue&quot;;color:rgb(0,0,0)">Hi Sean,=C2=A0</p><p class=3D"p2" style=3D"m=
+argin-bottom:0px;font-variant-numeric:normal;font-variant-east-asian:normal=
+;font-variant-alternates:normal;font-size-adjust:none;font-kerning:auto;fon=
+t-feature-settings:normal;font-stretch:normal;font-size:13px;line-height:no=
+rmal;font-family:&quot;Helvetica Neue&quot;;min-height:15px;color:rgb(0,0,0=
+)"><br></p><p class=3D"p1" style=3D"margin-bottom:0px;font-variant-numeric:=
+normal;font-variant-east-asian:normal;font-variant-alternates:normal;font-s=
+ize-adjust:none;font-kerning:auto;font-feature-settings:normal;font-stretch=
+:normal;font-size:13px;line-height:normal;font-family:&quot;Helvetica Neue&=
+quot;;color:rgb(0,0,0)">I hope you&#39;re doing well. My name is Lexi, and =
+I=E2=80=99m with Zintro=E2=80=94a platform that connects professionals and =
+subject matter experts with paid research opportunities.</p><p class=3D"p2"=
+ style=3D"margin-bottom:0px;font-variant-numeric:normal;font-variant-east-a=
+sian:normal;font-variant-alternates:normal;font-size-adjust:none;font-kerni=
+ng:auto;font-feature-settings:normal;font-stretch:normal;font-size:13px;lin=
+e-height:normal;font-family:&quot;Helvetica Neue&quot;;min-height:15px;colo=
+r:rgb(0,0,0)"><br></p><p class=3D"p1" style=3D"margin-bottom:0px;font-varia=
+nt-numeric:normal;font-variant-east-asian:normal;font-variant-alternates:no=
+rmal;font-size-adjust:none;font-kerning:auto;font-feature-settings:normal;f=
+ont-stretch:normal;font-size:13px;line-height:normal;font-family:&quot;Helv=
+etica Neue&quot;;color:rgb(0,0,0)">We=E2=80=99re currently conducting a stu=
+dy on Software Developer Tools and are looking to speak with both experienc=
+ed and aspiring software developers. The goal is to better understand how d=
+evelopers select their tools, use various Integrated Development Environmen=
+ts (IDEs), and approach technical problem-solving. This is a 60-minute webc=
+am interview.</p><p class=3D"p2" style=3D"margin-bottom:0px;font-variant-nu=
+meric:normal;font-variant-east-asian:normal;font-variant-alternates:normal;=
+font-size-adjust:none;font-kerning:auto;font-feature-settings:normal;font-s=
+tretch:normal;font-size:13px;line-height:normal;font-family:&quot;Helvetica=
+ Neue&quot;;min-height:15px;color:rgb(0,0,0)"><br></p><p class=3D"p1" style=
+=3D"margin-bottom:0px;font-variant-numeric:normal;font-variant-east-asian:n=
+ormal;font-variant-alternates:normal;font-size-adjust:none;font-kerning:aut=
+o;font-feature-settings:normal;font-stretch:normal;font-size:13px;line-heig=
+ht:normal;font-family:&quot;Helvetica Neue&quot;;color:rgb(0,0,0)">Would yo=
+u be open to participating? If so, please respond with the following:</p><p=
+ class=3D"p2" style=3D"margin-bottom:0px;font-variant-numeric:normal;font-v=
+ariant-east-asian:normal;font-variant-alternates:normal;font-size-adjust:no=
+ne;font-kerning:auto;font-feature-settings:normal;font-stretch:normal;font-=
+size:13px;line-height:normal;font-family:&quot;Helvetica Neue&quot;;min-hei=
+ght:15px;color:rgb(0,0,0)"><br></p><p class=3D"p1" style=3D"margin-bottom:0=
+px;font-variant-numeric:normal;font-variant-east-asian:normal;font-variant-=
+alternates:normal;font-size-adjust:none;font-kerning:auto;font-feature-sett=
+ings:normal;font-stretch:normal;font-size:13px;line-height:normal;font-fami=
+ly:&quot;Helvetica Neue&quot;;color:rgb(0,0,0)">1. Which of the following I=
+DEs have you used in the past few weeks or days? (Select all that apply)</p=
+><p class=3D"p2" style=3D"margin-bottom:0px;font-variant-numeric:normal;fon=
+t-variant-east-asian:normal;font-variant-alternates:normal;font-size-adjust=
+:none;font-kerning:auto;font-feature-settings:normal;font-stretch:normal;fo=
+nt-size:13px;line-height:normal;font-family:&quot;Helvetica Neue&quot;;min-=
+height:15px;color:rgb(0,0,0)"><br></p><p class=3D"p1" style=3D"margin-botto=
+m:0px;font-variant-numeric:normal;font-variant-east-asian:normal;font-varia=
+nt-alternates:normal;font-size-adjust:none;font-kerning:auto;font-feature-s=
+ettings:normal;font-stretch:normal;font-size:13px;line-height:normal;font-f=
+amily:&quot;Helvetica Neue&quot;;color:rgb(0,0,0)">A. Cline</p><p class=3D"=
+p1" style=3D"margin-bottom:0px;font-variant-numeric:normal;font-variant-eas=
+t-asian:normal;font-variant-alternates:normal;font-size-adjust:none;font-ke=
+rning:auto;font-feature-settings:normal;font-stretch:normal;font-size:13px;=
+line-height:normal;font-family:&quot;Helvetica Neue&quot;;color:rgb(0,0,0)"=
+>B. Cursor</p><p class=3D"p1" style=3D"margin-bottom:0px;font-variant-numer=
+ic:normal;font-variant-east-asian:normal;font-variant-alternates:normal;fon=
+t-size-adjust:none;font-kerning:auto;font-feature-settings:normal;font-stre=
+tch:normal;font-size:13px;line-height:normal;font-family:&quot;Helvetica Ne=
+ue&quot;;color:rgb(0,0,0)">C. Replit</p><p class=3D"p1" style=3D"margin-bot=
+tom:0px;font-variant-numeric:normal;font-variant-east-asian:normal;font-var=
+iant-alternates:normal;font-size-adjust:none;font-kerning:auto;font-feature=
+-settings:normal;font-stretch:normal;font-size:13px;line-height:normal;font=
+-family:&quot;Helvetica Neue&quot;;color:rgb(0,0,0)">D. Tabnine</p><p class=
+=3D"p1" style=3D"margin-bottom:0px;font-variant-numeric:normal;font-variant=
+-east-asian:normal;font-variant-alternates:normal;font-size-adjust:none;fon=
+t-kerning:auto;font-feature-settings:normal;font-stretch:normal;font-size:1=
+3px;line-height:normal;font-family:&quot;Helvetica Neue&quot;;color:rgb(0,0=
+,0)">E. Trae</p><p class=3D"p1" style=3D"margin-bottom:0px;font-variant-num=
+eric:normal;font-variant-east-asian:normal;font-variant-alternates:normal;f=
+ont-size-adjust:none;font-kerning:auto;font-feature-settings:normal;font-st=
+retch:normal;font-size:13px;line-height:normal;font-family:&quot;Helvetica =
+Neue&quot;;color:rgb(0,0,0)">F. Windsurf</p><p class=3D"p1" style=3D"margin=
+-bottom:0px;font-variant-numeric:normal;font-variant-east-asian:normal;font=
+-variant-alternates:normal;font-size-adjust:none;font-kerning:auto;font-fea=
+ture-settings:normal;font-stretch:normal;font-size:13px;line-height:normal;=
+font-family:&quot;Helvetica Neue&quot;;color:rgb(0,0,0)">G. None of the abo=
+ve</p><p class=3D"p2" style=3D"margin-bottom:0px;font-variant-numeric:norma=
+l;font-variant-east-asian:normal;font-variant-alternates:normal;font-size-a=
+djust:none;font-kerning:auto;font-feature-settings:normal;font-stretch:norm=
+al;font-size:13px;line-height:normal;font-family:&quot;Helvetica Neue&quot;=
+;min-height:15px;color:rgb(0,0,0)"><br></p><p class=3D"p1" style=3D"margin-=
+bottom:0px;font-variant-numeric:normal;font-variant-east-asian:normal;font-=
+variant-alternates:normal;font-size-adjust:none;font-kerning:auto;font-feat=
+ure-settings:normal;font-stretch:normal;font-size:13px;line-height:normal;f=
+ont-family:&quot;Helvetica Neue&quot;;color:rgb(0,0,0)">2. Participants typ=
+ically quote $320 for this type of engagement. What is your preferred rate =
+for participating in a 60-minute interview on this topic?</p><p class=3D"p2=
+" style=3D"margin-bottom:0px;font-variant-numeric:normal;font-variant-east-=
+asian:normal;font-variant-alternates:normal;font-size-adjust:none;font-kern=
+ing:auto;font-feature-settings:normal;font-stretch:normal;font-size:13px;li=
+ne-height:normal;font-family:&quot;Helvetica Neue&quot;;min-height:15px;col=
+or:rgb(0,0,0)"><br></p><p class=3D"p1" style=3D"margin-bottom:0px;font-vari=
+ant-numeric:normal;font-variant-east-asian:normal;font-variant-alternates:n=
+ormal;font-size-adjust:none;font-kerning:auto;font-feature-settings:normal;=
+font-stretch:normal;font-size:13px;line-height:normal;font-family:&quot;Hel=
+vetica Neue&quot;;color:rgb(0,0,0)">Let me know if you&#39;re interested, a=
+nd I=E2=80=99ll be happy to provide more details. I look forward to hearing=
+ from you!</p><p class=3D"p2" style=3D"margin-bottom:0px;font-variant-numer=
+ic:normal;font-variant-east-asian:normal;font-variant-alternates:normal;fon=
+t-size-adjust:none;font-kerning:auto;font-feature-settings:normal;font-stre=
+tch:normal;font-size:13px;line-height:normal;font-family:&quot;Helvetica Ne=
+ue&quot;;min-height:15px;color:rgb(0,0,0)"><br></p><p class=3D"p1" style=3D=
+"margin-bottom:0px;font-variant-numeric:normal;font-variant-east-asian:norm=
+al;font-variant-alternates:normal;font-size-adjust:none;font-kerning:auto;f=
+ont-feature-settings:normal;font-stretch:normal;font-size:13px;line-height:=
+normal;font-family:&quot;Helvetica Neue&quot;;color:rgb(0,0,0)">Best Regard=
+s,</p></div><div><div dir=3D"ltr" data-smartmail=3D"gmail_signature"><div d=
+ir=3D"ltr"><br><div><table style=3D"border:none;border-collapse:collapse"><=
+colgroup><col width=3D"130"><col width=3D"494"></colgroup><tbody><tr style=
+=3D"height:94.1689pt"><td style=3D"vertical-align:top;padding:5pt;overflow:=
+hidden"><p dir=3D"ltr" style=3D"line-height:1.2;margin-top:0pt;margin-botto=
+m:0pt"><span style=3D"font-size:12pt;font-family:Arial;color:rgb(0,0,0);bac=
+kground-color:transparent;vertical-align:baseline;white-space:pre-wrap"><sp=
+an style=3D"border:none;display:inline-block;overflow:hidden;width:119px;he=
+ight:112px"><img src=3D"https://app.zintro.com/resources/zintro_logo.png" h=
+eight=3D"112" style=3D"margin-left:0px;margin-top:0px" class=3D"CToWUd"><br=
+></span></span></p></td><td style=3D"vertical-align:top;padding:5pt;overflo=
+w:hidden"><p dir=3D"ltr" style=3D"color:rgb(34,34,34);font-family:Arial,Hel=
+vetica,sans-serif;font-size:small;line-height:1.38;margin-top:0pt;margin-bo=
+ttom:0pt"><span style=3D"background-color:transparent;font-weight:700;verti=
+cal-align:baseline"><font face=3D"georgia, serif" color=3D"#000000">Lexi Pe=
+arson | Qualitative Research Manager</font></span></p><p dir=3D"ltr" style=
+=3D"color:rgb(34,34,34);font-family:Arial,Helvetica,sans-serif;font-size:sm=
+all;line-height:1.38;margin-top:0pt;margin-bottom:0pt"><font color=3D"#0000=
+00" face=3D"georgia, serif">Mobile:=C2=A0</font><span style=3D"color:rgb(0,=
+0,0);font-family:georgia,serif">(617) 936.0153 ext. 727</span></p><p dir=3D=
+"ltr" style=3D"color:rgb(34,34,34);font-family:Arial,Helvetica,sans-serif;f=
+ont-size:small;line-height:1.38;margin-top:0pt;margin-bottom:0pt"><font col=
+or=3D"#000000" face=3D"georgia, serif">HQ Address:=C2=A0</font><font color=
+=3D"#000000" face=3D"georgia, serif">68 Harrison Ave #605, PMB 27193, Bosto=
+n, MA 02111</font></p></td></tr></tbody></table><hr><p class=3D"MsoNormal">=
+</p><div style=3D"color:rgb(80,0,80);font-family:Arial,Helvetica,sans-serif=
+;font-size:small"><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=
+=3D"gmail_signature"><div dir=3D"ltr"><div dir=3D"ltr" style=3D"margin-left=
+:0pt"><div dir=3D"ltr" style=3D"margin-left:0pt"><div dir=3D"ltr" style=3D"=
+margin-left:0pt"><div dir=3D"ltr" style=3D"margin-left:0pt"><table style=3D=
+"color:rgb(34,34,34);border:none"><tbody><tr style=3D"height:56.7284pt"><td=
+ style=3D"margin:0px;border-left:2.25pt solid rgb(255,255,255);vertical-ali=
+gn:top;overflow:hidden"><p dir=3D"ltr" style=3D"line-height:1.38;margin-top=
+:0pt;margin-bottom:0pt"><span style=3D"font-size:11pt;font-family:Times,ser=
+if;background-color:transparent;font-style:italic;vertical-align:baseline">=
+<font color=3D"#000000">Zintro is a global market research expert network. =
+We connect researchers (market researchers, consulting groups, investors, u=
+niversities, etc.) with experts who can provide valuable and unique perspec=
+tives on niche topics.</font></span></p><p dir=3D"ltr" style=3D"line-height=
+:1.38;margin-top:0pt;margin-bottom:0pt"><br></p><p dir=3D"ltr" style=3D"lin=
+e-height:1.38;margin-top:0pt;margin-bottom:0pt"><span style=3D"font-size:11=
+pt;font-family:Times,serif;color:rgb(0,0,0);background-color:transparent;ve=
+rtical-align:baseline">Don&#39;t want to receive more emails about research=
+ projects? Please let me know or=C2=A0</span><a href=3D"https://app.zintro.=
+com/unsubscribe" target=3D"_blank" style=3D"color:rgb(17,85,204)"><span sty=
+le=3D"font-size:11pt;font-family:Times,serif;background-color:transparent;v=
+ertical-align:baseline"><font color=3D"#0000ff">click here</font></span></a=
+><span style=3D"font-size:11pt;font-family:Times,serif;color:rgb(0,0,0);bac=
+kground-color:transparent;vertical-align:baseline">.</span></p><p dir=3D"lt=
+r" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt"><br></p><p d=
+ir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt"><spa=
+n style=3D"font-family:Times,serif;color:rgb(0,0,0);background-color:transp=
+arent;vertical-align:baseline"><font size=3D"1">This e-mail message is inte=
+nded only for the recipient identified in the address of this message. It m=
+ay contain information that is confidential, privileged, or subject to lega=
+l restrictions and penalties regarding its unauthorized disclosure and use.=
+ Any unauthorized review, copying, disclosure, use, or distribution is proh=
+ibited. If you have received this e-mail message in error, please notify th=
+e sender immediately by reply e-mail and delete this message from your syst=
+em.</font></span></p></td></tr></tbody></table></div></div></div></div></di=
+v></div></div><p></p></div></div></div></div></div><img src=3D"https://app.=
+zintro.com/mail_open_tracking/rec_filter_tracking?tracking_id=3D133556489" =
+width=3D"1" height=3D"1" alt=3D"beacon" style=3D"display:none;display:none!=
+important"><div class=3D"yj6qo"></div><div class=3D"adL"></div></div></div>=
+<div id=3D":pm" class=3D"ii gt" style=3D"display:none"><div id=3D":pn" clas=
+s=3D"a3s aiL "></div></div><div class=3D"hi"></div></div>
+
+--000000000000aa42bc063473f7c5--
