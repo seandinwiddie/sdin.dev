@@ -75,15 +75,44 @@ Sean Dinwiddie sent the following messages at 4:55 PM
 View Sean's profileSean Dinwiddie, #OPEN_TO_WORK
 Sean Dinwiddie  4:55 PM
 Awesome I would love to hear more about your business, Don!
+Wednesday
+View Sean's profileSean Dinwiddie, #OPEN_TO_WORK
+Sean Dinwiddie  5:16 PM
+
+Hi Don,
+
+I've been thinking about your retail shipping software. Have you found an effective way to handle mobile access for your customers while maintaining your C# .NET architecture?
+
+I've seen several specialized software companies struggle with that transition, especially with QuickBooks integrations.
+
+Sean
+https://sdin.dev/coaching/
+
+Don VonderBurg sent the following messages at 1:59 PM on Thursday
+View Don's profileDon VonderBurg
+Don VonderBurg   1:59 PM
+Hey Sean,
+
+Sorry about the delays. We do not have any mobile access applications, nor any needed for the software we created. Our application is a Windows desktop application designed for retail shipping stores. Here in town Excell Shipping and Storage would be a prime example. Even though they are not a customer. We have thousands of installs nationwide. I have been a software engineer and business entrepreneur for over 47 years. Yikes that sounds old just saying it. :-) Even though our company is small, and everyone working is remote, we do a lot with our application. The main solution we provide is notifications services for PMB's (Private Mailboxes). A PMB is much like a PO Box but different that it is a street address rather than a PO Box at a post office. Our customers rent these PMB's to people who wish to be notified of letters and packages received to their PMB. Our software helps the store process a notification via email and SMS and keep up with storage fees. That is 1 of the 65 tools we have in our application called PMTools. The QuickBooks process is another tool that takes sales from their POS and pushed Journal Entries into the desktop version of QuickBooks. This has helped stores manage the accounting P&L and Balance Sheets needed for tax purposes. PMTools is 16 years old and running strong. Besides those 2 tools mentioned we also have many graphical reports and tools to help the small business owner keep a pulse on their business. 
+
+I do not have any pressing needs currently, but I always like to keep a list of contact resources just in case. 
+
+Don VonderBurg
+CEO
+VSoftwareTools, Inc.
 
 ### Next Message:
 
 ```
 Hi Don,
 
-I've been thinking about your retail shipping software. Have you found an effective way to handle mobile access for your customers while maintaining your C# .NET architecture?
+Thanks for sharing details about PMTools. It's impressive to see specialized software with such longevity and depth of functionality. 16 years in the software business is quite an achievement.
 
-I've seen several specialized software companies struggle with that transition, especially with QuickBooks integrations.
+Your notification system integrating email and SMS sounds robust.
+
+I respect the success you've built with your focused approach.
+
+47 years in software engineering is impressive - that puts you at the beginning of the industry revolution. With 65 tools in PMTools and thousands of installations, what's been your most interesting technical challenge in maintaining such specialized software over 16 years?
 
 Sean
 https://sdin.dev/coaching/
