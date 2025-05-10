@@ -55,7 +55,7 @@ https://sdin.dev/coaching
 *   **Subject:** That API that was written as a dare...
 *   **Body:**
 
-Hi Melissa,
+    Hi Melissa,
 
 Your comment about undocumented APIs "written as a dare" has been making me chuckle all week. Just yesterday I was battling one that seemed designed by someone who actively hated developers.
 
@@ -127,13 +127,14 @@ But... its a weekend (here/there) side project and I only have time every other 
 
 That's really smart building the KPIs in from day one - so many businesses would kill for that foresight! I've seen companies spend months retrofitting metrics into existing systems because nobody thought about measurement until the CEO suddenly wanted dashboards.
 
-Using your professional hindsight to avoid the same mistakes is exactly what makes side projects so satisfying. The "I know better now" approach.
+Using your professional hindsight to avoid the same mistakes is exactly what makes side projects so satisfying. The "I know better now" approach. 👍
 
 C# with Swagger is a solid stack. Clean, well-documented APIs are almost an act of kindness to future developers (including future you!).
 
-The every-other-weekend development schedule sounds familiar. I've got a habit tracker app I've been building at roughly the same pace. There's something to be said for the slow, intentional approach - fewer rushed decisions that you regret later.
+The every-other-weekend development schedule sounds familiar. I've got a habit tracker app I've been building at roughly the same pace. There's something to be said for the slow, intentional approach - fewer rushed decisions that you regret later. What's the next interesting bit you're planning to tackle on your shopping site when you find the time?
 
 If you ever want to bounce ideas around for your KPI implementation or any other aspects of the project, I'm happy to be a sounding board. No strings attached, just enjoy talking shop with other thoughtful developers.
 
 Sean
-530-638-3238 
+530-638-3238
+https://sdin.dev/coaching/
