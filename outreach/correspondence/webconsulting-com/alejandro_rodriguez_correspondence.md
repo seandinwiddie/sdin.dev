@@ -90,8 +90,26 @@
 > 👉 https://calendly.com/webconsultingcom/strategy
 > Talk soon!
 
-**Sean Dinwiddie (April 29, 2025, 9:08 PM):**
-> Yes! Alejandro, I would love to see how we can support each other! How are things going for you??
+**Sean Dinwiddie (May 7th 2025, 1:25pm):**
+Hi Alex,
+Following up on our strategy call about the coffee business web application. Did you have a chance to speak with Josh about the project's current status? I'd be interested in discussing how I can help and advise on the technical implementation.
+Also, I was wondering if you've had the opportunity to speak with Emily yet about the app development project you mentioned. How did that conversation go?
+Thanks,
+Sean
+
+**Sean Dinwiddie (not sent yet):**
+
+Hi Alex,
+
+Hope you're having a good week!
+
+Just wanted to follow up on our chat – any news from Josh regarding the coffee app's Webflow/Supabase setup?
+
+Also, I was wondering if you had a chance to connect with Emily about that app development project. Curious to hear how that went if you did!
+
+Cheers,
+Sean
+https://sdin.dev/coaching/
 
 ### Skool Platform - Landing Page Feedback (Recent)
 
