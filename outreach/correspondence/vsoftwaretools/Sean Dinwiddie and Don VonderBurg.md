@@ -75,7 +75,7 @@ Sean Dinwiddie sent the following messages at 4:55 PM
 View Sean's profileSean Dinwiddie, #OPEN_TO_WORK
 Sean Dinwiddie  4:55 PM
 Awesome I would love to hear more about your business, Don!
-Wednesday
+May 7
 View Sean's profileSean Dinwiddie, #OPEN_TO_WORK
 Sean Dinwiddie  5:16 PM
 
@@ -88,7 +88,8 @@ I've seen several specialized software companies struggle with that transition, 
 Sean
 https://sdin.dev/coaching/
 
-Don VonderBurg sent the following messages at 1:59 PM on Thursday
+Don VonderBurg sent the following messages at 1:59 PM on 
+May 8
 View Don's profileDon VonderBurg
 Don VonderBurg   1:59 PM
 Hey Sean,
@@ -101,18 +102,32 @@ Don VonderBurg
 CEO
 VSoftwareTools, Inc.
 
+May 10
+Don VonderBurg sent the following messages at 4:11 AM
+View Don’s profileDon VonderBurg
+Don VonderBurg   4:11 AM
+
+
+
+Hi Sean,
+
+Yeah, it’s wild to think I’ve been in this game for 47 years, and the tech world has changed a lot, but some challenges stick around. Personally, keeping up with the evolution of technology and not getting stagnant in one field is a challenge. I still have friends programming in COBOL and Pascal. :-) 😉 
+
+For PMTools, the biggest ongoing challenge has been designing a user interface that feels natural for the folks who actually use it, the people running Mail & Parcel Centers. These aren’t techies, they’re "mom and pop" business owners juggling a million things. So the software has to make sense in their world. That means using their lingo, making screens that don’t feel overwhelming, and cutting out any extra steps that slow them down.
+
+If the UI confuses them or feels too “software-y,” we end up with more training, more support calls, and sometimes lost customers. And really, in business software, your UI has to do two things, impress new customers and keep existing ones happy. Finding that sweet spot where it’s powerful but still friendly. That’s been the ongoing puzzle. But when it clicks, and someone says, “Hey, this just makes sense,” that’s the win.
+
+Don
+
+
 ### Next Message:
 
 ```
 Hi Don,
 
-Thanks for sharing details about PMTools. It's impressive to see specialized software with such longevity and depth of functionality. 16 years in the software business is quite an achievement.
+I can appreciate that balance of staying current while not chasing every shiny new framework. Those friends coding in COBOL probably still have job security that modern web developers can only dream of.
 
-Your notification system integrating email and SMS sounds robust.
-
-I respect the success you've built with your focused approach.
-
-47 years in software engineering is impressive - that puts you at the beginning of the industry revolution. With 65 tools in PMTools and thousands of installations, what's been your most interesting technical challenge in maintaining such specialized software over 16 years?
+That challenge of creating intuitive interfaces for non-technical users really resonates - it's where tech and psychology intersect. In my experience, the most successful business software finds that harmony between power and simplicity. Have you discovered particular user testing approaches that worked well for getting feedback from your mail center owners? I've found that direct observation sessions where you watch users interact with the software (without guiding them) can reveal design issues that surveys never capture. Heatmaps have been eye-opening too - seeing where users actually focus versus where we think they should look.
 
 Sean
 https://sdin.dev/coaching/
