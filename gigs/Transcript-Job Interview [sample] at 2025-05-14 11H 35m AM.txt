@@ -1,0 +1,82 @@
+interviewer: Seamlessly on other platforms. The information. Right? That is available in the flyer. So that's what this flyer is coming from. Right? So what I want to build here is that I want to build flyer development and delivery, like, very seamless model of doing so. But it can create flyers that is already happening across
+you: Yeah.
+interviewer: many platforms. Charge up, can do it. Can can walk and do it. A lot of the various technology products do those kind of stuff. But where I want to really differentiate myself is is not just creation, but also deployment. Optimization and getting more value to the end customer. In terms of what they've achieved with the fires. Right?
+you: Okay. Alright.
+interviewer: If you look at this and if you look at these flyers, right, in the local community,
+you: Yeah.
+interviewer: you have also different ask. Right? Has lost something. They're looking for it. Somebody's looking for a roommate. Somebody's looking for whatever. Like, many different things. Somebody looking for a job. Right? It can be n number of services, how do you reach up an audience? Right? That is a common marketing problem. What I want to do here is that I want to automate the entire process into it.
+you: Okay. And they're primarily
+interviewer: Right?
+you: digital flyers that would be posted on Facebook, social media?
+interviewer: Yeah. Yeah. Yeah. So the way I want to do is through my platform, I'll manage that. Right, and push it through social media and also host it on my platform. Right? So I want to have a multichannel strategy where my platform and also have a flyer and people customers that come and view and engage with that. Right? On the other end, I also want these flyers to integrate with social media platform. Like Nextdoor or Reddit or Facebook. Right? Wherever what I want to do here is that I want to recommend and then deploy based on what the flyer is about and what is the problem we're trying to solve.
+you: Okay. And then would that be, getting
+interviewer: Right?
+you: analytics from the social in order to optimize the flyer?
+interviewer: No. Absolutely. I think that is very important information that I want to solve for is that as we deploy to one channel, like, think one next door. Right? And we have a flyer that is in service at the moment. Right? So the first thing is just look at the as is pro process. Right? Once you deploy a ad campaign on any of these platforms, what do you what are the steps you take? Right? So you deploy it. You monitor it. You engage with the audience. And then based on the results, further optimize it or maybe change the content of the flyer. Things I want to automate that process.
+you: Okay. That sounds good. Yeah. I really like it.
+interviewer: Right? Yeah. I want to automate that process where we take the guest game out of people who are not expert at advertising marketing, and they they spend tons of money on ad campaigns. It doesn't work.
+you: Yeah. So, essentially, the analytics could report back to the flyer generation and optimize and then
+interviewer: Yeah.
+you: back and forth iteratively kind of doing
+interviewer: Perfect.
+you: AB testing or whatnot.
+interviewer: Yes. Yes. You got it. Yep. So I think that is what I want to showcase I want to showcase through a MVP product or prototype. Whatever it takes of you know, I think you mentioned that a product and tech, both of it. Right?
+you: Mhmm. Yeah.
+interviewer: What I've done is that I actually have created a landing page and I've tried to put all what I'm thinking about this thing and how it works on the landing page. It's not I've not operationalized the landing page. I just
+you: Good.
+interviewer: created it. Have you heard of the app, Lovable?
+you: I'm not certain. I I don't think I have.
+interviewer: Okay. So that's an app that I just found out two days back, and it's a game changer in terms of how fast you can create website prototypes. You know, it's more about that.
+you: Okay. Yeah. Yeah. Alright. Uh-huh.
+interviewer: Landing pages. And it does all the integration in the background. It just it's amazing. So I've I've I've been kind of
+you: Nice.
+interviewer: just quickly doing it myself and all that kind of stuff.
+you: Okay.
+interviewer: I have that ready. I can deploy it. I'm naming naming the product. A post I x dot a I.
+you: Okay.
+interviewer: It's it's about posting stuff and all that kind of stuff. So, anyways, very important. I think what I want to build is that something where I can engage with the audience and where I'm going with this, Tom, is that I want to put it out there with a minimal viable product Right? That's not totally, like, functional, but it has something differentiated. Right? And then I can go for further investment to kinda build you know, how it is. Right? The building any
+you: Yeah. Yeah. So initially, it should be the flyer generation. That's probably MVP
+interviewer: yeah.
+you: like, phase one. And then phase two is being able to post that to social. And then phase three would be to work with the analytics from social and repeat the cycle.
+interviewer: But, you know, Tom, I mean, I I like the way you broke it down. Right? Because I think generation is an important asset because eventually what would happen is based on the feedback from these platforms, right, optimize the flyers as well. Right? So it's a back and forth. So generation is already happening many places. Right? People can generate flyers, but what doesn't happen is that how do you take actions from there? Right? And that's what we are trying to solve for.
+you: Right.
+interviewer: So maybe we had to look at not just generation, but also in terms of how do we activate that. Right? Maybe what I'm saying here is that absolutely you have it all kind of laid out in your phase one, two, and three. But maybe
+you: Mhmm.
+interviewer: we have to kinda look at maybe phase one also has that aspect of it. And what does you know, the also, the thing is we control the narrative in terms of what we are putting it out there.
+you: Yeah.
+interviewer: So it not it might not be complete automation yet because we don't have the data We it's all through learning we can automate various touch points. Right?
+you: Absolutely. Yes. Precisely.
+interviewer: So So I think anyway, so you get the point. But yeah.
+you: Yeah. Definitely. So I think it sounds pretty clear to set up the application, back end with OpenAI and with their API and then get that set up on AWS with Node and then to build out the front end in React and then have that to support the the flyer generation and then kind of move on from there.
+interviewer: Okay. Okay. And and, Tom, are you based out of Boston?
+you: Yes. Yes.
+interviewer: Okay. Okay. I'm I'm in Connecticut, not too far. Okay.
+you: Nice.
+interviewer: That that's good. And what do you do right now? Are you just kinda doing consulting freelance? Or
+you: Yeah. Yeah. That's what I've been doing a lot of recently. So
+interviewer: it looks like okay. Okay.
+you: things have been going well with that. And so I do have
+interviewer: Mhmm.
+you: another call coming up at just fifteen minutes. So I think that this is pretty clear what, you wanna get going. What would be the next steps for you?
+interviewer: Yeah. So my next step is I'm talking to a bunch of folks today and tomorrow, and then I want to finalize by Friday afternoon.
+you: Okay.
+interviewer: And then what I would like to see here is that I want to see some kind of proposal in terms of you know, because you know how it is. I'm cost conscious at this moment.
+you: Yeah. Yeah. You wanna see kind of, like, a a scope of work with budget breakdown. So, you know, this amount of
+interviewer: Yeah. Yeah.
+you: time for this amount of development and
+interviewer: Yeah. Yeah.
+you: individual breakdown of what's gonna be in there and then kind of having that budgeted out.
+interviewer: Yeah.
+you: So that would make sense. So, yeah, I can put together a
+interviewer: Yeah.
+you: scope of work and get that sent over to you based off of a our conversation today. Does that sound good?
+interviewer: Yeah. Yeah. No. Absolutely, Tom. And you just keep in mind that it has to be. You know, because well, I'm sure you're doing all sorts of work, but I'm in a different place and stage at the moment. So so have a look at the price and the cost and because eventually, if this works out, potentially, there's more opportunity. Right? So I want to have enough runway so I can move forward.
+you: Awesome. Good. Yeah. Yeah. That sounds good. I can appreciate that.
+interviewer: Yeah. So okay. Perfect. Thank you, Tom. Appreciate it. So yeah, just send me when you have that, and then I'll make a decision by Friday.
+you: Alright. That sounds great. Ashish, and I look forward to being in touch with you.
+interviewer: Thank you. Thank you. Appreciate it.
+you: Alright. Thank you. Bye bye.
+interviewer: Look forward. Yeah. So Bye.
+----------------------------------
+
+Transcript saved using Ntro.io Chrome extension

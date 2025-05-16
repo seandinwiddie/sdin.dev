@@ -1,0 +1,112 @@
+0:11: Hello, how's it going? 
+ 0:13: Oh great. 
+ 0:14: How are you doing, Martin? 
+ 0:16: I'm doing wonderful. 
+ 0:17: How are you doing? 
+ 0:19: Oh, great. 
+ 0:19: Thank you for asking. 
+ 0:22: Yeah, so I'm excited to hear more about what you have going on. 
+ 0:26: Yeah, so, first of all, thank you for joining this call. 
+ 0:30: I, I really like your resume, seems you're packing a lot of experience. 
+ 0:36: So basically, I'm the CTO of one of the pharmaceutical companies. 
+ 0:41: We had acquired a different company, which comes with its own tech component. 
+ 0:49: So with that being said, it's, it's a merger type deal, right? 
+ 0:54: So they have their team going on. 
+ 0:57: And our board of, our board basically. 
+ 1:02: Have is pushing certain agenda forward that we don't feel is getting met by the current team. 
+ 1:09: so yeah, we need to hire a very capable individual to go in and push forward with our agenda. 
+ 1:17: So I believe I the job description says the stack needed basically a go react next GS. 
+ 1:25: So, yeah, we need to put someone here there they're gonna start pushing with the front end. 
+ 1:32: Yeah, that sounds awesome. 
+ 1:33: I have a lot of experience with that, very comfortable with it. 
+ 1:37: I'm used to being in staff engineer position where it's just a lot of programming and very quickly on tight deadlines, and so that sounds right up my alley. 
+ 1:48: Do you have some examples of the features that you're implementing? 
+ 1:53: I don't, basically we'll have, to sign the NDA first, not compete before we move forward with any of that, but basically our process is like that. 
+ 2:04: We gonna, we have intro call because again a lot of people claiming to be. 
+ 2:09: Different skill sets than they really are. 
+ 2:11: So the first intro call here we assess two things, basically the applicant communication and we look at a piece of code together like it it doesn't have to be anything specific, like just a piece of code of your choice, and we get through it like you walk me through it and also I'd love to hear like some. 
+ 2:30: Some brief about your experience, like your resume says you were in Google for 12 years. 
+ 2:36: so yeah, I would love to hear a little bit about that. 
+ 2:40: Yeah, so it's not really very fancy, a lot of staff engineer work like I was mentioning, so it's just a lot of Somewhat mundane programming, but I definitely, no doubt about it, like when Angular came out, that was a pretty big deal I thought in the way that, you know, just the industry is going, keeps it exciting. 
+ 3:02: But on my end, it's just a lot of, a lot of coding, nothing too fancy, a lot of user interfaces and API calls and things like that. 
+ 3:13: So, pretty straightforward work, especially with the good team structure they have there and Able to just follow the requirements and get those done pretty quickly, so. 
+ 3:23: , that's kind of my background there with Google. 
+ 3:29: And then Yeah, I didn't really have any code offhand to look through. 
+ 3:36: Recently I've been kind of messing around with some, redux sort of stuff, getting into some state management and things like that, but that doesn't look like necessarily what you guys are doing here. 
+ 3:51: So, I've done a lot of work with various different languages, and so no I'm really experienced with and go for the API development and the same with PHP for just getting websites developed really quickly and with larva. 
+ 4:09: So, What kind of Features, you, you said you can't really get into that with it out an NDA so. 
+ 4:18: Yeah, it's like, it's, it's basically gonna be a pharmacy portal software. 
+ 4:26: Our company is pushing towards a certain product to be delivered, which is like a, like I said, it's it's pharmacy portal of some sort. 
+ 4:36: So that's, that's as much notes as I can. 
+ 4:39: , yeah, so portals are pretty straightforward in my experience. 
+ 4:43: It's a lot of the same kind of stuff, you know, like the account information and then the, you know, kind of like different posts that are going on and, you know, different discussions and then accessing different files and things like that. 
+ 5:00: So they're pretty straightforward. 
+ 5:02: I definitely like to work with. 
+ 5:05: Having like a a good back end system with the API and, you know, I've even messed around with graphQL so that it works really well, but Postgraph works super good on the back end and I like developing APIs that just connect to that smoothly, So yeah, sounds like that's pretty much what you guys are looking for. 
+ 5:34: yeah, it's just going to be like it's a patient ho like so there's some sort of for pharmacy, so there's some ordering capabilities and that's really a major system that's that's part of the challenge like it's, it's, it's huge code base with multiple repositories. 
+ 5:52: , and they're gonna be order and where this order is going to be routed, that's more of the complicated part like, yeah, obviously the portal in its essence like in terms of files and data visualization that's that's straightforward, but part of the complexity is like routing the orders in a huge data structure to the right, Choose the right place, basically. 
+ 6:16: Yeah, so that kind of thing is, you know, state management and stuff like that. 
+ 6:21: I've done a lot of work with and so. 
+ 6:25: You know, I try to write a little bit of a functional programming style these days and just kind of keep a unidirectional data flow to where it really simplifies a lot of that sort of complexity that you're talking about there, and that can be implemented in granular aspects and, so that's just kind of being a staff engineer, a lot of the work that I've done is, you know, refactoring and getting new features implemented in the most. 
+ 6:56: Like at least of complexity, but, using good paradigms. 
+ 7:00: Like I said, you know, separation of concerns and things like that, to just be able to understand the flow easier than that cuts down on bugs a lot of the time too, so. 
+ 7:11: , Yeah, I, I'm definitely look interested in signing an NDA and moving forward with, getting some code under my belt with you guys. 
+ 7:23: Do you guys like to do like a coding assessment sort of thing at all or sample? 
+ 7:30: Yeah, it's, it's an intro call with with me basically and then we do a coding assessment probably we'll do it in-house, so probably gonna be me. 
+ 7:38: And then the third step we're gonna do a panel was there chief information technology and I would say VP of engineering. 
+ 7:46: , again, there's so many chefs in the kitchen, and this is part of the challenge of this job is like so many chefs in the kitchen, multiple agendas. 
+ 7:56: , But also, like I said. 
+ 8:01: I'm pretty good at fulfilling milestones, not necessarily like I'm good in the senior lead position as a chef, but also just being in that, you know, staff position where I'm just getting co-executed quickly. 
+ 8:14: Yeah, that's what, that's what I was going at. 
+ 8:16: This is gonna be at least at the beginning and gonna be very hands on, you see what I'm saying like we are telling the other team, we're getting you a front end. 
+ 8:25: But my goal is, I want someone to understand their architecture, respond to our team internally and be like, OK, they're messing around with this, they're wasting time in this because again, like I said, this is a measure. 
+ 8:37: So you got conflict of it. 
+ 8:39: So with that position, it will start as basically react next jazz type thing. 
+ 8:45: And then as you gain more clarity on the on the overall structure of the microservices controller is different points of the system, we'll we'll we'll go from there, you see what I'm saying? 
+ 8:58: So that's definitely and you're the, the CTO have you looked into anything like Redux toolkit or any state management, like that? 
+ 9:10: In terms of what for this project? 
+ 9:13: Yeah, I was literally just given like we asked them to give us the GitHub access. 
+ 9:19: It took them like 5 days. 
+ 9:21: I just got the access today. 
+ 9:24: I'm basing this off of the prior call where we went through the tech stack with them. 
+ 9:29: So I'm basing basically that's the information I have. 
+ 9:33: I just get the code access to that. 
+ 9:34: I, I didn't even. 
+ 9:36: Yeah, so that's one of the things I like to do is be able to. 
+ 9:41: Gradually incrementally refactor for optimization, and that also helps reduce bugs and get code out faster, meet milestones faster. 
+ 9:51: Essentially, the thoughtfulness of the design architecture being much more scalable. 
+ 9:58: So being as that you're using React and next JS, you know, doing a little bit of, you know, code refactoring and probably, you know, as the new features need to be implemented quickly. 
+ 10:10: , I'd be very excited to get on board and start playing around with some code. 
+ 10:15: So, when do you think that you'd be able to send over an NDA? 
+ 10:20: It's, I, I can send the NDA right away. 
+ 10:23: The problem is my availability is literally toasted, so we'll have to fit you in for the code assessment tomorrow sometime. 
+ 10:30: But again, you're asking, this is very urgent. 
+ 10:33: We're trying to get this going ASAP, you see what I'm saying? 
+ 10:36: , but yeah, just to make sure I'm not wasting your time, you're not wasting my time. 
+ 10:41: You don't have any piece of code we can go through like your GitHub. 
+ 10:45: I think you're very active in GitHub. 
+ 10:46: Like you don't have any of those reports we can go through. 
+ 10:51: Yeah, I mean, if you want to look through my GitHub, then that would be great, and I think that probably on the follow-up call if we wanted to go through it, to be honest, I'm pretty tired at the end of the day and going through it right now would be a little bit slow and you're anxious to get going. 
+ 11:09: So I think if you're able to send over the ND I could get that signed and then we can either work with a code assessment and or going to my GitHub, then we can do that and I'm interested in like you said, getting going as soon as possible. 
+ 11:24: Yeah, we can, we can make this as a part of our code assessment again to be honest with you, like I did a lot of those and it was you see what I'm saying someone saying you did this and that. 
+ 11:34: And the coding assessment was a complete disaster. 
+ 11:36: I'm not saying that's you. 
+ 11:37: Like, I'm, I'm very excited, for this, but also I wanted to make sure we're on the same page. 
+ 11:42: But again, given you it's almost 7, I with you, but let's get out something tomorrow and. 
+ 11:50: And we'll go from there in terms of the coding assessment, maybe looking at your GitHubre together. 
+ 11:55: Yeah, that would be spectacular. 
+ 11:58: One last question right now, like this is gonna be like a full time gig. 
+ 12:03: So do you have that availability of other gigs? 
+ 12:06: Do you have any? 
+ 12:06: Yeah, I do. 
+ 12:07: Yeah, all the other gigs I have, I'm wrapping them up pretty much as we speak, probably, you know, you know, as a developer late into the night, just wrapping up a few ends of the thing of deals and then. 
+ 12:19: And you're saying you're looking to get for going on this pretty quickly, so he's thinking like in the next day or two. 
+ 12:26: Gotcha. 
+ 12:26: OK. 
+ 12:27: That's, that's perfect. 
+ 12:28: All right, Martin, thank you. 
+ 12:29: I'll know, I'll be in touch tomorrow. 
+ 12:32: All right, awesome. 
+ 12:32: Thank you so much for your time. 
+ 12:34: It was great, take care, bye. 
+ 12:36: Take it easy, bye. 

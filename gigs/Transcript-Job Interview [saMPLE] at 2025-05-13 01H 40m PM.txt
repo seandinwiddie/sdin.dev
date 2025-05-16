@@ -1,0 +1,93 @@
+interviewer: Task needs to be done by two, agents. The agents have to collaborate.
+interviewer: You know? So the question I have is I mean, basically, the when the doctor says something to the agent, they should know which API to call.
+you: Precisely. Yeah. That's what the MCP server does. So a lot of the work would be on that
+interviewer: Yeah.
+you: side, getting that all set up with the APIs and then
+interviewer: Yeah.
+you: obviously, its own components for or its own functions.
+interviewer: Yeah.
+you: For doing certain things that they would need to do.
+interviewer: Yeah. And whoever needed, obviously, they will be talking to Anthropique or open air. Whatever is needed, they may talk to here.
+you: Correct.
+interviewer: This is a very you know, swimming out them here. You know? Lot of these agents do single task as responsibility, generally, we're looking at two ways. One you got the right API, I know the task will be done.
+you: Mhmm.
+interviewer: The agent does not do any more work. Because, obviously, the APIs have been in production. For few years doing the tasks.
+you: Right.
+interviewer: So, obviously, the APS will do the task. If they cannot do it, they'll tell the agent, and they will will message with the AngularJS and show it here.
+you: Yes. Right?
+interviewer: Yeah. Do you I will be needing somewhat a couple of page. How you want to architect, do you want to use? How do you do what frameworks you want to use? What label is this. A lot of them in the field. You want to land, gov, or something else. A three library for talking, agent to agent. You
+you: Right. Yeah. Okay. I can put that together. A lot of it will be
+interviewer: Yeah.
+you: in my experience, Anthropic has been really good for this sort of thing. And they have a SDK for their MCP
+interviewer: And what what what do you want to use for converting the speech
+you: server stuff.
+interviewer: to text? You know, doctor is talking to the agent. Doctor is not typing to the agent.
+you: Yeah. Yeah. So probably, you know, something node based is, in my experience, pretty good. Either that or there's some Python stuff that would also work. Do you what is your API server running? Is it a node server, or what kind of server are you using there?
+interviewer: Mister Glove Windows twenty twenty two server. All my APIs are low dot net. It's a simple system. Very simple system. You get the API, and then we we provide all the chessons. So you know which JSON to send to which API.
+you: Okay. Yeah. Yeah. So alright. So, yeah, I can definitely put together some documentation on that.
+interviewer: Yeah. And we send we give you the request just on the responses on if you get a response, say, get me a list of this report for all the patients who have not seen me in the last three months. They just know how to know which APA to call. It'll send you back the list, and you will send it to the h t
+you: Correct. Yeah.
+interviewer: Yeah. So what software do you use for converting voice to text?
+you: I don't have a particular one that I always use. Usually, I'll do some research as to which one is not necessarily trending, but performing well in the ecosystem at the time. So a lot of times, I'll go through the I like to use Node, and I'll go through the NPM package list, and I'll kinda see, you know, which ones are doing which things. And and so on. So, yeah, that's definitely something I can, put together in a document for you.
+interviewer: Good. Now
+you: That will show you what I think would be the best to use right now.
+you: Yeah. So the way that those the the calls work is using credits.
+interviewer: Pardon me?
+you: Are you referring to the credit system? So, for example, for the or OpenAI, Gemini for their API, calls. It just uses a credit system.
+interviewer: Where do you see the AI coming into picture here?
+you: So
+interviewer: Of course, they will be calling, but they're not too many tokens. Doctors want hey. For this patient ID 11234, send an SMS message. Patient, dear Smith, you have abnormal blood test. Give me a call. We need to discuss.
+you: Yeah. It's pretty simple. Definitely pretty simple.
+you: Correct. Yeah.
+interviewer: When the response comes, anyhow, you don't need API to what to do with the response. Just show the doctor what it is. The API gives. So
+you: Right.
+interviewer: the developmental cost of APIs cost of developing, testing, and deploying, If we want to go for a fixed price per agent, how many man hours you think each agent will take on average? Okay. Some method. But as long as we maintain mostly single tax, Basically, they are identified based on the doctor's talking to them, which API to call. If they don't know which API to call, there's nothing they can do.
+you: Yeah. Yeah. So
+interviewer: What's the average man hours or average?
+you: I wouldn't have a specific man hours
+interviewer: Price agent?
+you: for that until I start to get in and actually develop it. That's when it's gonna start to, you know,
+interviewer: But but you you
+you: what will be like a a fuzzy scope now once the code is opened up and everything, then I'll be able to start giving quotes on man hours and price per agent sort of things.
+interviewer: Okay. The so but I'm thinking whatever is done, we'll be taking all the testing part and telling you. Got testing takes a lot of help people who can do the testing.
+you: Yeah. Hopefully, that should be definitely cut down by
+interviewer: Yeah.
+you: just getting good tests integrated into the MCP server. And
+interviewer: Yeah. The final testing. You will be doing your unit testing and everything.
+you: yeah, yeah, so that should you know, it should be pretty concrete as far as how that operates. And then like you said, it it it's pretty simple with the API. They perform the tasks already in within the system.
+interviewer: Yeah.
+you: It's just right now, it's done through
+interviewer: The real heavy lifting is done by my APIs.
+you: go on. Right.
+interviewer: You know what I mean?
+interviewer: So alright. So if you want to kind of department. There's so many things that come into design document. You don't have to be very extensive, you know, Whatever you think is useful what you want to follow.
+interviewer: Yeah.
+you: have that in place to make that call to the MCP server, and then that will then transition into telling the API what to do. And so getting that all set up in the design doc will be good after looking over the APIs and how those are set up.
+interviewer: Yeah. Yeah. Actually, I have a list of all these agents that I want. I have a lot bigger list, but I can
+you: Okay.
+interviewer: send you this agency. In the upworks.
+you: Nice. Very good.
+interviewer: And, also, we want to know what is what kind of guardrails, how hallucinations did it them.
+you: Yeah. That shouldn't be an issue with especially with how they're developed, right now. The they're not
+interviewer: Mhmm.
+you: too bad on giving hallucinations, especially when the the instructions are very explicit, then you just and it's kind of another thing that plays into it with the MCP that it does what it what you would call thinking, but it's more of just kind of like it lays out instructions, and then it checks those instructions for things like, and then it refines it and goes back and forth on that a bit to make sure that it gets it honed in for accuracy.
+interviewer: Okay.
+you: And so that's something that the MCP server does. Taking the prompts from the front end and really dials it down to get the API calls accurate and also to just do whatever other things it needs to do without having any sort of
+interviewer: Okay. Well,
+you: slippage like you're referring to.
+interviewer: I'll take a look at the agents I'm looking for. I don't know. If you stick them into one One agent or 10 agents or
+you: Yeah. I'll put
+interviewer: how do you want to do them? They're the first yeah, yeah, they are the first list of agents. And
+you: I'll put that together in the design doc.
+interviewer: if you can give us all uploading the upworks, we'll meet again after I take a look at it.
+you: Okay.
+interviewer: Is it really that difficult to give out man hours? Because I was surprised. Yeah. Wait. Because
+you: No. It's just that I wouldn't wanna, you know, lead you astray with that. I think it'll be good to take a look at just the request that you want to do and then man hours average can you know, I can quote you based off of that.
+interviewer: Okay. Alright. Okay. So I'll wait for your document design document and the man hours that you're looking at.
+you: Awesome. Yeah. Sounds great.
+interviewer: And there we go. Okay. Thanks. Bye.
+you: Thank you so much. Bye bye.
+interviewer: Yeah. Thank you. Bye.
+----------------------------------
+
+Transcript saved using Ntro.io Chrome extension

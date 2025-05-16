@@ -1,0 +1,92 @@
+0:46: This meeting is being recorded. 
+ 0:55: Hey, how's it going? 
+ 0:57: It's wonderful. 
+ 0:58: How are you doing? 
+ 1:00: Heath It's good to meet you. 
+ 1:03: Good to meet you. 
+ 1:05: How's your day going? 
+ 1:07: Oh, you know, it's actually very busy. 
+ 1:10: I've been doing a whole bunch of And grunt work today, but other than that, it's going great. 
+ 1:18: Not bad, not bad. 
+ 1:19: You're on the east coast is where you're at or actually no I'm in the Sacramento area. 
+ 1:26: Oh, you're in Sacramento. 
+ 1:27: Gotcha. 
+ 1:27: Oh, OK. 
+ 1:28: I'm not sure. 
+ 1:29: East Coast, sorry, it's been. 
+ 1:31: And then yeah, just a whirlwind for me too, so yeah, it's typically. 
+ 1:37: How business goes. 
+ 1:38: So tell me more about the problem you're facing. 
+ 1:42: So what we're taking a look at is that we have a We have a our we run a software as a service product. 
+ 1:50: our SAS application is, is backed by Mongo through an API and our up to this point we've just been serving up the geometry component basically through through the API and then drawing it through, you know, leaflet or Ezri or something like that. 
+ 2:14: we're starting to get so many things on the map that we are needing to migrate over to vector tiles so that we can have a, you know, much more complicated map and still not slow down. 
+ 2:25: We're starting to see some pretty good slowdowns when the map gets very complex with, you know, hundreds or thousands of points that are, that are, you know, drawn in polygons or points and things like that. 
+ 2:37: So. 
+ 2:38: We thought the solution was GeoServer, which I still do. 
+ 2:41: I, because it does vector tiles kind of, with an extension, but pretty natively, and our, so what we're trying to do is we're trying to deploy that into our Kubernetes cluster and then have it basically hook into Mongo, serve up the vector tiles to our SAS application. 
+ 3:04: Well,, we have GeoServer deployed in our cluster. 
+ 3:09: we use AWS Cognito for our authentication. 
+ 3:12: We didn't write an authentication. 
+ 3:14: There's so many of them out there. 
+ 3:15: That one was pretty easy to do. 
+ 3:17: our cluster isn't hosted in AWS, it's over in Lenode if you've ever heard of them, they're kind of, company that does that. 
+ 3:25: So, So we're using that as our authentication. 
+ 3:29: When our SAS application, when the user signs into our SAS, you know, it authenticates with Cognito, grabs it, Java web Java token, and then we want to basically all I want to do, this is just frustrating, but all I want to do is I just want to be able to then send that front end react application just needs to send that web token to GeoServer, have GeoServer verify that web. 
+ 3:56: Token is valid and then honor the request. 
+ 3:59: I don't want GeoServer to sign in. 
+ 4:02: I don't need anybody to sign in through GeoServer. 
+ 4:04: I don't want it to know anything other than yes, this token is valid, serve up the map. 
+ 4:09: No, this token is not valid, you know, keep it closed. 
+ 4:12: , we may eventually want to open it up that you could hook into GeoServer through, you know, ArcJS or Qis or whatnot, to, to get map level access through a desktop application, but right now our focus is is just hooking up Cognito or validating that Cognito Java web token in Geo Server and ensuring that that's a valid token. 
+ 4:41: We. 
+ 4:42: Our problem right now is that We traced back that we can't get Cognito to add in an AUD that the that is needed by. 
+ 4:58: The, the web token kind of, what's it called, the, the validator that Geo Server has built in, and I think the AUD is part of the, the open spec that they're following, but Cognito adds that in as a separate little thing that you can do, but I'm not enough of an AWS expert to understand how to do all of that, nor do I have time to mess around. 
+ 5:25: And try to figure all of that out. 
+ 5:27: So I'm looking for somebody who's a decent expert in GeoServer to help us get the authentication piece working and then hook it into Mongo and look at the right collections and serve up our, our, map data as vector tiles. 
+ 5:43: Does that make any sense whatsoever? 
+ 5:44: It makes perfect sense to be honest, and it sounds pretty straightforward. 
+ 5:49: it makes it makes sense. 
+ 5:51: If you're not spending a lot of time in AWS, obviously their platform is kind of like being in Star Wars or something, but insane, yeah, I mean, the thing is, you know, for me now I've just spent so much time in it that I, I don't really think about it anymore, you know, so it definitely sounds straightforward and something that I'd love to jump in and get resolved for you. 
+ 6:16: OK. 
+ 6:16: Is it something you're, I mean, you sent me a pretty, a pretty awesome looking site of GeoServer kind of stuff, so I, I, I assume you're super familiar with how it's inner workings and setups are and. 
+ 6:29: Yeah. 
+ 6:29: It should be pretty straightforward. 
+ 6:31: I wouldn't even expect this should take too awfully long, so OK. 
+ 6:36: Perfect. 
+ 6:38: That's, that's, that's discouraging and also encouraging all at the same time. 
+ 6:42: So, well, no, I mean, it makes sense because like I can remember, you know, a decade ago when I was just jumping into AWS how everything would take exponentially longer just because, but, you know, again, I've been in there so long now that it just is pretty straightforward. 
+ 7:00: So. 
+ 7:02: OK. 
+ 7:02: And. 
+ 7:04: Like I said, would you be interested, I know I didn't write this as part of this job, but would you be interested to add on to get it hooked into Mongo for us and then, and then kind of get that pathway figured out and then serve up some, some of our information. 
+ 7:19: We've, we've been, we hooked it up to Postscripts because we wanted to just play around with it, but we don't want to expose any of our clients' data, even on our development site to just, you know, an open ended geos server that any snooping. 
+ 7:33: , you know, bot could come across and just start calling random data and, you know, doing God knows what with it. 
+ 7:40: So we've kind of kept that away, but I'd like to shift that over and just hook it right into Mongo and, and start serving up some interesting data, and then help us try to configure those vector tiles so they're saving. 
+ 7:52: Because I know they have to save in an S3 bucket or something like that just so that we have that, just so that they're quick, I guess, is, is kind of a caching situation. 
+ 8:01: So would that be something you would be interested in, definitely, yeah, with this,, getting in there, getting my. 
+ 8:11: Hands dirty with what you got going on and then taking a look at. 
+ 8:15: Implementing those extra connections that would be very interested in. 
+ 8:20: OK, perfect. 
+ 8:20: Yeah, and reasonable confident that there wouldn't be a, that your, your skill set matches that. 
+ 8:25: I've had, I've had plenty of people tell me, oh, sure, I can do that, and then, you know, 14 hours later and they and you know, a few $1000 and they're like, yeah, I don't know how to do it. 
+ 8:35: Yeah, it, it sounds pretty straightforward, so I Again, I don't even think that, hopefully that shouldn't take very long, depending on your setup, obviously, with this getting in there and seeing what you have going on and then being able to evaluate what you want to do next, I'd be able to, you know, critique on that more afterwards. 
+ 8:55: Perfect, perfect, yeah, I,, obviously, it, it wouldn't be me. 
+ 9:00: I, I'm not the Kuberneti's expert, but I have one, and I just, if you wouldn't mind just being thrown into a Slack channel with, with the Kubernetti's person, probably one of my best junior engineers to help with, you know, schemas of the, of Mongo, and then, and then, I could throw you in with some, some credentials for AWS Cognito so you could, change some configurations around and, I think, and then just, you know, report back to me each day what what you figured out what progress was, and, and, go from there. 
+ 9:33: I wouldn't expect, if you think it's gonna be that quick to be more than, you know, what do you think like a week's long yeah, definitely. 
+ 9:41: I mean that that should be plenty of time and I wouldn't even expect it would be that long, so. 
+ 9:47: Yeah, I think that sounds perfect. 
+ 9:48: I'd love to jump in and slack with them and then just give me those credentials and I can start getting working on that. 
+ 9:56: Dang, that's awesome, that's awesome. 
+ 9:58: So yeah, I'm I'm, I'm excited about that. 
+ 10:00: Sounds like a great fit and, yeah, sounds like something we could, we can jump through and, yeah, have done, have done quickly. 
+ 10:07: So, yeah, that's, that's what I was looking for. 
+ 10:09: So, yeah, that sounds good. 
+ 10:11: I'll, I'll get, I'll get, I'll get an offer figured out here in Upwork and get that, get that moved over to you here shortly. 
+ 10:18: So I love it. 
+ 10:19: Thank you, Heath. 
+ 10:20: It was great meeting with you and I appreciate your time. 
+ 10:23: Yeah, thank you as much. 
+ 10:24: I'll talk to you soon. 
+ 10:25: All right, later. 
+ 10:26: Thanks, bye. 
+ 10:27: Bye. 

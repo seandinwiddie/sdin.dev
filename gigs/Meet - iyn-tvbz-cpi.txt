@@ -1,0 +1,72 @@
+Meet - iyn-tvbz-cpi.webm
+
+(Transcribed by Sonix.ai - Remove this message by upgrading your Sonix account today!)
+
+Speaker1: [00:00:20] Thomas. Yeah.
+
+Speaker2: [00:00:22] How's it going? It's good to meet with you again. Thank you
+
+Speaker1: [00:00:25] For taking the time. Good. Thanks for getting that NDA over. So, yeah, real real quick, I give you just who we are. AAA, we have about 6,700,000 members. AAA, I don't know if you know this, is a federation of clubs. So there's about north of 20 of us. We're one of the large mega clubs. Our territory is California, Nevada, Utah, Arizona, my Wyoming, Montana, and Alaska. And we we got a new CEO a few months ago, and he's been really investing back into our business. We basically we were very profitable even though we're a not for profit company, but we weren't investing, you know, into technology and people and all that. So there's just been an onslaught of kind of pent up demand for certain things, including the technology, which has our IT team right now understaffed. So we're leaning a lot on a lot of external folks, and they're focused on kind of fundamental things like putting in Salesforce. My team strategic initiative sits in strategy. Part of our role is to develop the AI strategy for the organization, and that means kind of setting the strategy and watching where the puck goes with in in regards to AI. It also involves prototyping in order to do that. So we've been prototyping a a number of different AI labs and just understanding, you know, their capabilities, where they're strong at. We're also starting to you know, things where I would say we're maybe more catching up with, but maybe the tools are better now, is standing up some chatbots to aid the member experience and then also aid our team member experience.
+
+Speaker1: [00:02:28] So two of it right now that we're thinking about for this project with you, The first one would be we built on Vertex a chatbot for our home security tech support team. And so, really, all it's doing is accessing kind of a depository of documents and some websites Okay. To aid the tech tech support team in responding to, you know, calls that are coming in. So the first part of this is just to get a feel for you and your work. What we would wanna do is just you know, we're we're a bit new to we're on the Google Suite across the organization. Okay. We're new to some of the newer things that are being kinda launched by Google. We do have Gemini in in in the you know, in our in our suite. But things like agent space is is, you know, both new to the market, new to us. So we're just looking for some guidance. We're also looking for, you know, this one that we developed on Vertex to have you just kinda take a look at it, give us some recommendations, what you think. Maybe we we didn't think about something that's very scalable or anyway, you have, you know, ways of helping us enhance it. Yeah. Right now, it's being piloted right now. So that would be kind of part one of this first project.
+
+Speaker2: [00:04:03] Okay.
+
+Speaker1: [00:04:03] Part two I guess I'll pause there. Any immediate thoughts on that?
+
+Speaker2: [00:04:09] No. That sounds really good.
+
+Speaker1: [00:04:11] Okay. Part two is we wanna build a chatbot more leveraging the generative AI component because what we wanna do is eventually expose it to our members and have it member facing. But right now, what we wanna do is we wanna create it where it's team member facing.
+
+Speaker2: [00:04:30] Okay.
+
+Speaker1: [00:04:30] We can monitor it, and what it would do is it would be a research tool for our travel team. So when a member is looking to, you know, explore a travel, let's say it's like, hey. They wanna do a river cruise in Europe. Well, there's, like, three to five different websites, different promotions going on. And so what we wanna build is the chatbot that the team member can basically ask it, hey. You know, here, I want something in Germany. I want it eight weeks long. I want it blah blah blah blah. Whatever it wants, it would go out, research it, and bring it all back.
+
+Speaker2: [00:05:09] Okay.
+
+Speaker1: [00:05:11] So we want that for the team members. They can use it with members. They can let us know if there you know, if there's problems, and we can continue to tune it. And then eventually, we would put it on the website, and then members can use it anytime because we're not open all the time. We're not open twenty four seven. So, you know, let's say it's Sunday at 10PM. You know, we could turn this thing on for our members. So that would be part two of this project. And then we have also other applications like our road service division wants one and so on and so forth. But for the purpose of this, it would be these two pieces. Okay.
+
+Speaker2: [00:05:46] That sounds good. So the first one primarily to focus on initially is for the internal team, and you've developed something in Vertex?
+
+Speaker1: [00:06:00] Yes.
+
+Speaker2: [00:06:01] Okay. Alright. So, yeah, I would just need access to that to be able to look over it and give you my feedback on that, and that would probably be the initial step. Would you agree?
+
+Speaker1: [00:06:14] Yeah. I think that would be the first one. Now let me ask you. Our cybersecurity team, you know, takes a little bit of time to grant access to systems. So I'm wondering for this first part. I know it might take a little bit longer, a little bit more clunky. But the guy on my team that built it, and he didn't have a ton of experience with this. Yeah. Would you be able to do if he screen shared what he built, how he built it, and you can just kinda take a look at that. And I don't know if there's he could send code over or well, I don't know. Whatever. Can you basically do it virtually at first?
+
+Speaker2: [00:06:53] That would be a lot more of a challenge since it takes some time to get in there and look over it and mull over it. And I usually kinda, you know, meditate on it as I'm going through. And so that probably just wouldn't be the answer that you're looking for, I don't think.
+
+Speaker1: [00:07:11] Okay.
+
+Speaker2: [00:07:12] I get what you're saying about it needing to take time. I'm willing to wait for that, so that's not really a big deal for me.
+
+Speaker1: [00:07:20] Okay. So tell me tell me more about your experience, around doing this and, like, you know yeah. How much experience do you have specifically on building, you know, these types of chatbots?
+
+Speaker2: [00:07:32] Yeah. So it, you know, hasn't been out for a whole long time, but, I'm pretty much on the bleeding edge. And so as soon as these things come out, I jump on there. And, I have been working with Vertex AI for a while because it's been pretty fun. But, it's mostly just messing around by creating public facing resources and, stuff for global websites. So it's just a lot of hands on, kinda digging into it, getting into the documentation, figuring out how it works. And then, you know, a lot of the stuff is pretty early right now, so that's just the nature of it. My experience has been building with building chatbots with it, and it works pretty well. So, yeah, it's all pretty much new and fresh. So I've just been
+
+Speaker1: [00:08:29] Getting there. Do at what did you specifically do at Google?
+
+Speaker2: [00:08:34] Yeah. So Google, it was a lot of design work and maintaining the core infrastructure. So that you know, it's a lot of DevOps and developing the different connections between the different servers and resources and then making sure that it scales well. That's a big part of it. It's just kind of optimizing the code in different ways that, it's gonna scale because as things get developed quickly, usually, that's not a big consideration. And so it has to be gone back through and refactored. And so that's a lot of what I've done is gone through stuff that's been developed quickly and then made it so it scales easier. And that's part of the maintenance of the core infrastructure. So, yeah, it's kind of a lot of just, like, staff maintenance refactoring work, but it's really getting my hands dirty. So that's what I'm good at. Okay.
+
+Speaker1: [00:09:40] And so have you have you specifically built a a chatbot for a company?
+
+Speaker2: [00:09:51] Yeah. Yeah. Definitely. For Unilever, that was where I was doing that. And it it really isn't too complicated. It's I mean, it is. But it's just a matter of sitting down with the documentation. And, obviously, you know, with it being able to chat back and forth, it's easy to or I guess kinda fun, I should say, just, you know, going through and diagnosing it as you're developing it and going through the documentation. Just kind of a back and forth situation there. And so, yeah, that was public facing for them as part of their global corporate website and also provides internal support. But, yeah, again, that was just a lot of kind of you know, in the minutiae of it, it's it's really just kind of nerding out, you know, getting in there in the code and optimizing it gradually, slowly over time.
+
+Speaker1: [00:10:49] And what which one what was that built off of?
+
+Speaker2: [00:10:53] That was using the same tech stack. It was Vertex AI and the Dialogflow, which is gonna be changing its name. But yeah. And then it was using some Firebase functions and Python on the back end.
+
+Speaker1: [00:11:09] Got it. Okay. Okay. Well, any questions for me?
+
+Speaker2: [00:11:17] No. I think I have a pretty good understanding of what you need. So I think it's ready as soon as you're ready to move forward, then I'm available.
+
+Speaker1: [00:11:29] Great. Alright, Thomas. I yeah. Give me a few days, and I'll be in touch.
+
+Speaker2: [00:11:34] Alright. That sounds wonderful.
+
+Speaker1: [00:11:36] Thank you so much. We'll talk soon.
+
+Speaker2: [00:11:38] Alright. Bye bye. Bye.
+
+(Transcribed by Sonix.ai - Remove this message by upgrading your Sonix account today!)
+

@@ -1,0 +1,164 @@
+Zoom.webm
+
+(Transcribed by Sonix.ai - Remove this message by upgrading your Sonix account today!)
+
+Speaker1: [00:00:10] Who knows? I do think, like, if you if you call me
+
+Speaker2: [00:00:13] How's it going?
+
+Speaker1: [00:00:15] Oh, hey. How are doing?
+
+Speaker2: [00:00:16] Great. How are you doing?
+
+Speaker1: [00:00:18] Oh, not too bad. We're in San Francisco. Where are you where are you calling in from?
+
+Speaker2: [00:00:23] Right now, I'm calling in from Southern Southern Southern California. Oh, nice. The LA area.
+
+Speaker1: [00:00:29] Yeah. I don't wanna take too much of your time. Like, the reason I I wanna do these calls is basically, like, we recently lost one engineer, and we're trying to figure out, do we go, like, go hire a full time, like, brand new engineer, or can we, like, really leverage some
+
+Speaker3: [00:00:43] Of the
+
+Speaker1: [00:00:44] Better people we find on Upwork and, you know, go go about projects that way. Right? Mhmm. But but, yeah, wanted to have a conversation. Like, you know, I I don't know really a better way to say it, but, basically, like, Jackson and I Jackson and I's perspective on engineering is, like, for lack of better terms, you almost have, like, really good engineers and then really good shit engineers. Right? And, like, the way we think about that is, like, I can write perfect tests and have everything be, like, nice nice and perfect for, like, other engineers to work on. But I also need, like, somebody who can go bang out an integration in, like, four or five hours. Right? And I'm not the only one doing that or Jackson's not the only one doing that. And that's kinda what we're looking for, and it's, I think, harder to find these kinds of engineers who are, like, not shit engineers, but they're shit engineers. That makes sense. Any anyway, so, like, I think Jackson has some questions, but do you have any thoughts there?
+
+Speaker2: [00:01:33] Yeah. I would just say I pretty sure I get what you're saying that just wanna be able to get stuff out real quick and not necessarily have it be completely perfect, but, you know, just get it out quickly.
+
+Speaker1: [00:01:45] Right. And, like, the reason for that is, like, we do a lot so, like, a a little bit more context. Right? We work with some of, like, we signed recently some of, like, the biggest Fortune 500 companies, and we're, like, overwhelmed. And, like, we have more. And what we need to be able to do is do, like, with these really quick proof of concepts.
+
+Speaker2: [00:02:01] Yeah.
+
+Speaker1: [00:02:02] But but, like, it's it is, again, hard to find someone. So I guess we'll like, we we like to find someone like that. Right? But we also like to be able to be like, hey. Like, this is an integration for a platform we we we need done. Like, go do it as fast as possible. Like, pay you hourly or whatever you need. And then, like, if that goes well, transition that to, like, a bunch of other of these integrations we need. Any any thoughts, Jackson?
+
+Speaker3: [00:02:23] Yeah. No. I mean, I think that's the, like, basically, the the thing that we were really trying to look for is, really quantity, honestly, quantity of integrations. It's almost a volume game. And the other thing is these don't have to be, like, you know, in in in perfect shape too. Right? Like, we're I think what we're doing is we're we're first gonna demo, like, the the stage and the integrations. We wanna first demo these. And then, assuming the demos work or or land, then we'll go productionize it. So it's like a even, like, a preproductionization, integration, if you will. Like, it's basically something that just, like, needs to work in a demo, needs not flake out, but it doesn't need to support, like, concurrency or anything. Right? But we need, like, a lot of these, and, they just have to work.
+
+Speaker1: [00:03:14] And and There's, like, three like, like, the three button thing. Like, if people wanna build these full Selenium, like, click on these all these things. Right? But, you know, like, a lot of these integrations actually only require, like, two or three things to happen. Right?
+
+Speaker3: [00:03:26] I would say, like, the key the key thing here is, like, we're basically looking for someone who's very scrappy and can navigate the difference, challenges that each integration would bring. Right? So for example, like, some would have, like some of them have, like, Cloudflare, protection. Right? It's like, how do you bypass that? Some of them have, like, really weird
+
+Speaker2: [00:03:51] I'm sorry. You're cutting out
+
+Speaker3: [00:03:53] A little bit. There's no APIs. It's which runs. Right? So how do you, like yeah. So oh. Oh, Hey. Sorry. We heard off our camera.
+
+Speaker2: [00:04:11] Yeah. Okay. So, yeah, I I'm pretty sure I get what you're saying. You need it to work to be functional and to be done very quickly. So in my mind, it I kinda think about it like a minimal viable product. You're you're not making a Swiss army knife. You're making a scalpel. That scalpel has to do its job, but you don't want, you know, all those edge cases. And if some of the, you know, components of it are, you know, kind of a just making it work, then that's what needs to be done, not like, you know, all the edge cases, you know, like, double security and all that bloat. It just needs to do the one thing really quick and really simple and have a good user experience, I would imagine. Yeah.
+
+Speaker3: [00:04:55] That's yeah. Exactly. And then the other two things that throw in there is, like, the the scrapiness to bypass to figure out, like, what needs to be done to bypass it. Right? Like, maybe it's the case that you can't do direct API calls for whatever reason. Right? Then, like, you might need a puppeteer system. I don't know. Like, it really comes down to, like, what the integration looks like.
+
+Speaker1: [00:05:15] Yeah.
+
+Speaker3: [00:05:16] And then two, the other requirement is, we can't burn these accounts. Right? So we're using, these are, like, institutional financial accounts.
+
+Speaker1: [00:05:25] Expensive accounts our friends have given us.
+
+Speaker3: [00:05:27] Exactly. And, they can't be burned. So, basically, you'll need to do all of, like, caching or whatever, to make sure that the accounts don't get burned. So those are the the three requirements.
+
+Speaker2: [00:05:38] What do you mean by not get burned?
+
+Speaker3: [00:05:41] Like a basically, if you bake get the account banned, which is, like, we haven't, we actually haven't run into yet. But I know that, like, if you were to, for example, go and, like, scrape every document on, like, go and research, then, yeah, you get banned. Yeah.
+
+Speaker2: [00:05:59] Okay.
+
+Speaker3: [00:05:59] So you just need to, like, operate in a way that's, like, light footprints.
+
+Speaker2: [00:06:05] Yeah. Not doing penetration testing.
+
+Speaker3: [00:06:08] Exactly. Yeah. You don't do penetration testing. No DDoSing. Yeah. Yeah. Nothing like that.
+
+Speaker2: [00:06:14] Great. Yeah. That that totally makes sense. It has to, you know, be like you're saying, the light footprint, just kind of get in and get out and don't leave a trace and be simple and to the point.
+
+Speaker3: [00:06:28] Exactly. That's right.
+
+Speaker2: [00:06:30] Yeah. Would you be able to demo any of the integrations you're referring to by chance? If not, that's fine. But you're saying
+
+Speaker3: [00:06:42] We don't really have, like, a I mean, I can show you, like, a Postman of, like, a of, like, a reverse API, something we've reversed API for.
+
+Speaker2: [00:06:53] Yeah. I mean, I'd be interested in just checking it out.
+
+Speaker1: [00:06:57] Yeah. We could also just, like, show can we can we show them the alpha watch log demo? Just he can go to that site too.
+
+Speaker3: [00:07:02] Just Yeah. Actually, she have it. Do have it on here? Oh, yeah. You just logged in.
+
+Speaker1: [00:07:05] Yeah. Yeah. Yeah. You're right. Why don't, I'm gonna share my screen here. Yeah. So at least you get a sense of, like, what what we're doing.
+
+Speaker2: [00:07:13] Yeah. That'd be great.
+
+Speaker1: [00:07:17] Sorry. It's very ad hoc meeting, but thanks for bearing with us.
+
+Speaker2: [00:07:20] Totally. A lot of dev meetings are like that.
+
+Speaker1: [00:07:25] Cool. Do wanna Yeah.
+
+Speaker3: [00:07:27] So so this is, we have, like, a this is our demo, like, website. Okay. So we have an integration on this platform called Tigas. So you can just ask, like, what was, like, you know, talk about one of Microsoft's recent acquisitions. And, what Tigas is is it's a bunch of, like, call transcripts. So they have, their interface is basically you you log in. There's, like, a search bar. Mhmm. Type search in search bar. It gives you a list of transcripts that match your search. These are all, like, investment call transcripts. And you can go in and read the transcripts. So Okay. What we built for this one or what I built for this one is it it just does that. Right? So I have I reverse engineered the the search, the search bar search, reverse engineered the fetching the results from the search, and then reverse engineered the pulling the transcripts. And so you can see, like, it's it's this is calling the search bar. Right? So searching the search bar for Microsoft. It's searching for Microsoft acquisition, and then it got the results. And now it's, like, actually reading it's reverse engineering the the read transcript call, and then and then it's giving you, like, the the information here. So Very cool. So this is, yeah, this is exactly what it looked like, but we would want, like Tigas is one, but, like, we want, like, I don't know, like like Goldman Research, for example, for another one. And there is
+
+Speaker1: [00:09:06] A team of, like, I think another There's, like, a team of how many engineers? There's there's what? That he that because, like, he wouldn't have to go do the front end for a new integration. Right?
+
+Speaker3: [00:09:15] Yeah. Yeah. So just to be clear with you, like, this work, you know, you we're not gonna expect you to build, any UI or anything. Like, it's purely just it's literally just, like, reverse engine like, can you hit call a function, or or can you, like, call a function, can you have it authenticate, for example? Or can we call a function, pass in the cookies, and then get the list of transcript or, call the, like, search bar and get the results in the search bar?
+
+Speaker2: [00:09:43] Okay. You
+
+Speaker3: [00:09:43] Create a function that passes in the cookies, and then, you get, like, you and then you pass in, like, the transcript ID or something, and then you can get the full transcript contents. Like, those are it like, it's really just, like, those functions. That's that's what I'm looking for.
+
+Speaker2: [00:09:57] Okay. Yeah. So that that makes pretty clear sense. A lot of web scraping and data fetching, but not necessarily using an API, just kind of reverse engineering how other sites are doing it and then integrating it into the existing a UI or whatever you're gonna be building with it.
+
+Speaker3: [00:10:16] Yeah. So the integration is very simple because we're we're using, the the tool calling to do it. So it's literally it's function calling. Right? So it's literally just a function. So your the your output of your work is just a function where the the LLM can pass in, a cookie and then, like, maybe the transcript ID, and then it goes and fetches the, like, the thing for you the transcript for you.
+
+Speaker2: [00:10:35] Yeah. Very nice. Yeah.
+
+Speaker3: [00:10:38] So so, like, there's the only work you're you're doing is, like, just basically figuring out, like, how to reverse engineer the the websites.
+
+Speaker2: [00:10:45] Yeah. That that makes clear sense. I wouldn't mind seeing another one if you had, but I'm pretty sure, you know, I get the gist of what you're saying. It's just kind of, like, the background functions on here for fetching the data.
+
+Speaker3: [00:10:56] And We
+
+Speaker2: [00:10:57] Give you a
+
+Speaker1: [00:10:57] Website that we haven't what's the hard one Zach couldn't crack?
+
+Speaker3: [00:11:00] Yeah. So the one that, we one of our engineers is kinda struggling to to crack is called Crunchbase. Have you heard of it?
+
+Speaker2: [00:11:06] Yeah.
+
+Speaker3: [00:11:07] So Crunchbase is, they're a little, like, I guess, notorious, and, they're very like, they protect everything via Cloudflare. Okay? And, usually I mean, I don't know what Zach's doing, to be honest, but, I've I've personally reverse engineered another one called PitchBook. Uh-huh. That was also Cloudflare protected, but I've been able to get past it.
+
+Speaker2: [00:11:29] Okay.
+
+Speaker3: [00:11:30] So if you can get past Crunchbase, then, yeah, then, you know, that'll put you Yeah.
+
+Speaker2: [00:11:35] Now for the stuff you were just speaking of, do you have that on a repo?
+
+Speaker3: [00:11:41] I don't I don't have it on, the demo that to show you, but, I can give you look. Why don't I give you the Tigas code, for you to look at? And then the I mean yeah. And then, actually, no. I'll give you the the pitch book code. It's not done. That's the thing. It's
+
+Speaker2: [00:11:58] Like Yeah. But the way that you're saying that you are bypassing Cloudflare and that you've that, it'd be great to see how you're going about doing that. I'm sure, you know, compounding information really helps.
+
+Speaker3: [00:12:12] Yeah. Well, I, I can I can basically I mean, it's it's basically a matter of, not of of not leaving fingerprints? Right?
+
+Speaker1: [00:12:22] Okay.
+
+Speaker3: [00:12:23] That's how a platform tracks you. So, that one, it's actually not, like, anything special. It was literally just, setting the user agent properly
+
+Speaker2: [00:12:32] Okay.
+
+Speaker3: [00:12:32] And then, running the request, bare metal. So you don't you don't run it through any libraries. Yeah. And that that did it.
+
+Speaker2: [00:12:41] So just doing it as vanilla as possible, but still would be great to see even if it's simple.
+
+Speaker3: [00:12:48] Yeah. I mean, we can we can we can give that to you. But, again, I I'm not sure if Crunchbase is gonna be So you have to, like, figure out, part of the job, right, is to figure out,
+
+Speaker2: [00:12:57] Like Definitely.
+
+Speaker3: [00:12:58] What is needed to to bypass, CloudFare.
+
+Speaker2: [00:13:01] Alright. That sounds great. Yeah. So I can, appreciate where you're coming from. I'm wanting to be able to do real simple integrations simply, keep them simple, and to be able to be able to reverse engineer a lot of these systems without having the API. So what is your next steps on moving forward with this project?
+
+Speaker1: [00:13:22] Yeah. It's basically like you and one other guy. If you can give us, like, end of day to, like, get back to you, if that's fine. Because I you know, if you actually go through this code, we wanna make sure you're paid and whatnot. And I think, like, yeah, it would probably be like, hey. Let's pay let's figure out a number to do, like, an initial integration, see how that goes. And and, you know, sounds like that could be Crunchbase. Could be something else. We have a list of, like Yeah. 20 platforms we need to hit Yeah.
+
+Speaker2: [00:13:46] That'd be awesome. Throw, one at me, and I'd love to get going on it right away.
+
+Speaker1: [00:13:51] Alright. Cool. Give us the end of the day, and I'll I'll get back to you. Alright?
+
+Speaker2: [00:13:55] Alright. Thank you so much, Colby. Really appreciate your time.
+
+Speaker1: [00:13:59] Of course, man. Alright. Take care, dude.
+
+Speaker2: [00:14:01] Alright. Later.
+
+(Transcribed by Sonix.ai - Remove this message by upgrading your Sonix account today!)
+
