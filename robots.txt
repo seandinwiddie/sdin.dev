@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /gigs/
+Disallow: /jobs/
+Disallow: /resources/
+Disallow: /resumes/
+
+# Allow all other paths
+Allow: / 
