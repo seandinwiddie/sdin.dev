@@ -50,8 +50,8 @@
     <meta name="twitter:creator" content="@seandinwiddie" />
     
     <!-- Additional SEO Meta Tags -->
-    <meta name="theme-color" content="#10b981" />
-    <meta name="msapplication-TileColor" content="#10b981" />
+    <meta name="theme-color" content="#2c3e50" />
+    <meta name="msapplication-TileColor" content="#2c3e50" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Sean Dinwiddie" />
@@ -168,23 +168,35 @@
     <style>
         @import url("https://seandinwiddie.com/wp-content/themes/visual-composer-starter-theme-child/dank-mono.css");
         
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #2c3e50;
+            --light-bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --success-color: #27ae60;
+            --warning-color: #f39c12;
+            --info-color: #3498db;
+        }
+        
         body, h1, p, a {
             font-family: "dm", "Inter", sans-serif !important;
         }
         
         a {
-        font-style: italic !important;
-      }
-      
-      @keyframes pulse {
-        0% { opacity: 1; }
-        50% { opacity: 0.5; }
-        100% { opacity: 1; }
-      }
-      
-      .pulse-link {
-        animation: pulse 2s infinite ease-in-out;
-      }
+            font-style: italic !important;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .pulse-link {
+            animation: pulse 2s infinite ease-in-out;
+        }
         
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
@@ -197,31 +209,31 @@
     </style>
   </head>
 
-<body class="bg-gradient-to-br from-emerald-400 to-teal-500 min-h-screen">
+<body class="min-h-screen" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
     <!-- Header Navigation -->
-    <header class="bg-gradient-to-br from-emerald-400 to-teal-500 border-b border-emerald-200 sticky top-0 z-50">
+    <header class="sticky top-0 z-50" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid rgba(255,255,255,0.1);">
         <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center">
-                    <a href="https://sdin.dev/" class="inline-block px-6 py-3 bg-blue-500 text-white no-underline rounded-lg font-bold text-lg transition-all duration-300 hover:bg-blue-600 hover:-translate-y-0.5 hover:shadow-lg tracking-wide">
+                    <a href="https://sdin.dev/" class="inline-block px-6 py-3 text-white no-underline rounded-lg font-bold text-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg tracking-wide" style="background-color: var(--accent-color);">
                         SEAN DINWIDDIE
                     </a>
                 </div>
                 <div class="flex items-center space-x-4">
                     <!-- Desktop Navigation -->
                     <nav class="hidden md:flex items-center space-x-6">
-                        <a href="https://sdin.dev/coaching/" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-emerald-600 transition-all duration-300 font-medium rounded-lg">Coaching</a>
-                        <a href="https://sdin.dev/automation/" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-emerald-600 transition-all duration-300 font-medium rounded-lg">Automation</a>
+                        <a href="https://sdin.dev/coaching/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">Coaching</a>
+                        <a href="https://sdin.dev/automation/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">Automation</a>
                     </nav>
                     
                     <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-button" class="md:hidden text-white hover:text-emerald-200 transition-colors duration-300">
+                    <button id="mobile-menu-button" class="md:hidden text-white transition-colors duration-300" style="--hover-color: rgba(255,255,255,0.7);" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='white'">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                     
                     <!-- CTA Button -->
                     <a href="mailto:sean@sdin.dev?subject=Strategy%20Call%20Request" 
-                       class="hidden sm:inline-block px-6 py-3 bg-orange-400 text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-orange-500 hover:-translate-y-0.5 hover:shadow-lg">
+                       class="hidden sm:inline-block px-6 py-3 text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg" style="background-color: var(--warning-color);" onmouseover="this.style.backgroundColor='#e67e22'" onmouseout="this.style.backgroundColor='var(--warning-color)'">
                         Get Your Free Strategy Call
                     </a>
                 </div>
@@ -230,10 +242,10 @@
             <!-- Mobile Navigation Menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col space-y-3">
-                    <a href="https://sdin.dev/coaching/" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-emerald-600 transition-all duration-300 font-medium rounded-lg text-center">Coaching</a>
-                    <a href="https://sdin.dev/automation/" class="px-4 py-2 border-2 border-white text-white hover:bg-white hover:text-emerald-600 transition-all duration-300 font-medium rounded-lg text-center">Automation</a>
+                    <a href="https://sdin.dev/coaching/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg text-center" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">Coaching</a>
+                    <a href="https://sdin.dev/automation/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg text-center" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">Automation</a>
                     <a href="mailto:sean@sdin.dev?subject=Strategy%20Call%20Request" 
-                       class="inline-block px-6 py-3 bg-orange-400 text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-orange-500 text-center">
+                       class="inline-block px-6 py-3 text-white no-underline rounded-lg font-semibold transition-all duration-300 text-center" style="background-color: var(--warning-color);" onmouseover="this.style.backgroundColor='#e67e22'" onmouseout="this.style.backgroundColor='var(--warning-color)'">
                         Get Your Free Strategy Call
                     </a>
                 </div>
@@ -242,7 +254,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-emerald-400 to-teal-500 py-16 border-b border-emerald-200">
+    <section class="py-16" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid rgba(255,255,255,0.1);">
         <div class="container mx-auto px-4 text-center">
             <div class="max-w-4xl mx-auto">
                 <!-- Profile Image -->
@@ -254,7 +266,7 @@
                 <h1 class="text-4xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
                 React.js & Redux.js Developer
                     <br>
-                    <a href="https://portfolio.sdin.dev" target="_blank" class="text-3xl md:text-5xl text-blue-200 hover:text-white transition-colors duration-300">
+                    <a href="https://portfolio.sdin.dev" target="_blank" class="text-3xl md:text-5xl transition-colors duration-300" style="color: rgba(255,255,255,0.8);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgba(255,255,255,0.8)'">
                         Portfolio.sdin.dev
                     </a>
                 </h1>
@@ -266,8 +278,8 @@
                 <!-- Introduction -->
                 <p class="text-lg text-white mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="400">
                     My name is Sean Paul Payne Dinwiddie and I love writing 
-                    <a href="https://redux-toolkit.js.org/" target="_blank" class="text-blue-200 hover:text-white underline">Redux Toolkit</a> 
-                    and <a href="https://expo.dev/" target="_blank" class="text-blue-200 hover:text-white underline">Expo</a> 
+                    <a href="https://redux-toolkit.js.org/" target="_blank" class="underline transition-colors duration-300" style="color: rgba(255,255,255,0.8);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgba(255,255,255,0.8)'">Redux Toolkit</a> 
+                    and <a href="https://expo.dev/" target="_blank" class="underline transition-colors duration-300" style="color: rgba(255,255,255,0.8);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgba(255,255,255,0.8)'">Expo</a> 
                     applications in Cursor on my mechanical keyboard!
                 </p>
                 
@@ -287,47 +299,47 @@
     </section>
 
     <!-- Main Content -->
-    <section class="bg-gradient-to-br from-emerald-400 to-teal-500 py-16 border-b border-emerald-200">
+    <section class="py-16" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid rgba(255,255,255,0.1);">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 
                 <!-- Business Advantages Card -->
-                <div class="bg-slate-700 rounded-lg shadow-xl p-8 mb-8 border border-emerald-400" data-aos="fade-up">
+                <div class="rounded-lg shadow-xl p-8 mb-8" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up">
                     <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
-                        <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                        <i class="fas fa-check-circle mr-3" style="color: var(--success-color);"></i>
                         Your Business Advantages
                     </h3>
                     <div class="space-y-4">
                         <div class="flex items-start">
-                            <i class="fas fa-chevron-right text-emerald-400 mr-3 mt-1"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
                             <div>
                                 <strong class="text-white">Faster Time-to-Market</strong> 
                                 <span class="text-gray-300">- Get your applications deployed up to 40% faster with React's component-based architecture</span>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <i class="fas fa-chevron-right text-emerald-400 mr-3 mt-1"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
                             <div>
                                 <strong class="text-white">Reduced Maintenance Costs</strong> 
                                 <span class="text-gray-300">- Save 30+ hours monthly with TypeScript's error prevention and code maintainability</span>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <i class="fas fa-chevron-right text-emerald-400 mr-3 mt-1"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
                             <div>
                                 <strong class="text-white">Enhanced User Experience</strong> 
                                 <span class="text-gray-300">- Increase user engagement by 25%+ with responsive, lightning-fast interfaces</span>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <i class="fas fa-chevron-right text-emerald-400 mr-3 mt-1"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
                             <div>
                                 <strong class="text-white">Future-Proof Technology</strong> 
                                 <span class="text-gray-300">- Protect your investment with scalable architecture that grows with your business</span>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <i class="fas fa-chevron-right text-emerald-400 mr-3 mt-1"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
                 <div>
                                 <strong class="text-white">Predictable Development</strong> 
                                 <span class="text-gray-300">- Eliminate 97.3% of state management issues with Redux Toolkit</span>
@@ -337,42 +349,42 @@
                   </div>
 
                 <!-- Custom Solutions Card -->
-                <div class="bg-slate-700 rounded-lg shadow-xl p-8 mb-8 border border-emerald-400" data-aos="fade-up" data-aos-delay="200">
+                <div class="rounded-lg shadow-xl p-8 mb-8" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
-                        <i class="fas fa-cogs text-blue-400 mr-3"></i>
+                        <i class="fas fa-cogs mr-3" style="color: var(--accent-color);"></i>
                         Your Custom Solutions
                     </h3>
                     <div class="space-y-4">
                         <div class="flex items-start">
-                            <i class="fas fa-chevron-right text-emerald-400 mr-3 mt-1"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
                             <div>
                                 <strong class="text-white">Enterprise Web Applications</strong> 
                                 <span class="text-gray-300">- Scalable, secure solutions built with React and Redux Toolkit</span>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <i class="fas fa-chevron-right text-emerald-400 mr-3 mt-1"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
                             <div>
                                 <strong class="text-white">Cross-Platform Mobile Apps</strong> 
                                 <span class="text-gray-300">- Get both iOS and Android apps from a single codebase with Expo</span>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <i class="fas fa-chevron-right text-emerald-400 mr-3 mt-1"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
                             <div>
                                 <strong class="text-white">Performance Optimization</strong> 
                                 <span class="text-gray-300">- Transform slow legacy applications into lightning-fast modern experiences</span>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <i class="fas fa-chevron-right text-emerald-400 mr-3 mt-1"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
                             <div>
                                 <strong class="text-white">State Management Architecture</strong> 
                                 <span class="text-gray-300">- Eliminate data inconsistencies with proper Redux implementation</span>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <i class="fas fa-chevron-right text-emerald-400 mr-3 mt-1"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
                             <div>
                                 <strong class="text-white">Technical Strategy</strong> 
                                 <span class="text-gray-300">- Get expert guidance on technology decisions that impact your business</span>
@@ -382,35 +394,35 @@
                   </div>
 
                 <!-- Why Choose Me Card -->
-                <div class="bg-slate-700 rounded-lg shadow-xl p-8 mb-8 border border-emerald-400" data-aos="fade-up" data-aos-delay="400">
+                <div class="rounded-lg shadow-xl p-8 mb-8" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up" data-aos-delay="400">
                     <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
-                        <i class="fas fa-star text-yellow-400 mr-3"></i>
+                        <i class="fas fa-star mr-3" style="color: var(--warning-color);"></i>
                         Why Business Leaders Choose Me
                     </h3>
                     <div class="space-y-4">
                         <div class="flex items-start">
-                            <i class="fas fa-chevron-right text-emerald-400 mr-3 mt-1"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
                             <div>
                                 <strong class="text-white">Proven Results</strong> 
                                 <span class="text-gray-300">- 70%+ performance improvements for clients across multiple industries</span>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <i class="fas fa-chevron-right text-emerald-400 mr-3 mt-1"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
                             <div>
                                 <strong class="text-white">Business-First Approach</strong> 
                                 <span class="text-gray-300">- Solutions designed to deliver measurable ROI, not just code</span>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <i class="fas fa-chevron-right text-emerald-400 mr-3 mt-1"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
                             <div>
                                 <strong class="text-white">Technical Excellence</strong> 
                                 <span class="text-gray-300">- Clean, maintainable architecture that eliminates technical debt</span>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <i class="fas fa-chevron-right text-emerald-400 mr-3 mt-1"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
                             <div>
                                 <strong class="text-white">Clear Communication</strong> 
                                 <span class="text-gray-300">- Regular updates and plain-English explanations of complex concepts</span>
@@ -424,16 +436,16 @@
                     <p class="text-xl text-white mb-4">Ready to transform your business with custom software that delivers real value?</p>
                     <p class="text-lg text-white mb-8">Get your free strategy call today to discover what's possible.</p>
                     <a href="mailto:sean@sdin.dev?subject=Strategy%20Call%20Request" 
-                       class="inline-block px-8 py-4 bg-orange-400 text-white no-underline rounded-lg font-bold text-xl transition-all duration-300 hover:bg-orange-500 hover:-translate-y-1 hover:shadow-xl">
+                       class="inline-block px-8 py-4 text-white no-underline rounded-lg font-bold text-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" style="background-color: var(--warning-color);" onmouseover="this.style.backgroundColor='#e67e22'" onmouseout="this.style.backgroundColor='var(--warning-color)'">
                         Get Your Free Strategy Call
                     </a>
                 </div>
 
                 <!-- Software Engineering Consultant Section -->
-                <div class="bg-slate-700 rounded-lg shadow-xl p-8 mb-8 border border-emerald-400" data-aos="fade-up" data-aos-delay="800">
+                <div class="rounded-lg shadow-xl p-8 mb-8" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up" data-aos-delay="800">
                     <h3 class="text-2xl font-bold text-white mb-4">Software Engineering Consultant</h3>
                     <h4 class="text-lg text-gray-300 mb-6">
-                        DFY, DWY, and <a href="coaching/" class="pulse-link text-emerald-400 hover:text-emerald-300">Coaching</a>
+                        DFY, DWY, and <a href="coaching/" class="pulse-link transition-colors duration-300" style="color: var(--accent-color);" onmouseover="this.style.color='rgba(255,255,255,0.8)'" onmouseout="this.style.color='var(--accent-color)'">Coaching</a>
                     </h4>
                     
                     <div class="space-y-4 text-gray-300">
@@ -446,7 +458,7 @@
                   </div>
 
                 <!-- Contact Section -->
-                <div class="bg-slate-700 rounded-lg shadow-xl p-8 mb-8 border border-emerald-400" data-aos="fade-up" data-aos-delay="1000">
+                <div class="rounded-lg shadow-xl p-8 mb-8" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up" data-aos-delay="1000">
                     <div class="text-center">
                         <p class="text-gray-300 mb-6">
                             If you wish to hear more about my adoration for software architecture;<br>
@@ -461,25 +473,25 @@
                         </p>
                         
                         <a href="mailto:sean@sdin.dev" 
-                           class="inline-block px-8 py-4 bg-orange-400 text-white no-underline rounded-lg font-bold text-xl transition-all duration-300 hover:bg-orange-500 hover:-translate-y-1 hover:shadow-xl mb-6">
+                           class="inline-block px-8 py-4 text-white no-underline rounded-lg font-bold text-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl mb-6" style="background-color: var(--warning-color);" onmouseover="this.style.backgroundColor='#e67e22'" onmouseout="this.style.backgroundColor='var(--warning-color)'">
                             sean@sdin.dev
                         </a>
                         
                         <h5 class="text-lg font-bold text-white mb-4">TXT & VM:</h5>
                         <a href="tel:+15306383238" 
-                           class="inline-block px-6 py-3 bg-blue-500 text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-blue-600 hover:-translate-y-0.5 hover:shadow-lg mb-8">
+                           class="inline-block px-6 py-3 text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg mb-8" style="background-color: var(--accent-color);" onmouseover="this.style.backgroundColor='#2980b9'" onmouseout="this.style.backgroundColor='var(--accent-color)'">
                             (530) 638-3238
                         </a>
                         
                         <!-- Social Links -->
                         <div class="flex justify-center space-x-6 mb-8">
-                            <a href="https://www.instagram.com/sdin.dev/" class="text-2xl text-white hover:text-emerald-300 transition-colors duration-300">
+                            <a href="https://www.instagram.com/sdin.dev/" class="text-2xl text-white transition-colors duration-300" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='white'">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/seanpaulpaynedinwiddie/" class="text-2xl text-white hover:text-emerald-300 transition-colors duration-300">
+                            <a href="https://www.linkedin.com/in/seanpaulpaynedinwiddie/" class="text-2xl text-white transition-colors duration-300" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='white'">
                                 <i class="fab fa-linkedin"></i>
                             </a>
-                            <a href="https://github.com/SeanDinwiddie" class="text-2xl text-white hover:text-emerald-300 transition-colors duration-300">
+                            <a href="https://github.com/SeanDinwiddie" class="text-2xl text-white transition-colors duration-300" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='white'">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
@@ -487,14 +499,14 @@
                 </div>
 
                 <!-- PS Section -->
-                <div class="bg-slate-700 rounded-lg shadow-xl p-8 mb-8 border border-emerald-400" data-aos="fade-up" data-aos-delay="1200">
+                <div class="rounded-lg shadow-xl p-8 mb-8" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up" data-aos-delay="1200">
                     <div class="text-center">
                         <p class="text-gray-300">
                             P.S.<br>
                             I also like coding:<br>
                             Expo Go apps;<br>
                             in Sublime Text and Vim!<br>
-                            <i class="fas fa-peace text-2xl text-emerald-400 mt-2"></i>
+                            <i class="fas fa-peace text-2xl mt-2" style="color: var(--accent-color);"></i>
                     </p>
                   </div>
                 </div>
@@ -502,7 +514,7 @@
                 <!-- Resume Link -->
                 <div class="text-center" data-aos="fade-up" data-aos-delay="1400">
                     <a href="resumes/sean-dinwiddie-resume.pdf" target="_blank" 
-                       class="inline-block px-8 py-4 bg-blue-500 text-white no-underline rounded-lg font-bold text-xl transition-all duration-300 hover:bg-blue-600 hover:-translate-y-1 hover:shadow-xl">
+                       class="inline-block px-8 py-4 text-white no-underline rounded-lg font-bold text-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" style="background-color: var(--accent-color);" onmouseover="this.style.backgroundColor='#2980b9'" onmouseout="this.style.backgroundColor='var(--accent-color)'">
                         Resume
                     </a>
           </div>
@@ -511,35 +523,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gradient-to-br from-emerald-400 to-teal-500 py-8">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="text-white text-sm mb-4 md:mb-0">
-                    &copy; Sean Dinwiddie. All rights reserved.
-                </div>
-                <div class="flex space-x-6">
-                    <a href="https://www.linkedin.com/in/seandinwiddie/" 
-                       target="_blank"
-                       class="text-white hover:text-blue-300 transition-colors duration-300">
-                        <i class="fab fa-linkedin text-xl"></i>
-                    </a>
-                    <a href="https://github.com/SeanDinwiddie" 
-                       target="_blank"
-                       class="text-white hover:text-gray-300 transition-colors duration-300">
-                        <i class="fab fa-github text-xl"></i>
-                    </a>
-                    <a href="https://www.instagram.com/sdin.dev/" 
-                       target="_blank"
-                       class="text-white hover:text-pink-300 transition-colors duration-300">
-                        <i class="fab fa-instagram text-xl"></i>
-                    </a>
-                    <a href="https://x.com/seandinwiddie" 
-                       target="_blank"
-                       class="text-white hover:text-blue-300 transition-colors duration-300">
-                        <i class="fab fa-twitter text-xl"></i>
-                    </a>
-                </div>
-            </div>
+    <footer class="py-8" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-white">&copy; 2024 Sean Dinwiddie. All rights reserved.</p>
         </div>
     </footer>
 
