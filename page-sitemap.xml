@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://sdin.dev/main-sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://sdin.dev/</loc>
+		<lastmod>2025-01-27T00:00:00+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+		<image:image>
+			<image:loc>https://sdin.dev/profile.png</image:loc>
+			<image:title>Sean Dinwiddie - Custom Software Solutions</image:title>
+			<image:caption>Sean Dinwiddie, React.js & Redux.js Developer specializing in custom software solutions that save businesses $50K+ monthly</image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://sdin.dev/coaching/</loc>
+		<lastmod>2025-01-27T00:00:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+		<image:image>
+			<image:loc>https://sdin.dev/coaching/profile.png</image:loc>
+			<image:title>Sean Dinwiddie - Custom Software Solutions That Save $50K+ Monthly</image:title>
+			<image:caption>Custom software development and coaching services for businesses looking to save $50K+ monthly through automation and optimization</image:caption>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://sdin.dev/automation/</loc>
+		<lastmod>2025-01-27T00:00:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+		<image:image>
+			<image:loc>https://sdin.dev/profile.png</image:loc>
+			<image:title>Sean Dinwiddie - Custom Automation Solutions</image:title>
+			<image:caption>Transform your business with custom automation solutions that deliver measurable ROI and ongoing monthly savings</image:caption>
+		</image:image>
+	</url>
+</urlset>
+<!-- XML Sitemap generated for sdin.dev -->
