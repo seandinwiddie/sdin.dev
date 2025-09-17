@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Tracking Test - sdin.dev</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V36RT068VK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V36RT068VK');
+    </script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-button {
+            background: #4285F4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .test-button:hover {
+            background: #3367D6;
+        }
+        .console-output {
+            background: #000;
+            color: #0f0;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            margin: 10px 0;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversion Tracking Test Page</h1>
+    <p>This page tests the conversion tracking implementation for sdin.dev</p>
+    
+    <div class="test-section">
+        <h2>Test Conversion Events</h2>
+        <p>Click the buttons below to test different conversion events. Check the browser console for tracking messages.</p>
+        
+        <button class="test-button" onclick="testContactForm()">Test Contact Form</button>
+        <button class="test-button" onclick="testPhoneCall()">Test Phone Call</button>
+        <button class="test-button" onclick="testEmailClick()">Test Email Click</button>
+        <button class="test-button" onclick="testConsultationRequest()">Test Consultation Request</button>
+        <button class="test-button" onclick="testServicePageView()">Test Service Page View</button>
+        
+        <h3>Test Links</h3>
+        <a href="tel:+15306383238" class="test-button">Call (530) 638-3238</a>
+        <a href="mailto:sean@sdin.dev?subject=Test%20Email" class="test-button">Email sean@sdin.dev</a>
+        <a href="mailto:sean@sdin.dev?subject=Strategy%20Call%20Request" class="test-button">Get Free Strategy Call</a>
+    </div>
+    
+    <div class="test-section">
+        <h2>Console Output</h2>
+        <p>Open your browser's developer tools (F12) and check the Console tab for tracking messages.</p>
+        <div class="console-output" id="console-output">
+            Console output will appear here when you open developer tools...
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>GA4 Real-time Reports</h2>
+        <p>To verify events are being sent to GA4:</p>
+        <ol>
+            <li>Go to <a href="https://analytics.google.com" target="_blank">Google Analytics</a></li>
+            <li>Select your sdin.dev property</li>
+            <li>Go to Reports → Real-time</li>
+            <li>Click the buttons above and watch for events</li>
+        </ol>
+    </div>
+
+    <!-- Conversion Tracking Code -->
+    <script>
+        // Pure function to create conversion event data
+        const createConversionEvent = (eventName, category, label, value = 0) => ({
+            event_category: category,
+            event_label: label,
+            value: value,
+            custom_parameter_1: 'conversion_tracked',
+            timestamp: new Date().toISOString()
+        });
+
+        // Pure function to track conversion events
+        const trackConversion = (eventName, category, label, value = 0) => {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', eventName, createConversionEvent(eventName, category, label, value));
+                console.log(`✅ Conversion tracked: ${eventName}`, createConversionEvent(eventName, category, label, value));
+                updateConsoleOutput(`✅ Conversion tracked: ${eventName} - ${label}`);
+            } else {
+                console.warn('❌ Google Analytics not loaded. Conversion not tracked:', eventName);
+                updateConsoleOutput(`❌ Google Analytics not loaded. Conversion not tracked: ${eventName}`);
+            }
+        };
+
+        // Test functions
+        const testContactForm = () => {
+            trackConversion('contact_form_submit', 'Lead Generation', 'Test Contact Form', 10);
+        };
+
+        const testPhoneCall = () => {
+            trackConversion('phone_call_click', 'Lead Generation', 'Test Phone Call', 15);
+        };
+
+        const testEmailClick = () => {
+            trackConversion('email_click', 'Lead Generation', 'Test Email Click', 8);
+        };
+
+        const testConsultationRequest = () => {
+            trackConversion('consultation_request', 'Lead Generation', 'Test Consultation Request', 20);
+        };
+
+        const testServicePageView = () => {
+            trackConversion('service_page_view', 'Interest', 'Test Service Page View', 5);
+        };
+
+        // Update console output display
+        const updateConsoleOutput = (message) => {
+            const output = document.getElementById('console-output');
+            const timestamp = new Date().toLocaleTimeString();
+            output.innerHTML += `[${timestamp}] ${message}<br>`;
+            output.scrollTop = output.scrollHeight;
+        };
+
+        // Initialize tracking
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 Conversion tracking test page loaded');
+            updateConsoleOutput('🚀 Conversion tracking test page loaded');
+            
+            // Track page view
+            trackConversion('test_page_view', 'Testing', 'Conversion Tracking Test Page', 1);
+            
+            // Track email link clicks
+            const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+            emailLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const emailAddress = link.getAttribute('href') || 'email_link';
+                    trackConversion('email_click', 'Lead Generation', emailAddress, 8);
+                });
+            });
+
+            // Track phone number clicks
+            const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+            phoneLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const phoneNumber = link.getAttribute('href') || 'phone_link';
+                    trackConversion('phone_call_click', 'Lead Generation', phoneNumber, 15);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

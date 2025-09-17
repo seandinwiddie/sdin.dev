@@ -558,5 +558,181 @@
             mobileMenu.classList.toggle('hidden');
         });
     </script>
+
+    <!-- Conversion Tracking Code -->
+    <script>
+        // Pure function to create conversion event data
+        const createConversionEvent = (eventName, category, label, value = 0) => ({
+            event_category: category,
+            event_label: label,
+            value: value,
+            custom_parameter_1: 'conversion_tracked',
+            timestamp: new Date().toISOString()
+        });
+
+        // Pure function to track conversion events
+        const trackConversion = (eventName, category, label, value = 0) => {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', eventName, createConversionEvent(eventName, category, label, value));
+                console.log(`Conversion tracked: ${eventName}`, createConversionEvent(eventName, category, label, value));
+            } else {
+                console.warn('Google Analytics not loaded. Conversion not tracked:', eventName);
+            }
+        };
+
+        // Pure function to track contact form submissions
+        const trackContactForm = (formType = 'contact') => {
+            trackConversion('contact_form_submit', 'Lead Generation', formType, 10);
+        };
+
+        // Pure function to track phone call clicks
+        const trackPhoneCall = (phoneNumber = 'phone_link') => {
+            trackConversion('phone_call_click', 'Lead Generation', phoneNumber, 15);
+        };
+
+        // Pure function to track email clicks
+        const trackEmailClick = (emailAddress = 'email_link') => {
+            trackConversion('email_click', 'Lead Generation', emailAddress, 8);
+        };
+
+        // Pure function to track consultation requests
+        const trackConsultationRequest = (source = 'button') => {
+            trackConversion('consultation_request', 'Lead Generation', source, 20);
+        };
+
+        // Pure function to track service page views
+        const trackServicePageView = (serviceName) => {
+            trackConversion('service_page_view', 'Interest', serviceName, 5);
+        };
+
+        // Pure function to track pricing page views
+        const trackPricingPageView = () => {
+            trackConversion('pricing_page_view', 'Purchase Intent', 'Pricing Page', 12);
+        };
+
+        // Pure function to track about page views
+        const trackAboutPageView = () => {
+            trackConversion('about_page_view', 'Interest', 'About Page', 3);
+        };
+
+        // Initialize conversion tracking when DOM is ready
+        const initializeConversionTracking = () => {
+            console.log('Initializing conversion tracking for sdin.dev...');
+            
+            // Track contact form submissions (if any forms exist)
+            const contactForms = document.querySelectorAll('form[action*="contact"], form[action*="mailto"], form[action*="submit"]');
+            contactForms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    const formType = form.getAttribute('action') || 'contact';
+                    trackContactForm(formType);
+                    
+                    // Optional: Add a small delay to ensure tracking fires
+                    setTimeout(() => {
+                        console.log('Contact form submission tracked');
+                    }, 100);
+                });
+            });
+
+            // Track phone number clicks
+            const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+            phoneLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const phoneNumber = link.getAttribute('href') || 'phone_link';
+                    trackPhoneCall(phoneNumber);
+                });
+            });
+
+            // Track email link clicks
+            const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+            emailLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const emailAddress = link.getAttribute('href') || 'email_link';
+                    trackEmailClick(emailAddress);
+                });
+            });
+
+            // Track consultation buttons (Strategy Call buttons)
+            const consultationButtons = document.querySelectorAll('a[href*="Strategy%20Call%20Request"], a:contains("Get Your Free Strategy Call")');
+            consultationButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const source = button.textContent || 'strategy_call_button';
+                    trackConsultationRequest(source);
+                });
+            });
+
+            // Track service page views based on current page
+            const currentPage = window.location.pathname;
+            
+            if (currentPage.includes('/coaching/')) {
+                trackServicePageView('Coaching Services');
+            } else if (currentPage.includes('/automation/')) {
+                trackServicePageView('Automation Services');
+            } else if (currentPage === '/') {
+                trackServicePageView('Homepage');
+            }
+
+            // Track scroll depth for engagement
+            let maxScroll = 0;
+            const scrollThresholds = [25, 50, 75, 90];
+            const trackedThresholds = new Set();
+
+            window.addEventListener('scroll', () => {
+                const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+                
+                if (scrollPercent > maxScroll) {
+                    maxScroll = scrollPercent;
+                    
+                    scrollThresholds.forEach(threshold => {
+                        if (scrollPercent >= threshold && !trackedThresholds.has(threshold)) {
+                            trackedThresholds.add(threshold);
+                            trackConversion('scroll_depth', 'Engagement', `${threshold}%`, threshold);
+                        }
+                    });
+                }
+            });
+
+            // Track time on page
+            const startTime = Date.now();
+            
+            window.addEventListener('beforeunload', () => {
+                const timeOnPage = Math.round((Date.now() - startTime) / 1000);
+                
+                if (timeOnPage > 30) { // Only track if user spent more than 30 seconds
+                    trackConversion('time_on_page', 'Engagement', `${timeOnPage}s`, Math.min(timeOnPage / 10, 10));
+                }
+            });
+
+            // Track external link clicks
+            const externalLinks = document.querySelectorAll('a[href^="http"]:not([href*="' + window.location.hostname + '"])');
+            
+            externalLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const url = this.getAttribute('href');
+                    trackConversion('external_link_click', 'Engagement', url, 2);
+                });
+            });
+
+            console.log('Conversion tracking initialized successfully for sdin.dev');
+        };
+
+        // Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeConversionTracking);
+        } else {
+            initializeConversionTracking();
+        }
+
+        // Test function for development (uncomment to test)
+        // const testConversionTracking = () => {
+        //     console.log('Testing conversion tracking...');
+        //     trackContactForm('test');
+        //     trackPhoneCall('test_phone');
+        //     trackEmailClick('test_email');
+        //     trackConsultationRequest('test_consultation');
+        //     trackServicePageView('test_service');
+        //     console.log('Conversion tracking test completed');
+        // };
+        // testConversionTracking();
+    </script>
   </body>
 </html>

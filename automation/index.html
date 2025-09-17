@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sean Dinwiddie - Custom Software Solutions That Save $50K+ Monthly</title>
     
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V36RT068VK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V36RT068VK');
+    </script>
+    
     <!-- SEO Meta Tags -->
     <meta name="description" content="Transform your business with custom software solutions that deliver measurable ROI and ongoing monthly savings. React, Redux Toolkit, and TypeScript expert." />
     <meta name="keywords" content="custom software development, automation consulting, React development, TypeScript, business automation, software optimization" />
@@ -426,6 +435,78 @@
                 });
             });
         });
+    </script>
+
+    <!-- Conversion Tracking Code -->
+    <script>
+        // Pure function to create conversion event data
+        const createConversionEvent = (eventName, category, label, value = 0) => ({
+            event_category: category,
+            event_label: label,
+            value: value,
+            custom_parameter_1: 'conversion_tracked',
+            timestamp: new Date().toISOString()
+        });
+
+        // Pure function to track conversion events
+        const trackConversion = (eventName, category, label, value = 0) => {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', eventName, createConversionEvent(eventName, category, label, value));
+                console.log(`Conversion tracked: ${eventName}`, createConversionEvent(eventName, category, label, value));
+            } else {
+                console.warn('Google Analytics not loaded. Conversion not tracked:', eventName);
+            }
+        };
+
+        // Pure function to track service page views
+        const trackServicePageView = (serviceName) => {
+            trackConversion('service_page_view', 'Interest', serviceName, 5);
+        };
+
+        // Pure function to track email clicks
+        const trackEmailClick = (emailAddress = 'email_link') => {
+            trackConversion('email_click', 'Lead Generation', emailAddress, 8);
+        };
+
+        // Pure function to track phone call clicks
+        const trackPhoneCall = (phoneNumber = 'phone_link') => {
+            trackConversion('phone_call_click', 'Lead Generation', phoneNumber, 15);
+        };
+
+        // Initialize conversion tracking for automation page
+        const initializeAutomationPageTracking = () => {
+            console.log('Initializing conversion tracking for automation page...');
+            
+            // Track automation service page view
+            trackServicePageView('Automation Services');
+            
+            // Track email link clicks
+            const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+            emailLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const emailAddress = link.getAttribute('href') || 'email_link';
+                    trackEmailClick(emailAddress);
+                });
+            });
+
+            // Track phone number clicks
+            const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+            phoneLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const phoneNumber = link.getAttribute('href') || 'phone_link';
+                    trackPhoneCall(phoneNumber);
+                });
+            });
+
+            console.log('Automation page conversion tracking initialized');
+        };
+
+        // Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeAutomationPageTracking);
+        } else {
+            initializeAutomationPageTracking();
+        }
     </script>
 </body>
 </html>

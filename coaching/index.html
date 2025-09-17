@@ -787,5 +787,77 @@
         });
       });
     </script>
+
+    <!-- Conversion Tracking Code -->
+    <script>
+        // Pure function to create conversion event data
+        const createConversionEvent = (eventName, category, label, value = 0) => ({
+            event_category: category,
+            event_label: label,
+            value: value,
+            custom_parameter_1: 'conversion_tracked',
+            timestamp: new Date().toISOString()
+        });
+
+        // Pure function to track conversion events
+        const trackConversion = (eventName, category, label, value = 0) => {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', eventName, createConversionEvent(eventName, category, label, value));
+                console.log(`Conversion tracked: ${eventName}`, createConversionEvent(eventName, category, label, value));
+            } else {
+                console.warn('Google Analytics not loaded. Conversion not tracked:', eventName);
+            }
+        };
+
+        // Pure function to track service page views
+        const trackServicePageView = (serviceName) => {
+            trackConversion('service_page_view', 'Interest', serviceName, 5);
+        };
+
+        // Pure function to track email clicks
+        const trackEmailClick = (emailAddress = 'email_link') => {
+            trackConversion('email_click', 'Lead Generation', emailAddress, 8);
+        };
+
+        // Pure function to track phone call clicks
+        const trackPhoneCall = (phoneNumber = 'phone_link') => {
+            trackConversion('phone_call_click', 'Lead Generation', phoneNumber, 15);
+        };
+
+        // Initialize conversion tracking for coaching page
+        const initializeCoachingPageTracking = () => {
+            console.log('Initializing conversion tracking for coaching page...');
+            
+            // Track coaching service page view
+            trackServicePageView('Coaching Services');
+            
+            // Track email link clicks
+            const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+            emailLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const emailAddress = link.getAttribute('href') || 'email_link';
+                    trackEmailClick(emailAddress);
+                });
+            });
+
+            // Track phone number clicks
+            const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+            phoneLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const phoneNumber = link.getAttribute('href') || 'phone_link';
+                    trackPhoneCall(phoneNumber);
+                });
+            });
+
+            console.log('Coaching page conversion tracking initialized');
+        };
+
+        // Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeCoachingPageTracking);
+        } else {
+            initializeCoachingPageTracking();
+        }
+    </script>
   </body>
 </html>
