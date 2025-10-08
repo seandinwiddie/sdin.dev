@@ -1,0 +1,26 @@
+{
+  "name": "marketing-platform-jsdoc",
+  "version": "1.0.0",
+  "description": "JSDoc documentation package for Marketing Platform",
+  "main": "add-jsdoc-comments.js",
+  "scripts": {
+    "docs:add": "node add-jsdoc-comments.js",
+    "docs:check": "node add-jsdoc-comments.js --dry-run --verbose",
+    "docs:generate": "jsdoc -c jsdoc.json",
+    "docs:frontend": "node add-jsdoc-comments.js frontend/src",
+    "docs:backend": "node add-jsdoc-comments.js backend/src"
+  },
+  "keywords": [
+    "jsdoc",
+    "documentation",
+    "typescript",
+    "react",
+    "redux",
+    "functional-programming"
+  ],
+  "author": "Sean Dinwiddie",
+  "license": "MIT",
+  "devDependencies": {
+    "jsdoc": "^4.0.0"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "source": {
+    "include": [
+      "frontend/src",
+      "backend/src"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist",
+      "build",
+      "coverage"
+    ],
+    "includePattern": "\\.(ts|tsx|js|jsx)$",
+    "excludePattern": "(node_modules/|dist/|build/)"
+  },
+  "opts": {
+    "destination": "./docs",
+    "recurse": true,
+    "readme": "./README.md",
+    "template": "default",
+    "encoding": "utf8"
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true,
+    "default": {
+      "outputSourceFiles": true
+    }
+  },
+  "markdown": {
+    "parser": "gfm",
+    "hardwrap": false
+  }
+}
