@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean Dinwiddie - AI Development Training: Stop Writing Code, Start Architecting Intelligence</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V36RT068VK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V36RT068VK');
+    </script>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="AI development training that turns generic AI assistants into deterministic software engineers. Learn the functional programming patterns that stop hallucinations and end context-window rot. React, Redux Toolkit, and TypeScript." />
+    <meta name="keywords" content="AI development training, functional programming AI, vibe coding, Cursor rules, Claude Code, AI hallucinations, TypeScript, Redux Toolkit, functional programming course" />
+    <meta name="author" content="Sean Dinwiddie" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sean Dinwiddie - AI Development Training: Stop Writing Code, Start Architecting Intelligence" />
+    <meta property="og:description" content="The missing manual for AI-native development. Learn the functional programming patterns that make your codebase hallucination-proof, token-efficient, and AI-readable." />
+    <meta property="og:image" content="https://sdin.dev/profile.png" />
+    <meta property="og:url" content="https://sdin.dev/ai/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sean Dinwiddie" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sean Dinwiddie - AI Development Training: Stop Writing Code, Start Architecting Intelligence" />
+    <meta name="twitter:description" content="The missing manual for AI-native development. Learn the functional programming patterns that make your codebase hallucination-proof, token-efficient, and AI-readable." />
+    <meta name="twitter:image" content="https://sdin.dev/profile.png" />
+    <meta name="twitter:site" content="@seandinwiddie" />
+    <meta name="twitter:creator" content="@seandinwiddie" />
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#4285F4" />
+    <meta name="msapplication-TileColor" content="#4285F4" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Sean Dinwiddie" />
+
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "Functional Programming with AI Quickstart",
+        "description": "AI development training that turns generic AI assistants into deterministic software engineers using functional programming patterns in TypeScript, React, and Redux Toolkit.",
+        "url": "https://sdin.dev/ai/",
+        "provider": {
+            "@type": "Person",
+            "name": "Sean Dinwiddie",
+            "url": "https://sdin.dev",
+            "image": "https://sdin.dev/profile.png",
+            "jobTitle": "AI Systems Architect & Custom Software Developer",
+            "sameAs": [
+                "https://www.linkedin.com/in/seandinwiddie/",
+                "https://github.com/SeanDinwiddie",
+                "https://www.instagram.com/sdin.dev/",
+                "https://x.com/seandinwiddie"
+            ]
+        },
+        "about": [
+            "Functional Programming",
+            "AI-Assisted Development",
+            "TypeScript",
+            "Redux Toolkit",
+            "Software Architecture"
+        ]
+    }
+    </script>
+
+    <!-- External Resources -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        body, h1, h2, h3, h4, h5, h6, p, a {
+            font-family: "Inter", system-ui, -apple-system, sans-serif !important;
+        }
+        code, pre {
+            font-family: "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace !important;
+        }
+
+        /* Pulse animation for special links */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .animate-pulse-custom {
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        /* Float animation for profile image */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white leading-relaxed">
+    <!-- Header Navigation -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="https://sdin.dev/" class="text-xl font-bold text-gray-800 tracking-wide no-underline">
+                        SEAN DINWIDDIE
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden md:flex items-center space-x-6">
+                        <a href="https://sdin.dev/ai/" class="px-4 py-2 text-blue-600 transition-colors duration-300 font-semibold">AI Development</a>
+                        <a href="https://sdin.dev/coaching/" class="px-4 py-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium">Coaching</a>
+                        <a href="https://sdin.dev/automation/" class="px-4 py-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium">Automation</a>
+                    </nav>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+
+                    <!-- CTA Button -->
+                    <a href="mailto:sean@sdin.dev?subject=AI%20Development%20Training%20Inquiry"
+                       class="hidden sm:inline-block px-6 py-3 text-white no-underline rounded-md font-semibold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+                       style="background-color: #4285F4;"
+                       onmouseover="this.style.backgroundColor='#3367D6'"
+                       onmouseout="this.style.backgroundColor='#4285F4'">
+                        Get the Guide &amp; Assets
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="https://sdin.dev/ai/" class="px-4 py-2 text-blue-600 transition-colors duration-300 font-semibold">AI Development</a>
+                    <a href="https://sdin.dev/coaching/" class="px-4 py-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium">Coaching</a>
+                    <a href="https://sdin.dev/automation/" class="px-4 py-2 text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium">Automation</a>
+                    <a href="mailto:sean@sdin.dev?subject=AI%20Development%20Training%20Inquiry"
+                       class="inline-block px-6 py-3 text-white no-underline rounded-md font-semibold transition-all duration-300 text-center"
+                       style="background-color: #4285F4;"
+                       onmouseover="this.style.backgroundColor='#3367D6'"
+                       onmouseout="this.style.backgroundColor='#4285F4'">
+                        Get the Guide &amp; Assets
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-50 to-gray-100 py-24 text-center">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Profile Image -->
+            <div class="flex justify-center mb-8">
+                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg animate-float">
+                    <img src="https://sdin.dev/profile.png" alt="Sean Dinwiddie" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Eyebrow -->
+            <p class="text-sm font-semibold uppercase tracking-widest mb-4" style="color: #4285F4;">AI Development Training</p>
+
+            <!-- Main Heading -->
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+                Stop Writing Code.<br class="hidden sm:block"> Start Architecting Intelligence.
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
+                The missing manual for AI-native development that turns generic AI assistants into deterministic software engineers. Learn the functional programming patterns that make your codebase hallucination-proof, token-efficient, and AI-readable.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="mailto:sean@sdin.dev?subject=AI%20Development%20Guide%20%26%20Assets"
+                   class="inline-block px-8 py-4 text-white no-underline rounded-md font-semibold text-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
+                   style="background-color: #4285F4;"
+                   onmouseover="this.style.backgroundColor='#3367D6'"
+                   onmouseout="this.style.backgroundColor='#4285F4'">
+                    <i class="fas fa-book mr-2"></i>
+                    Get the Guide &amp; Assets
+                </a>
+                <a href="#curriculum"
+                   class="inline-block px-6 py-3 bg-transparent border-2 no-underline rounded-md font-semibold transition-all duration-300"
+                   style="border-color: #4285F4; color: #4285F4;"
+                   onmouseover="this.style.backgroundColor='#4285F4'; this.style.color='white'"
+                   onmouseout="this.style.backgroundColor='transparent'; this.style.color='#4285F4'">
+                    <i class="fas fa-list-ol mr-2"></i>
+                    See the Curriculum
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-16 text-center" style="background-color: #FEF7F7;">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-4" style="color: #EA4335;">Your AI Context Window Is Bleeding</h2>
+            <p class="text-xl max-w-3xl mx-auto" style="color: #D93025;">You start a session with Claude or Cursor and it's magic. But 400 lines later the AI starts "forgetting." It hallucinates variables. It refactors working code into broken spaghetti. It fixes one bug and creates two more.</p>
+            <p class="text-lg max-w-3xl mx-auto mt-6 font-medium" style="color: #B31412;">Why? Because you're feeding it imperative junk. AI models are statistical engines, not compilers &mdash; and every mutation and hidden side effect forces the model to <em>simulate</em> your computer's memory in its head. That's what burns your tokens and ends your flow.</p>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4 text-center">Functional Programming Is the Native Language of AI</h2>
+            <p class="text-lg text-gray-600 mb-2 max-w-4xl mx-auto text-center">This isn't about learning Haskell or academic theory. It's a tactical playbook for the AI-era developer &mdash; the three properties that make code an AI can actually reason about.</p>
+            <p class="text-base text-gray-500 mb-12 text-center italic">Functional Core, Imperative Shell &mdash; the only architecture that scales with AI agents.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
+                <div class="bg-white p-10 rounded-xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 text-white rounded-full flex items-center justify-center text-2xl mb-6" style="background-color: #4285F4;"><i class="fas fa-cube"></i></div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Context-Independent</h3>
+                    <p class="text-gray-600 leading-relaxed">Pure functions are atoms of logic an AI can read, understand, and refactor in isolation &mdash; without holding the state of the entire universe in its head. Same input, same output, zero surprises.</p>
+                </div>
+
+                <div class="bg-white p-10 rounded-xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 text-white rounded-full flex items-center justify-center text-2xl mb-6" style="background-color: #4285F4;"><i class="fas fa-shield-halved"></i></div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Hallucination-Proof</h3>
+                    <p class="text-gray-600 leading-relaxed">Discriminated unions and strict types constrain the model to valid code paths. If it compiles, it works. The AI <em>literally</em> cannot write an invalid state &mdash; type-driven development becomes your prompt engineering.</p>
+                </div>
+
+                <div class="bg-white p-10 rounded-xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 text-white rounded-full flex items-center justify-center text-2xl mb-6" style="background-color: #4285F4;"><i class="fas fa-bolt"></i></div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Token-Efficient</h3>
+                    <p class="text-gray-600 leading-relaxed">Declarative implementations compress complex logic into dense, high-meaning lines &mdash; effectively "zipping" your codebase for the context window. More capability per token, longer flow-state sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center">The Same Feature, Two Ways the AI Sees It</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div class="rounded-xl border-l-4 overflow-hidden" style="background-color: #FEF7F7; border-left-color: #EA4335;" data-aos="fade-right">
+                    <div class="p-8">
+                        <h3 class="text-xl font-semibold mb-4" style="color: #EA4335;"><i class="fas fa-times-circle mr-2"></i>Imperative &mdash; the AI gets confused</h3>
+                        <pre class="text-sm bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto"><code>let total = 0;
+let items = getCart();
+for (let i = 0; i &lt; items.length; i++) {
+  if (items[i].active) {
+    total += items[i].price;
+    items[i].counted = true;  // mutation
+  }
+}
+applyDiscount();  // hidden side effect</code></pre>
+                        <p class="text-gray-600 text-sm mt-4">Hidden state, mutation, and implied ordering. The AI must track every variable across the whole function to touch a single line safely.</p>
+                    </div>
+                </div>
+
+                <div class="rounded-xl border-l-4 overflow-hidden" style="background-color: #F0F8F0; border-left-color: #34A853;" data-aos="fade-left">
+                    <div class="p-8">
+                        <h3 class="text-xl font-semibold mb-4" style="color: #34A853;"><i class="fas fa-check-circle mr-2"></i>Functional &mdash; the AI optimizes instantly</h3>
+                        <pre class="text-sm bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto"><code>const total = (items) =&gt;
+  items
+    .filter(item =&gt; item.active)
+    .reduce((sum, item) =&gt; sum + item.price, 0);
+
+const withDiscount = applyDiscount(total(getCart()));</code></pre>
+                        <p class="text-gray-600 text-sm mt-4">Pure, immutable, composable. Each function reads in isolation &mdash; the AI refactors it aggressively and safely, because there's nothing hidden to break.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4 text-center">The Curriculum</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-4xl mx-auto text-center">A pattern-first path from your simplest pure function to event-sourced architecture &mdash; the same functional patterns running in production in the <a href="https://forboc.ai" target="_blank" class="text-blue-600 font-medium hover:underline">ForbocAI</a> neuro-symbolic AI SDK.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="50">
+                    <div class="text-sm font-semibold uppercase tracking-wide mb-3" style="color: #4285F4;">01 &middot; Fundamentals</div>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>The simplest FP + TypeScript hello world</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>What is a function? Pure functions</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>ES6+ features for functional programming</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>TypeScript &amp; the type system as a guardrail</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-sm font-semibold uppercase tracking-wide mb-3" style="color: #4285F4;">02 &middot; Intermediate</div>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Redux standard patterns &amp; FP</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Redux Toolkit the functional way</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Functional composition &amp; pipes</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Point-free style for AI efficiency</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="150">
+                    <div class="text-sm font-semibold uppercase tracking-wide mb-3" style="color: #4285F4;">03 &middot; Advanced</div>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Monads &amp; safe error handling (Maybe/Either)</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Monad transformers</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Category theory fundamentals</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Functors, laws &amp; AI-proof modeling</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-sm font-semibold uppercase tracking-wide mb-3" style="color: #4285F4;">04 &middot; Applications</div>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Thin components, fat reducers</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Performance: memoization &amp; virtualization</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>FP across Rust, Python &amp; beyond</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>RTK Query, caching &amp; optimistic updates</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="250">
+                    <div class="text-sm font-semibold uppercase tracking-wide mb-3" style="color: #4285F4;">05 &middot; Architecture</div>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Functional Core, Imperative Shell</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>CQRS &amp; event sourcing</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Strangler pattern for legacy rescue</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Maintenance strategy for FP codebases</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-sm font-semibold uppercase tracking-wide mb-3" style="color: #4285F4;">06 &middot; The AI Workflow</div>
+                    <ul class="text-gray-600 space-y-2 text-sm">
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>The rules file &amp; architecture checking</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Refactoring prompts &amp; reducer generation</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Property testing &amp; zero-mocking TDD</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-xs" style="color: #4285F4;"></i>Staying in flow state without AI degradation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get / Offer Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center">What You Get</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="p-10 rounded-xl border-l-4" style="background-color: #F8F9FF; border-left-color: #4285F4;" data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4"><i class="fas fa-book-open mr-2" style="color: #4285F4;"></i>The Guide</h3>
+                    <p class="text-gray-600 leading-relaxed">A no-nonsense, pattern-first manual. From "The Simplest Pure Function" to event-sourcing architectures, every lesson is designed to make your codebase AI-readable &mdash; with side-by-side "impure vs. pure" comparisons throughout.</p>
+                </div>
+
+                <div class="p-10 rounded-xl border-l-4" style="background-color: #F8F9FF; border-left-color: #4285F4;" data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4"><i class="fas fa-toolbox mr-2" style="color: #4285F4;"></i>The Vibe-Coding Asset Pack</h3>
+                    <p class="text-gray-600 leading-relaxed">Don't just read about it &mdash; install the workflow. A production <code class="text-sm bg-white px-1 rounded">.cursorrules</code> file that forces pure, immutable code by default, a <code class="text-sm bg-white px-1 rounded">CLAUDE.md</code> template that turns Claude into a senior FP architect, and a copy-paste reasoning prompt library for refactoring legacy spaghetti into clean pipes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It's For Section -->
+    <section class="py-24 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center">Who This Is For</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl mb-4" style="color: #4285F4;"><i class="fas fa-wand-magic-sparkles"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">The Vibe Coder</h3>
+                    <p class="text-gray-600 text-sm">You build with Cursor, Windsurf, and Claude &mdash; and you want to stay in flow state longer without the AI degrading mid-session.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl mb-4" style="color: #4285F4;"><i class="fas fa-user-gear"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">The Senior Dev</h3>
+                    <p class="text-gray-600 text-sm">You see the AI wave coming and want to transition from a code writer to a systems architect the models work <em>with</em>, not against.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl mb-4" style="color: #4285F4;"><i class="fas fa-sitemap"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">The CTO / Lead</h3>
+                    <p class="text-gray-600 text-sm">You need a standard for your team that keeps the codebase from becoming an AI-generated mess as everyone starts shipping with AI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-24" style="background-color: #F0F8F0;">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-4 text-center" style="color: #34A853;">Choose Your Tier</h2>
+            <p class="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">Less than a month of an AI subscription &mdash; and it pays for itself the first time the AI doesn't hallucinate your state away.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                <!-- Reader -->
+                <div class="bg-white p-8 rounded-xl shadow-sm flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">The Reader</h3>
+                    <div class="text-4xl font-bold text-gray-800 mb-4">$27</div>
+                    <ul class="text-gray-600 space-y-2 text-sm mb-8 flex-grow">
+                        <li><i class="fas fa-check mr-2" style="color: #34A853;"></i>The complete guide (PDF &amp; EPUB)</li>
+                        <li><i class="fas fa-check mr-2" style="color: #34A853;"></i>Every lecture &amp; pattern comparison</li>
+                        <li><i class="fas fa-check mr-2" style="color: #34A853;"></i>Free lifetime content updates</li>
+                    </ul>
+                    <a href="mailto:sean@sdin.dev?subject=AI%20Guide%20-%20Reader%20Tier%20(%2427)"
+                       class="block text-center px-6 py-3 border-2 no-underline rounded-md font-semibold transition-all duration-300"
+                       style="border-color: #4285F4; color: #4285F4;"
+                       onmouseover="this.style.backgroundColor='#4285F4'; this.style.color='white'"
+                       onmouseout="this.style.backgroundColor='transparent'; this.style.color='#4285F4'">
+                        Get the Reader Tier
+                    </a>
+                </div>
+
+                <!-- Builder (highlighted) -->
+                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col relative border-2 transform md:-translate-y-2" style="border-color: #4285F4;" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 right-0 text-white text-xs font-bold px-3 py-1 rounded-bl-lg" style="background-color: #4285F4;">MOST POPULAR</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">The Builder</h3>
+                    <div class="text-4xl font-bold text-gray-800 mb-4">$49</div>
+                    <ul class="text-gray-600 space-y-2 text-sm mb-8 flex-grow">
+                        <li><i class="fas fa-check mr-2" style="color: #34A853;"></i>Everything in The Reader</li>
+                        <li><i class="fas fa-check mr-2" style="color: #34A853;"></i>Production <code class="text-xs">.cursorrules</code> file</li>
+                        <li><i class="fas fa-check mr-2" style="color: #34A853;"></i><code class="text-xs">CLAUDE.md</code> architect template</li>
+                        <li><i class="fas fa-check mr-2" style="color: #34A853;"></i>Copy-paste reasoning prompt library</li>
+                    </ul>
+                    <a href="mailto:sean@sdin.dev?subject=AI%20Guide%20-%20Builder%20Tier%20(%2449)"
+                       class="block text-center px-6 py-3 text-white no-underline rounded-md font-semibold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+                       style="background-color: #4285F4;"
+                       onmouseover="this.style.backgroundColor='#3367D6'"
+                       onmouseout="this.style.backgroundColor='#4285F4'">
+                        Get the Builder Tier
+                    </a>
+                </div>
+
+                <!-- Architect -->
+                <div class="bg-white p-8 rounded-xl shadow-sm flex flex-col" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">The Architect</h3>
+                    <div class="text-4xl font-bold text-gray-800 mb-4">$99<span class="text-lg font-medium text-gray-500">+</span></div>
+                    <ul class="text-gray-600 space-y-2 text-sm mb-8 flex-grow">
+                        <li><i class="fas fa-check mr-2" style="color: #34A853;"></i>Everything in The Builder</li>
+                        <li><i class="fas fa-check mr-2" style="color: #34A853;"></i>Over-the-shoulder video masterclass</li>
+                        <li><i class="fas fa-check mr-2" style="color: #34A853;"></i>Legacy-rescue &amp; refactor case studies</li>
+                        <li><i class="fas fa-check mr-2" style="color: #34A853;"></i>Live-coded event-sourcing walkthrough</li>
+                    </ul>
+                    <a href="mailto:sean@sdin.dev?subject=AI%20Guide%20-%20Architect%20Tier%20(%2499%2B)"
+                       class="block text-center px-6 py-3 border-2 no-underline rounded-md font-semibold transition-all duration-300"
+                       style="border-color: #4285F4; color: #4285F4;"
+                       onmouseover="this.style.backgroundColor='#4285F4'; this.style.color='white'"
+                       onmouseout="this.style.backgroundColor='transparent'; this.style.color='#4285F4'">
+                        Get the Architect Tier
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 text-white text-center" style="background-color: #1A73E8;">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-6">The AI revolution isn't about typing faster. It's about thinking clearer.</h2>
+            <p class="text-xl mb-4 font-medium">Stop fighting entropy. Start building systems the AI can actually understand.</p>
+            <p class="text-lg mb-10 opacity-90">Prefer to bring this to your whole team? I run private AI-development workshops and codebase audits too &mdash; just ask.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="mailto:sean@sdin.dev?subject=AI%20Development%20Guide%20%26%20Assets"
+                   class="inline-block px-8 py-4 no-underline rounded-md font-semibold text-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
+                   style="background-color: #FBBC04; color: #202124;"
+                   onmouseover="this.style.backgroundColor='#F9AB00'"
+                   onmouseout="this.style.backgroundColor='#FBBC04'">
+                    <i class="fas fa-book mr-2"></i>
+                    Get the Guide &amp; Assets
+                </a>
+                <a href="mailto:sean@sdin.dev?subject=Team%20AI%20Development%20Workshop"
+                   class="inline-block px-6 py-3 bg-transparent border-2 border-white text-white no-underline rounded-md font-semibold transition-all duration-300 hover:bg-white"
+                   onmouseover="this.style.color='#1A73E8'"
+                   onmouseout="this.style.color='white'">
+                    <i class="fas fa-users mr-2"></i>
+                    Train My Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="py-16" style="background-color: #F0F8F0;">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl font-bold mb-4" style="color: #34A853;">Built From Production, Not Theory</h3>
+            <p style="color: #137333;">These aren't academic exercises. Every pattern in this guide runs in production in the ForbocAI neuro-symbolic SDK &mdash; Redux-style state, pure functional pipelines, and monadic inference for autonomous game NPCs. You're learning what actually ships.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center border-t" style="background-color: #F8F9FA; border-top-color: #E8EAED;">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-sm mb-4 md:mb-0" style="color: #5F6368;">
+                    &copy; Sean Dinwiddie. All rights reserved.
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/in/seandinwiddie/"
+                       target="_blank"
+                       class="transition-colors duration-300"
+                       style="color: #5F6368;"
+                       onmouseover="this.style.color='#4285F4'"
+                       onmouseout="this.style.color='#5F6368'">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="https://github.com/SeanDinwiddie"
+                       target="_blank"
+                       class="transition-colors duration-300"
+                       style="color: #5F6368;"
+                       onmouseover="this.style.color='#202124'"
+                       onmouseout="this.style.color='#5F6368'">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sdin.dev/"
+                       target="_blank"
+                       class="transition-colors duration-300"
+                       style="color: #5F6368;"
+                       onmouseover="this.style.color='#EA4335'"
+                       onmouseout="this.style.color='#5F6368'">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://x.com/seandinwiddie"
+                       target="_blank"
+                       class="transition-colors duration-300"
+                       style="color: #5F6368;"
+                       onmouseover="this.style.color='#4285F4'"
+                       onmouseout="this.style.color='#5F6368'">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize AOS animations
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true,
+                offset: 100
+            });
+        });
+
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Conversion Tracking Code -->
+    <script>
+        // Pure function to create conversion event data
+        const createConversionEvent = (eventName, category, label, value = 0) => ({
+            event_category: category,
+            event_label: label,
+            value: value,
+            custom_parameter_1: 'conversion_tracked',
+            timestamp: new Date().toISOString()
+        });
+
+        // Pure function to track conversion events
+        const trackConversion = (eventName, category, label, value = 0) => {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', eventName, createConversionEvent(eventName, category, label, value));
+                console.log(`Conversion tracked: ${eventName}`, createConversionEvent(eventName, category, label, value));
+            } else {
+                console.warn('Google Analytics not loaded. Conversion not tracked:', eventName);
+            }
+        };
+
+        // Pure function to track service page views
+        const trackServicePageView = (serviceName) => {
+            trackConversion('service_page_view', 'Interest', serviceName, 5);
+        };
+
+        // Pure function to track email clicks
+        const trackEmailClick = (emailAddress = 'email_link') => {
+            trackConversion('email_click', 'Lead Generation', emailAddress, 8);
+        };
+
+        // Initialize conversion tracking for the AI development page
+        const initializeAiPageTracking = () => {
+            console.log('Initializing conversion tracking for AI development page...');
+
+            // Track AI development page view
+            trackServicePageView('AI Development Training');
+
+            // Track email link clicks
+            const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+            emailLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const emailAddress = link.getAttribute('href') || 'email_link';
+                    trackEmailClick(emailAddress);
+                });
+            });
+
+            console.log('AI development page conversion tracking initialized');
+        };
+
+        // Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeAiPageTracking);
+        } else {
+            initializeAiPageTracking();
+        }
+    </script>
+</body>
+</html>
