@@ -13,6 +13,7 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/normalize.js"></script>
     <title>Sean Dinwiddie — React & Redux Developer & Software Consultant</title>
     <meta name="description" content="React, Redux Toolkit, and TypeScript developer building custom software, automation, and modern web & native apps that deliver measurable ROI." />
     <meta name="keywords" content="custom software development, React developer, Redux Toolkit, TypeScript, business automation, software consulting, web development, mobile apps, Expo" />
@@ -26,8 +27,11 @@
     <meta property="og:title" content="Sean Dinwiddie — React & Redux Developer & Software Consultant" />
     <meta property="og:description" content="React, Redux Toolkit, and TypeScript developer building custom software, automation, and modern web & native apps that deliver measurable ROI." />
     <meta property="og:image" content="https://sdin.dev/og.png" />
+    <meta property="og:image:secure_url" content="https://sdin.dev/og.png" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Sean Dinwiddie — React and Redux developer building AI-native software" />
     <meta property="og:site_name" content="sdin.dev" />
     <meta property="og:locale" content="en_US" />
     
@@ -37,6 +41,7 @@
     <meta name="twitter:title" content="Sean Dinwiddie — React & Redux Developer & Software Consultant" />
     <meta name="twitter:description" content="React, Redux Toolkit, and TypeScript developer building custom software, automation, and modern web & native apps that deliver measurable ROI." />
     <meta name="twitter:image" content="https://sdin.dev/og.png" />
+    <meta name="twitter:image:alt" content="Sean Dinwiddie — React and Redux developer building AI-native software" />
     <meta name="twitter:site" content="@seandinwiddie" />
     <meta name="twitter:creator" content="@seandinwiddie" />
     
@@ -151,11 +156,11 @@
     <link rel="stylesheet" href="/styles.css">
   </head>
 
-<body class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] min-h-screen">
+<body class="ayu-theme bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] min-h-screen">
     <a href="#main" class="skip-link">Skip to main content</a>
     <!-- Header Navigation -->
     <header class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] border-b border-[var(--ayu-divider)] sticky top-0 z-50">
-        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="Primary navigation" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center">
                     <a href="https://sdin.dev/" class="inline-block px-6 py-3 bg-[var(--ayu-cyan)] text-[var(--ayu-ink)] no-underline rounded-lg font-bold text-lg transition-all duration-300 hover:bg-[var(--ayu-cyan-2)] hover:-translate-y-0.5 hover:shadow-lg tracking-wide">
@@ -164,14 +169,14 @@
                 </div>
                 <div class="flex items-center space-x-4">
                     <!-- Desktop Navigation -->
-                    <nav class="hidden md:flex items-center space-x-6">
+                    <nav aria-label="Desktop navigation" class="hidden md:flex items-center space-x-6">
                         <a href="https://sdin.dev/ai/" class="px-4 py-2 border-2 border-[var(--ayu-fg)] text-white hover:bg-[var(--ayu-fg)] hover:text-[var(--ayu-ink)] transition-all duration-300 font-medium rounded-lg">AI Development</a>
                         <a href="https://sdin.dev/coaching/" class="px-4 py-2 border-2 border-[var(--ayu-fg)] text-white hover:bg-[var(--ayu-fg)] hover:text-[var(--ayu-ink)] transition-all duration-300 font-medium rounded-lg">Coaching</a>
                         <a href="https://sdin.dev/automation/" class="px-4 py-2 border-2 border-[var(--ayu-fg)] text-white hover:bg-[var(--ayu-fg)] hover:text-[var(--ayu-ink)] transition-all duration-300 font-medium rounded-lg">Automation</a>
                     </nav>
                     
                     <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white hover:text-[var(--ayu-amber)] transition-colors duration-300">
+                    <button type="button" id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white hover:text-[var(--ayu-amber)] transition-colors duration-300">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                     
@@ -198,8 +203,9 @@
           </nav>
     </header>
 
+    <main id="main" class="ayu-editor">
     <!-- Hero Section -->
-    <section id="main" class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16 border-b border-[var(--ayu-divider)]">
+    <section data-syntax-label="// index.tsx" class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16 border-b border-[var(--ayu-divider)]">
         <div class="container mx-auto px-4 text-center">
             <div class="max-w-4xl mx-auto">
                 <!-- Profile Image -->
@@ -208,10 +214,10 @@
                 </div>
                 
                 <!-- Main Headlines -->
-                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
+                <h1 class="syntax-heading text-4xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
                 React.js & Redux.js Developer
                     <br>
-                    <a href="https://portfolio.sdin.dev" target="_blank" class="text-3xl md:text-5xl text-[var(--ayu-cyan)] hover:text-white transition-colors duration-300">
+                    <a href="https://portfolio.sdin.dev" target="_blank" rel="noopener" class="text-3xl md:text-5xl text-[var(--ayu-cyan)] hover:text-white transition-colors duration-300">
                         Portfolio.sdin.dev
                     </a>
                 </h1>
@@ -223,8 +229,8 @@
                 <!-- Introduction -->
                 <p class="text-lg text-white mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="400">
                     My name is Sean Paul Payne Dinwiddie and I love writing 
-                    <a href="https://redux-toolkit.js.org/" target="_blank" class="text-[var(--ayu-cyan)] hover:text-white underline">Redux Toolkit</a> 
-                    and <a href="https://expo.dev/" target="_blank" class="text-[var(--ayu-cyan)] hover:text-white underline">Expo</a> 
+                    <a href="https://redux-toolkit.js.org/" target="_blank" rel="noopener" class="text-[var(--ayu-cyan)] hover:text-white underline">Redux Toolkit</a>
+                    and <a href="https://expo.dev/" target="_blank" rel="noopener" class="text-[var(--ayu-cyan)] hover:text-white underline">Expo</a>
                     applications in Cursor on my mechanical keyboard!
                 </p>
                 
@@ -244,8 +250,9 @@
     </section>
 
     <!-- Main Content -->
-    <section class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16 border-b border-[var(--ayu-divider)]">
+    <section data-syntax-label="// services.ts" class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16 border-b border-[var(--ayu-divider)]">
         <div class="container mx-auto px-4">
+            <h2 class="sr-only">Services and contact information</h2>
             <div class="max-w-4xl mx-auto">
                 
                 <!-- Business Advantages Card -->
@@ -410,9 +417,9 @@
                   Or are interested in collaborating with or commissioning me...
                 </p>
                         
-                        <h4 class="text-lg font-bold text-white mb-4 uppercase">
+                        <h3 class="text-lg font-bold text-white mb-4 uppercase">
                             You can <mark class="bg-[var(--ayu-amber)] text-[var(--ayu-ink)] px-2 py-1 rounded">get your message to my phone</mark>, online, right now! at:
-                </h4>
+                </h3>
                         <p class="text-sm text-gray-400 mb-6">
                             (though I am likely programming in cloud nine and will get back with you shortly) <i class="fas fa-hand-wave text-[var(--ayu-amber)]"></i>
                         </p>
@@ -422,7 +429,7 @@
                             sean@sdin.dev
                         </a>
                         
-                        <h5 class="text-lg font-bold text-white mb-4">TXT & VM:</h5>
+                        <h4 class="text-lg font-bold text-white mb-4">TXT & VM:</h4>
                         <a href="tel:+15306383238" 
                            class="inline-block px-6 py-3 bg-[var(--ayu-cyan)] text-[var(--ayu-ink)] no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[var(--ayu-cyan-2)] hover:-translate-y-0.5 hover:shadow-lg mb-8">
                             (530) 638-3238
@@ -458,7 +465,7 @@
 
                 <!-- Resume Link -->
                 <div class="text-center" data-aos="fade-up" data-aos-delay="1400">
-                    <a href="sean-dinwiddie_resume.html" target="_blank" 
+                    <a href="/resume/" target="_blank" rel="noopener"
                        class="inline-block px-8 py-4 bg-[var(--ayu-cyan)] text-[var(--ayu-ink)] no-underline rounded-lg font-bold text-xl transition-all duration-300 hover:bg-[var(--ayu-cyan-2)] hover:-translate-y-1 hover:shadow-xl">
                         Resume
                     </a>
@@ -466,6 +473,7 @@
         </div>
       </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-8">

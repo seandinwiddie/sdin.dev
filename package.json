@@ -3,7 +3,9 @@
   "private": true,
   "description": "sdin.dev static site — Tailwind build.",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./tailwind.css --minify"
+    "build": "npm run build:css && npm run build:sitemap",
+    "build:css": "tailwindcss -i ./src/input.css -o ./tailwind.css --minify",
+    "build:sitemap": "node ./scripts/generate-sitemaps.mjs"
   },
   "devDependencies": {
     "tailwindcss": "3.4.17"

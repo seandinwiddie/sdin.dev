@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/normalize.js"></script>
     <title>Sean Dinwiddie - AI Development Services: Done-For-You & Done-With-You</title>
 
     <!-- Google Analytics -->
@@ -25,18 +26,23 @@
     <meta property="og:title" content="Sean Dinwiddie - AI Development Services: Done-For-You & Done-With-You" />
     <meta property="og:description" content="Ship AI-native software, not AI-generated debt. DFY builds and DWY team enablement built on the functional patterns that make a codebase hallucination-proof and AI-readable." />
     <meta property="og:image" content="https://sdin.dev/og.png" />
+    <meta property="og:image:secure_url" content="https://sdin.dev/og.png" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Sean Dinwiddie — React and Redux developer building AI-native software" />
     <meta property="og:url" content="https://sdin.dev/ai/" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Sean Dinwiddie" />
+    <meta property="og:site_name" content="sdin.dev" />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://sdin.dev/ai/" />
     <meta name="twitter:title" content="Sean Dinwiddie - AI Development Services: Done-For-You & Done-With-You" />
     <meta name="twitter:description" content="Ship AI-native software, not AI-generated debt. DFY builds and DWY team enablement built on the functional patterns that make a codebase hallucination-proof and AI-readable." />
     <meta name="twitter:image" content="https://sdin.dev/og.png" />
+    <meta name="twitter:image:alt" content="Sean Dinwiddie — React and Redux developer building AI-native software" />
     <meta name="twitter:site" content="@seandinwiddie" />
     <meta name="twitter:creator" content="@seandinwiddie" />
 
@@ -120,11 +126,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
 </head>
-<body class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] min-h-screen text-gray-200 leading-relaxed">
+<body class="ayu-theme bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] min-h-screen text-gray-200 leading-relaxed">
     <a href="#main" class="skip-link">Skip to main content</a>
     <!-- Header Navigation -->
     <header class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] border-b border-[var(--ayu-divider)] sticky top-0 z-50">
-        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="Primary navigation" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center">
                     <a href="https://sdin.dev/" class="inline-block px-6 py-3 bg-[var(--ayu-cyan)] text-[var(--ayu-ink)] no-underline rounded-lg font-bold text-lg transition-all duration-300 hover:bg-[var(--ayu-cyan-2)] hover:-translate-y-0.5 hover:shadow-lg tracking-wide">
@@ -133,14 +139,14 @@
                 </div>
                 <div class="flex items-center space-x-4">
                     <!-- Desktop Navigation -->
-                    <nav class="hidden md:flex items-center space-x-6">
+                    <nav aria-label="Desktop navigation" class="hidden md:flex items-center space-x-6">
                         <a href="https://sdin.dev/ai/" class="px-4 py-2 bg-[var(--ayu-amber)] text-[var(--ayu-ink)] transition-all duration-300 font-semibold rounded-lg">AI Development</a>
                         <a href="https://sdin.dev/coaching/" class="px-4 py-2 border-2 border-[var(--ayu-fg)] text-white hover:bg-[var(--ayu-fg)] hover:text-[var(--ayu-ink)] transition-all duration-300 font-medium rounded-lg">Coaching</a>
                         <a href="https://sdin.dev/automation/" class="px-4 py-2 border-2 border-[var(--ayu-fg)] text-white hover:bg-[var(--ayu-fg)] hover:text-[var(--ayu-ink)] transition-all duration-300 font-medium rounded-lg">Automation</a>
                     </nav>
 
                     <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white hover:text-[var(--ayu-amber)] transition-colors duration-300">
+                    <button type="button" id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white hover:text-[var(--ayu-amber)] transition-colors duration-300">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
 
@@ -167,8 +173,9 @@
         </nav>
     </header>
 
+    <main id="main" class="ayu-editor">
     <!-- Hero Section -->
-    <section id="main" class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16 border-b border-[var(--ayu-divider)] text-center">
+    <section data-syntax-label="// ai/index.ts" class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16 border-b border-[var(--ayu-divider)] text-center">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Profile Image -->
             <div class="mb-8">
@@ -179,7 +186,7 @@
             <p class="text-sm font-semibold uppercase tracking-widest mb-4 text-[var(--ayu-cyan-2)]" data-aos="fade-up">AI Development Services &middot; Done-For-You &amp; Done-With-You</p>
 
             <!-- Main Heading -->
-            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight" data-aos="fade-up" data-aos-delay="200">
+            <h1 class="syntax-heading text-4xl md:text-6xl font-bold text-white mb-6 leading-tight" data-aos="fade-up" data-aos-delay="200">
                 Ship AI-Native Software.<br class="hidden sm:block"> Not AI-Generated Debt.
             </h1>
 
@@ -396,7 +403,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">The Playbook Behind the Work</h2>
-                <p class="text-lg text-white max-w-4xl mx-auto">Every engagement draws on the same pattern library &mdash; a pattern-first path from your simplest pure function to event-sourced architecture, the same functional patterns running in production in the <a href="https://forboc.ai" target="_blank" class="text-[var(--ayu-amber)] font-medium hover:text-white underline">ForbocAI</a> neuro-symbolic AI SDK. In DWY, this is what I teach your team.</p>
+                <p class="text-lg text-white max-w-4xl mx-auto">Every engagement draws on the same pattern library &mdash; a pattern-first path from your simplest pure function to event-sourced architecture, the same functional patterns running in production in the <a href="https://forboc.ai" target="_blank" rel="noopener" class="text-[var(--ayu-amber)] font-medium hover:text-white underline">ForbocAI</a> neuro-symbolic AI SDK. In DWY, this is what I teach your team.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -683,11 +690,12 @@
     <section class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border border-[var(--ayu-border)] text-center" data-aos="fade-up">
-                <h3 class="text-2xl font-bold mb-4 text-white"><i class="fas fa-check-circle text-[var(--ayu-green)] mr-2"></i>No Excuses. Just Systems That Ship.</h3>
+                <h2 class="text-2xl font-bold mb-4 text-white"><i class="fas fa-check-circle text-[var(--ayu-green)] mr-2"></i>No Excuses. Just Systems That Ship.</h2>
                 <p class="text-gray-300">If the architecture call doesn't surface AI-native wins worth far more than any engagement fee &mdash; faster shipping, lower model spend, or debt you can finally stop paying interest on &mdash; we don't move forward. No strings attached.</p>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-8">

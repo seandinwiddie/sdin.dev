@@ -8,14 +8,17 @@ Source for [sdin.dev](https://sdin.dev): a static, GitHub Pages–hosted portfol
 - `ai/` — AI development services (DFY & DWY)
 - `automation/` — business automation services
 - `coaching/` — coaching, consulting & fractional-CTO services
-- `sean-dinwiddie_resume.html` — resume
+- `resume/` — canonical resume
+- `sean-dinwiddie_resume.html` — legacy static redirect to `/resume/`
+- `404.html` — branded route-not-found page
 
 ## Shared assets (single source of truth)
 
 Every page links the same three files instead of duplicating CSS/JS inline. **Edit these, not per-page copies.**
 
-- `styles.css` — theme: the Ayu Mirage palette (`--ayu-*` CSS variables), typography, animations, and accessibility rules (focus ring, skip-link, reduced-motion). Also `@import`s the Dank Mono font.
+- `styles.css` — self-contained Ayu Mirage palette (`--ayu-*` CSS variables), syntax-inspired presentation, typography, animations, and accessibility rules.
 - `tailwind.css` — **generated** Tailwind utilities (see Build). Do not edit by hand.
+- `normalize.js` — canonical production-host normalization; leaves local and preview hosts untouched.
 - `site.js` — shared behavior: AOS init, mobile-menu toggle (with `aria-expanded`), smooth scroll.
 - `tracking.js` — shared Google Analytics conversion tracking (page views by path, mailto/tel, scroll-depth, time-on-page, outbound links).
 
@@ -30,7 +33,9 @@ npm install      # once
 npm run build    # regenerate tailwind.css after editing any HTML class
 ```
 
-The build (`tailwindcss -i src/input.css -o tailwind.css --minify`) scans the pages listed in `tailwind.config.js` and emits only the utilities actually used. **Re-run it whenever you add/remove Tailwind classes**, or CI will flag `tailwind.css` as stale (see `.github/workflows/build.yml`).
+The build compiles Tailwind and generates both XML sitemaps from immutable page entities. Sitemap `lastmod` values use each clean page's Git commit date and the current UTC date for new or locally modified pages. Set `SITE_URL` to generate for another host.
+
+**Re-run it whenever you add/remove Tailwind classes or add/change an indexable route**, or CI will flag the generated files as stale (see `.github/workflows/build.yml`).
 
 ## Local preview
 

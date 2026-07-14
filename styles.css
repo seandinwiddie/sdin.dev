@@ -1,5 +1,4 @@
 /* sdin.dev shared theme — single source of truth. Linked by every page. */
-@import url("https://seandinwiddie.com/wp-content/themes/visual-composer-starter-theme-child/dank-mono.css");
 
 /* ===== Ayu Mirage palette ===== */
 :root {
@@ -23,16 +22,119 @@
   --ayu-purple:  #d4bfff; /* constant  */
   --ayu-mint:    #95e6cb; /* regexp    */
   --ayu-comment: #5c6773; /* comment   */
+  --ayu-blue:    #73d0ff; /* variable  */
+  --ayu-shadow:  rgba(0, 0, 0, 0.38);
 }
 
 /* ===== Typography ===== */
-body, h1, h2, h3, h4, h5, h6, p, a {
-  font-family: "dm", "Inter", sans-serif !important;
+html {
+  background: var(--ayu-bg-to);
+  color-scheme: dark;
+}
+body, p, a {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6, nav, button {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace !important;
 }
 code, pre {
   font-family: "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace !important;
 }
-a { font-style: italic !important; }
+a { text-underline-offset: 0.2em; }
+
+::selection {
+  background: rgba(115, 208, 255, 0.28);
+  color: #fff;
+}
+
+/* ===== Ayu editor surface ===== */
+.ayu-theme {
+  background-color: var(--ayu-bg-to);
+  background-image:
+    linear-gradient(rgba(92, 207, 230, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(92, 207, 230, 0.025) 1px, transparent 1px),
+    radial-gradient(circle at 18% 0%, rgba(212, 191, 255, 0.08), transparent 34rem);
+  background-size: 32px 32px, 32px 32px, auto;
+}
+
+.ayu-theme::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 1000;
+  height: 3px;
+  background: linear-gradient(90deg, var(--ayu-orange), var(--ayu-amber), var(--ayu-green), var(--ayu-cyan), var(--ayu-purple));
+  pointer-events: none;
+}
+
+.ayu-editor > section {
+  position: relative;
+}
+
+.ayu-editor > section[data-syntax-label]::before {
+  content: attr(data-syntax-label);
+  position: absolute;
+  top: 1rem;
+  left: max(1rem, calc((100% - 72rem) / 2));
+  z-index: 2;
+  color: var(--ayu-comment);
+  font: 0.75rem/1.4 "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+}
+
+.syntax-heading::before {
+  content: "export const";
+  display: block;
+  margin-bottom: 0.55rem;
+  color: var(--ayu-orange);
+  font-size: 0.28em;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: lowercase;
+}
+
+.syntax-heading::after {
+  content: "_";
+  display: inline-block;
+  margin-left: 0.16em;
+  color: var(--ayu-amber);
+  animation: cursor-blink 1.15s steps(1, end) infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 54% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+
+.ayu-editor :is(p, li) > strong {
+  color: var(--ayu-green) !important;
+}
+
+.ayu-editor :is(p, li) > em {
+  color: var(--ayu-purple);
+}
+
+.ayu-editor li::marker {
+  color: var(--ayu-salmon);
+}
+
+.ayu-editor [class*="bg-[var(--ayu-panel)]"],
+.ayu-editor [style*="background-color: var(--ayu-panel)"] {
+  box-shadow: 0 18px 42px var(--ayu-shadow);
+}
+
+.syntax-window {
+  border: 1px solid var(--ayu-border);
+  border-top: 3px solid var(--ayu-cyan);
+  background: linear-gradient(145deg, rgba(35, 40, 52, 0.98), rgba(28, 33, 43, 0.98));
+  box-shadow: 0 24px 60px var(--ayu-shadow);
+}
+
+.syntax-comment {
+  color: var(--ayu-comment);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
 
 /* ===== Animations ===== */
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
@@ -60,7 +162,6 @@ a:focus-visible, button:focus-visible {
   padding: 0.5rem 1rem;
   border-radius: 0 0 0.5rem 0;
   font-weight: 600;
-  font-style: normal !important;
 }
 .skip-link:focus { left: 0; }
 
@@ -83,5 +184,10 @@ a:focus-visible, button:focus-visible {
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
+  }
+
+  .syntax-heading::after {
+    animation: none !important;
+    opacity: 1;
   }
 }

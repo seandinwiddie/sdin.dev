@@ -13,6 +13,7 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/normalize.js"></script>
     <title>Sean Dinwiddie — Coaching, Consulting & Fractional CTO</title>
     <meta name="description" content="Technical coaching, software consulting, and fractional-CTO leadership: modernize legacy systems, cut operational cost, and get senior architecture guidance without a full-time hire." />
     <meta name="keywords" content="custom software development, React developer, Redux Toolkit, TypeScript, business automation, software consulting, web development, mobile apps, Expo" />
@@ -26,8 +27,11 @@
     <meta property="og:title" content="Sean Dinwiddie — Coaching, Consulting & Fractional CTO" />
     <meta property="og:description" content="Technical coaching, software consulting, and fractional-CTO leadership: modernize legacy systems, cut operational cost, and get senior architecture guidance without a full-time hire." />
     <meta property="og:image" content="https://sdin.dev/og.png" />
+    <meta property="og:image:secure_url" content="https://sdin.dev/og.png" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Sean Dinwiddie — React and Redux developer building AI-native software" />
     <meta property="og:site_name" content="sdin.dev" />
     <meta property="og:locale" content="en_US" />
     
@@ -37,6 +41,7 @@
     <meta name="twitter:title" content="Sean Dinwiddie — Coaching, Consulting & Fractional CTO" />
     <meta name="twitter:description" content="Technical coaching, software consulting, and fractional-CTO leadership: modernize legacy systems, cut operational cost, and get senior architecture guidance without a full-time hire." />
     <meta name="twitter:image" content="https://sdin.dev/og.png" />
+    <meta name="twitter:image:alt" content="Sean Dinwiddie — React and Redux developer building AI-native software" />
     <meta name="twitter:site" content="@seandinwiddie" />
     <meta name="twitter:creator" content="@seandinwiddie" />
     
@@ -107,11 +112,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="/styles.css">
   </head>
-<body class="font-sans text-white leading-relaxed" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to));">
+<body class="ayu-theme font-sans text-white leading-relaxed" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to));">
     <a href="#main" class="skip-link">Skip to main content</a>
     <!-- Header Navigation -->
     <header class="sticky top-0 z-50" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
-        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="Primary navigation" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center">
                     <a href="https://sdin.dev/" class="inline-block px-6 py-3 text-white no-underline rounded-lg font-bold text-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg tracking-wide" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
@@ -120,14 +125,14 @@
             </div>
                 <div class="flex items-center space-x-4">
                     <!-- Desktop Navigation -->
-                    <nav class="hidden md:flex items-center space-x-6">
+                    <nav aria-label="Desktop navigation" class="hidden md:flex items-center space-x-6">
                         <a href="https://sdin.dev/ai/" class="px-4 py-2 border-2 border-[var(--ayu-fg)] text-white hover:bg-[var(--ayu-fg)] transition-all duration-300 font-medium rounded-lg" style="--hover-text-color: var(--ayu-bg-from);" onmouseover="this.style.color='var(--ayu-ink)'" onmouseout="this.style.color='white'">AI Development</a>
                         <a href="https://sdin.dev/coaching/" class="px-4 py-2 bg-[var(--ayu-amber)] text-[var(--ayu-ink)] transition-all duration-300 font-semibold rounded-lg">Coaching</a>
                         <a href="https://sdin.dev/automation/" class="px-4 py-2 border-2 border-[var(--ayu-fg)] text-white hover:bg-[var(--ayu-fg)] transition-all duration-300 font-medium rounded-lg" style="--hover-text-color: var(--ayu-bg-from);" onmouseover="this.style.color='var(--ayu-ink)'" onmouseout="this.style.color='white'">Automation</a>
           </nav>
                     
                     <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white transition-colors duration-300" style="--hover-color: rgba(255,255,255,0.7);" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='white'">
+                    <button type="button" id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white transition-colors duration-300" style="--hover-color: rgba(255,255,255,0.7);" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='white'">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                     
@@ -154,11 +159,12 @@
         </nav>
                   </header>
 
+    <main id="main" class="ayu-editor">
     <!-- Hero Section -->
-    <section id="main" class="py-24 text-center relative overflow-hidden" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
+    <section data-syntax-label="// coaching/index.ts" class="py-24 text-center relative overflow-hidden" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-10">
-            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%239C92AC\" fill-opacity=\"0.1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%239C92AC%22 fill-opacity=%220.1%22%3E%3Cpath d=%22M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
         </div>
         
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -170,7 +176,7 @@
             </div>
             
             <!-- Main Heading -->
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 class="syntax-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                 Coaching, Consulting &amp; Fractional CTO Leadership
             </h1>
             
@@ -202,7 +208,7 @@
             <!-- Why Traditional Software Development Is Costing You Money -->
             <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden mb-12" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="500">
                 <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
-                    <h3 class="text-xl font-semibold">Why Traditional Software Development Is Costing You Money</h3>
+                    <h2 class="text-xl font-semibold">Why Traditional Software Development Is Costing You Money</h2>
                 </div>
                 <div class="p-6">
                     <div class="space-y-4 text-gray-300">
@@ -219,10 +225,10 @@
                                     <i class="fas fa-user text-2xl" style="color: var(--ayu-cyan);"></i>
                                 </div>
                                 <div class="flex-1">
-                                    <h4 class="text-lg font-semibold text-white mb-2">
+                                    <h3 class="text-lg font-semibold text-white mb-2">
                                         <i class="fas fa-cogs mr-2" style="color: var(--ayu-cyan);"></i>
                                         ENPLAN Success: $62,300 Monthly Efficiency Gains
-                                    </h4>
+                                    </h3>
                                     <p class="text-gray-300 leading-relaxed">
                             For Randall Hauser, CEO and Founder of ENPLAN, I led the modernization of their legacy website to current standards. The refactoring significantly improved performance and created a more maintainable codebase. This resulted in $27,300 monthly savings in maintenance costs and $35,000 in monthly operational efficiency improvements through streamlined workflows.
                           </p>
@@ -234,10 +240,10 @@
                             <div class="flex items-start space-x-4">
                                 <img src="tb.jpg" alt="Tammy Boone - Owner of Compliance Associates" width="150" height="150" loading="lazy" class="w-16 h-16 rounded-full object-cover flex-shrink-0" style="border: 2px solid var(--ayu-cyan);">
                                 <div class="flex-1">
-                                    <h4 class="text-lg font-semibold text-white mb-2">
+                                    <h3 class="text-lg font-semibold text-white mb-2">
                                         <i class="fas fa-chart-line mr-2" style="color: var(--ayu-cyan);"></i>
                                         Compliance Associates Success: $41,600 Monthly Cost Savings
-                                    </h4>
+                                    </h3>
                                     <p class="text-gray-300 leading-relaxed">
                             For Tammy Boone, Owner of Compliance Associates, I developed custom software that streamlined regulatory compliance processes, reducing manual documentation work by 30+ hours weekly. At $80/hour fully-loaded labor cost, this saves them $2,400/week or $10,400/month in direct labor costs. The improved accuracy and reporting also eliminated $31,200 in monthly compliance penalties and rework expenses.
                           </p>
@@ -251,10 +257,10 @@
                                     <i class="fas fa-user text-2xl" style="color: var(--ayu-cyan);"></i>
                                 </div>
                                 <div class="flex-1">
-                                    <h4 class="text-lg font-semibold text-white mb-2">
+                                    <h3 class="text-lg font-semibold text-white mb-2">
                                         <i class="fas fa-heartbeat mr-2" style="color: var(--ayu-cyan);"></i>
                                         Veritas Health Systems Success: $58,900 Monthly Cost Reduction
-                                    </h4>
+                                    </h3>
                                     <p class="text-gray-300 leading-relaxed">
                             For Jim Phillips, President of Veritas Health Systems, I developed custom tailored accounting applications and insurance forecasting tools. These solutions streamlined workflows, accelerated processing, and enhanced data visualization. The result was $58,900 in monthly operational cost savings through eliminated overhead and improved staff efficiency.
                           </p>
@@ -268,10 +274,10 @@
                                     <i class="fas fa-user text-2xl" style="color: var(--ayu-cyan);"></i>
                                 </div>
                                 <div class="flex-1">
-                                    <h4 class="text-lg font-semibold text-white mb-2">
+                                    <h3 class="text-lg font-semibold text-white mb-2">
                                         <i class="fas fa-shopping-cart mr-2" style="color: var(--ayu-cyan);"></i>
                                         Carport Central Success: $73,500 Monthly Revenue Increase
-                                    </h4>
+                                    </h3>
                                     <p class="text-gray-300 leading-relaxed">
                             For Christian Lara, CCO of Carport Central, I spearheaded the refactoring of their legacy website to modern standards. This modernization improves site performance by 70%, enhances mobile responsiveness, and creates a more intuitive user experience—resulting in a 28% conversion rate improvement. For their business, this translated to approximately $73,500 in additional monthly revenue.
                           </p>
@@ -287,6 +293,7 @@
     <!-- Statistics Section -->
     <section class="py-24" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="sr-only">Client outcomes</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-full h-28 flex items-center justify-center" style="background-color: var(--ayu-deep);">
@@ -336,10 +343,10 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
                 <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
-                    <h3 class="text-xl font-semibold">
+                    <h2 class="text-xl font-semibold">
                         <i class="fas fa-tasks mr-3"></i>
                         Our Proven 4-Step Process
-                    </h3>
+                    </h2>
                 </div>
                 <div class="p-6">
                     <ol class="space-y-4 text-gray-300">
@@ -392,6 +399,7 @@
     <!-- Value Propositions Section -->
     <section class="py-24" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="sr-only">Value propositions</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="flip-left" data-aos-delay="100">
                     <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
@@ -443,10 +451,10 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
                 <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
-                    <h3 class="text-xl font-semibold">
+                    <h2 class="text-xl font-semibold">
                         <i class="fas fa-gift mr-3"></i>
                         What You Get (Valued at $15K+ Monthly)
-                    </h3>
+                    </h2>
                 </div>
                 <div class="p-6">
                     <ul class="space-y-4 text-gray-300">
@@ -541,10 +549,10 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
                 <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
-                    <h3 class="text-xl font-semibold">
+                    <h2 class="text-xl font-semibold">
                         <i class="fas fa-tools mr-3"></i>
                         Technical Expertise
-                    </h3>
+                    </h2>
                 </div>
                 <div class="p-6">
                     <p class="text-gray-300 mb-6">Specializing in modern, efficient development approaches that deliver reliable, maintainable applications:</p>
@@ -596,10 +604,10 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
                 <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
-                    <h3 class="text-xl font-semibold">
+                    <h2 class="text-xl font-semibold">
                         <i class="fas fa-flask mr-3"></i>
                         Backed by Research
-                    </h3>
+                    </h2>
                 </div>
                 <div class="p-6">
                     <p class="text-gray-300 mb-6">The value propositions we offer are supported by industry research and data:</p>
@@ -607,73 +615,73 @@
                         <li class="flex items-start">
                             <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                McKinsey reports that companies with successful digital transformations achieve 20-50% improvement in operational performance<sup><a href="https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[1]</a></sup>
+                                McKinsey reports that companies with successful digital transformations achieve 20-50% improvement in operational performance<sup><a href="https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening" target="_blank" rel="noopener" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[1]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                Forrester Research found that companies leveraging custom software solutions see an average ROI of 321% over three years<sup><a href="https://www.forrester.com/report/The-Total-Economic-Impact-Of-Microsoft-Power-Apps/RES159527" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[2]</a></sup>
+                                Forrester Research found that companies leveraging custom software solutions see an average ROI of 321% over three years<sup><a href="https://www.forrester.com/report/The-Total-Economic-Impact-Of-Microsoft-Power-Apps/RES159527" target="_blank" rel="noopener" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[2]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                Nucleus Research states that automation solutions typically deliver $9.33 in value for every dollar spent<sup><a href="https://nucleusresearch.com/research/single/automation-drives-933-roi/" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[3]</a></sup>
+                                Nucleus Research states that automation solutions typically deliver $9.33 in value for every dollar spent<sup><a href="https://nucleusresearch.com/research/single/automation-drives-933-roi/" target="_blank" rel="noopener" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[3]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                State of JavaScript survey shows TypeScript adoption increased to 78% among professional developers due to its impact on code quality and maintainability<sup><a href="https://stateofjs.com" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[4]</a></sup>
+                                State of JavaScript survey shows TypeScript adoption increased to 78% among professional developers due to its impact on code quality and maintainability<sup><a href="https://stateofjs.com" target="_blank" rel="noopener" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[4]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                Redux Toolkit reduces boilerplate code by 40-60% compared to traditional Redux implementations, accelerating development cycles<sup><a href="https://redux-toolkit.js.org/introduction/getting-started" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[5]</a></sup>
+                                Redux Toolkit reduces boilerplate code by 40-60% compared to traditional Redux implementations, accelerating development cycles<sup><a href="https://redux-toolkit.js.org/introduction/getting-started" target="_blank" rel="noopener" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[5]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                Microsoft research found TypeScript can prevent up to 15% of bugs in JavaScript applications, directly impacting software quality and maintenance costs<sup><a href="https://earlbarr.com/publications/typestudy.pdf" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[6]</a></sup>
+                                Microsoft research found TypeScript can prevent up to 15% of bugs in JavaScript applications, directly impacting software quality and maintenance costs<sup><a href="https://earlbarr.com/publications/typestudy.pdf" target="_blank" rel="noopener" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[6]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                Functional programming approaches reduce bugs by up to 60% according to studies comparing imperative vs. functional codebases<sup><a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.368.1058&rep=rep1&type=pdf" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[7]</a></sup>
+                                Functional programming approaches reduce bugs by up to 60% according to studies comparing imperative vs. functional codebases<sup><a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.368.1058&rep=rep1&type=pdf" target="_blank" rel="noopener" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[7]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                RTK Query can reduce API-related code by up to 80% while improving application performance through automatic caching<sup><a href="https://redux-toolkit.js.org/rtk-query/overview" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[8]</a></sup>
+                                RTK Query can reduce API-related code by up to 80% while improving application performance through automatic caching<sup><a href="https://redux-toolkit.js.org/rtk-query/overview" target="_blank" rel="noopener" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[8]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                Expo Go reduces development time by approximately 30-40% through cross-platform capabilities<sup><a href="https://expo.dev/case-studies" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[9]</a></sup>
+                                Expo Go reduces development time by approximately 30-40% through cross-platform capabilities<sup><a href="https://expo.dev/case-studies" target="_blank" rel="noopener" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[9]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                CISQ reports that poor software quality costs US organizations $2.08 trillion in 2020, highlighting the critical importance of maintainable architecture<sup><a href="https://www.it-cisq.org/the-cost-of-poor-software-quality-in-the-us-a-2020-report/" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[10]</a></sup>
+                                CISQ reports that poor software quality costs US organizations $2.08 trillion in 2020, highlighting the critical importance of maintainable architecture<sup><a href="https://www.it-cisq.org/the-cost-of-poor-software-quality-in-the-us-a-2020-report/" target="_blank" rel="noopener" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[10]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                Clean code architecture reduces maintenance costs by up to 50% over a software application's lifetime according to industry analyses<sup><a href="https://www.sei.cmu.edu/publications/technical-reports/" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[11]</a></sup>
+                                Clean code architecture reduces maintenance costs by up to 50% over a software application's lifetime according to industry analyses<sup><a href="https://www.sei.cmu.edu/publications/technical-reports/" target="_blank" rel="noopener" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[11]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                According to Stack Overflow's 2023 Developer Survey, TypeScript is among the most loved languages (77.3%), reflecting its positive impact on developer productivity and code quality<sup><a href="https://insights.stackoverflow.com/survey/2023" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[12]</a></sup>
+                                According to Stack Overflow's 2023 Developer Survey, TypeScript is among the most loved languages (77.3%), reflecting its positive impact on developer productivity and code quality<sup><a href="https://insights.stackoverflow.com/survey/2023" target="_blank" rel="noopener" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[12]</a></sup>
                             </div>
                         </li>
                       </ul>
@@ -685,6 +693,7 @@
     <!-- Limited Availability Notice -->
     <section class="py-12" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="sr-only">Availability</h2>
             <div class="rounded-lg p-8 text-center" style="background-color: rgba(255,204,102,0.12); border: 1px solid var(--ayu-amber);" data-aos="fade-up">
                 <p class="text-xl text-white font-semibold">
                     <strong>Limited Availability:</strong> I maintain an intentionally small client roster to provide truly personalized, white-glove service. Currently accepting just 1 new client this month.
@@ -696,10 +705,10 @@
     <!-- Final CTA Section -->
     <section class="py-24 text-center" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
                 <i class="fas fa-check-circle mr-3" style="color: var(--ayu-cyan);"></i>
                 Ready to Save $50K+ Monthly With Custom Software?
-            </h3>
+            </h2>
             <p class="text-xl text-white mb-10 max-w-4xl mx-auto leading-relaxed">
                     Book your free strategy call today and discover how we can work together to build custom software solutions that reduce your operational costs by $50K+ every month. Save time and money now!
                   </p>
@@ -715,6 +724,7 @@
             </p>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="py-8" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to));">

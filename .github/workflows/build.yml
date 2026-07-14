@@ -6,16 +6,18 @@ on:
   pull_request:
 
 jobs:
-  tailwind:
+  static-site:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
       - run: npm install
       - run: npm run build
-      - name: Ensure committed tailwind.css is up to date
+      - name: Ensure generated site artifacts are up to date
         run: |
-          git diff --exit-code -- tailwind.css \
-            || (echo "::error::tailwind.css is stale — run 'npm run build' and commit the result" && exit 1)
+          git diff --exit-code -- tailwind.css page-sitemap.xml sitemap_index.xml \
+            || (echo "::error::Generated files are stale — run 'npm run build' and commit the result" && exit 1)
