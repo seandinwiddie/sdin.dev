@@ -9,13 +9,6 @@
       gtag('js', new Date());
       gtag('config', 'G-V36RT068VK');
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204973696-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-204973696-1');
-    </script>
     
     <!-- Meta Tags -->
     <meta charset="UTF-8">
@@ -55,15 +48,13 @@
     <meta name="apple-mobile-web-app-title" content="Sean Dinwiddie" />
     
     <!-- Favicon -->
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22><i class='fas fa-code'></i></text></svg>">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     
     <!-- Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://seandinwiddie.com/wp-content/themes/visual-composer-starter-theme-child/dank-mono.css">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -71,56 +62,7 @@
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Custom Styles (Minimal) -->
-    <style>
-        /* ===== Ayu Mirage palette (single source of truth) ===== */
-        :root {
-            --ayu-bg-from: #1c212b;
-            --ayu-bg-to:   #161a22;
-            --ayu-panel:   #232834;
-            --ayu-deep:    #12151c;
-            --ayu-border:  #3a4152;
-            --ayu-divider: #2b3140;
-            --ayu-fg:      #cccac2;
-            --ayu-ink:     #1f2430;
-            --ayu-amber:   #ffcc66;
-            --ayu-amber-2: #ffd580;
-            --ayu-cyan:    #5ccfe6;
-            --ayu-cyan-2:  #73d0ff;
-            --ayu-green:   #bae67e;
-            --ayu-salmon:  #f28779;
-        }
-      
-        /* Dank Mono Font */
-        body, h1, h2, h3, h4, h5, h6, p, a {
-            font-family: "dm", "Inter", system-ui, -apple-system, sans-serif !important;
-        }
-        
-        /* Italic links */
-        a {
-            font-style: italic !important;
-        }
-        
-        /* Pulse animation for special links */
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-        
-        .animate-pulse-custom {
-            animation: pulse 2s infinite ease-in-out;
-        }
-        
-        /* Float animation for profile image */
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        .animate-float {
-        animation: float 6s ease-in-out infinite;
-      }
-    </style>
+    <link rel="stylesheet" href="/styles.css">
   </head>
 <body class="font-sans text-white leading-relaxed" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to));">
     <!-- Header Navigation -->
@@ -178,7 +120,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <!-- Profile Image -->
             <div class="flex justify-center mb-8">
-                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-[var(--ayu-fg)] shadow-lg animate-float">
+                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-[var(--ayu-fg)] shadow-lg float-animation">
                     <img src="https://sdin.dev/profile.png" alt="Sean Dinwiddie" class="w-full h-full object-cover">
                 </div>
             </div>
@@ -214,7 +156,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- Why Traditional Software Development Is Costing You Money -->
-            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden mb-12" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="500">
+            <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden mb-12" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="500">
                 <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                     <h3 class="text-xl font-semibold">Why Traditional Software Development Is Costing You Money</h3>
                 </div>
@@ -227,7 +169,7 @@
                             <strong class="text-white">There's a better way.</strong> As your dedicated software consultant, I don't just build applications - I architect solutions that deliver measurable cost savings month after month. This high-touch approach means you get personalized attention, strategic guidance, and ongoing optimization that keeps your business ahead of the curve.
                         </p>
                         <!-- Testimonial Section -->
-                        <div class="rounded-xl p-8 mb-8" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border); border-left: 4px solid var(--ayu-cyan);" data-aos="fade-right">
+                        <div class="rounded-lg p-8 mb-8" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border); border-left: 4px solid var(--ayu-cyan);" data-aos="fade-right">
                             <div class="flex items-start space-x-4">
                                 <div class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: var(--ayu-deep); border: 2px solid var(--ayu-cyan);">
                                     <i class="fas fa-user text-2xl" style="color: var(--ayu-cyan);"></i>
@@ -244,11 +186,9 @@
                       </div>
                         </div>
                         <!-- Additional Testimonials -->
-                        <div class="rounded-xl p-8 mb-8" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border); border-left: 4px solid var(--ayu-cyan);" data-aos="fade-right" data-aos-delay="100">
+                        <div class="rounded-lg p-8 mb-8" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border); border-left: 4px solid var(--ayu-cyan);" data-aos="fade-right" data-aos-delay="100">
                             <div class="flex items-start space-x-4">
-                                <div class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: var(--ayu-deep); border: 2px solid var(--ayu-cyan);">
-                                    <i class="fas fa-user text-2xl" style="color: var(--ayu-cyan);"></i>
-                                </div>
+                                <img src="tb.jpg" alt="Tammy Boone - Owner of Compliance Associates" class="w-16 h-16 rounded-full object-cover flex-shrink-0" style="border: 2px solid var(--ayu-cyan);">
                                 <div class="flex-1">
                                     <h4 class="text-lg font-semibold text-white mb-2">
                                         <i class="fas fa-chart-line mr-2" style="color: var(--ayu-cyan);"></i>
@@ -261,7 +201,7 @@
                       </div>
                         </div>
                         
-                        <div class="rounded-xl p-8 mb-8" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border); border-left: 4px solid var(--ayu-cyan);" data-aos="fade-right" data-aos-delay="200">
+                        <div class="rounded-lg p-8 mb-8" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border); border-left: 4px solid var(--ayu-cyan);" data-aos="fade-right" data-aos-delay="200">
                             <div class="flex items-start space-x-4">
                                 <div class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: var(--ayu-deep); border: 2px solid var(--ayu-cyan);">
                                     <i class="fas fa-user text-2xl" style="color: var(--ayu-cyan);"></i>
@@ -278,7 +218,7 @@
                       </div>
                         </div>
                         
-                        <div class="rounded-xl p-8 mb-8" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border); border-left: 4px solid var(--ayu-cyan);" data-aos="fade-right" data-aos-delay="300">
+                        <div class="rounded-lg p-8 mb-8" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border); border-left: 4px solid var(--ayu-cyan);" data-aos="fade-right" data-aos-delay="300">
                             <div class="flex items-start space-x-4">
                                 <div class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: var(--ayu-deep); border: 2px solid var(--ayu-cyan);">
                                     <i class="fas fa-user text-2xl" style="color: var(--ayu-cyan);"></i>
@@ -304,7 +244,7 @@
     <section class="py-24" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="100">
+                <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-full h-28 flex items-center justify-center" style="background-color: var(--ayu-deep);">
                         <i class="fas fa-chart-line text-4xl" style="color: var(--ayu-cyan);"></i>
                     </div>
@@ -314,7 +254,7 @@
                     </div>
                   </div>
                 
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="200">
+                <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-full h-28 flex items-center justify-center" style="background-color: var(--ayu-deep);">
                         <i class="fas fa-clock text-4xl" style="color: var(--ayu-cyan);"></i>
                     </div>
@@ -324,7 +264,7 @@
                     </div>
                   </div>
                 
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="300">
+                <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-full h-28 flex items-center justify-center" style="background-color: var(--ayu-deep);">
                         <i class="fas fa-shield-halved text-4xl" style="color: var(--ayu-cyan);"></i>
                     </div>
@@ -334,7 +274,7 @@
                     </div>
                   </div>
                 
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="400">
+                <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="400">
                     <div class="w-full h-28 flex items-center justify-center" style="background-color: var(--ayu-deep);">
                         <i class="fas fa-hand-holding-dollar text-4xl" style="color: var(--ayu-cyan);"></i>
                     </div>
@@ -350,7 +290,7 @@
     <!-- 4-Step Process Section -->
     <section class="py-24" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
+            <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
                 <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                     <h3 class="text-xl font-semibold">
                         <i class="fas fa-tasks mr-3"></i>
@@ -409,7 +349,7 @@
     <section class="py-24" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="flip-left" data-aos-delay="100">
+                <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="flip-left" data-aos-delay="100">
                     <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                         <h3 class="text-lg font-semibold">
                             <i class="fas fa-coins mr-2"></i>
@@ -423,7 +363,7 @@
                         </div>
                       </div>
                 
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="flip-left" data-aos-delay="200">
+                <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="flip-left" data-aos-delay="200">
                     <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                         <h3 class="text-lg font-semibold">
                             <i class="fas fa-robot mr-2"></i>
@@ -437,7 +377,7 @@
                         </div>
                       </div>
                 
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="flip-left" data-aos-delay="300">
+                <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="flip-left" data-aos-delay="300">
                     <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                         <h3 class="text-lg font-semibold">
                             <i class="fas fa-handshake mr-2"></i>
@@ -457,7 +397,7 @@
     <!-- What You Get Section -->
     <section class="py-24" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
+            <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
                 <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                     <h3 class="text-xl font-semibold">
                         <i class="fas fa-gift mr-3"></i>
@@ -555,7 +495,7 @@
     <!-- Technical Expertise Section -->
     <section class="py-24" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
+            <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
                 <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                     <h3 class="text-xl font-semibold">
                         <i class="fas fa-tools mr-3"></i>
@@ -610,7 +550,7 @@
     <!-- Backed by Research Section -->
     <section class="py-24" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
+            <div class="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
                 <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                     <h3 class="text-xl font-semibold">
                         <i class="fas fa-flask mr-3"></i>
@@ -701,7 +641,7 @@
     <!-- Limited Availability Notice -->
     <section class="py-12" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="rounded-xl p-8 text-center" style="background-color: rgba(255,204,102,0.12); border: 1px solid var(--ayu-amber);" data-aos="fade-up">
+            <div class="rounded-lg p-8 text-center" style="background-color: rgba(255,204,102,0.12); border: 1px solid var(--ayu-amber);" data-aos="fade-up">
                 <p class="text-xl text-white font-semibold">
                     <strong>Limited Availability:</strong> I maintain an intentionally small client roster to provide truly personalized, white-glove service. Currently accepting just 1 new client this month.
                   </p>
@@ -766,111 +706,8 @@
     </footer>
 
     <!-- JavaScript -->
-    <script>
-        // Initialize AOS animations
-      document.addEventListener('DOMContentLoaded', function() {
-        AOS.init({
-          duration: 1000,
-                once: true,
-                mirror: false
-            });
-            
-            // Mobile menu toggle
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            if (mobileMenuButton && mobileMenu) {
-                mobileMenuButton.addEventListener('click', function() {
-                    mobileMenu.classList.toggle('hidden');
-                });
-            }
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-        });
-      });
-    </script>
+    <script src="/site.js"></script>
 
-    <!-- Conversion Tracking Code -->
-    <script>
-        // Pure function to create conversion event data
-        const createConversionEvent = (eventName, category, label, value = 0) => ({
-            event_category: category,
-            event_label: label,
-            value: value,
-            custom_parameter_1: 'conversion_tracked',
-            timestamp: new Date().toISOString()
-        });
-
-        // Pure function to track conversion events
-        const trackConversion = (eventName, category, label, value = 0) => {
-            if (typeof gtag !== 'undefined') {
-                gtag('event', eventName, createConversionEvent(eventName, category, label, value));
-                console.log(`Conversion tracked: ${eventName}`, createConversionEvent(eventName, category, label, value));
-            } else {
-                console.warn('Google Analytics not loaded. Conversion not tracked:', eventName);
-            }
-        };
-
-        // Pure function to track service page views
-        const trackServicePageView = (serviceName) => {
-            trackConversion('service_page_view', 'Interest', serviceName, 5);
-        };
-
-        // Pure function to track email clicks
-        const trackEmailClick = (emailAddress = 'email_link') => {
-            trackConversion('email_click', 'Lead Generation', emailAddress, 8);
-        };
-
-        // Pure function to track phone call clicks
-        const trackPhoneCall = (phoneNumber = 'phone_link') => {
-            trackConversion('phone_call_click', 'Lead Generation', phoneNumber, 15);
-        };
-
-        // Initialize conversion tracking for coaching page
-        const initializeCoachingPageTracking = () => {
-            console.log('Initializing conversion tracking for coaching page...');
-            
-            // Track coaching service page view
-            trackServicePageView('Coaching Services');
-            
-            // Track email link clicks
-            const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
-            emailLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    const emailAddress = link.getAttribute('href') || 'email_link';
-                    trackEmailClick(emailAddress);
-                });
-            });
-
-            // Track phone number clicks
-            const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-            phoneLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    const phoneNumber = link.getAttribute('href') || 'phone_link';
-                    trackPhoneCall(phoneNumber);
-                });
-            });
-
-            console.log('Coaching page conversion tracking initialized');
-        };
-
-        // Initialize when DOM is ready
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initializeCoachingPageTracking);
-        } else {
-            initializeCoachingPageTracking();
-        }
-    </script>
+    <script src="/tracking.js"></script>
   </body>
 </html>

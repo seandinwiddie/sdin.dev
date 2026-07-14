@@ -19,6 +19,7 @@
     <meta name="keywords" content="AI development services, done for you AI development, done with you AI development, functional programming AI, AI-native software, Cursor rules, Claude Code, fractional AI architect, TypeScript, Redux Toolkit" />
     <meta name="author" content="Sean Dinwiddie" />
     <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://sdin.dev/ai/" />
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Sean Dinwiddie - AI Development Services: Done-For-You & Done-With-You" />
@@ -44,7 +45,7 @@
     <meta name="apple-mobile-web-app-title" content="Sean Dinwiddie" />
 
     <!-- Favicon -->
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- Structured Data / Schema.org -->
     <script type="application/ld+json">
@@ -96,56 +97,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- Custom Styles (matched to sdin.dev homepage theme) -->
-    <style>
-        @import url("https://seandinwiddie.com/wp-content/themes/visual-composer-starter-theme-child/dank-mono.css");
-        /* ===== Ayu Mirage palette (single source of truth) ===== */
-        :root {
-            --ayu-bg-from: #1c212b;
-            --ayu-bg-to:   #161a22;
-            --ayu-panel:   #232834;
-            --ayu-deep:    #12151c;
-            --ayu-border:  #3a4152;
-            --ayu-divider: #2b3140;
-            --ayu-fg:      #cccac2;
-            --ayu-ink:     #1f2430;
-            --ayu-amber:   #ffcc66;
-            --ayu-amber-2: #ffd580;
-            --ayu-cyan:    #5ccfe6;
-            --ayu-cyan-2:  #73d0ff;
-            --ayu-green:   #bae67e;
-            --ayu-salmon:  #f28779;
-        }
-
-        body, h1, h2, h3, h4, h5, h6, p, a {
-            font-family: "dm", "Inter", sans-serif !important;
-        }
-        code, pre {
-            font-family: "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace !important;
-        }
-
-        a {
-            font-style: italic !important;
-        }
-
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
-        }
-        .pulse-link {
-            animation: pulse 2s infinite ease-in-out;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-        .float-animation {
-            animation: float 3s ease-in-out infinite;
-        }
-    </style>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] min-h-screen text-gray-200 leading-relaxed">
     <!-- Header Navigation -->
@@ -706,112 +658,8 @@ const withDiscount = applyDiscount(total(getCart()));</code></pre>
     </footer>
 
     <!-- JavaScript -->
-    <script>
-        // Initialize AOS animations
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
+    <script src="/site.js"></script>
 
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Smooth scrolling for anchor links
-        document.addEventListener('DOMContentLoaded', function() {
-            const links = document.querySelectorAll('a[href^="#"]');
-
-            links.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        });
-    </script>
-
-    <!-- Conversion Tracking Code -->
-    <script>
-        // Pure function to create conversion event data
-        const createConversionEvent = (eventName, category, label, value = 0) => ({
-            event_category: category,
-            event_label: label,
-            value: value,
-            custom_parameter_1: 'conversion_tracked',
-            timestamp: new Date().toISOString()
-        });
-
-        // Pure function to track conversion events
-        const trackConversion = (eventName, category, label, value = 0) => {
-            if (typeof gtag !== 'undefined') {
-                gtag('event', eventName, createConversionEvent(eventName, category, label, value));
-                console.log(`Conversion tracked: ${eventName}`, createConversionEvent(eventName, category, label, value));
-            } else {
-                console.warn('Google Analytics not loaded. Conversion not tracked:', eventName);
-            }
-        };
-
-        // Pure function to track service page views
-        const trackServicePageView = (serviceName) => {
-            trackConversion('service_page_view', 'Interest', serviceName, 5);
-        };
-
-        // Pure function to track email clicks
-        const trackEmailClick = (emailAddress = 'email_link') => {
-            trackConversion('email_click', 'Lead Generation', emailAddress, 8);
-        };
-
-        // Pure function to track phone call clicks
-        const trackPhoneCall = (phoneNumber = 'phone_link') => {
-            trackConversion('phone_call_click', 'Lead Generation', phoneNumber, 15);
-        };
-
-        // Initialize conversion tracking for the AI development services page
-        const initializeAiPageTracking = () => {
-            console.log('Initializing conversion tracking for AI development services page...');
-
-            // Track AI development services page view
-            trackServicePageView('AI Development Services');
-
-            // Track email link clicks
-            const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
-            emailLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    const emailAddress = link.getAttribute('href') || 'email_link';
-                    trackEmailClick(emailAddress);
-                });
-            });
-
-            // Track phone number clicks
-            const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-            phoneLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    const phoneNumber = link.getAttribute('href') || 'phone_link';
-                    trackPhoneCall(phoneNumber);
-                });
-            });
-
-            console.log('AI development services page conversion tracking initialized');
-        };
-
-        // Initialize when DOM is ready
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initializeAiPageTracking);
-        } else {
-            initializeAiPageTracking();
-        }
-    </script>
+    <script src="/tracking.js"></script>
 </body>
 </html>

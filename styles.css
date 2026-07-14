@@ -1,28 +1,36 @@
+/* sdin.dev shared theme — single source of truth. Linked by every page. */
 @import url("https://seandinwiddie.com/wp-content/themes/visual-composer-starter-theme-child/dank-mono.css");
 
-body,
-h1,
-p,
-a {
-  font-family: "dm" !important;
+/* ===== Ayu Mirage palette ===== */
+:root {
+  --ayu-bg-from: #1c212b;
+  --ayu-bg-to:   #161a22;
+  --ayu-panel:   #232834;
+  --ayu-deep:    #12151c;
+  --ayu-border:  #3a4152;
+  --ayu-divider: #2b3140;
+  --ayu-fg:      #cccac2;
+  --ayu-ink:     #1f2430;
+  --ayu-amber:   #ffcc66;
+  --ayu-amber-2: #ffd580;
+  --ayu-cyan:    #5ccfe6;
+  --ayu-cyan-2:  #73d0ff;
+  --ayu-green:   #bae67e;
+  --ayu-salmon:  #f28779;
 }
 
-a {
-  font-style: italic !important;
+/* ===== Typography ===== */
+body, h1, h2, h3, h4, h5, h6, p, a {
+  font-family: "dm", "Inter", sans-serif !important;
 }
-
-/* Coaching page specific styles */
-.value-card {
-  transition: transform 0.3s ease;
+code, pre {
+  font-family: "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace !important;
 }
+a { font-style: italic !important; }
 
-.value-card:hover {
-  transform: translateY(-5px);
-}
+/* ===== Animations ===== */
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+.pulse-link { animation: pulse 2s infinite ease-in-out; }
 
-.testimonial {
-  font-style: italic;
-  border-left: 3px solid #3273dc;
-  padding-left: 1rem;
-  margin: 1.5rem 0;
-} 
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+.float-animation { animation: float 3s ease-in-out infinite; }

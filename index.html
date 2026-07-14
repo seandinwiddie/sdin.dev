@@ -10,15 +10,6 @@
       gtag('config', 'G-V36RT068VK');
     </script>
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204973696-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-204973696-1');
-    </script>
-    
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -146,8 +137,7 @@
     </script>
     
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22><i class='fas fa-code'></i></text></svg>">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -163,55 +153,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Custom Styles -->
-    <style>
-        @import url("https://seandinwiddie.com/wp-content/themes/visual-composer-starter-theme-child/dank-mono.css");
-        /* ===== Ayu Mirage palette (single source of truth) ===== */
-        :root {
-            --ayu-bg-from: #1c212b;
-            --ayu-bg-to:   #161a22;
-            --ayu-panel:   #232834;
-            --ayu-deep:    #12151c;
-            --ayu-border:  #3a4152;
-            --ayu-divider: #2b3140;
-            --ayu-fg:      #cccac2;
-            --ayu-ink:     #1f2430;
-            --ayu-amber:   #ffcc66;
-            --ayu-amber-2: #ffd580;
-            --ayu-cyan:    #5ccfe6;
-            --ayu-cyan-2:  #73d0ff;
-            --ayu-green:   #bae67e;
-            --ayu-salmon:  #f28779;
-        }
-        
-        body, h1, p, a {
-            font-family: "dm", "Inter", sans-serif !important;
-        }
-        
-        a {
-        font-style: italic !important;
-      }
-      
-      @keyframes pulse {
-        0% { opacity: 1; }
-        50% { opacity: 0.5; }
-        100% { opacity: 1; }
-      }
-      
-      .pulse-link {
-        animation: pulse 2s infinite ease-in-out;
-      }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        .float-animation {
-            animation: float 3s ease-in-out infinite;
-        }
-    </style>
+    <link rel="stylesheet" href="/styles.css">
   </head>
 
 <body class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] min-h-screen">
@@ -495,7 +437,7 @@
                             <a href="https://www.instagram.com/sdin.dev/" class="text-2xl text-white hover:text-[var(--ayu-green)] transition-colors duration-300">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/seanpaulpaynedinwiddie/" class="text-2xl text-white hover:text-[var(--ayu-green)] transition-colors duration-300">
+                            <a href="https://www.linkedin.com/in/seandinwiddie/" class="text-2xl text-white hover:text-[var(--ayu-green)] transition-colors duration-300">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                             <a href="https://github.com/SeanDinwiddie" class="text-2xl text-white hover:text-[var(--ayu-green)] transition-colors duration-300">
@@ -563,195 +505,8 @@
     </footer>
 
     <!-- JavaScript -->
-    <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
+    <script src="/site.js"></script>
 
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-
-    <!-- Conversion Tracking Code -->
-    <script>
-        // Pure function to create conversion event data
-        const createConversionEvent = (eventName, category, label, value = 0) => ({
-            event_category: category,
-            event_label: label,
-            value: value,
-            custom_parameter_1: 'conversion_tracked',
-            timestamp: new Date().toISOString()
-        });
-
-        // Pure function to track conversion events
-        const trackConversion = (eventName, category, label, value = 0) => {
-            if (typeof gtag !== 'undefined') {
-                gtag('event', eventName, createConversionEvent(eventName, category, label, value));
-                console.log(`Conversion tracked: ${eventName}`, createConversionEvent(eventName, category, label, value));
-            } else {
-                console.warn('Google Analytics not loaded. Conversion not tracked:', eventName);
-            }
-        };
-
-        // Pure function to track contact form submissions
-        const trackContactForm = (formType = 'contact') => {
-            trackConversion('contact_form_submit', 'Lead Generation', formType, 10);
-        };
-
-        // Pure function to track phone call clicks
-        const trackPhoneCall = (phoneNumber = 'phone_link') => {
-            trackConversion('phone_call_click', 'Lead Generation', phoneNumber, 15);
-        };
-
-        // Pure function to track email clicks
-        const trackEmailClick = (emailAddress = 'email_link') => {
-            trackConversion('email_click', 'Lead Generation', emailAddress, 8);
-        };
-
-        // Pure function to track consultation requests
-        const trackConsultationRequest = (source = 'button') => {
-            trackConversion('consultation_request', 'Lead Generation', source, 20);
-        };
-
-        // Pure function to track service page views
-        const trackServicePageView = (serviceName) => {
-            trackConversion('service_page_view', 'Interest', serviceName, 5);
-        };
-
-        // Pure function to track pricing page views
-        const trackPricingPageView = () => {
-            trackConversion('pricing_page_view', 'Purchase Intent', 'Pricing Page', 12);
-        };
-
-        // Pure function to track about page views
-        const trackAboutPageView = () => {
-            trackConversion('about_page_view', 'Interest', 'About Page', 3);
-        };
-
-        // Initialize conversion tracking when DOM is ready
-        const initializeConversionTracking = () => {
-            console.log('Initializing conversion tracking for sdin.dev...');
-            
-            // Track contact form submissions (if any forms exist)
-            const contactForms = document.querySelectorAll('form[action*="contact"], form[action*="mailto"], form[action*="submit"]');
-            contactForms.forEach(form => {
-                form.addEventListener('submit', function(e) {
-                    const formType = form.getAttribute('action') || 'contact';
-                    trackContactForm(formType);
-                    
-                    // Optional: Add a small delay to ensure tracking fires
-                    setTimeout(() => {
-                        console.log('Contact form submission tracked');
-                    }, 100);
-                });
-            });
-
-            // Track phone number clicks
-            const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-            phoneLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    const phoneNumber = link.getAttribute('href') || 'phone_link';
-                    trackPhoneCall(phoneNumber);
-                });
-            });
-
-            // Track email link clicks
-            const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
-            emailLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    const emailAddress = link.getAttribute('href') || 'email_link';
-                    trackEmailClick(emailAddress);
-                });
-            });
-
-            // Track consultation buttons (Strategy Call buttons)
-            const consultationButtons = document.querySelectorAll('a[href*="Strategy%20Call%20Request"], a:contains("Get Your Free Strategy Call")');
-            consultationButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const source = button.textContent || 'strategy_call_button';
-                    trackConsultationRequest(source);
-                });
-            });
-
-            // Track service page views based on current page
-            const currentPage = window.location.pathname;
-            
-            if (currentPage.includes('/coaching/')) {
-                trackServicePageView('Coaching Services');
-            } else if (currentPage.includes('/automation/')) {
-                trackServicePageView('Automation Services');
-            } else if (currentPage === '/') {
-                trackServicePageView('Homepage');
-            }
-
-            // Track scroll depth for engagement
-            let maxScroll = 0;
-            const scrollThresholds = [25, 50, 75, 90];
-            const trackedThresholds = new Set();
-
-            window.addEventListener('scroll', () => {
-                const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
-                
-                if (scrollPercent > maxScroll) {
-                    maxScroll = scrollPercent;
-                    
-                    scrollThresholds.forEach(threshold => {
-                        if (scrollPercent >= threshold && !trackedThresholds.has(threshold)) {
-                            trackedThresholds.add(threshold);
-                            trackConversion('scroll_depth', 'Engagement', `${threshold}%`, threshold);
-                        }
-                    });
-                }
-            });
-
-            // Track time on page
-            const startTime = Date.now();
-            
-            window.addEventListener('beforeunload', () => {
-                const timeOnPage = Math.round((Date.now() - startTime) / 1000);
-                
-                if (timeOnPage > 30) { // Only track if user spent more than 30 seconds
-                    trackConversion('time_on_page', 'Engagement', `${timeOnPage}s`, Math.min(timeOnPage / 10, 10));
-                }
-            });
-
-            // Track external link clicks
-            const externalLinks = document.querySelectorAll('a[href^="http"]:not([href*="' + window.location.hostname + '"])');
-            
-            externalLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    const url = this.getAttribute('href');
-                    trackConversion('external_link_click', 'Engagement', url, 2);
-                });
-            });
-
-            console.log('Conversion tracking initialized successfully for sdin.dev');
-        };
-
-        // Initialize when DOM is ready
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initializeConversionTracking);
-        } else {
-            initializeConversionTracking();
-        }
-
-        // Test function for development (uncomment to test)
-        // const testConversionTracking = () => {
-        //     console.log('Testing conversion tracking...');
-        //     trackContactForm('test');
-        //     trackPhoneCall('test_phone');
-        //     trackEmailClick('test_email');
-        //     trackConsultationRequest('test_consultation');
-        //     trackServicePageView('test_service');
-        //     console.log('Conversion tracking test completed');
-        // };
-        // testConversionTracking();
-    </script>
+    <script src="/tracking.js"></script>
   </body>
 </html>

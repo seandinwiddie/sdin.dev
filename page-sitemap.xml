@@ -18,7 +18,7 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 		<image:image>
-			<image:loc>https://sdin.dev/coaching/profile.png</image:loc>
+			<image:loc>https://sdin.dev/profile.png</image:loc>
 			<image:title>Sean Dinwiddie - Custom Software Solutions That Save $50K+ Monthly</image:title>
 			<image:caption>Custom software development and coaching services for businesses looking to save $50K+ monthly through automation and optimization</image:caption>
 		</image:image>
