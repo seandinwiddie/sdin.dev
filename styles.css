@@ -34,3 +34,36 @@ a { font-style: italic !important; }
 
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 .float-animation { animation: float 3s ease-in-out infinite; }
+
+/* ===== Accessibility ===== */
+/* Keyboard focus ring (works regardless of hover styling) */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--ayu-cyan-2);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Skip-to-content link: off-screen until focused */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: var(--ayu-amber);
+  color: var(--ayu-ink);
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 0.5rem 0;
+  font-weight: 600;
+  font-style: normal !important;
+}
+.skip-link:focus { left: 0; }
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

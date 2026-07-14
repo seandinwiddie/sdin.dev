@@ -1,0 +1,11 @@
+{
+  "name": "sdin-dev",
+  "private": true,
+  "description": "sdin.dev static site — Tailwind build.",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./tailwind.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}

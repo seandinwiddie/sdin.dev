@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const button = document.getElementById('mobile-menu-button');
   const menu = document.getElementById('mobile-menu');
   if (button && menu) {
-    button.addEventListener('click', function () { menu.classList.toggle('hidden'); });
+    button.addEventListener('click', function () {
+      const isOpen = menu.classList.toggle('hidden') === false;
+      button.setAttribute('aria-expanded', String(isOpen));
+    });
   }
 
   document.querySelectorAll('a[href^="#"]').forEach(function (link) {

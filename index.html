@@ -13,8 +13,8 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sean Dinwiddie - Custom Software Solutions That Save $50K+ Monthly</title>
-    <meta name="description" content="Transform your business with custom software solutions that deliver measurable ROI and ongoing monthly savings. React, Redux Toolkit, and TypeScript expert." />
+    <title>Sean Dinwiddie — React & Redux Developer & Software Consultant</title>
+    <meta name="description" content="React, Redux Toolkit, and TypeScript developer building custom software, automation, and modern web & native apps that deliver measurable ROI." />
     <meta name="keywords" content="custom software development, React developer, Redux Toolkit, TypeScript, business automation, software consulting, web development, mobile apps, Expo" />
     <meta name="author" content="Sean Dinwiddie" />
     <meta name="robots" content="index, follow" />
@@ -23,8 +23,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sdin.dev/" />
-    <meta property="og:title" content="Sean Dinwiddie - Custom Software Solutions That Save $50K+ Monthly" />
-    <meta property="og:description" content="Transform your business with custom software solutions that deliver measurable ROI and ongoing monthly savings. React, Redux Toolkit, and TypeScript expert." />
+    <meta property="og:title" content="Sean Dinwiddie — React & Redux Developer & Software Consultant" />
+    <meta property="og:description" content="React, Redux Toolkit, and TypeScript developer building custom software, automation, and modern web & native apps that deliver measurable ROI." />
     <meta property="og:image" content="https://sdin.dev/profile.png" />
     <meta property="og:image:width" content="128" />
     <meta property="og:image:height" content="128" />
@@ -34,8 +34,8 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://sdin.dev/" />
-    <meta name="twitter:title" content="Sean Dinwiddie - Custom Software Solutions That Save $50K+ Monthly" />
-    <meta name="twitter:description" content="Transform your business with custom software solutions that deliver measurable ROI and ongoing monthly savings. React, Redux Toolkit, and TypeScript expert." />
+    <meta name="twitter:title" content="Sean Dinwiddie — React & Redux Developer & Software Consultant" />
+    <meta name="twitter:description" content="React, Redux Toolkit, and TypeScript developer building custom software, automation, and modern web & native apps that deliver measurable ROI." />
     <meta name="twitter:image" content="https://sdin.dev/profile.png" />
     <meta name="twitter:site" content="@seandinwiddie" />
     <meta name="twitter:creator" content="@seandinwiddie" />
@@ -140,7 +140,7 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/tailwind.css">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -157,6 +157,7 @@
   </head>
 
 <body class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] min-h-screen">
+    <a href="#main" class="skip-link">Skip to main content</a>
     <!-- Header Navigation -->
     <header class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] border-b border-[var(--ayu-divider)] sticky top-0 z-50">
         <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -175,7 +176,7 @@
                     </nav>
                     
                     <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-button" class="md:hidden text-white hover:text-[var(--ayu-amber)] transition-colors duration-300">
+                    <button id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white hover:text-[var(--ayu-amber)] transition-colors duration-300">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                     
@@ -203,12 +204,12 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16 border-b border-[var(--ayu-divider)]">
+    <section id="main" class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16 border-b border-[var(--ayu-divider)]">
         <div class="container mx-auto px-4 text-center">
             <div class="max-w-4xl mx-auto">
                 <!-- Profile Image -->
                 <div class="mb-8">
-                    <img src="profile.png" alt="Sean Dinwiddie" class="w-32 h-32 rounded-full mx-auto border-4 border-[var(--ayu-fg)] shadow-lg float-animation">
+                    <img src="profile.png" alt="Sean Dinwiddie" width="128" height="128" class="w-32 h-32 rounded-full mx-auto border-4 border-[var(--ayu-fg)] shadow-lg float-animation">
                 </div>
                 
                 <!-- Main Headlines -->

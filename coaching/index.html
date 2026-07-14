@@ -13,8 +13,8 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sean Dinwiddie - Custom Software Solutions That Save $50K+ Monthly</title>
-    <meta name="description" content="Transform your business with custom software solutions that deliver measurable ROI and ongoing monthly savings. React, Redux Toolkit, and TypeScript expert." />
+    <title>Sean Dinwiddie — Coaching, Consulting & Fractional CTO</title>
+    <meta name="description" content="Technical coaching, software consulting, and fractional-CTO leadership: modernize legacy systems, cut operational cost, and get senior architecture guidance without a full-time hire." />
     <meta name="keywords" content="custom software development, React developer, Redux Toolkit, TypeScript, business automation, software consulting, web development, mobile apps, Expo" />
     <meta name="author" content="Sean Dinwiddie" />
     <meta name="robots" content="index, follow" />
@@ -23,8 +23,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sdin.dev/coaching/" />
-    <meta property="og:title" content="Sean Dinwiddie - Custom Software Solutions That Save $50K+ Monthly" />
-    <meta property="og:description" content="Transform your business with custom software solutions that deliver measurable ROI and ongoing monthly savings. React, Redux Toolkit, and TypeScript expert." />
+    <meta property="og:title" content="Sean Dinwiddie — Coaching, Consulting & Fractional CTO" />
+    <meta property="og:description" content="Technical coaching, software consulting, and fractional-CTO leadership: modernize legacy systems, cut operational cost, and get senior architecture guidance without a full-time hire." />
     <meta property="og:image" content="https://sdin.dev/profile.png" />
     <meta property="og:image:width" content="128" />
     <meta property="og:image:height" content="128" />
@@ -34,8 +34,8 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://sdin.dev/coaching/" />
-    <meta name="twitter:title" content="Sean Dinwiddie - Custom Software Solutions That Save $50K+ Monthly" />
-    <meta name="twitter:description" content="Transform your business with custom software solutions that deliver measurable ROI and ongoing monthly savings. React, Redux Toolkit, and TypeScript expert." />
+    <meta name="twitter:title" content="Sean Dinwiddie — Coaching, Consulting & Fractional CTO" />
+    <meta name="twitter:description" content="Technical coaching, software consulting, and fractional-CTO leadership: modernize legacy systems, cut operational cost, and get senior architecture guidance without a full-time hire." />
     <meta name="twitter:image" content="https://sdin.dev/profile.png" />
     <meta name="twitter:site" content="@seandinwiddie" />
     <meta name="twitter:creator" content="@seandinwiddie" />
@@ -51,7 +51,7 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/tailwind.css">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -65,6 +65,7 @@
     <link rel="stylesheet" href="/styles.css">
   </head>
 <body class="font-sans text-white leading-relaxed" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to));">
+    <a href="#main" class="skip-link">Skip to main content</a>
     <!-- Header Navigation -->
     <header class="sticky top-0 z-50" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,7 +84,7 @@
           </nav>
                     
                     <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-button" class="md:hidden text-white transition-colors duration-300" style="--hover-color: rgba(255,255,255,0.7);" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='white'">
+                    <button id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-white transition-colors duration-300" style="--hover-color: rgba(255,255,255,0.7);" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='white'">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                     
@@ -111,7 +112,7 @@
                   </header>
 
     <!-- Hero Section -->
-    <section class="py-24 text-center relative overflow-hidden" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
+    <section id="main" class="py-24 text-center relative overflow-hidden" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-10">
             <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%239C92AC\" fill-opacity=\"0.1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
@@ -121,18 +122,18 @@
             <!-- Profile Image -->
             <div class="flex justify-center mb-8">
                 <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-[var(--ayu-fg)] shadow-lg float-animation">
-                    <img src="https://sdin.dev/profile.png" alt="Sean Dinwiddie" class="w-full h-full object-cover">
+                    <img src="https://sdin.dev/profile.png" alt="Sean Dinwiddie" width="128" height="128" class="w-full h-full object-cover">
                 </div>
             </div>
             
             <!-- Main Heading -->
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Custom Software Solutions That Save $50K+ Monthly
+                Coaching, Consulting &amp; Fractional CTO Leadership
             </h1>
             
             <!-- Subtitle -->
             <p class="text-xl md:text-2xl text-white mb-10 max-w-4xl mx-auto leading-relaxed">
-                For $3-5M+ Businesses: Stop Wasting Money on Off-the-Shelf Software. Get Tailored Solutions That Put Real Dollars Back in Your Pocket.
+                For $3–5M+ businesses: senior technical leadership on demand — one-on-one coaching, hands-on consulting, and fractional-CTO strategy that turns software into measurable savings.
             </p>
             
             <!-- CTA Button -->
@@ -188,7 +189,7 @@
                         <!-- Additional Testimonials -->
                         <div class="rounded-lg p-8 mb-8" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border); border-left: 4px solid var(--ayu-cyan);" data-aos="fade-right" data-aos-delay="100">
                             <div class="flex items-start space-x-4">
-                                <img src="tb.jpg" alt="Tammy Boone - Owner of Compliance Associates" class="w-16 h-16 rounded-full object-cover flex-shrink-0" style="border: 2px solid var(--ayu-cyan);">
+                                <img src="tb.jpg" alt="Tammy Boone - Owner of Compliance Associates" width="150" height="150" loading="lazy" class="w-16 h-16 rounded-full object-cover flex-shrink-0" style="border: 2px solid var(--ayu-cyan);">
                                 <div class="flex-1">
                                     <h4 class="text-lg font-semibold text-white mb-2">
                                         <i class="fas fa-chart-line mr-2" style="color: var(--ayu-cyan);"></i>

@@ -1,0 +1,21 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  tailwind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: npm run build
+      - name: Ensure committed tailwind.css is up to date
+        run: |
+          git diff --exit-code -- tailwind.css \
+            || (echo "::error::tailwind.css is stale — run 'npm run build' and commit the result" && exit 1)
