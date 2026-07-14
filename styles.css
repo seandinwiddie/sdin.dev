@@ -17,6 +17,7 @@
   --ayu-cyan-2:  #73d0ff;
   --ayu-green:   #bae67e;
   --ayu-salmon:  #f28779;
+  --upwork-green: #14a800; /* Upwork brand */
 }
 
 /* ===== Typography ===== */
@@ -57,6 +58,9 @@ a:focus-visible, button:focus-visible {
   font-style: normal !important;
 }
 .skip-link:focus { left: 0; }
+
+/* Brand-colored social hover */
+.social-upwork:hover, .social-upwork:focus-visible { color: var(--upwork-green); }
 
 /* Respect reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
