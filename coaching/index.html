@@ -48,8 +48,8 @@
     <meta name="twitter:creator" content="@seandinwiddie" />
     
     <!-- Additional SEO Meta Tags -->
-    <meta name="theme-color" content="#2c3e50" />
-    <meta name="msapplication-TileColor" content="#2c3e50" />
+    <meta name="theme-color" content="#10b981" />
+    <meta name="msapplication-TileColor" content="#10b981" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Sean Dinwiddie" />
@@ -74,15 +74,15 @@
     <!-- Custom Styles (Minimal) -->
     <style>
       :root {
-        --primary-color: #2c3e50;
-        --secondary-color: #34495e;
-        --accent-color: #3498db;
-        --text-color: #2c3e50;
-        --light-bg: #f8f9fa;
-        --card-bg: #ffffff;
-        --success-color: #27ae60;
-        --warning-color: #f39c12;
-        --info-color: #3498db;
+        --primary-color: #34d399;   /* emerald-400 */
+        --secondary-color: #14b8a6; /* teal-500 */
+        --accent-color: #3b82f6;    /* blue-500 */
+        --text-color: #f1f5f9;
+        --light-bg: #334155;
+        --card-bg: #334155;         /* slate-700 */
+        --success-color: #34d399;   /* emerald-400 */
+        --warning-color: #fb923c;   /* orange-400 */
+        --info-color: #3b82f6;
       }
       
         /* Dank Mono Font */
@@ -118,7 +118,7 @@
   </head>
 <body class="font-sans text-white leading-relaxed" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
     <!-- Header Navigation -->
-    <header class="sticky top-0 z-50" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <header class="sticky top-0 z-50" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
         <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center">
@@ -129,9 +129,9 @@
                 <div class="flex items-center space-x-4">
                     <!-- Desktop Navigation -->
                     <nav class="hidden md:flex items-center space-x-6">
-                        <a href="https://sdin.dev/ai/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">AI Development</a>
-                        <a href="https://sdin.dev/coaching/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">Coaching</a>
-                        <a href="https://sdin.dev/automation/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">Automation</a>
+                        <a href="https://sdin.dev/ai/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='#059669'" onmouseout="this.style.color='white'">AI Development</a>
+                        <a href="https://sdin.dev/coaching/" class="px-4 py-2 bg-white text-emerald-600 transition-all duration-300 font-semibold rounded-lg">Coaching</a>
+                        <a href="https://sdin.dev/automation/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='#059669'" onmouseout="this.style.color='white'">Automation</a>
           </nav>
                     
                     <!-- Mobile Menu Button -->
@@ -150,9 +150,9 @@
             <!-- Mobile Navigation Menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col space-y-3">
-                    <a href="https://sdin.dev/ai/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg text-center" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">AI Development</a>
-                    <a href="https://sdin.dev/coaching/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg text-center" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">Coaching</a>
-                    <a href="https://sdin.dev/automation/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg text-center" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">Automation</a>
+                    <a href="https://sdin.dev/ai/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg text-center" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='#059669'" onmouseout="this.style.color='white'">AI Development</a>
+                    <a href="https://sdin.dev/coaching/" class="px-4 py-2 bg-white text-emerald-600 transition-all duration-300 font-semibold rounded-lg text-center">Coaching</a>
+                    <a href="https://sdin.dev/automation/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg text-center" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='#059669'" onmouseout="this.style.color='white'">Automation</a>
                     <a href="mailto:sean@sdin.dev?subject=Strategy%20Call%20Request" 
                        class="inline-block px-6 py-3 text-white no-underline rounded-lg font-semibold transition-all duration-300 text-center" style="background-color: var(--warning-color);" onmouseover="this.style.backgroundColor='#e67e22'" onmouseout="this.style.backgroundColor='var(--warning-color)'">
                         Get Your Free Strategy Call
@@ -163,7 +163,7 @@
                   </header>
 
     <!-- Hero Section -->
-    <section class="py-24 text-center relative overflow-hidden" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <section class="py-24 text-center relative overflow-hidden" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-10">
             <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%239C92AC\" fill-opacity=\"0.1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
@@ -195,7 +195,7 @@
                     Book Your Free Strategy Call
                 </a>
                 <a href="tel:+15306383238" 
-                   class="inline-block px-6 py-3 bg-transparent border-2 border-white text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-white" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='white'">
+                   class="inline-block px-6 py-3 bg-transparent border-2 border-white text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-white" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='#059669'" onmouseout="this.style.color='white'">
                     <i class="fas fa-phone mr-2"></i>
                     (530) 638-3238
                 </a>
@@ -204,11 +204,11 @@
     </section>
 
     <!-- Main Content Section -->
-    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- Why Traditional Software Development Is Costing You Money -->
-            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden mb-12" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up" data-aos-delay="500">
+            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden mb-12" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up" data-aos-delay="500">
                 <div class="text-white p-6" style="background-color: var(--accent-color);">
                     <h3 class="text-xl font-semibold">Why Traditional Software Development Is Costing You Money</h3>
                 </div>
@@ -221,7 +221,7 @@
                             <strong class="text-white">There's a better way.</strong> As your dedicated software consultant, I don't just build applications - I architect solutions that deliver measurable cost savings month after month. This high-touch approach means you get personalized attention, strategic guidance, and ongoing optimization that keeps your business ahead of the curve.
                         </p>
                         <!-- Testimonial Section -->
-                        <div class="rounded-xl p-8 mb-8" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-left: 4px solid var(--accent-color);" data-aos="fade-right">
+                        <div class="rounded-xl p-8 mb-8" style="background-color: #334155; border: 1px solid #34d399; border-left: 4px solid var(--accent-color);" data-aos="fade-right">
                             <div class="flex items-start space-x-4">
                                 <img src="https://www.redding.com/gcdn/presto/2019/07/18/PRRS/f3b326ab-6610-46fb-8c80-4b2a60c8db84-Randall_Hauser.JPG?width=600&height=886&fit=crop&format=pjpg&auto=webp" 
                                      alt="Randall Hauser - CEO and Founder of ENPLAN" 
@@ -238,7 +238,7 @@
                       </div>
                         </div>
                         <!-- Additional Testimonials -->
-                        <div class="rounded-xl p-8 mb-8" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-left: 4px solid var(--accent-color);" data-aos="fade-right" data-aos-delay="100">
+                        <div class="rounded-xl p-8 mb-8" style="background-color: #334155; border: 1px solid #34d399; border-left: 4px solid var(--accent-color);" data-aos="fade-right" data-aos-delay="100">
                             <div class="flex items-start space-x-4">
                                 <img src="https://boondata.com/wp-content/uploads/tammy-boone-portrait.jpg" 
                                      alt="Tammy Boone - Compliance Associates" 
@@ -255,7 +255,7 @@
                       </div>
                         </div>
                         
-                        <div class="rounded-xl p-8 mb-8" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-left: 4px solid var(--accent-color);" data-aos="fade-right" data-aos-delay="200">
+                        <div class="rounded-xl p-8 mb-8" style="background-color: #334155; border: 1px solid #34d399; border-left: 4px solid var(--accent-color);" data-aos="fade-right" data-aos-delay="200">
                             <div class="flex items-start space-x-4">
                                 <img src="https://storage.zoominfo.com/417002649" 
                                      alt="Jim Phillips - President of Veritas Health Systems" 
@@ -272,7 +272,7 @@
                       </div>
                         </div>
                         
-                        <div class="rounded-xl p-8 mb-8" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-left: 4px solid var(--accent-color);" data-aos="fade-right" data-aos-delay="300">
+                        <div class="rounded-xl p-8 mb-8" style="background-color: #334155; border: 1px solid #34d399; border-left: 4px solid var(--accent-color);" data-aos="fade-right" data-aos-delay="300">
                             <div class="flex items-start space-x-4">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTliYaBMLyJBmTwVZgzgckR4lFFVbmkBaU3tjVgvoTZryD8AJ57ESg2L2YRYzOqdx9Igqc&usqp=CAU" 
                                      alt="Christian Lara - CCO of Carport Central" 
@@ -295,10 +295,10 @@
     </section>
 
     <!-- Statistics Section -->
-    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up" data-aos-delay="100">
+                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up" data-aos-delay="100">
                     <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Productivity chart" class="w-full h-48 object-cover">
                     <div class="p-6 text-center">
                         <div class="text-4xl font-bold text-white mb-2">500%</div>
@@ -306,7 +306,7 @@
                     </div>
                   </div>
                 
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up" data-aos-delay="200">
+                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up" data-aos-delay="200">
                     <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Saving time" class="w-full h-48 object-cover">
                     <div class="p-6 text-center">
                         <div class="text-4xl font-bold text-white mb-2">30+</div>
@@ -314,7 +314,7 @@
                     </div>
                   </div>
                 
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up" data-aos-delay="300">
+                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up" data-aos-delay="300">
                     <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Error reduction" class="w-full h-48 object-cover">
                     <div class="p-6 text-center">
                         <div class="text-4xl font-bold text-white mb-2">90%</div>
@@ -322,7 +322,7 @@
                     </div>
                   </div>
                 
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up" data-aos-delay="400">
+                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up" data-aos-delay="400">
                     <img src="https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Return on investment" class="w-full h-48 object-cover">
                     <div class="p-6 text-center">
                         <div class="text-4xl font-bold text-white mb-2">3-5x</div>
@@ -334,9 +334,9 @@
     </section>
 
     <!-- 4-Step Process Section -->
-    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up">
+            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up">
                 <div class="text-white p-6" style="background-color: var(--accent-color);">
                     <h3 class="text-xl font-semibold">
                         <i class="fas fa-tasks mr-3"></i>
@@ -392,10 +392,10 @@
     </section>
 
     <!-- Value Propositions Section -->
-    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="flip-left" data-aos-delay="100">
+                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="flip-left" data-aos-delay="100">
                     <img src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Software development" class="w-full h-48 object-cover">
                     <div class="text-white p-6" style="background-color: var(--accent-color);">
                         <h3 class="text-lg font-semibold">
@@ -410,7 +410,7 @@
                         </div>
                       </div>
                 
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="flip-left" data-aos-delay="200">
+                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="flip-left" data-aos-delay="200">
                     <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Automation" class="w-full h-48 object-cover">
                     <div class="text-white p-6" style="background-color: var(--accent-color);">
                         <h3 class="text-lg font-semibold">
@@ -425,7 +425,7 @@
                         </div>
                       </div>
                 
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="flip-left" data-aos-delay="300">
+                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="flip-left" data-aos-delay="300">
                     <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Partnership" class="w-full h-48 object-cover">
                     <div class="text-white p-6" style="background-color: var(--accent-color);">
                         <h3 class="text-lg font-semibold">
@@ -444,9 +444,9 @@
     </section>
 
     <!-- What You Get Section -->
-    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up">
+            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up">
                 <div class="text-white p-6" style="background-color: var(--accent-color);">
                     <h3 class="text-xl font-semibold">
                         <i class="fas fa-gift mr-3"></i>
@@ -542,9 +542,9 @@
     </section>
 
     <!-- Technical Expertise Section -->
-    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up">
+            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up">
                 <div class="text-white p-6" style="background-color: var(--accent-color);">
                     <h3 class="text-xl font-semibold">
                         <i class="fas fa-tools mr-3"></i>
@@ -597,9 +597,9 @@
     </section>
 
     <!-- Backed by Research Section -->
-    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);" data-aos="fade-up">
+            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up">
                 <div class="text-white p-6" style="background-color: var(--accent-color);">
                     <h3 class="text-xl font-semibold">
                         <i class="fas fa-flask mr-3"></i>
@@ -688,7 +688,7 @@
     </section>
 
     <!-- Limited Availability Notice -->
-    <section class="py-12" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <section class="py-12" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="rounded-xl p-8 text-center" style="background-color: rgba(243, 156, 18, 0.15); border: 1px solid var(--warning-color);" data-aos="fade-up">
                 <p class="text-xl text-white font-semibold">
@@ -699,7 +699,7 @@
     </section>
 
     <!-- Final CTA Section -->
-    <section class="py-24 text-center" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <section class="py-24 text-center" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">
                 <i class="fas fa-check-circle mr-3" style="color: var(--accent-color);"></i>
