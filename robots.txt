@@ -1,8 +1,4 @@
 User-agent: *
-Disallow: /gigs/
-Disallow: /jobs/
-Disallow: /resources/
-Disallow: /resumes/
+Allow: /
 
-# Allow all other paths
-Allow: / 
+Sitemap: https://sdin.dev/sitemap_index.xml
