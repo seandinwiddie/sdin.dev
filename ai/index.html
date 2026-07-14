@@ -243,7 +243,7 @@
                 <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border-l-4 border border-[var(--ayu-salmon)]" data-aos="fade-right">
                     <h3 class="text-xl font-bold mb-4 text-white"><i class="fas fa-times-circle mr-2 text-[var(--ayu-salmon)]"></i>Imperative &mdash; the AI gets confused</h3>
                     <pre class="text-sm bg-[var(--ayu-deep)] text-[var(--ayu-fg)] rounded-lg p-4 overflow-x-auto"><code><span style="color:var(--ayu-orange)">let</span> total = <span style="color:var(--ayu-purple)">0</span>;
-<span style="color:var(--ayu-orange)">let</span> items = <span style="color:var(--ayu-gold)">getCart</span>();
+<span style="color:var(--ayu-orange)">let</span> items = <span style="color:var(--ayu-gold)">getItems</span>();
 <span style="color:var(--ayu-orange)">for</span> (<span style="color:var(--ayu-orange)">let</span> i = <span style="color:var(--ayu-purple)">0</span>; i &lt; items<span style="color:var(--ayu-cyan)">.length</span>; i++) {
   <span style="color:var(--ayu-orange)">if</span> (items[i]<span style="color:var(--ayu-cyan)">.active</span>) {
     total += items[i]<span style="color:var(--ayu-cyan)">.price</span>;
@@ -260,7 +260,7 @@
     <span style="color:var(--ayu-gold)">.filter</span>(item <span style="color:var(--ayu-orange)">=&gt;</span> item<span style="color:var(--ayu-cyan)">.active</span>)
     <span style="color:var(--ayu-gold)">.reduce</span>((sum, item) <span style="color:var(--ayu-orange)">=&gt;</span> sum + item<span style="color:var(--ayu-cyan)">.price</span>, <span style="color:var(--ayu-purple)">0</span>);
 
-<span style="color:var(--ayu-orange)">const</span> grandTotal = <span style="color:var(--ayu-gold)">total</span>(<span style="color:var(--ayu-gold)">getCart</span>());</code></pre>
+<span style="color:var(--ayu-orange)">const</span> grandTotal = <span style="color:var(--ayu-gold)">total</span>(<span style="color:var(--ayu-gold)">getItems</span>());</code></pre>
                     <p class="text-gray-300 text-sm mt-4">Pure, immutable, composable. Each function reads in isolation &mdash; the AI refactors it aggressively and safely, because there's nothing hidden to break.</p>
                 </div>
             </div>
