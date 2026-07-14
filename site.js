@@ -1,4 +1,4 @@
-// sdin.dev shared behavior — AOS init, mobile menu, smooth scroll. Linked by every page.
+// sdin.dev shared behavior — AOS init and accessible mobile navigation.
 document.addEventListener('DOMContentLoaded', function () {
   if (typeof AOS !== 'undefined') {
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
@@ -7,21 +7,26 @@ document.addEventListener('DOMContentLoaded', function () {
   const button = document.getElementById('mobile-menu-button');
   const menu = document.getElementById('mobile-menu');
   if (button && menu) {
-    button.addEventListener('click', function () {
-      const isOpen = menu.classList.toggle('hidden') === false;
+    const setMenuOpen = function (isOpen) {
+      menu.classList.toggle('hidden', !isOpen);
       button.setAttribute('aria-expanded', String(isOpen));
-    });
-  }
+    };
 
-  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      const id = link.getAttribute('href');
-      if (id.length <= 1) return; // ignore bare "#"
-      const target = document.querySelector(id);
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    button.addEventListener('click', function () {
+      setMenuOpen(button.getAttribute('aria-expanded') !== 'true');
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && button.getAttribute('aria-expanded') === 'true') {
+        setMenuOpen(false);
+        button.focus();
       }
     });
-  });
+
+    menu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        setMenuOpen(false);
+      });
+    });
+  }
 });

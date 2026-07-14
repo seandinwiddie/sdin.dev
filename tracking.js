@@ -1,17 +1,14 @@
-// sdin.dev shared conversion tracking — pure functions over gtag. Linked by every page.
-const createConversionEvent = (eventName, category, label, value = 0) => ({
+// sdin.dev shared conversion tracking — pure functions over gtag.
+const createConversionEvent = (category, label, leadScore = 0) => ({
   event_category: category,
   event_label: label,
-  value: value,
-  custom_parameter_1: 'conversion_tracked',
-  timestamp: new Date().toISOString()
+  lead_score: leadScore,
+  custom_parameter_1: 'conversion_tracked'
 });
 
-const trackConversion = (eventName, category, label, value = 0) => {
+const trackConversion = (eventName, category, label, leadScore = 0) => {
   if (typeof gtag !== 'undefined') {
-    gtag('event', eventName, createConversionEvent(eventName, category, label, value));
-  } else {
-    console.warn('Google Analytics not loaded. Conversion not tracked:', eventName);
+    gtag('event', eventName, createConversionEvent(category, label, leadScore));
   }
 };
 
@@ -59,7 +56,7 @@ const initTracking = () => {
         }
       });
     }
-  });
+  }, { passive: true });
 
   // Time on page (only if engaged > 30s)
   const start = Date.now();

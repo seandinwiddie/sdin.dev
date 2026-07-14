@@ -1,9 +1,10 @@
-// Canonical-host normalization for portable static hosting.
+// Generated canonical-host normalization for portable static hosting.
 // Server-level redirects remain preferable; local and preview hosts are untouched.
 (function () {
   'use strict';
 
-  const canonicalHost = 'sdin.dev';
+  const canonicalOrigin = "https://sdin.dev";
+  const canonicalHost = "sdin.dev";
   const productionHosts = new Set([canonicalHost, `www.${canonicalHost}`]);
 
   const shouldNormalize = ({ protocol, hostname }) =>
@@ -11,7 +12,7 @@
     (protocol !== 'https:' || hostname !== canonicalHost);
 
   const toCanonicalUrl = ({ pathname, search, hash }) =>
-    `https://${canonicalHost}${pathname}${search}${hash}`;
+    `${canonicalOrigin}${pathname}${search}${hash}`;
 
   if (shouldNormalize(window.location)) {
     window.location.replace(toCanonicalUrl(window.location));

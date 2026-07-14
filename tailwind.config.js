@@ -6,7 +6,8 @@ module.exports = {
     './ai/index.html',
     './coaching/index.html',
     './automation/index.html',
-    './resume/index.html'
+    './resume/index.html',
+    './privacy/index.html'
   ],
   theme: { extend: {} },
   plugins: []

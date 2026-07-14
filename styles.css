@@ -21,7 +21,7 @@
   --ayu-gold:    #ffd580; /* function  */
   --ayu-purple:  #d4bfff; /* constant  */
   --ayu-mint:    #95e6cb; /* regexp    */
-  --ayu-comment: #5c6773; /* comment   */
+  --ayu-comment: #8f98a5; /* accessible comment text on every Ayu surface */
   --ayu-blue:    #73d0ff; /* variable  */
   --ayu-shadow:  rgba(0, 0, 0, 0.38);
 }
@@ -30,6 +30,8 @@
 html {
   background: var(--ayu-bg-to);
   color-scheme: dark;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 body, p, a {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;

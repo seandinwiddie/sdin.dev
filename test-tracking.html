@@ -6,14 +6,7 @@
     <meta name="robots" content="noindex, nofollow">
     <title>Conversion Tracking Test - sdin.dev</title>
     
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V36RT068VK"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-V36RT068VK');
-    </script>
+    <!-- Local-only harness: this page never loads or transmits to Google Analytics. -->
     
     <style>
         body {
@@ -58,7 +51,7 @@
 </head>
 <body>
     <h1>Conversion Tracking Test Page</h1>
-    <p>This page tests the conversion tracking implementation for sdin.dev</p>
+        <p>This local harness tests conversion event payloads without contacting Google Analytics.</p>
     
     <div class="test-section">
         <h2>Test Conversion Events</h2>
@@ -85,37 +78,33 @@
     </div>
     
     <div class="test-section">
-        <h2>GA4 Real-time Reports</h2>
-        <p>To verify events are being sent to GA4:</p>
+        <h2>Network Safety</h2>
+        <p>This page deliberately keeps every test event in the browser:</p>
         <ol>
-            <li>Go to <a href="https://analytics.google.com" target="_blank">Google Analytics</a></li>
-            <li>Select your sdin.dev property</li>
-            <li>Go to Reports → Real-time</li>
-            <li>Click the buttons above and watch for events</li>
+            <li>No Google Analytics script is loaded.</li>
+            <li>No production measurement ID is initialized.</li>
+            <li>Click a button and inspect the console payload.</li>
         </ol>
     </div>
 
     <!-- Conversion Tracking Code -->
     <script>
         // Pure function to create conversion event data
-        const createConversionEvent = (eventName, category, label, value = 0) => ({
+        const createConversionEvent = (category, label, leadScore = 0) => ({
             event_category: category,
             event_label: label,
-            value: value,
-            custom_parameter_1: 'conversion_tracked',
-            timestamp: new Date().toISOString()
+            lead_score: leadScore,
+            custom_parameter_1: 'conversion_tracked'
         });
 
-        // Pure function to track conversion events
-        const trackConversion = (eventName, category, label, value = 0) => {
-            if (typeof gtag !== 'undefined') {
-                gtag('event', eventName, createConversionEvent(eventName, category, label, value));
-                console.log(`✅ Conversion tracked: ${eventName}`, createConversionEvent(eventName, category, label, value));
-                updateConsoleOutput(`✅ Conversion tracked: ${eventName} - ${label}`);
-            } else {
-                console.warn('❌ Google Analytics not loaded. Conversion not tracked:', eventName);
-                updateConsoleOutput(`❌ Google Analytics not loaded. Conversion not tracked: ${eventName}`);
-            }
+        const simulatedEvents = [];
+
+        // Store test events locally; never call the production gtag endpoint.
+        const trackConversion = (eventName, category, label, leadScore = 0) => {
+            const payload = createConversionEvent(category, label, leadScore);
+            simulatedEvents.push({ eventName, payload });
+            console.log(`✅ Conversion simulated locally: ${eventName}`, payload);
+            updateConsoleOutput(`✅ Simulated locally: ${eventName} - ${label}`);
         };
 
         // Test functions
@@ -149,8 +138,8 @@
 
         // Initialize tracking
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('🚀 Conversion tracking test page loaded');
-            updateConsoleOutput('🚀 Conversion tracking test page loaded');
+            console.log('🚀 Local conversion tracking harness loaded');
+            updateConsoleOutput('🚀 Local harness loaded; network transmission is disabled');
             
             // Track page view
             trackConversion('test_page_view', 'Testing', 'Conversion Tracking Test Page', 1);
