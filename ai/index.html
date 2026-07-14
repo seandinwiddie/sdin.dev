@@ -242,26 +242,25 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border-l-4 border border-[var(--ayu-salmon)]" data-aos="fade-right">
                     <h3 class="text-xl font-bold mb-4 text-white"><i class="fas fa-times-circle mr-2 text-[var(--ayu-salmon)]"></i>Imperative &mdash; the AI gets confused</h3>
-                    <pre class="text-sm bg-[var(--ayu-deep)] text-[var(--ayu-fg)] rounded-lg p-4 overflow-x-auto"><code>let total = 0;
-let items = getCart();
-for (let i = 0; i &lt; items.length; i++) {
-  if (items[i].active) {
-    total += items[i].price;
-    items[i].counted = true;  // mutation
+                    <pre class="text-sm bg-[var(--ayu-deep)] text-[var(--ayu-fg)] rounded-lg p-4 overflow-x-auto"><code><span style="color:var(--ayu-orange)">let</span> total = <span style="color:var(--ayu-purple)">0</span>;
+<span style="color:var(--ayu-orange)">let</span> items = <span style="color:var(--ayu-gold)">getCart</span>();
+<span style="color:var(--ayu-orange)">for</span> (<span style="color:var(--ayu-orange)">let</span> i = <span style="color:var(--ayu-purple)">0</span>; i &lt; items<span style="color:var(--ayu-cyan)">.length</span>; i++) {
+  <span style="color:var(--ayu-orange)">if</span> (items[i]<span style="color:var(--ayu-cyan)">.active</span>) {
+    total += items[i]<span style="color:var(--ayu-cyan)">.price</span>;
+    items[i]<span style="color:var(--ayu-cyan)">.counted</span> = <span style="color:var(--ayu-purple)">true</span>;  <span style="color:var(--ayu-comment)">// mutation</span>
   }
-}
-applyDiscount();  // hidden side effect</code></pre>
+}</code></pre>
                     <p class="text-gray-300 text-sm mt-4">Hidden state, mutation, and implied ordering. The AI must track every variable across the whole function to touch a single line safely.</p>
                 </div>
 
                 <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border-l-4 border border-[var(--ayu-border)]" data-aos="fade-left">
                     <h3 class="text-xl font-bold mb-4 text-white"><i class="fas fa-check-circle mr-2 text-[var(--ayu-green)]"></i>Functional &mdash; the AI optimizes instantly</h3>
-                    <pre class="text-sm bg-[var(--ayu-deep)] text-[var(--ayu-fg)] rounded-lg p-4 overflow-x-auto"><code>const total = (items) =&gt;
+                    <pre class="text-sm bg-[var(--ayu-deep)] text-[var(--ayu-fg)] rounded-lg p-4 overflow-x-auto"><code><span style="color:var(--ayu-orange)">const</span> total = (items) <span style="color:var(--ayu-orange)">=&gt;</span>
   items
-    .filter(item =&gt; item.active)
-    .reduce((sum, item) =&gt; sum + item.price, 0);
+    <span style="color:var(--ayu-gold)">.filter</span>(item <span style="color:var(--ayu-orange)">=&gt;</span> item<span style="color:var(--ayu-cyan)">.active</span>)
+    <span style="color:var(--ayu-gold)">.reduce</span>((sum, item) <span style="color:var(--ayu-orange)">=&gt;</span> sum + item<span style="color:var(--ayu-cyan)">.price</span>, <span style="color:var(--ayu-purple)">0</span>);
 
-const withDiscount = applyDiscount(total(getCart()));</code></pre>
+<span style="color:var(--ayu-orange)">const</span> grandTotal = <span style="color:var(--ayu-gold)">total</span>(<span style="color:var(--ayu-gold)">getCart</span>());</code></pre>
                     <p class="text-gray-300 text-sm mt-4">Pure, immutable, composable. Each function reads in isolation &mdash; the AI refactors it aggressively and safely, because there's nothing hidden to break.</p>
                 </div>
             </div>
@@ -633,36 +632,22 @@ const withDiscount = applyDiscount(total(getCart()));</code></pre>
                     &copy; Sean Dinwiddie. All rights reserved.
                 </div>
                 <div class="flex space-x-6">
-                    <a href="https://www.linkedin.com/in/seandinwiddie/"
-                       target="_blank"
-                       class="text-white hover:text-[var(--ayu-cyan)] transition-colors duration-300">
+                    <a href="https://www.linkedin.com/in/seandinwiddie/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
                         <i class="fab fa-linkedin text-xl"></i>
                     </a>
-                    <a href="https://github.com/SeanDinwiddie"
-                       target="_blank"
-                       class="text-white hover:text-[var(--ayu-fg)] transition-colors duration-300">
+                    <a href="https://github.com/SeanDinwiddie" target="_blank" rel="noopener" aria-label="GitHub" class="social-link s-github">
                         <i class="fab fa-github text-xl"></i>
                     </a>
-                    <a href="https://www.instagram.com/sdin.dev/"
-                       target="_blank"
-                       class="text-white hover:text-[var(--ayu-salmon)] transition-colors duration-300">
+                    <a href="https://www.instagram.com/sdin.dev/" target="_blank" rel="noopener" aria-label="Instagram" class="social-link s-instagram">
                         <i class="fab fa-instagram text-xl"></i>
                     </a>
-                    <a href="https://x.com/seandinwiddie"
-                       target="_blank"
-                       class="text-white hover:text-[var(--ayu-cyan)] transition-colors duration-300">
+                    <a href="https://x.com/seandinwiddie" target="_blank" rel="noopener" aria-label="X (Twitter)" class="social-link s-x">
                         <i class="fab fa-twitter text-xl"></i>
                     </a>
-                    <a href="https://www.upwork.com/freelancers/~01dce79404e28629c9"
-                       target="_blank"
-                       aria-label="Upwork"
-                       class="social-upwork text-white transition-colors duration-300">
+                    <a href="https://www.upwork.com/freelancers/~01dce79404e28629c9" target="_blank" rel="noopener" aria-label="Upwork" class="social-link s-upwork">
                         <i class="fab fa-upwork text-xl"></i>
                     </a>
-                    <a href="https://www.freelancer.com/u/seandinwiddie"
-                       target="_blank"
-                       aria-label="Freelancer"
-                       class="text-white hover:text-[var(--ayu-cyan)] transition-colors duration-300">
+                    <a href="https://www.freelancer.com/u/seandinwiddie" target="_blank" rel="noopener" aria-label="Freelancer" class="social-link s-freelancer">
                         <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor" style="width:1.25rem;height:1.25rem;display:inline-block;vertical-align:middle"><path d="M14.096 3.076l1.634 2.292L24 3.076M5.503 20.924l4.474-4.374-2.692-2.89m6.133-10.584L11.027 5.23l4.022.15M4.124 3.077l.857 1.76 4.734.294m-3.058 7.072l3.497-6.522L0 5.13m7.064 7.485l3.303 3.548 3.643-3.57 1.13-6.652-4.439-.228Z"/></svg>
                     </a>
                 </div>

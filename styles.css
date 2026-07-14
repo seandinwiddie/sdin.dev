@@ -17,7 +17,12 @@
   --ayu-cyan-2:  #73d0ff;
   --ayu-green:   #bae67e;
   --ayu-salmon:  #f28779;
-  --upwork-green: #14a800; /* Upwork brand */
+  /* Extended Ayu Mirage syntax palette (for aesthetic accents) */
+  --ayu-orange:  #ffa759; /* keyword   */
+  --ayu-gold:    #ffd580; /* function  */
+  --ayu-purple:  #d4bfff; /* constant  */
+  --ayu-mint:    #95e6cb; /* regexp    */
+  --ayu-comment: #5c6773; /* comment   */
 }
 
 /* ===== Typography ===== */
@@ -59,8 +64,17 @@ a:focus-visible, button:focus-visible {
 }
 .skip-link:focus { left: 0; }
 
-/* Brand-colored social hover */
-.social-upwork:hover, .social-upwork:focus-visible { color: var(--upwork-green); }
+/* Social icon links: base white, Ayu-syntax highlight — one color per network */
+.social-link { color: #fff; transition: color 0.3s ease; }
+.social-link:hover, .social-link:focus-visible { color: var(--ayu-cyan); } /* LinkedIn (default) */
+.s-github:hover,     .s-github:focus-visible     { color: var(--ayu-purple); }
+.s-instagram:hover,  .s-instagram:focus-visible  { color: var(--ayu-salmon); }
+.s-x:hover,          .s-x:focus-visible          { color: var(--ayu-cyan-2); }
+.s-upwork:hover,     .s-upwork:focus-visible      { color: var(--ayu-green); }
+.s-freelancer:hover, .s-freelancer:focus-visible { color: var(--ayu-orange); }
+
+/* Inline code chips (not fenced blocks) get a subtle syntax tint */
+:not(pre) > code { color: var(--ayu-mint); }
 
 /* Respect reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
