@@ -48,8 +48,8 @@
     <meta name="twitter:creator" content="@seandinwiddie" />
     
     <!-- Additional SEO Meta Tags -->
-    <meta name="theme-color" content="#10b981" />
-    <meta name="msapplication-TileColor" content="#10b981" />
+    <meta name="theme-color" content="#1f2430" />
+    <meta name="msapplication-TileColor" content="#1f2430" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Sean Dinwiddie" />
@@ -73,17 +73,23 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Custom Styles (Minimal) -->
     <style>
-      :root {
-        --primary-color: #34d399;   /* emerald-400 */
-        --secondary-color: #14b8a6; /* teal-500 */
-        --accent-color: #3b82f6;    /* blue-500 */
-        --text-color: #f1f5f9;
-        --light-bg: #334155;
-        --card-bg: #334155;         /* slate-700 */
-        --success-color: #34d399;   /* emerald-400 */
-        --warning-color: #fb923c;   /* orange-400 */
-        --info-color: #3b82f6;
-      }
+        /* ===== Ayu Mirage palette (single source of truth) ===== */
+        :root {
+            --ayu-bg-from: #1c212b;
+            --ayu-bg-to:   #161a22;
+            --ayu-panel:   #232834;
+            --ayu-deep:    #12151c;
+            --ayu-border:  #3a4152;
+            --ayu-divider: #2b3140;
+            --ayu-fg:      #cccac2;
+            --ayu-ink:     #1f2430;
+            --ayu-amber:   #ffcc66;
+            --ayu-amber-2: #ffd580;
+            --ayu-cyan:    #5ccfe6;
+            --ayu-cyan-2:  #73d0ff;
+            --ayu-green:   #bae67e;
+            --ayu-salmon:  #f28779;
+        }
       
         /* Dank Mono Font */
         body, h1, h2, h3, h4, h5, h6, p, a {
@@ -116,22 +122,22 @@
       }
     </style>
   </head>
-<body class="font-sans text-white leading-relaxed" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+<body class="font-sans text-white leading-relaxed" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to));">
     <!-- Header Navigation -->
-    <header class="sticky top-0 z-50" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
+    <header class="sticky top-0 z-50" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center">
-                    <a href="https://sdin.dev/" class="inline-block px-6 py-3 text-white no-underline rounded-lg font-bold text-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg tracking-wide" style="background-color: var(--accent-color);">
+                    <a href="https://sdin.dev/" class="inline-block px-6 py-3 text-white no-underline rounded-lg font-bold text-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg tracking-wide" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                         SEAN DINWIDDIE
               </a>
             </div>
                 <div class="flex items-center space-x-4">
                     <!-- Desktop Navigation -->
                     <nav class="hidden md:flex items-center space-x-6">
-                        <a href="https://sdin.dev/ai/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='#059669'" onmouseout="this.style.color='white'">AI Development</a>
-                        <a href="https://sdin.dev/coaching/" class="px-4 py-2 bg-white text-emerald-600 transition-all duration-300 font-semibold rounded-lg">Coaching</a>
-                        <a href="https://sdin.dev/automation/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='#059669'" onmouseout="this.style.color='white'">Automation</a>
+                        <a href="https://sdin.dev/ai/" class="px-4 py-2 border-2 border-[var(--ayu-fg)] text-white hover:bg-[var(--ayu-fg)] transition-all duration-300 font-medium rounded-lg" style="--hover-text-color: var(--ayu-bg-from);" onmouseover="this.style.color='var(--ayu-ink)'" onmouseout="this.style.color='white'">AI Development</a>
+                        <a href="https://sdin.dev/coaching/" class="px-4 py-2 bg-[var(--ayu-amber)] text-[var(--ayu-ink)] transition-all duration-300 font-semibold rounded-lg">Coaching</a>
+                        <a href="https://sdin.dev/automation/" class="px-4 py-2 border-2 border-[var(--ayu-fg)] text-white hover:bg-[var(--ayu-fg)] transition-all duration-300 font-medium rounded-lg" style="--hover-text-color: var(--ayu-bg-from);" onmouseover="this.style.color='var(--ayu-ink)'" onmouseout="this.style.color='white'">Automation</a>
           </nav>
                     
                     <!-- Mobile Menu Button -->
@@ -141,7 +147,7 @@
                     
                     <!-- CTA Button -->
                     <a href="mailto:sean@sdin.dev?subject=Strategy%20Call%20Request" 
-                       class="hidden sm:inline-block px-6 py-3 text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg" style="background-color: var(--warning-color);" onmouseover="this.style.backgroundColor='#e67e22'" onmouseout="this.style.backgroundColor='var(--warning-color)'">
+                       class="hidden sm:inline-block px-6 py-3 text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg" style="background-color: var(--ayu-amber); color: var(--ayu-ink);" onmouseover="this.style.backgroundColor='var(--ayu-amber-2)'" onmouseout="this.style.backgroundColor='var(--ayu-amber)'">
                         Get Your Free Strategy Call
                     </a>
                 </div>
@@ -150,11 +156,11 @@
             <!-- Mobile Navigation Menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col space-y-3">
-                    <a href="https://sdin.dev/ai/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg text-center" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='#059669'" onmouseout="this.style.color='white'">AI Development</a>
-                    <a href="https://sdin.dev/coaching/" class="px-4 py-2 bg-white text-emerald-600 transition-all duration-300 font-semibold rounded-lg text-center">Coaching</a>
-                    <a href="https://sdin.dev/automation/" class="px-4 py-2 border-2 border-white text-white hover:bg-white transition-all duration-300 font-medium rounded-lg text-center" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='#059669'" onmouseout="this.style.color='white'">Automation</a>
+                    <a href="https://sdin.dev/ai/" class="px-4 py-2 border-2 border-[var(--ayu-fg)] text-white hover:bg-[var(--ayu-fg)] transition-all duration-300 font-medium rounded-lg text-center" style="--hover-text-color: var(--ayu-bg-from);" onmouseover="this.style.color='var(--ayu-ink)'" onmouseout="this.style.color='white'">AI Development</a>
+                    <a href="https://sdin.dev/coaching/" class="px-4 py-2 bg-[var(--ayu-amber)] text-[var(--ayu-ink)] transition-all duration-300 font-semibold rounded-lg text-center">Coaching</a>
+                    <a href="https://sdin.dev/automation/" class="px-4 py-2 border-2 border-[var(--ayu-fg)] text-white hover:bg-[var(--ayu-fg)] transition-all duration-300 font-medium rounded-lg text-center" style="--hover-text-color: var(--ayu-bg-from);" onmouseover="this.style.color='var(--ayu-ink)'" onmouseout="this.style.color='white'">Automation</a>
                     <a href="mailto:sean@sdin.dev?subject=Strategy%20Call%20Request" 
-                       class="inline-block px-6 py-3 text-white no-underline rounded-lg font-semibold transition-all duration-300 text-center" style="background-color: var(--warning-color);" onmouseover="this.style.backgroundColor='#e67e22'" onmouseout="this.style.backgroundColor='var(--warning-color)'">
+                       class="inline-block px-6 py-3 text-white no-underline rounded-lg font-semibold transition-all duration-300 text-center" style="background-color: var(--ayu-amber); color: var(--ayu-ink);" onmouseover="this.style.backgroundColor='var(--ayu-amber-2)'" onmouseout="this.style.backgroundColor='var(--ayu-amber)'">
                         Get Your Free Strategy Call
                     </a>
                 </div>
@@ -163,7 +169,7 @@
                   </header>
 
     <!-- Hero Section -->
-    <section class="py-24 text-center relative overflow-hidden" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
+    <section class="py-24 text-center relative overflow-hidden" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-10">
             <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%239C92AC\" fill-opacity=\"0.1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
@@ -172,7 +178,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <!-- Profile Image -->
             <div class="flex justify-center mb-8">
-                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg animate-float">
+                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-[var(--ayu-fg)] shadow-lg animate-float">
                     <img src="https://sdin.dev/profile.png" alt="Sean Dinwiddie" class="w-full h-full object-cover">
                 </div>
             </div>
@@ -190,12 +196,12 @@
             <!-- CTA Button -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a href="mailto:sean@sdin.dev?subject=Strategy%20Call%20Request" 
-                   class="inline-block px-8 py-4 text-white no-underline rounded-lg font-semibold text-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl" style="background-color: var(--warning-color);" onmouseover="this.style.backgroundColor='#e67e22'" onmouseout="this.style.backgroundColor='var(--warning-color)'">
+                   class="inline-block px-8 py-4 text-white no-underline rounded-lg font-semibold text-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl" style="background-color: var(--ayu-amber); color: var(--ayu-ink);" onmouseover="this.style.backgroundColor='var(--ayu-amber-2)'" onmouseout="this.style.backgroundColor='var(--ayu-amber)'">
                     <i class="fas fa-calendar-check mr-2"></i>
                     Book Your Free Strategy Call
                 </a>
                 <a href="tel:+15306383238" 
-                   class="inline-block px-6 py-3 bg-transparent border-2 border-white text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-white" style="--hover-text-color: var(--primary-color);" onmouseover="this.style.color='#059669'" onmouseout="this.style.color='white'">
+                   class="inline-block px-6 py-3 bg-transparent border-2 border-[var(--ayu-fg)] text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[var(--ayu-fg)]" style="--hover-text-color: var(--ayu-bg-from);" onmouseover="this.style.color='var(--ayu-ink)'" onmouseout="this.style.color='white'">
                     <i class="fas fa-phone mr-2"></i>
                     (530) 638-3238
                 </a>
@@ -204,12 +210,12 @@
     </section>
 
     <!-- Main Content Section -->
-    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
+    <section class="py-24" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- Why Traditional Software Development Is Costing You Money -->
-            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden mb-12" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up" data-aos-delay="500">
-                <div class="text-white p-6" style="background-color: var(--accent-color);">
+            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden mb-12" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="500">
+                <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                     <h3 class="text-xl font-semibold">Why Traditional Software Development Is Costing You Money</h3>
                 </div>
                 <div class="p-6">
@@ -221,14 +227,14 @@
                             <strong class="text-white">There's a better way.</strong> As your dedicated software consultant, I don't just build applications - I architect solutions that deliver measurable cost savings month after month. This high-touch approach means you get personalized attention, strategic guidance, and ongoing optimization that keeps your business ahead of the curve.
                         </p>
                         <!-- Testimonial Section -->
-                        <div class="rounded-xl p-8 mb-8" style="background-color: #334155; border: 1px solid #34d399; border-left: 4px solid var(--accent-color);" data-aos="fade-right">
+                        <div class="rounded-xl p-8 mb-8" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border); border-left: 4px solid var(--ayu-cyan);" data-aos="fade-right">
                             <div class="flex items-start space-x-4">
                                 <img src="https://www.redding.com/gcdn/presto/2019/07/18/PRRS/f3b326ab-6610-46fb-8c80-4b2a60c8db84-Randall_Hauser.JPG?width=600&height=886&fit=crop&format=pjpg&auto=webp" 
                                      alt="Randall Hauser - CEO and Founder of ENPLAN" 
-                                     class="w-16 h-16 rounded-full object-cover border-3" style="border-color: var(--accent-color);">
+                                     class="w-16 h-16 rounded-full object-cover border-3" style="border-color: var(--ayu-cyan);">
                                 <div class="flex-1">
                                     <h4 class="text-lg font-semibold text-white mb-2">
-                                        <i class="fas fa-cogs mr-2" style="color: var(--accent-color);"></i>
+                                        <i class="fas fa-cogs mr-2" style="color: var(--ayu-cyan);"></i>
                                         ENPLAN Success: $62,300 Monthly Efficiency Gains
                                     </h4>
                                     <p class="text-gray-300 leading-relaxed">
@@ -238,14 +244,14 @@
                       </div>
                         </div>
                         <!-- Additional Testimonials -->
-                        <div class="rounded-xl p-8 mb-8" style="background-color: #334155; border: 1px solid #34d399; border-left: 4px solid var(--accent-color);" data-aos="fade-right" data-aos-delay="100">
+                        <div class="rounded-xl p-8 mb-8" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border); border-left: 4px solid var(--ayu-cyan);" data-aos="fade-right" data-aos-delay="100">
                             <div class="flex items-start space-x-4">
                                 <img src="https://boondata.com/wp-content/uploads/tammy-boone-portrait.jpg" 
                                      alt="Tammy Boone - Compliance Associates" 
-                                     class="w-16 h-16 rounded-full object-cover border-3" style="border-color: var(--accent-color);">
+                                     class="w-16 h-16 rounded-full object-cover border-3" style="border-color: var(--ayu-cyan);">
                                 <div class="flex-1">
                                     <h4 class="text-lg font-semibold text-white mb-2">
-                                        <i class="fas fa-chart-line mr-2" style="color: var(--accent-color);"></i>
+                                        <i class="fas fa-chart-line mr-2" style="color: var(--ayu-cyan);"></i>
                                         Compliance Associates Success: $41,600 Monthly Cost Savings
                                     </h4>
                                     <p class="text-gray-300 leading-relaxed">
@@ -255,14 +261,14 @@
                       </div>
                         </div>
                         
-                        <div class="rounded-xl p-8 mb-8" style="background-color: #334155; border: 1px solid #34d399; border-left: 4px solid var(--accent-color);" data-aos="fade-right" data-aos-delay="200">
+                        <div class="rounded-xl p-8 mb-8" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border); border-left: 4px solid var(--ayu-cyan);" data-aos="fade-right" data-aos-delay="200">
                             <div class="flex items-start space-x-4">
                                 <img src="https://storage.zoominfo.com/417002649" 
                                      alt="Jim Phillips - President of Veritas Health Systems" 
-                                     class="w-16 h-16 rounded-full object-cover border-3" style="border-color: var(--accent-color);">
+                                     class="w-16 h-16 rounded-full object-cover border-3" style="border-color: var(--ayu-cyan);">
                                 <div class="flex-1">
                                     <h4 class="text-lg font-semibold text-white mb-2">
-                                        <i class="fas fa-heartbeat mr-2" style="color: var(--accent-color);"></i>
+                                        <i class="fas fa-heartbeat mr-2" style="color: var(--ayu-cyan);"></i>
                                         Veritas Health Systems Success: $58,900 Monthly Cost Reduction
                                     </h4>
                                     <p class="text-gray-300 leading-relaxed">
@@ -272,14 +278,14 @@
                       </div>
                         </div>
                         
-                        <div class="rounded-xl p-8 mb-8" style="background-color: #334155; border: 1px solid #34d399; border-left: 4px solid var(--accent-color);" data-aos="fade-right" data-aos-delay="300">
+                        <div class="rounded-xl p-8 mb-8" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border); border-left: 4px solid var(--ayu-cyan);" data-aos="fade-right" data-aos-delay="300">
                             <div class="flex items-start space-x-4">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTliYaBMLyJBmTwVZgzgckR4lFFVbmkBaU3tjVgvoTZryD8AJ57ESg2L2YRYzOqdx9Igqc&usqp=CAU" 
                                      alt="Christian Lara - CCO of Carport Central" 
-                                     class="w-16 h-16 rounded-full object-cover border-3" style="border-color: var(--accent-color);">
+                                     class="w-16 h-16 rounded-full object-cover border-3" style="border-color: var(--ayu-cyan);">
                                 <div class="flex-1">
                                     <h4 class="text-lg font-semibold text-white mb-2">
-                                        <i class="fas fa-shopping-cart mr-2" style="color: var(--accent-color);"></i>
+                                        <i class="fas fa-shopping-cart mr-2" style="color: var(--ayu-cyan);"></i>
                                         Carport Central Success: $73,500 Monthly Revenue Increase
                                     </h4>
                                     <p class="text-gray-300 leading-relaxed">
@@ -295,10 +301,10 @@
     </section>
 
     <!-- Statistics Section -->
-    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
+    <section class="py-24" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up" data-aos-delay="100">
+                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="100">
                     <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Productivity chart" class="w-full h-48 object-cover">
                     <div class="p-6 text-center">
                         <div class="text-4xl font-bold text-white mb-2">500%</div>
@@ -306,7 +312,7 @@
                     </div>
                   </div>
                 
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up" data-aos-delay="200">
+                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="200">
                     <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Saving time" class="w-full h-48 object-cover">
                     <div class="p-6 text-center">
                         <div class="text-4xl font-bold text-white mb-2">30+</div>
@@ -314,7 +320,7 @@
                     </div>
                   </div>
                 
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up" data-aos-delay="300">
+                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="300">
                     <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Error reduction" class="w-full h-48 object-cover">
                     <div class="p-6 text-center">
                         <div class="text-4xl font-bold text-white mb-2">90%</div>
@@ -322,7 +328,7 @@
                     </div>
                   </div>
                 
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up" data-aos-delay="400">
+                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up" data-aos-delay="400">
                     <img src="https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Return on investment" class="w-full h-48 object-cover">
                     <div class="p-6 text-center">
                         <div class="text-4xl font-bold text-white mb-2">3-5x</div>
@@ -334,10 +340,10 @@
     </section>
 
     <!-- 4-Step Process Section -->
-    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
+    <section class="py-24" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up">
-                <div class="text-white p-6" style="background-color: var(--accent-color);">
+            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
+                <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                     <h3 class="text-xl font-semibold">
                         <i class="fas fa-tasks mr-3"></i>
                         Our Proven 4-Step Process
@@ -346,40 +352,40 @@
                 <div class="p-6">
                     <ol class="space-y-4 text-gray-300">
                         <li class="flex items-start">
-                            <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-4">1</span>
+                            <span class="flex-shrink-0 w-8 h-8 bg-[var(--ayu-cyan)] text-[var(--ayu-ink)] rounded-full flex items-center justify-center font-bold mr-4">1</span>
                             <div>
                                 <strong class="text-white">
-                                    <i class="fas fa-comments mr-2" style="color: var(--accent-color);"></i>
+                                    <i class="fas fa-comments mr-2" style="color: var(--ayu-cyan);"></i>
                                     Strategy Call:
                                 </strong>
                                 We begin with a deep dive into your business challenges and technical needs to identify opportunities for maximum impact.
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-4">2</span>
+                            <span class="flex-shrink-0 w-8 h-8 bg-[var(--ayu-cyan)] text-[var(--ayu-ink)] rounded-full flex items-center justify-center font-bold mr-4">2</span>
                             <div>
                                 <strong class="text-white">
-                                    <i class="fas fa-drafting-compass mr-2" style="color: var(--accent-color);"></i>
+                                    <i class="fas fa-drafting-compass mr-2" style="color: var(--ayu-cyan);"></i>
                                     Solution Design:
                                 </strong>
                                 I design a tailored software architecture that addresses your specific requirements and delivers measurable ROI.
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-4">3</span>
+                            <span class="flex-shrink-0 w-8 h-8 bg-[var(--ayu-cyan)] text-[var(--ayu-ink)] rounded-full flex items-center justify-center font-bold mr-4">3</span>
                             <div>
                                 <strong class="text-white">
-                                    <i class="fas fa-code mr-2" style="color: var(--accent-color);"></i>
+                                    <i class="fas fa-code mr-2" style="color: var(--ayu-cyan);"></i>
                                     Development & Implementation:
                                 </strong>
                                 We build and deploy custom software solutions that solve your immediate challenges while setting up for future growth.
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-4">4</span>
+                            <span class="flex-shrink-0 w-8 h-8 bg-[var(--ayu-cyan)] text-[var(--ayu-ink)] rounded-full flex items-center justify-center font-bold mr-4">4</span>
                             <div>
                                 <strong class="text-white">
-                                    <i class="fas fa-chart-line mr-2" style="color: var(--accent-color);"></i>
+                                    <i class="fas fa-chart-line mr-2" style="color: var(--ayu-cyan);"></i>
                                     Ongoing Optimization:
                                 </strong>
                                 Regular check-ins ensure your systems continue to deliver value as your business evolves, with continuous improvements that maximize your investment.
@@ -392,12 +398,12 @@
     </section>
 
     <!-- Value Propositions Section -->
-    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
+    <section class="py-24" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="flip-left" data-aos-delay="100">
+                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="flip-left" data-aos-delay="100">
                     <img src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Software development" class="w-full h-48 object-cover">
-                    <div class="text-white p-6" style="background-color: var(--accent-color);">
+                    <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                         <h3 class="text-lg font-semibold">
                             <i class="fas fa-coins mr-2"></i>
                             Custom Software That Pays For Itself
@@ -410,9 +416,9 @@
                         </div>
                       </div>
                 
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="flip-left" data-aos-delay="200">
+                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="flip-left" data-aos-delay="200">
                     <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Automation" class="w-full h-48 object-cover">
-                    <div class="text-white p-6" style="background-color: var(--accent-color);">
+                    <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                         <h3 class="text-lg font-semibold">
                             <i class="fas fa-robot mr-2"></i>
                             Automation That Saves You 20+ Hours Weekly
@@ -425,9 +431,9 @@
                         </div>
                       </div>
                 
-                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="flip-left" data-aos-delay="300">
+                <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="flip-left" data-aos-delay="300">
                     <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="Partnership" class="w-full h-48 object-cover">
-                    <div class="text-white p-6" style="background-color: var(--accent-color);">
+                    <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                         <h3 class="text-lg font-semibold">
                             <i class="fas fa-handshake mr-2"></i>
                             Technical Partnership
@@ -444,10 +450,10 @@
     </section>
 
     <!-- What You Get Section -->
-    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
+    <section class="py-24" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up">
-                <div class="text-white p-6" style="background-color: var(--accent-color);">
+            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
+                <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                     <h3 class="text-xl font-semibold">
                         <i class="fas fa-gift mr-3"></i>
                         What You Get (Valued at $15K+ Monthly)
@@ -456,80 +462,80 @@
                 <div class="p-6">
                     <ul class="space-y-4 text-gray-300">
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--success-color);"></i>
+                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--ayu-green);"></i>
                             <div>
                                 <strong class="text-white">
-                                    <i class="fas fa-user-clock mr-2" style="color: var(--accent-color);"></i>
+                                    <i class="fas fa-user-clock mr-2" style="color: var(--ayu-cyan);"></i>
                                     Direct Access:
                                 </strong>
                                 Weekly one-on-one sessions to address challenges and opportunities
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--success-color);"></i>
+                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--ayu-green);"></i>
                             <div>
                                 <strong class="text-white">
-                                    <i class="fas fa-laptop-code mr-2" style="color: var(--accent-color);"></i>
+                                    <i class="fas fa-laptop-code mr-2" style="color: var(--ayu-cyan);"></i>
                                     Custom Software Development:
                                 </strong>
                                 Tailored applications built specifically for your business needs
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--success-color);"></i>
+                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--ayu-green);"></i>
                             <div>
                                 <strong class="text-white">
-                                    <i class="fas fa-magic mr-2" style="color: var(--accent-color);"></i>
+                                    <i class="fas fa-magic mr-2" style="color: var(--ayu-cyan);"></i>
                                     Process Automation:
                                 </strong>
                                 Workflow automation that typically saves 20+ hours weekly
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--success-color);"></i>
+                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--ayu-green);"></i>
                             <div>
                                 <strong class="text-white">
-                                    <i class="fas fa-plug mr-2" style="color: var(--accent-color);"></i>
+                                    <i class="fas fa-plug mr-2" style="color: var(--ayu-cyan);"></i>
                                     API Integration:
                                 </strong>
                                 Seamless connections between your existing systems and new solutions
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--success-color);"></i>
+                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--ayu-green);"></i>
                             <div>
                                 <strong class="text-white">
-                                    <i class="fas fa-sitemap mr-2" style="color: var(--accent-color);"></i>
+                                    <i class="fas fa-sitemap mr-2" style="color: var(--ayu-cyan);"></i>
                                     Technical Architecture:
                                 </strong>
                                 Scalable, maintainable systems built with industry best practices
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--success-color);"></i>
+                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--ayu-green);"></i>
                             <div>
                                 <strong class="text-white">
-                                    <i class="fas fa-tachometer-alt mr-2" style="color: var(--accent-color);"></i>
+                                    <i class="fas fa-tachometer-alt mr-2" style="color: var(--ayu-cyan);"></i>
                                     Performance Optimization:
                                 </strong>
                                 Continuous improvement to ensure your systems run at peak efficiency
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--success-color);"></i>
+                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--ayu-green);"></i>
                             <div>
                                 <strong class="text-white">
-                                    <i class="fas fa-compass mr-2" style="color: var(--accent-color);"></i>
+                                    <i class="fas fa-compass mr-2" style="color: var(--ayu-cyan);"></i>
                                     Strategic Guidance:
                                 </strong>
                                 Expert advice on technology decisions that impact your business
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--success-color);"></i>
+                            <i class="fas fa-check-circle mr-3 mt-1" style="color: var(--ayu-green);"></i>
                             <div>
                                 <strong class="text-white">
-                                    <i class="fas fa-life-ring mr-2" style="color: var(--accent-color);"></i>
+                                    <i class="fas fa-life-ring mr-2" style="color: var(--ayu-cyan);"></i>
                                     Implementation Support:
                                 </strong>
                                 Hands-on help with critical technical initiatives
@@ -542,10 +548,10 @@
     </section>
 
     <!-- Technical Expertise Section -->
-    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
+    <section class="py-24" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up">
-                <div class="text-white p-6" style="background-color: var(--accent-color);">
+            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
+                <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                     <h3 class="text-xl font-semibold">
                         <i class="fas fa-tools mr-3"></i>
                         Technical Expertise
@@ -555,37 +561,37 @@
                     <p class="text-gray-300 mb-6">Specializing in modern, efficient development approaches that deliver reliable, maintainable applications:</p>
                     <ul class="space-y-4 text-gray-300">
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
                                 <strong class="text-white">Redux Toolkit (RTK):</strong> Building predictable state management solutions with the official, opinionated Redux library
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
                                 <strong class="text-white">RTK Query:</strong> Implementing efficient API data fetching with automatic caching and request lifecycle management
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
                                 <strong class="text-white">Functional Programming:</strong> Writing clean, testable code with pure functions and immutable data patterns
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
                                 <strong class="text-white">TypeScript:</strong> Ensuring type safety and enhanced developer experience with static typing
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
                                 <strong class="text-white">Expo Go:</strong> Rapid mobile app development with React Native that works across iOS and Android
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
                                 <strong class="text-white">Clean Code Architecture:</strong> Prioritizing maintainability, scalability, and readability with intuitive design patterns that eliminate technical debt and prevent "spaghetti code"
                             </div>
@@ -597,10 +603,10 @@
     </section>
 
     <!-- Backed by Research Section -->
-    <section class="py-24" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
+    <section class="py-24" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: #334155; border: 1px solid #34d399;" data-aos="fade-up">
-                <div class="text-white p-6" style="background-color: var(--accent-color);">
+            <div class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden" style="background-color: var(--ayu-panel); border: 1px solid var(--ayu-border);" data-aos="fade-up">
+                <div class="text-white p-6" style="background-color: var(--ayu-cyan); color: var(--ayu-ink);">
                     <h3 class="text-xl font-semibold">
                         <i class="fas fa-flask mr-3"></i>
                         Backed by Research
@@ -610,75 +616,75 @@
                     <p class="text-gray-300 mb-6">The value propositions we offer are supported by industry research and data:</p>
                     <ul class="space-y-4 text-gray-300">
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                McKinsey reports that companies with successful digital transformations achieve 20-50% improvement in operational performance<sup><a href="https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening" target="_blank" class="text-blue-300 hover:text-blue-200">[1]</a></sup>
+                                McKinsey reports that companies with successful digital transformations achieve 20-50% improvement in operational performance<sup><a href="https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[1]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                Forrester Research found that companies leveraging custom software solutions see an average ROI of 321% over three years<sup><a href="https://www.forrester.com/report/The-Total-Economic-Impact-Of-Microsoft-Power-Apps/RES159527" target="_blank" class="text-blue-300 hover:text-blue-200">[2]</a></sup>
+                                Forrester Research found that companies leveraging custom software solutions see an average ROI of 321% over three years<sup><a href="https://www.forrester.com/report/The-Total-Economic-Impact-Of-Microsoft-Power-Apps/RES159527" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[2]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                Nucleus Research states that automation solutions typically deliver $9.33 in value for every dollar spent<sup><a href="https://nucleusresearch.com/research/single/automation-drives-933-roi/" target="_blank" class="text-blue-300 hover:text-blue-200">[3]</a></sup>
+                                Nucleus Research states that automation solutions typically deliver $9.33 in value for every dollar spent<sup><a href="https://nucleusresearch.com/research/single/automation-drives-933-roi/" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[3]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                State of JavaScript survey shows TypeScript adoption increased to 78% among professional developers due to its impact on code quality and maintainability<sup><a href="https://stateofjs.com" target="_blank" class="text-blue-300 hover:text-blue-200">[4]</a></sup>
+                                State of JavaScript survey shows TypeScript adoption increased to 78% among professional developers due to its impact on code quality and maintainability<sup><a href="https://stateofjs.com" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[4]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                Redux Toolkit reduces boilerplate code by 40-60% compared to traditional Redux implementations, accelerating development cycles<sup><a href="https://redux-toolkit.js.org/introduction/getting-started" target="_blank" class="text-blue-300 hover:text-blue-200">[5]</a></sup>
+                                Redux Toolkit reduces boilerplate code by 40-60% compared to traditional Redux implementations, accelerating development cycles<sup><a href="https://redux-toolkit.js.org/introduction/getting-started" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[5]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                Microsoft research found TypeScript can prevent up to 15% of bugs in JavaScript applications, directly impacting software quality and maintenance costs<sup><a href="https://earlbarr.com/publications/typestudy.pdf" target="_blank" class="text-blue-300 hover:text-blue-200">[6]</a></sup>
+                                Microsoft research found TypeScript can prevent up to 15% of bugs in JavaScript applications, directly impacting software quality and maintenance costs<sup><a href="https://earlbarr.com/publications/typestudy.pdf" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[6]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                Functional programming approaches reduce bugs by up to 60% according to studies comparing imperative vs. functional codebases<sup><a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.368.1058&rep=rep1&type=pdf" target="_blank" class="text-blue-300 hover:text-blue-200">[7]</a></sup>
+                                Functional programming approaches reduce bugs by up to 60% according to studies comparing imperative vs. functional codebases<sup><a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.368.1058&rep=rep1&type=pdf" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[7]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                RTK Query can reduce API-related code by up to 80% while improving application performance through automatic caching<sup><a href="https://redux-toolkit.js.org/rtk-query/overview" target="_blank" class="text-blue-300 hover:text-blue-200">[8]</a></sup>
+                                RTK Query can reduce API-related code by up to 80% while improving application performance through automatic caching<sup><a href="https://redux-toolkit.js.org/rtk-query/overview" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[8]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                Expo Go reduces development time by approximately 30-40% through cross-platform capabilities<sup><a href="https://expo.dev/case-studies" target="_blank" class="text-blue-300 hover:text-blue-200">[9]</a></sup>
+                                Expo Go reduces development time by approximately 30-40% through cross-platform capabilities<sup><a href="https://expo.dev/case-studies" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[9]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                CISQ reports that poor software quality costs US organizations $2.08 trillion in 2020, highlighting the critical importance of maintainable architecture<sup><a href="https://www.it-cisq.org/the-cost-of-poor-software-quality-in-the-us-a-2020-report/" target="_blank" class="text-blue-300 hover:text-blue-200">[10]</a></sup>
+                                CISQ reports that poor software quality costs US organizations $2.08 trillion in 2020, highlighting the critical importance of maintainable architecture<sup><a href="https://www.it-cisq.org/the-cost-of-poor-software-quality-in-the-us-a-2020-report/" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[10]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                Clean code architecture reduces maintenance costs by up to 50% over a software application's lifetime according to industry analyses<sup><a href="https://www.sei.cmu.edu/publications/technical-reports/" target="_blank" class="text-blue-300 hover:text-blue-200">[11]</a></sup>
+                                Clean code architecture reduces maintenance costs by up to 50% over a software application's lifetime according to industry analyses<sup><a href="https://www.sei.cmu.edu/publications/technical-reports/" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[11]</a></sup>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--accent-color);"></i>
+                            <i class="fas fa-chevron-right mr-3 mt-1" style="color: var(--ayu-cyan);"></i>
                             <div>
-                                According to Stack Overflow's 2023 Developer Survey, TypeScript is among the most loved languages (77.3%), reflecting its positive impact on developer productivity and code quality<sup><a href="https://insights.stackoverflow.com/survey/2023" target="_blank" class="text-blue-300 hover:text-blue-200">[12]</a></sup>
+                                According to Stack Overflow's 2023 Developer Survey, TypeScript is among the most loved languages (77.3%), reflecting its positive impact on developer productivity and code quality<sup><a href="https://insights.stackoverflow.com/survey/2023" target="_blank" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">[12]</a></sup>
                             </div>
                         </li>
                       </ul>
@@ -688,9 +694,9 @@
     </section>
 
     <!-- Limited Availability Notice -->
-    <section class="py-12" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
+    <section class="py-12" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="rounded-xl p-8 text-center" style="background-color: rgba(243, 156, 18, 0.15); border: 1px solid var(--warning-color);" data-aos="fade-up">
+            <div class="rounded-xl p-8 text-center" style="background-color: rgba(255,204,102,0.12); border: 1px solid var(--ayu-amber);" data-aos="fade-up">
                 <p class="text-xl text-white font-semibold">
                     <strong>Limited Availability:</strong> I maintain an intentionally small client roster to provide truly personalized, white-glove service. Currently accepting just 1 new client this month.
                   </p>
@@ -699,10 +705,10 @@
     </section>
 
     <!-- Final CTA Section -->
-    <section class="py-24 text-center" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-bottom: 1px solid #a7f3d0;">
+    <section class="py-24 text-center" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to)); border-bottom: 1px solid var(--ayu-divider);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">
-                <i class="fas fa-check-circle mr-3" style="color: var(--accent-color);"></i>
+                <i class="fas fa-check-circle mr-3" style="color: var(--ayu-cyan);"></i>
                 Ready to Save $50K+ Monthly With Custom Software?
             </h3>
             <p class="text-xl text-white mb-10 max-w-4xl mx-auto leading-relaxed">
@@ -710,19 +716,19 @@
                   </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                 <a href="mailto:sean@sdin.dev?subject=Strategy%20Call%20Request" 
-                   class="inline-block px-8 py-4 text-white no-underline rounded-lg font-semibold text-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl" style="background: linear-gradient(135deg, var(--warning-color), #e67e22);" onmouseover="this.style.background='linear-gradient(135deg, #e67e22, var(--warning-color))'" onmouseout="this.style.background='linear-gradient(135deg, var(--warning-color), #e67e22)'">
+                   class="inline-block px-8 py-4 text-white no-underline rounded-lg font-semibold text-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl" style="background: linear-gradient(135deg, var(--ayu-amber), var(--ayu-amber-2)); color: var(--ayu-ink);" onmouseover="this.style.background='linear-gradient(135deg, var(--ayu-amber-2), var(--ayu-amber))'" onmouseout="this.style.background='linear-gradient(135deg, var(--ayu-amber), var(--ayu-amber-2))'">
                     <i class="fas fa-calendar-check mr-2"></i>
                     Book Your Free Strategy Call Now!
                 </a>
             </div>
             <p class="text-gray-300">
-                Or reach me directly at <a href="mailto:sean@sdin.dev" class="text-blue-300 hover:text-blue-200">sean@sdin.dev</a>
+                Or reach me directly at <a href="mailto:sean@sdin.dev" class="text-[var(--ayu-cyan)] hover:text-[var(--ayu-cyan-2)]">sean@sdin.dev</a>
             </p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-8" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+    <footer class="py-8" style="background: linear-gradient(135deg, var(--ayu-bg-from), var(--ayu-bg-to));">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="text-white text-sm mb-4 md:mb-0">

@@ -90,6 +90,23 @@
     <!-- Custom Styles (matched to sdin.dev homepage theme) -->
     <style>
         @import url("https://seandinwiddie.com/wp-content/themes/visual-composer-starter-theme-child/dank-mono.css");
+        /* ===== Ayu Mirage palette (single source of truth) ===== */
+        :root {
+            --ayu-bg-from: #1c212b;
+            --ayu-bg-to:   #161a22;
+            --ayu-panel:   #232834;
+            --ayu-deep:    #12151c;
+            --ayu-border:  #3a4152;
+            --ayu-divider: #2b3140;
+            --ayu-fg:      #cccac2;
+            --ayu-ink:     #1f2430;
+            --ayu-amber:   #ffcc66;
+            --ayu-amber-2: #ffd580;
+            --ayu-cyan:    #5ccfe6;
+            --ayu-cyan-2:  #73d0ff;
+            --ayu-green:   #bae67e;
+            --ayu-salmon:  #f28779;
+        }
 
         body, h1, h2, h3, h4, h5, h6, p, a {
             font-family: "dm", "Inter", sans-serif !important;
@@ -117,32 +134,32 @@
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-[#1c212b] to-[#161a22] min-h-screen text-gray-200 leading-relaxed">
+<body class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] min-h-screen text-gray-200 leading-relaxed">
     <!-- Header Navigation -->
-    <header class="bg-gradient-to-br from-[#1c212b] to-[#161a22] border-b border-[#2b3140] sticky top-0 z-50">
+    <header class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] border-b border-[var(--ayu-divider)] sticky top-0 z-50">
         <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center">
-                    <a href="https://sdin.dev/" class="inline-block px-6 py-3 bg-[#5ccfe6] text-[#1f2430] no-underline rounded-lg font-bold text-lg transition-all duration-300 hover:bg-[#73d0ff] hover:-translate-y-0.5 hover:shadow-lg tracking-wide">
+                    <a href="https://sdin.dev/" class="inline-block px-6 py-3 bg-[var(--ayu-cyan)] text-[var(--ayu-ink)] no-underline rounded-lg font-bold text-lg transition-all duration-300 hover:bg-[var(--ayu-cyan-2)] hover:-translate-y-0.5 hover:shadow-lg tracking-wide">
                         SEAN DINWIDDIE
                     </a>
                 </div>
                 <div class="flex items-center space-x-4">
                     <!-- Desktop Navigation -->
                     <nav class="hidden md:flex items-center space-x-6">
-                        <a href="https://sdin.dev/ai/" class="px-4 py-2 border-2 border-[#cccac2] text-white hover:bg-[#cccac2] hover:text-[#1f2430] transition-all duration-300 font-medium rounded-lg">AI Development</a>
-                        <a href="https://sdin.dev/coaching/" class="px-4 py-2 border-2 border-[#cccac2] text-white hover:bg-[#cccac2] hover:text-[#1f2430] transition-all duration-300 font-medium rounded-lg">Coaching</a>
-                        <a href="https://sdin.dev/automation/" class="px-4 py-2 bg-[#ffcc66] text-[#1f2430] transition-all duration-300 font-semibold rounded-lg">Automation</a>
+                        <a href="https://sdin.dev/ai/" class="px-4 py-2 border-2 border-[var(--ayu-fg)] text-white hover:bg-[var(--ayu-fg)] hover:text-[var(--ayu-ink)] transition-all duration-300 font-medium rounded-lg">AI Development</a>
+                        <a href="https://sdin.dev/coaching/" class="px-4 py-2 border-2 border-[var(--ayu-fg)] text-white hover:bg-[var(--ayu-fg)] hover:text-[var(--ayu-ink)] transition-all duration-300 font-medium rounded-lg">Coaching</a>
+                        <a href="https://sdin.dev/automation/" class="px-4 py-2 bg-[var(--ayu-amber)] text-[var(--ayu-ink)] transition-all duration-300 font-semibold rounded-lg">Automation</a>
                     </nav>
 
                     <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-button" class="md:hidden text-white hover:text-[#ffcc66] transition-colors duration-300">
+                    <button id="mobile-menu-button" class="md:hidden text-white hover:text-[var(--ayu-amber)] transition-colors duration-300">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
 
                     <!-- CTA Button -->
                     <a href="mailto:sean@sdin.dev?subject=Strategy%20Call%20Request"
-                       class="hidden sm:inline-block px-6 py-3 bg-[#ffcc66] text-[#1f2430] no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[#ffd580] hover:-translate-y-0.5 hover:shadow-lg">
+                       class="hidden sm:inline-block px-6 py-3 bg-[var(--ayu-amber)] text-[var(--ayu-ink)] no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[var(--ayu-amber-2)] hover:-translate-y-0.5 hover:shadow-lg">
                         Get Your Free Strategy Call
                     </a>
                 </div>
@@ -151,11 +168,11 @@
             <!-- Mobile Navigation Menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <div class="flex flex-col space-y-3">
-                    <a href="https://sdin.dev/ai/" class="px-4 py-2 border-2 border-[#cccac2] text-white hover:bg-[#cccac2] hover:text-[#1f2430] transition-all duration-300 font-medium rounded-lg text-center">AI Development</a>
-                    <a href="https://sdin.dev/coaching/" class="px-4 py-2 border-2 border-[#cccac2] text-white hover:bg-[#cccac2] hover:text-[#1f2430] transition-all duration-300 font-medium rounded-lg text-center">Coaching</a>
-                    <a href="https://sdin.dev/automation/" class="px-4 py-2 bg-[#ffcc66] text-[#1f2430] transition-all duration-300 font-semibold rounded-lg text-center">Automation</a>
+                    <a href="https://sdin.dev/ai/" class="px-4 py-2 border-2 border-[var(--ayu-fg)] text-white hover:bg-[var(--ayu-fg)] hover:text-[var(--ayu-ink)] transition-all duration-300 font-medium rounded-lg text-center">AI Development</a>
+                    <a href="https://sdin.dev/coaching/" class="px-4 py-2 border-2 border-[var(--ayu-fg)] text-white hover:bg-[var(--ayu-fg)] hover:text-[var(--ayu-ink)] transition-all duration-300 font-medium rounded-lg text-center">Coaching</a>
+                    <a href="https://sdin.dev/automation/" class="px-4 py-2 bg-[var(--ayu-amber)] text-[var(--ayu-ink)] transition-all duration-300 font-semibold rounded-lg text-center">Automation</a>
                     <a href="mailto:sean@sdin.dev?subject=Strategy%20Call%20Request"
-                       class="inline-block px-6 py-3 bg-[#ffcc66] text-[#1f2430] no-underline rounded-lg font-semibold transition-all duration-300 text-center hover:bg-[#ffd580]">
+                       class="inline-block px-6 py-3 bg-[var(--ayu-amber)] text-[var(--ayu-ink)] no-underline rounded-lg font-semibold transition-all duration-300 text-center hover:bg-[var(--ayu-amber-2)]">
                         Get Your Free Strategy Call
                     </a>
                 </div>
@@ -164,11 +181,11 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-[#1c212b] to-[#161a22] py-16 border-b border-[#2b3140] text-center">
+    <section class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16 border-b border-[var(--ayu-divider)] text-center">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Profile Image -->
             <div class="mb-8">
-                <img src="https://sdin.dev/profile.png" alt="Sean Dinwiddie" class="w-32 h-32 rounded-full mx-auto border-4 border-[#cccac2] shadow-lg float-animation object-cover">
+                <img src="https://sdin.dev/profile.png" alt="Sean Dinwiddie" class="w-32 h-32 rounded-full mx-auto border-4 border-[var(--ayu-fg)] shadow-lg float-animation object-cover">
             </div>
 
             <!-- Main Heading -->
@@ -184,12 +201,12 @@
             <!-- CTA Button -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="400">
                 <a href="mailto:sean@sdin.dev?subject=Strategy%20Call%20Request"
-                   class="inline-block px-8 py-4 bg-[#ffcc66] text-[#1f2430] no-underline rounded-lg font-bold text-lg transition-all duration-300 hover:bg-[#ffd580] hover:-translate-y-1 hover:shadow-xl">
+                   class="inline-block px-8 py-4 bg-[var(--ayu-amber)] text-[var(--ayu-ink)] no-underline rounded-lg font-bold text-lg transition-all duration-300 hover:bg-[var(--ayu-amber-2)] hover:-translate-y-1 hover:shadow-xl">
                     <i class="fas fa-calendar-check mr-2"></i>
                     Book Your Free Strategy Call
                 </a>
                 <a href="tel:+15306383238"
-                   class="inline-block px-6 py-3 bg-transparent border-2 border-[#cccac2] text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[#cccac2] hover:text-[#1f2430]">
+                   class="inline-block px-6 py-3 bg-transparent border-2 border-[var(--ayu-fg)] text-white no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[var(--ayu-fg)] hover:text-[var(--ayu-ink)]">
                     <i class="fas fa-phone mr-2"></i>
                     (530) 638-3238
                 </a>
@@ -198,11 +215,11 @@
     </section>
 
     <!-- Problem Section -->
-    <section class="bg-gradient-to-br from-[#1c212b] to-[#161a22] py-16 border-b border-[#2b3140]">
+    <section class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16 border-b border-[var(--ayu-divider)]">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-[#232834] rounded-lg shadow-xl p-8 border border-[#3a4152] text-center" data-aos="fade-up">
+            <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border border-[var(--ayu-border)] text-center" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white flex items-center justify-center">
-                    <i class="fas fa-triangle-exclamation text-[#f28779] mr-3"></i>
+                    <i class="fas fa-triangle-exclamation text-[var(--ayu-salmon)] mr-3"></i>
                     Stop Wasting Time on Tasks That Should Be Automated
                 </h2>
                 <p class="text-lg text-gray-300 max-w-2xl mx-auto">Your team is spending hours on repetitive tasks that modern technology can handle effortlessly. It's time to let robots do what robots do best.</p>
@@ -211,29 +228,29 @@
     </section>
 
     <!-- Solution Section -->
-    <section class="bg-gradient-to-br from-[#1c212b] to-[#161a22] py-16 border-b border-[#2b3140]">
+    <section class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16 border-b border-[var(--ayu-divider)]">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Transform Your Workflow in Three Stages</h2>
                 <p class="text-lg text-white max-w-4xl mx-auto">Our three-stage process is designed to automate your low-hanging fruit activities and work down towards automating decisions only you can make.</p>
-                <p class="text-base text-[#73d0ff] mt-2 italic">*Yes, it's possible.</p>
+                <p class="text-base text-[var(--ayu-cyan-2)] mt-2 italic">*Yes, it's possible.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-[#232834] rounded-lg shadow-xl p-8 border border-[#3a4152] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-12 h-12 bg-[#5ccfe6] text-[#1f2430] rounded-full flex items-center justify-center text-2xl font-bold mb-6">1</div>
+                <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border border-[var(--ayu-border)] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-[var(--ayu-cyan)] text-[var(--ayu-ink)] rounded-full flex items-center justify-center text-2xl font-bold mb-6">1</div>
                     <h3 class="text-2xl font-bold text-white mb-4">Tedious Task Release</h3>
                     <p class="text-gray-300">This stage is designed to eliminate mundane tasks, freeing you from repetitive work. Tasks no one should do besides robots with today's capabilities.</p>
                 </div>
 
-                <div class="bg-[#232834] rounded-lg shadow-xl p-8 border border-[#3a4152] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-12 h-12 bg-[#5ccfe6] text-[#1f2430] rounded-full flex items-center justify-center text-2xl font-bold mb-6">2</div>
+                <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border border-[var(--ayu-border)] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-[var(--ayu-cyan)] text-[var(--ayu-ink)] rounded-full flex items-center justify-center text-2xl font-bold mb-6">2</div>
                     <h3 class="text-2xl font-bold text-white mb-4">Efficiency Enhancer</h3>
                     <p class="text-gray-300">During this stage, it's all about making your team and contractors become superhuman with automation. It optimizes mid-level processes, boosting productivity across your operation. It can save as much as 70% of your team's time for higher-level activities.</p>
                 </div>
 
-                <div class="bg-[#232834] rounded-lg shadow-xl p-8 border border-[#3a4152] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-12 h-12 bg-[#5ccfe6] text-[#1f2430] rounded-full flex items-center justify-center text-2xl font-bold mb-6">3</div>
+                <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border border-[var(--ayu-border)] transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-[var(--ayu-cyan)] text-[var(--ayu-ink)] rounded-full flex items-center justify-center text-2xl font-bold mb-6">3</div>
                     <h3 class="text-2xl font-bold text-white mb-4">Decision-Driver</h3>
                     <p class="text-gray-300">The Decision-Driver stage empowers you to make fewer decisions each day. We tap into high-level decision-making with AI, allowing you to focus on strategic growth. Embrace a smarter, more efficient way to work and unlock your business's full potential.</p>
                 </div>
@@ -242,24 +259,24 @@
     </section>
 
     <!-- Results Section -->
-    <section class="bg-gradient-to-br from-[#1c212b] to-[#161a22] py-16 border-b border-[#2b3140]">
+    <section class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16 border-b border-[var(--ayu-divider)]">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-white" data-aos="fade-up">Here's What Others Are Saying</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-[#232834] rounded-lg shadow-xl p-8 border border-[#3a4152] text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="text-4xl font-bold mb-2 text-[#bae67e]">70%</div>
+                <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border border-[var(--ayu-border)] text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl font-bold mb-2 text-[var(--ayu-green)]">70%</div>
                     <div class="text-gray-300">Time Saved for Higher-Level Activities</div>
                 </div>
-                <div class="bg-[#232834] rounded-lg shadow-xl p-8 border border-[#3a4152] text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-4xl font-bold mb-2 text-[#bae67e]">24/7</div>
+                <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border border-[var(--ayu-border)] text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl font-bold mb-2 text-[var(--ayu-green)]">24/7</div>
                     <div class="text-gray-300">Automated Operations</div>
                 </div>
-                <div class="bg-[#232834] rounded-lg shadow-xl p-8 border border-[#3a4152] text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-4xl font-bold mb-2 text-[#bae67e]">90%</div>
+                <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border border-[var(--ayu-border)] text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl font-bold mb-2 text-[var(--ayu-green)]">90%</div>
                     <div class="text-gray-300">Reduction in Manual Errors</div>
                 </div>
-                <div class="bg-[#232834] rounded-lg shadow-xl p-8 border border-[#3a4152] text-center" data-aos="fade-up" data-aos-delay="400">
-                    <div class="text-4xl font-bold mb-2 text-[#bae67e]">&infin;</div>
+                <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border border-[var(--ayu-border)] text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-4xl font-bold mb-2 text-[var(--ayu-green)]">&infin;</div>
                     <div class="text-gray-300">Scalability Potential</div>
                 </div>
             </div>
@@ -267,11 +284,11 @@
     </section>
 
     <!-- Case Studies Section -->
-    <section class="bg-gradient-to-br from-[#1c212b] to-[#161a22] py-16 border-b border-[#2b3140]">
+    <section class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16 border-b border-[var(--ayu-divider)]">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 text-center" data-aos="fade-up">Real Client Transformations</h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div class="bg-[#232834] rounded-lg shadow-xl p-8 border border-[#3a4152] border-l-4 border-l-[#5ccfe6]" data-aos="fade-right">
+                <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border border-[var(--ayu-border)] border-l-4 border-l-[var(--ayu-cyan)]" data-aos="fade-right">
                     <p class="text-lg text-gray-200 mb-6 leading-relaxed">I developed custom software that streamlined regulatory compliance processes, reducing manual documentation work by 30+ hours weekly. At $80/hour fully-loaded labor cost, this saves them $2,400/week or $10,400/month in direct labor costs. The improved accuracy and reporting also eliminated $31,200 in monthly compliance penalties and rework expenses.</p>
                     <div>
                         <strong class="block text-white font-semibold mb-1">Tammy Boone</strong>
@@ -279,7 +296,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#232834] rounded-lg shadow-xl p-8 border border-[#3a4152] border-l-4 border-l-[#5ccfe6]" data-aos="fade-left">
+                <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border border-[var(--ayu-border)] border-l-4 border-l-[var(--ayu-cyan)]" data-aos="fade-left">
                     <p class="text-lg text-gray-200 mb-6 leading-relaxed">I developed custom tailored accounting applications and insurance forecasting tools. These solutions streamlined workflows, accelerated processing, and enhanced data visualization. The result was $58,900 in monthly operational cost savings through eliminated overhead and improved staff efficiency.</p>
                     <div>
                         <strong class="block text-white font-semibold mb-1">Jim Phillips</strong>
@@ -291,30 +308,30 @@
     </section>
 
     <!-- Value Proposition Section -->
-    <section class="bg-gradient-to-br from-[#1c212b] to-[#161a22] py-16 border-b border-[#2b3140]">
+    <section class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16 border-b border-[var(--ayu-divider)]">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 text-center" data-aos="fade-up">Why Choose Custom Automation Over Generic Solutions?</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-[#232834] rounded-lg shadow-xl p-8 border border-[#3a4152]" data-aos="fade-right">
-                    <h3 class="text-2xl font-bold text-white mb-4"><i class="fas fa-times-circle mr-2 text-[#f28779]"></i>Manual Work Problems</h3>
+                <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border border-[var(--ayu-border)]" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold text-white mb-4"><i class="fas fa-times-circle mr-2 text-[var(--ayu-salmon)]"></i>Manual Work Problems</h3>
                     <ul class="text-gray-300 space-y-2">
-                        <li><i class="fas fa-chevron-right mr-2 text-[#bae67e]"></i>Your team wastes hours on repetitive tasks</li>
-                        <li><i class="fas fa-chevron-right mr-2 text-[#bae67e]"></i>Human errors cost you money and time</li>
-                        <li><i class="fas fa-chevron-right mr-2 text-[#bae67e]"></i>Scaling requires hiring more people</li>
-                        <li><i class="fas fa-chevron-right mr-2 text-[#bae67e]"></i>Processes break when key people are unavailable</li>
-                        <li><i class="fas fa-chevron-right mr-2 text-[#bae67e]"></i>No time for strategic thinking and growth</li>
-                        <li><i class="fas fa-chevron-right mr-2 text-[#bae67e]"></i>Competitors with automation gain advantage</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-[var(--ayu-green)]"></i>Your team wastes hours on repetitive tasks</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-[var(--ayu-green)]"></i>Human errors cost you money and time</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-[var(--ayu-green)]"></i>Scaling requires hiring more people</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-[var(--ayu-green)]"></i>Processes break when key people are unavailable</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-[var(--ayu-green)]"></i>No time for strategic thinking and growth</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-[var(--ayu-green)]"></i>Competitors with automation gain advantage</li>
                     </ul>
                 </div>
-                <div class="bg-[#232834] rounded-lg shadow-xl p-8 border border-[#3a4152]" data-aos="fade-left">
-                    <h3 class="text-2xl font-bold text-white mb-4"><i class="fas fa-check-circle mr-2 text-[#bae67e]"></i>Custom Automation Benefits</h3>
+                <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border border-[var(--ayu-border)]" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold text-white mb-4"><i class="fas fa-check-circle mr-2 text-[var(--ayu-green)]"></i>Custom Automation Benefits</h3>
                     <ul class="text-gray-300 space-y-2">
-                        <li><i class="fas fa-chevron-right mr-2 text-[#bae67e]"></i>Robots handle tedious tasks 24/7</li>
-                        <li><i class="fas fa-chevron-right mr-2 text-[#bae67e]"></i>Near-zero error rates with consistent quality</li>
-                        <li><i class="fas fa-chevron-right mr-2 text-[#bae67e]"></i>Scale infinitely without proportional costs</li>
-                        <li><i class="fas fa-chevron-right mr-2 text-[#bae67e]"></i>Processes run even when you're sleeping</li>
-                        <li><i class="fas fa-chevron-right mr-2 text-[#bae67e]"></i>Your team focuses on high-value activities</li>
-                        <li><i class="fas fa-chevron-right mr-2 text-[#bae67e]"></i>Competitive advantage through efficiency</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-[var(--ayu-green)]"></i>Robots handle tedious tasks 24/7</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-[var(--ayu-green)]"></i>Near-zero error rates with consistent quality</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-[var(--ayu-green)]"></i>Scale infinitely without proportional costs</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-[var(--ayu-green)]"></i>Processes run even when you're sleeping</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-[var(--ayu-green)]"></i>Your team focuses on high-value activities</li>
+                        <li><i class="fas fa-chevron-right mr-2 text-[var(--ayu-green)]"></i>Competitive advantage through efficiency</li>
                     </ul>
                 </div>
             </div>
@@ -322,20 +339,20 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="bg-gradient-to-br from-[#1c212b] to-[#161a22] py-16 border-b border-[#2b3140]">
+    <section class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16 border-b border-[var(--ayu-divider)]">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-[#232834] rounded-lg shadow-xl p-10 border border-[#3a4152] text-center" data-aos="fade-up">
+            <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-10 border border-[var(--ayu-border)] text-center" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Talk with our team to find out if custom automation is a fit for you.</h2>
                 <p class="text-xl text-gray-300 mb-4">Let's make it the most productive call you take this year.</p>
                 <p class="text-lg text-gray-300 mb-8">Discover how automation can transform your business operations and free up your team for what matters most.</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <a href="mailto:sean@sdin.dev?subject=Automation%20Strategy%20Call%20Request"
-                       class="inline-block px-8 py-4 bg-[#ffcc66] text-[#1f2430] no-underline rounded-lg font-bold text-xl transition-all duration-300 hover:bg-[#ffd580] hover:-translate-y-1 hover:shadow-xl">
+                       class="inline-block px-8 py-4 bg-[var(--ayu-amber)] text-[var(--ayu-ink)] no-underline rounded-lg font-bold text-xl transition-all duration-300 hover:bg-[var(--ayu-amber-2)] hover:-translate-y-1 hover:shadow-xl">
                         <i class="fas fa-calendar-check mr-2"></i>
                         Book a Call
                     </a>
                     <a href="tel:+15306383238"
-                       class="inline-block px-6 py-3 bg-[#5ccfe6] text-[#1f2430] no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[#73d0ff] hover:-translate-y-0.5 hover:shadow-lg">
+                       class="inline-block px-6 py-3 bg-[var(--ayu-cyan)] text-[var(--ayu-ink)] no-underline rounded-lg font-semibold transition-all duration-300 hover:bg-[var(--ayu-cyan-2)] hover:-translate-y-0.5 hover:shadow-lg">
                         <i class="fas fa-phone mr-2"></i>
                         (530) 638-3238
                     </a>
@@ -345,17 +362,17 @@
     </section>
 
     <!-- Guarantee Section -->
-    <section class="bg-gradient-to-br from-[#1c212b] to-[#161a22] py-16">
+    <section class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-16">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-[#232834] rounded-lg shadow-xl p-8 border border-[#3a4152] text-center" data-aos="fade-up">
-                <h3 class="text-2xl font-bold mb-4 text-white"><i class="fas fa-check-circle text-[#bae67e] mr-2"></i>No Excuses. Just Results.</h3>
+            <div class="bg-[var(--ayu-panel)] rounded-lg shadow-xl p-8 border border-[var(--ayu-border)] text-center" data-aos="fade-up">
+                <h3 class="text-2xl font-bold mb-4 text-white"><i class="fas fa-check-circle text-[var(--ayu-green)] mr-2"></i>No Excuses. Just Results.</h3>
                 <p class="text-gray-300">If we can't identify significant automation opportunities that will save your team time and reduce errors, the consultation is completely free. No strings attached.</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gradient-to-br from-[#1c212b] to-[#161a22] py-8">
+    <footer class="bg-gradient-to-br from-[var(--ayu-bg-from)] to-[var(--ayu-bg-to)] py-8">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="text-white text-sm mb-4 md:mb-0">
@@ -364,22 +381,22 @@
                 <div class="flex space-x-6">
                     <a href="https://www.linkedin.com/in/seandinwiddie/"
                        target="_blank"
-                       class="text-white hover:text-[#5ccfe6] transition-colors duration-300">
+                       class="text-white hover:text-[var(--ayu-cyan)] transition-colors duration-300">
                         <i class="fab fa-linkedin text-xl"></i>
                     </a>
                     <a href="https://github.com/SeanDinwiddie"
                        target="_blank"
-                       class="text-white hover:text-[#cccac2] transition-colors duration-300">
+                       class="text-white hover:text-[var(--ayu-fg)] transition-colors duration-300">
                         <i class="fab fa-github text-xl"></i>
                     </a>
                     <a href="https://www.instagram.com/sdin.dev/"
                        target="_blank"
-                       class="text-white hover:text-[#f28779] transition-colors duration-300">
+                       class="text-white hover:text-[var(--ayu-salmon)] transition-colors duration-300">
                         <i class="fab fa-instagram text-xl"></i>
                     </a>
                     <a href="https://x.com/seandinwiddie"
                        target="_blank"
-                       class="text-white hover:text-[#5ccfe6] transition-colors duration-300">
+                       class="text-white hover:text-[var(--ayu-cyan)] transition-colors duration-300">
                         <i class="fab fa-twitter text-xl"></i>
                     </a>
                 </div>
