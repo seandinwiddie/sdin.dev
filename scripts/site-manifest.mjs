@@ -135,6 +135,7 @@ export const standalonePages = Object.freeze([
 ]);
 
 export const publicAssets = Object.freeze([
+  'Sean Dinwiddie - AI Systems Architect & Senior Full Stack Engineer.pdf',
   'analytics.js',
   'favicon.ico',
   'google7e1b8911384e19a7.html',
