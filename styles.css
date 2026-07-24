@@ -180,7 +180,7 @@ a:focus-visible, button:focus-visible {
 .s-instagram:hover,  .s-instagram:focus-visible  { color: var(--ayu-salmon); }
 .s-x:hover,          .s-x:focus-visible          { color: var(--ayu-cyan-2); }
 .s-upwork:hover,     .s-upwork:focus-visible      { color: var(--ayu-green); }
-.s-freelancer:hover, .s-freelancer:focus-visible { color: var(--ayu-orange); }
+.s-freelancer:hover, .s-freelancer:focus-visible { color: var(--ayu-cyan-2); }
 
 /* Inline code chips (not fenced blocks) get a subtle syntax tint */
 :not(pre) > code { color: var(--ayu-mint); }
